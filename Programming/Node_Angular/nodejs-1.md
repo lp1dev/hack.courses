@@ -97,12 +97,13 @@ Tous les fichiers **JavaScript** sont supportés, mais il est en revanche possib
 
 Attaquons-nous maintenant aux principales différences entre les syntaxes **Node.js** et le **JavaScript orienté navigateur** :
 - Les imports
+- NPM
 - Les API navigateur
 - Process
 - Quelques modules Node.js
 	- fs
 	- express
-	- ws
+	- Les WebSockets
 
 > **Note** : Ce contenu a été testé en prenant un environnement Node.js 8.11 en référence, il est possible qu'il y ait quelques différences avec les dernières versions
 
@@ -133,7 +134,33 @@ const hello = require('./hello'); console.log(hello) #prints 'hello'
 ```
 
 ---
-### Les API navigateur
+## Node Package Manager (NPM)
+
+**NPM** est le gestionnaire de modules intégré à Node.js.
+
+Il en existe d'autres (yarn ou bower par exemple), mais **npm** est de loin le plus utilisé actuellement  car il est packagé avec les installeurs Node.js.
+
+On utilise la syntaxe `npm install {nom du module}` pour installer un module Node.js.
+
+La commande `npm init` dans un dossier permet d'initialiser un nouveau projet Node.js. 
+Un fichier **package.json** contenant diverses informations sur le projet (dépendances, dépot, auteur, licence) est alors crée.
+
+---
+## package.json
+
+**npm** se sert du fichier **package.json** pour stocker les informations relatives au projet courant.
+
+Lorsqu'un module npm est ajouté aux dépendances de votre projet (`npm install --save {nom du module}`)
+
+il sera ajouté dans le champ "dependencies" de votre fichier **package.json**. 
+Les fichiers du module seront par défaut installés dans le dossier *node_modules* du projet.
+
+Pour installer automatiquement toutes les dépendances d'un projet Node.js il suffit d'utiliser `npm install` sans paramètres.
+
+[la documentation NPM](https://docs.npmjs.com/files/package.json)
+
+---
+## Les API navigateur
 &nbsp;
 Ça peut être quelque peu déroutant mais en Node.js vous ne pourrez pas accéder à **window, navigator, document**.
 
@@ -142,7 +169,7 @@ C'est en soit logique, ce sont des API présentes et utiles dans le contexte d'u
 Dans le cas de Node.js, le code est exécuté en "standalone", il n'est **pas lié à un navigateur** mais **directement exécuté sur votre machine**.
 
 ---
-### Process
+## Process
 Process est une globale dans le contexte de Node. 
 Elle contient des informations et des méthodes utilitaires concernant le processus courant !
 
@@ -157,7 +184,7 @@ const firstArgument = process.argv[1] # affiche le premier argument passé au sc
 Plus d'infos sur [la documentation Node.js](https://nodejs.org/api/process.html#process_process)
 
 --- 
-### Le module fs
+## Le module fs
 Le module Node **fs** permet d'intéragir avec le système de fichiers de votre machine.
 
 Il permet (entre autres) de **créer, lire, écrire, supprimer, renommer** des fichiers.
@@ -176,6 +203,51 @@ fs.readFile('/etc/passwd', (err, data) => {
 Plus d'informations sur [la documentation Node.js](https://nodejs.org/api/fs.html)
 
 ---
-### Express.js
+## Express.js
+&nbsp;
+Express est un des modules Node.js les plus connus. 
+C'est un framework web, souvent utilisé pour créer des back-ends, notamment dans des stacks **MEAN** (**M**ongoDB **E**xpress **A**ngular **N**ode.js).
+
+Il s'inspire du micro-framework web **Sinatra** (Ruby) dans sa simplicité d'utilisation.
+
+```
+const express = require('express');
+const app = express();
+
+const server = app.listen(8000, () => {
+    const host = server.address().address;
+    const port = server.address().port;
+    console.log("HTTP Server listening on ", host, port);
+});
+```
+
+
 ---
-### ws
+## Les WebSockets
+
+&nbsp;
+Les WebSockets, vous en avez probablement entendu parler, possiblement même utilisées.
+
+Une WebSocket c'est (*en gros*) un hack de HTTP/2 permettant de créer des objets ayant le même comportement que des sockets UNIX.
+
+Il existe plusieurs modules Node.js implémentant des WebSockets côté serveur ou client, notamment **ws** et **websocket**. 
+
+Pour plus d'informations : [la documentation MDN](https://developer.mozilla.org/fr/docs/WebSockets)
+
+---
+## Axios
+
+**Axios** est un module quelque peu moins populaire que ceux que nous avons cités jusqu'ici mais il saura se montrer très utile pour la suite de ce cours (et probablement dans vos autres projets de développement en JavaScript) !
+
+C'est un wrapper autour des **API de communication HTTP** de Node.js et des navigateurs.
+
+Il permet de grandement simplifier les requêtes HTTP.
+
+*Par exemple* :
+ ```
+ const axios = require('axios');
+ axios.get('https://hack.courses')
+ 	.then(response => console.log(response))
+ 	.catch(error => console.error(error))
+
+ ```
