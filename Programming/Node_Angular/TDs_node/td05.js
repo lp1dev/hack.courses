@@ -1,13 +1,17 @@
 /* TD05 - Wrap Up
 
 Il est maintenant temps de finaliser l'outil que
-nous avons commencé à écrire !
+nous avons commencé à écrire et de le rendre plus facile à utiliser !
 
-Écrivez un script qui trouve les mots de passes correspondant aux
+Écrivez un script qui trouve les mots de passes correspondants aux
 hashs contenus dans le fichier passé en paramètre.
 
 Vous trouverez dans ce dossier un fichier hashes.txt qui contient des hashs md5,
-utilisez-le pour tester votre script.
+utilisez-le pour tester votre script. 
+
+C'est celui-ci qui est utilisé dans les tests.
+
+Astuce : Les constantes pré-définies dans le TD peuvent vous aider
 
 /* TD Part */
 
