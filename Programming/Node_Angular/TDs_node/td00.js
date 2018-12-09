@@ -45,4 +45,3 @@ if (!parsePackageFile(mockPackage) ||
     return
 }
 console.log('Test 00: OK')
-
