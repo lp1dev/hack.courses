@@ -51,3 +51,24 @@ Si vous n'arrivez pas à faire quelque chose mais que vous avez pourtant une id�
 
 # II - Comment faire son rendu ?
 
+Pour faire le rendu de vos TDs ou de votre projet, créez une archive **zip** au format :
+
+> nometudiant_nomduprojet.zip
+
+Par exemple : **amsellem_gameoflife.zip**
+OU
+
+> nometudiant_tds.zip
+
+Une fois que vous avez vérifié que votre archive et son contenu sont fonctionnels, vous pouvez me l'envoyer à l'adresse e-mail :
+
+> ramassage@lp1.eu
+
+Avec en sujet du mail :
+
+> [Rendu] Nom Prénom - Nom du projet
+
+Et voilà !
+
+Pour toutes question vous pouvez m'écrire sur: *mail(at)lp1.eu* 
+
