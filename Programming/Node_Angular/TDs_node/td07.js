@@ -37,17 +37,13 @@ Astuces :
 /* Testing Part */
 
 const data = {
-    hashes: [
-        '8ddcff3a80f4189ca1c9d4d902c3c909',
-        '3fc0a7acf087f549ac2b266baf94b8b1',
-        '4b9fd29cbfe8baffeb8d331a8cc5bcf2',
-        '11aad936ee5aab81953eee2e59fda247',
-        '68da3c8820f5cf217ae41b59abf1ff44',
-        '5f4dcc3b5aa765d61d8327deb882cf99',
-        '2fdd64782b4169e3c42c6a88a47faa78',
-        '65d671ec9787b32cfb7e33188be32ff7',
-        'e5dd2ae16b3c635f59fd329f0e735718'
-    ]
+    hashes: `2f8e193c39c4f1eedb68fa2947246cc7
+b80a3f1ac659c52f8c54224483825f6b
+f0c4b1d78649bcec257223e80e896086
+067a19b34a0be782c09c6aae42921ddf
+7c9b277e0893fc9234cfa5a642e29d80
+33cbcd797b50f5f79f455e6d2799290e
+2bccf72221e50686191fd76423e58ad0`.split('\n')
 }
 
 axios
