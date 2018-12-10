@@ -32,21 +32,24 @@ Astuces :
 
 /* TD Part */
 
-// You're on your own this time
+// GL;HF
 
 /* Testing Part */
 
+setTimeout(test, 1500)
+
 const data = {
-    hashes: `2f8e193c39c4f1eedb68fa2947246cc7
-b80a3f1ac659c52f8c54224483825f6b
-f0c4b1d78649bcec257223e80e896086
-067a19b34a0be782c09c6aae42921ddf
-7c9b277e0893fc9234cfa5a642e29d80
-33cbcd797b50f5f79f455e6d2799290e
-2bccf72221e50686191fd76423e58ad0`.split('\n')
+    hashes: `4a7d1ed414474e4033ac29ccb8653d9b
+7c6a180b36896a0a8c02787eeafb0e4c
+00bfc8c729f5d4d529a412b12c58ddd2
+f9f3b5f3978c0c2c4663982c8e0e3c76
+80ef61a9478f668711adb7df30543230
+b99cc420eb25205168e83190bae48a12`.split('\n')
 }
 
-axios
-    .post(`http://localhost:${PORT}/crack`, data)
-    .then(response => console.log('response: ', response.data))
-    .catch(e => console.error('TD07 :: KO', e))
+function test() {
+    axios
+        .post(`http://localhost:${PORT}/crack`, data)
+        .then(response => console.log('response: ', response.data))
+        .catch(e => console.error('TD07 :: KO', e))
+}
