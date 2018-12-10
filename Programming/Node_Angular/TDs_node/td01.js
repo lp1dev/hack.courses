@@ -47,4 +47,4 @@ qwerty
 abc123
 1234567`
 
-console.log(countLines(null, mockFile) == 10 ? 'TD01: OK' : 'TD01: KO')
+console.log(countLines(null, mockFile) == 11 ? 'TD01: OK' : 'TD01: KO')
