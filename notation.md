@@ -53,6 +53,8 @@ Si vous n'arrivez pas à faire quelque chose mais que vous avez pourtant une id�
 
 Pour faire le rendu de vos TDs ou de votre projet, créez une archive **zip** au format :
 
+## Si vous travaillez seul
+
 > nometudiant_nomduprojet.zip
 
 Par exemple : **amsellem_gameoflife.zip**
@@ -68,6 +70,20 @@ Avec en sujet du mail :
 
 > [Rendu] Nom Prénom - Nom du projet
 
+## Si vous travaillez en groupe
+
+> nometudiant1_nometudiant2_nometudiant3[...]_nomduprojet.zip
+
+Par exemple: **amsellem_blaizot_gameoflife.zip**
+
+Une fois que vous avez vérifié que votre archive et son contenu sont fonctionnels, vous pouvez me l'envoyer à l'adresse e-mail :
+
+> ramassage@lp1.eu
+
+Avec en sujet du mail :
+
+> [Rendu] Nom1 Prénom1 Nom 2 Prénom 2 - Nom du projet
+ 
 Et voilà !
 
 Pour toutes question vous pouvez m'écrire sur: *mail(at)lp1.eu* 
