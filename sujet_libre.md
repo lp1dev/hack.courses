@@ -13,6 +13,7 @@ La documentation du projet est à réaliser avant la pause du matin (10h30),
 La documentation devra contenir :
 
 - Le nom de votre Projet
+- Les noms du ou des participants
 - Une description globale de votre projet en quelques lignes
 - Une liste des fonctionnalités et sous-fonctionnalités que vous comptez réaliser.
 Dans le cas où les fonctionnalités ne seraient pas assez nombreuses ou trop "simplistes", 
