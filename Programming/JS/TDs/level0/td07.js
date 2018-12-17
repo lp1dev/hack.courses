@@ -4,7 +4,7 @@ Cet exercice est assez similaire au td06,
 cette-fois ci vous devez implémenter la 
 fonction td07 qui prend en paramètre un
 nombre nommé max et retourne un tableau 
-contenant les nombres de 0 à max (inclus).
+contenant les nombres de 0 à max exclu.
 
 */
 
