@@ -6,10 +6,10 @@ du nombre a passé en paramètre !
 
 */
 
+/* TD Part */
+
 function square(a) {
 }
-
-/* TD Part */
 
 /* Testing Part */
 
