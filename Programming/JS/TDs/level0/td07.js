@@ -15,7 +15,7 @@ function td07(max) {
 
 /* Testing Part */
 const array = '0'.repeat(999).split('').map((i, id) => id);
-if (td07(999) === array) {
+if (td07(999).join('') === array.join('')) {
     console.log('TD07:: OK');
 } else {
     console.log('TD07:: KO');
