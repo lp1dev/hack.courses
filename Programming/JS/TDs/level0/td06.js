@@ -2,7 +2,7 @@
 
 Maintenant, passons à l'utilisation de boucles !
 Le but de ce TD est de terminer d'implémenter la
-fonction loop100, qui retourne une chaîne de 
+fonction loop999, qui retourne une chaîne de 
 caractères contenant à la suite, sans espace les
 nombres de 0 à 999.
 
