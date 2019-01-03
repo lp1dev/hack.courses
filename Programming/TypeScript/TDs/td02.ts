@@ -11,19 +11,22 @@ les déplacements) avec la méthode move(x, y).
 
 /* TD Part */
 
-/* Testing Part */
-function test02() {
-    const p = new Pawn(0, 0);
-    if (typeof (p.move) === 'function') {
-        if (p.x === p.y && p.x === 0) {
-            p.move(5, 3);
-            if (p.x === 5 && p.y === 3) {
-                console.log('TD02 :: OK');
-                return;
-            }
-        }
+class Pawn {
+    constructor(...args: any) {
     }
-    console.log('TD02 :: KO');
 }
 
-test02();
+/* Testing Part */
+import { expect } from 'chai';
+import 'mocha';
+
+describe('TD02', () => {
+    const p : any = new Pawn(0, 0);
+    it('Should contain a Pawn that can move', () => {
+        expect(typeof (p.move)).to.equal('function');
+        expect(p.x).to.equal(p.y).and.equal(0);
+        p.move(5, 3);
+        expect(p.x).to.equal(5);
+        expect(p.y).to.equal(3);
+    });
+});

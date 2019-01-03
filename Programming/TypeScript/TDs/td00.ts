@@ -16,5 +16,11 @@ Vous travaillerez dans les bornes définies par la TD Part.
 let message: string;
 
 /* Testing Part */
+import { expect } from 'chai';
+import 'mocha';
 
-console.log(message === 'Hello World' ? 'TD00 :: OK' : 'TD00 :: KO')
+describe('TD00', () => {
+    it('Should contain a message whose value is "Hello World"', () => {
+        expect(message).to.equal('Hello World');
+    });
+});

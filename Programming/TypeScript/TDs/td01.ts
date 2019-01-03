@@ -16,19 +16,17 @@ TypeScript.
 
 const template = 'Hello name!';
 
-function td01(name) {
+function td01(name : any) {
     return template.replace('name', name);
 }
 
 /* Testing Part */
-function test01() {
-    if (td01('test') === 'Hello test') {
-        if (td01('azertyuiop') === 'Hello azertyuiop') {
-            console.log('TD01 :: OK');
-            return;
-        }
-    }
-    console.log('TD01 :: KO');
-}
+import { expect } from 'chai';
+import 'mocha';
 
-test01();
+describe('TD01', () => {
+    it('Should contain a td01 fonction saying hello', () => {
+        expect(td01('test')).to.equal('Hello test');
+        expect(td01('azertyuiop')).to.equal('Hello azertyuiop');
+    });
+});

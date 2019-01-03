@@ -22,39 +22,49 @@ avec un x et un y.
 
 /* TD Part */
 
+class Pawn {
+    constructor(...args: any) {}
+}
+class King {
+    constructor(...args: any) {}
+}
+class Queen {
+    constructor(...args: any) {}
+}
+class Rook {
+    constructor(...args: any) {}
+}
+class Bishop {
+    constructor(...args: any) {}
+}
 
 /* Testing Part */
 
-function test03() {
-    let passed = 0;
-    const p = new Pawn(1, 1);
-    if (p.x === 1 && p.y === 1 && p.type === 0) {
-        passed++;
-        const k = new King(2, 2);
-        k.move(p.x, p.y);        
-        if (k.x === 1 && k.y === 1 && k.type === 1) {
-            passed++;
-            const q = new Queen(3, 3);
-            q.move(k.x, k.y);
-            if (q.x === 1 && q.y === 1 && q.type === 2) {
-                passed++;
-                const r = new Rook(4, 4);
-                if (r.x === 4 && r.y === 4 && r.type === 3) {
-                    passed++;
-                    const b = new Bishop(5, 5);
-                    b.move(p.x, p.y);
-                    if (b.x === 1 && b.y === 1 && b.type === 4) {
-                        passed++;
-                        console.log('TD03 :: OK');
-                        return;
-                    }
-                }
-            }
-        }
+import { expect } from 'chai';
+import 'mocha';
 
+
+describe('TD03', () => {
+    let p : any = new Pawn(0, 0);
+    //
+    function testPiece(id: number) {
+        const moveX = Math.floor(Math.random() * 10);
+        const moveY = Math.floor(Math.random() * 10);
+        expect(typeof (p.move)).to.equal('function');
+        expect(p.type).to.equal(id);
+        expect(p.x).to.equal(p.y).and.equal(0);
+        p.move(moveX, moveY);
+        expect(p.x).to.equal(moveX);
+        expect(p.y).to.equal(moveY);
     }
-    console.log(`You have passed ${passed} tests`)
-    console.log('TD03 :: KO');
-}
-
-test03();
+    
+    it('Should contain a Pawn that can move', () => {testPiece(0)});
+    p = new King(1, 1);
+    it('Should contain a King that can move', () => {testPiece(1)});
+    p = new Queen(2, 2);
+    it('Should contain a Queen that can move', () => {testPiece(2)});
+    p = new Rook(2, 2);
+    it('Should contain a Rook that can move', () => {testPiece(3)});
+    p = new Bishop(3, 3);
+    it('Should contain a Queen that can move', () => {testPiece(4)});
+});
