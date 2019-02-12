@@ -569,9 +569,24 @@ La syntaxe est légèrement différente à la création d'un composant :
 Vue.directive('bold', {/*directive content*/})
 ```
 Les directives possèdent également un cycle de vie différent des composants, avec les **hooks** suivants :
-- **bind(*element*, [...])** : Appellé la première fois qu'une directive est liée à un élément
-- **inserted(*element*, [...])** : Appellé quand l'élément lié a été injecté dans son parent.
-- **update(*element*, [...])** : Appellé après chaque changement du composant contenant la directive.
+- **bind(*element, bindings*)** : Appellé la première fois qu'une directive est liée à un élément
+- **inserted(*element, bindings*)** : Appellé quand l'élément lié a été injecté dans son parent.
+- **update(*element, bindings*)** : Appellé après chaque changement du composant contenant la directive.
+
+---
+# Element et bindings ?!
+
+Ces deux paramètres sont passés aux **hooks** des directives Vue.js. 
+
+**Element** contient une référence à l'élément du **DOM** sur lequel est appliquée la directive.
+
+**Bindings** est un objet plus vaste : il contient plusieurs informations sur la liaison entre notre directive et l'élément auquel elle est rattachée :
+
+- **name** : le nom de la directive
+- **value** : la valeur passée à la directive
+- **expression** : l’expression liée en tant que chaine de caractères
+- **arg** : l’argument passé à la directive
+- **modifiers** : un objet contenant les modificateurs de la directive
 
 ---
 # Filtres
