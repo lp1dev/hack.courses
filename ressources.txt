@@ -1,4 +1,4 @@
-## 
+## Pentest Resources
 
 https://github.com/trimstray/the-book-of-secret-knowledge#black_small_square-labs-ethical-hacking-platformstrainingsctfs
 
@@ -55,3 +55,42 @@ https://github.com/pomerium/awesome-security-audits
 https://github.com/trustedsec/physical-docs
 
 https://www.isecom.org/OSSTMM.3.pdf
+
+https://www.linuxvmimages.com/
+
+https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/
+
+https://github.com/swisskyrepo/PayloadsAllTheThings
+
+https://morph3sec.com/2019/07/16/Windows-Red-Team-Cheat-Sheet/
+
+https://www.itsecurityguru.org/2020/01/20/is-sms-two-factor-authentication-secure/?utm_content=114017271&utm_medium=social&utm_source=twitter&hss_channel=tw-2925438791
+
+https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4
+
+1. Book of Secret Knowledge = https://lnkd.in/fWKCdi4
+2. Awesome Hacking = https://lnkd.in/f7VPTEX
+3. Awesome Bug Bounty = https://lnkd.in/fPrQiVD
+4. Awesome Penetration Testing = https://lnkd.in/fAUZgu5
+5. Awesome Web Hacking = https://lnkd.in/f5n2hSd
+6. Awesome Hacking Resources = https://lnkd.in/fcJ6wFH
+7. Awesome Pentest = https://lnkd.in/fNNSFeN
+8. Awesome Red Teaming = https://lnkd.in/fGpievF
+9. Awesome Web Security = https://lnkd.in/ffG73u2
+10. Penetration Test Guide based on OWASP = https://lnkd.in/ffyBwzG
+11. Pentest Compilation = https://lnkd.in/f5JwJTD
+12. Infosec Reference = https://lnkd.in/fY6wNmX
+
+https://www.pcisecuritystandards.org/document_library
+
+https://datarecovery.com/rd/default-passwords/
+
+https://hakin9.org/homepwn-swiss-army-knife-for-pentesting-of-iot-devices/
+
+https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/
+
+https://www.voidsecurity.in/2012/10/exploit-exercise-rpath-vulnerability.html
+
+https://sensepost.com/blog/2019/obtaining-shells-via-logitech-unifying-dongles/
+
+https://0xsp.com/offensive/red-teaming-toolkit-collection (!)
