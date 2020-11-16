@@ -47,7 +47,7 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "hack.courses"
-    subtitle = "Hacking courses and educational content"
+    subtitle = "Hacking and programmation courses and educational content"
     owner = "fenrir.pro"
     keywords = "hacking courses classes content learn"
     copyright = "hosted by fenrir.pro"
@@ -62,6 +62,11 @@ paginate = 5
       logoHomeLink = "/"
 
     [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "About"
+        name = "About"
+        url = "/posts/hack_courses"
+
       [[languages.en.menu.main]]
         identifier = "Directory"
         name = "Directory"

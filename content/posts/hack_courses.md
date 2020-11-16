@@ -16,8 +16,8 @@ Hack.courses is an online repository of classes and educational content made by 
 
 # What does it contains?
 
-Hack.courses contains exercices, resources, slides and class content related to hacking and development.
+Hack.courses contains exercices, resources, slides and class content related to hacking and development. Some of them are available in french, some of them are available in english.
 
 # Who is it for?
 
-Information Security enthusiasts, offensive security enthusiasts looking for class material and training.
+Development, Information Security and Offensive Security enthusiasts looking for class material and training.
