@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>courses on hack.courses</title>
+    <link>/tags/courses/</link>
+    <description>Recent content in courses on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 12:57:35 +0100</lastBuildDate><atom:link href="/tags/courses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About hack.courses</title>
+      <link>/posts/hack_courses/</link>
+      <pubDate>Mon, 16 Nov 2020 12:57:35 +0100</pubDate>
+      
+      <guid>/posts/hack_courses/</guid>
+      <description>What is hack.courses? Hack.courses is an online repository of classes and educational content made by fenrir.pro.
+What does it contains? Hack.courses contains exercices, resources, slides and class content related to hacking and development. Some of them are available in french, some of them are available in english.
+Who is it for? Development, Information Security and Offensive Security enthusiasts looking for class material and training.</description>
+      <content>&lt;h1 id=&#34;what-is-hackcourses&#34;&gt;What is hack.courses?&lt;/h1&gt;
+&lt;p&gt;Hack.courses is an online repository of classes and educational content made by &lt;a href=&#34;https://fenrir.pro&#34;&gt;fenrir.pro&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;what-does-it-contains&#34;&gt;What does it contains?&lt;/h1&gt;
+&lt;p&gt;Hack.courses contains exercices, resources, slides and class content related to hacking and development. Some of them are available in french, some of them are available in english.&lt;/p&gt;
+&lt;h1 id=&#34;who-is-it-for&#34;&gt;Who is it for?&lt;/h1&gt;
+&lt;p&gt;Development, Information Security and Offensive Security enthusiasts looking for class material and training.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

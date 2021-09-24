@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>js on hack.courses</title>
+    <link>/tags/js/</link>
+    <description>Recent content in js on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 13:55:32 +0100</lastBuildDate><atom:link href="/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cours Node.js</title>
+      <link>/posts/nodejs/</link>
+      <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
+      
+      <guid>/posts/nodejs/</guid>
+      <description>Slides  https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf  TDs  https://hack.courses/directory/Programming/Node_Angular/TDs_node/  Projet  https://hack.courses/directory/Programming/Node_Angular/project/  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf&#34;&gt;https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;tds&#34;&gt;TDs&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Node_Angular/TDs_node/&#34;&gt;https://hack.courses/directory/Programming/Node_Angular/TDs_node/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;projet&#34;&gt;Projet&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Node_Angular/project/&#34;&gt;https://hack.courses/directory/Programming/Node_Angular/project/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

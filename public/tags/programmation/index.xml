@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programmation on hack.courses</title>
+    <link>/tags/programmation/</link>
+    <description>Recent content in programmation on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 13:58:54 +0100</lastBuildDate><atom:link href="/tags/programmation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cours Typescript</title>
+      <link>/posts/typescript/</link>
+      <pubDate>Mon, 16 Nov 2020 13:58:54 +0100</pubDate>
+      
+      <guid>/posts/typescript/</guid>
+      <description>Slides  https://hack.courses/directory/Programming/TypeScript/slides.pdf  TDs  https://hack.courses/directory/Programming/TypeScript/TDs/  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/TypeScript/slides.pdf&#34;&gt;https://hack.courses/directory/Programming/TypeScript/slides.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;tds&#34;&gt;TDs&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/TypeScript/TDs/&#34;&gt;https://hack.courses/directory/Programming/TypeScript/TDs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Le Test-Driven Development (TDD)</title>
+      <link>/posts/tdd/</link>
+      <pubDate>Mon, 16 Nov 2020 13:57:34 +0100</pubDate>
+      
+      <guid>/posts/tdd/</guid>
+      <description>Slides  https://hack.courses/directory/Programming/TDD/tdd.pdf  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/TDD/tdd.pdf&#34;&gt;https://hack.courses/directory/Programming/TDD/tdd.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Cours Node.js</title>
+      <link>/posts/nodejs/</link>
+      <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
+      
+      <guid>/posts/nodejs/</guid>
+      <description>Slides  https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf  TDs  https://hack.courses/directory/Programming/Node_Angular/TDs_node/  Projet  https://hack.courses/directory/Programming/Node_Angular/project/  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf&#34;&gt;https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;tds&#34;&gt;TDs&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Node_Angular/TDs_node/&#34;&gt;https://hack.courses/directory/Programming/Node_Angular/TDs_node/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;projet&#34;&gt;Projet&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Node_Angular/project/&#34;&gt;https://hack.courses/directory/Programming/Node_Angular/project/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Formation Ionic</title>
+      <link>/posts/ionic/</link>
+      <pubDate>Mon, 16 Nov 2020 13:49:10 +0100</pubDate>
+      
+      <guid>/posts/ionic/</guid>
+      <description>Slides  https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE/edit https://hack.courses/directory/Programming/Ionic/Slides%20Formation%20Ionic.pdf  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE/edit&#34;&gt;https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE/edit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Ionic/Slides%20Formation%20Ionic.pdf&#34;&gt;https://hack.courses/directory/Programming/Ionic/Slides%20Formation%20Ionic.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Programmation : EcmaScript6</title>
+      <link>/posts/es6/</link>
+      <pubDate>Mon, 16 Nov 2020 13:47:16 +0100</pubDate>
+      
+      <guid>/posts/es6/</guid>
+      <description>Slides  https://hack.courses/directory/Programming/JS/es6.pdf https://hack.courses/directory/Programming/JS/es6-partie2.pdf  TDs  https://hack.courses/directory/Programming/JS/TDs/  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/JS/es6.pdf&#34;&gt;https://hack.courses/directory/Programming/JS/es6.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/JS/es6-partie2.pdf&#34;&gt;https://hack.courses/directory/Programming/JS/es6-partie2.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;tds&#34;&gt;TDs&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/JS/TDs/&#34;&gt;https://hack.courses/directory/Programming/JS/TDs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Comment réaliser un projet Vue.js en TDD ?</title>
+      <link>/posts/vue_js_tdd/</link>
+      <pubDate>Mon, 16 Nov 2020 13:19:38 +0100</pubDate>
+      
+      <guid>/posts/vue_js_tdd/</guid>
+      <description>Slides  https://hack.courses/directory/Programming/Vue.JS/vuejs-tdd.pdf  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/Vue.JS/vuejs-tdd.pdf&#34;&gt;https://hack.courses/directory/Programming/Vue.JS/vuejs-tdd.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
