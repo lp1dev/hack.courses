@@ -30,7 +30,8 @@ At the moment, the following free classes are available :
 - [Ionic Development](../ionic) 🇫🇷 
 - [EcmaScript 6](../es6) 🇫🇷
 - [Test-Driven Development 101](../tdd) 🇫🇷
-- [Test-Driven Development with Vue.JS](../vue_js_tdd) 🇫🇷
+- [Vue.js Development w/ TDD](../vue_js_tdd) 🇫🇷
+
 
 Some more free content is in development at the moment! You can follow [fenrir.pro on LinkedIn](https://www.linkedin.com/company/fenrir-sec) to know whenever the material here is updated.
 

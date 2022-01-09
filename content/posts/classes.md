@@ -19,7 +19,7 @@ showFullContent = false
 - [Ionic Development](../ionic) 🇫🇷 
 - [EcmaScript 6](../es6) 🇫🇷
 - [Test-Driven Development 101](../tdd) 🇫🇷
-- [Test-Driven Development with Vue.JS](../vue_js_tdd) 🇫🇷
+- [Vue.js Development w/ TDD](../vue_js_tdd) 🇫🇷
 
 # License
 

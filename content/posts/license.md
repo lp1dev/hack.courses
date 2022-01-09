@@ -14,6 +14,12 @@ showFullContent = false
 
 The project is not open source at the moment, it might evolve, but all of the content is owned by Jeremie Amsellem. You can contact me at jeremie(a)fenrir.pro if you need more information.
 
+# Courses license
+
+**All of the class contents on this site** use the [**creative commons** *Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)*](https://creativecommons.org/licenses/by-sa/4.0/) license.
+
+You can send me a message at jeremie(a)fenrir.pro if you need more details.
+
 # Open source licenses
 
 Open sources licenses involved with this project :
