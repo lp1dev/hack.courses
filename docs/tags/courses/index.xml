@@ -31,7 +31,7 @@ Some of the classes and course material here is open source, some is close sourc
 &lt;li&gt;&lt;a href=&#34;../ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Test-Driven Development with Vue.JS&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Some more free content is in development at the moment! You can follow &lt;a href=&#34;https://www.linkedin.com/company/fenrir-sec&#34;&gt;fenrir.pro on LinkedIn&lt;/a&gt; to know whenever the material here is updated.&lt;/p&gt;
 &lt;h1 id=&#34;what-about-the-terminal-and-exercices&#34;&gt;What about the terminal and exercices?&lt;/h1&gt;
@@ -70,7 +70,7 @@ If you&amp;rsquo;re new to this, check out the command line 101 class and learn 
       <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
       
       <guid>/posts/classes/</guid>
-      <description>Available classes  Command line 101 🇬🇧 TypeScript 🇫🇷 Node.js 🇫🇷 Ionic Development 🇫🇷 EcmaScript 6 🇫🇷 Test-Driven Development 101 🇫🇷 Test-Driven Development with Vue.JS 🇫🇷  License All of the class contents on this site use the creative commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+      <description>Available classes  Command line 101 🇬🇧 TypeScript 🇫🇷 Node.js 🇫🇷 Ionic Development 🇫🇷 EcmaScript 6 🇫🇷 Test-Driven Development 101 🇫🇷 Vue.js Development w/ TDD 🇫🇷  License All of the class contents on this site use the creative commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
 You can send me a message at jeremie(a)fenrir.pro if you need more details.</description>
       <content>&lt;h1 id=&#34;available-classes&#34;&gt;Available classes&lt;/h1&gt;
 &lt;ul&gt;
@@ -80,7 +80,7 @@ You can send me a message at jeremie(a)fenrir.pro if you need more details.</des
 &lt;li&gt;&lt;a href=&#34;../ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Test-Driven Development with Vue.JS&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;All of the class contents on this site&lt;/strong&gt; use the &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;&lt;strong&gt;creative commons&lt;/strong&gt; &lt;em&gt;Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)&lt;/em&gt;&lt;/a&gt; license.&lt;/p&gt;
