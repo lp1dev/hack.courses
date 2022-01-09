@@ -9,7 +9,7 @@ paginate = 5
   contentTypeName = "posts"
 
   # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "red"
+  themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
@@ -59,15 +59,15 @@ paginate = 5
 
     [languages.en.params.logo]
       logoText = "hack.courses"
-      logoHomeLink = "/"
+      logoHomeLink = "/post/home"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "About"
         name = "About"
-        url = "/posts/hack_courses"
+        url = "/posts/home"
 
       [[languages.en.menu.main]]
-        identifier = "Directory"
-        name = "Directory"
-        url = "/directory"
+        identifier = "Repository"
+        name = "Repository"
+        url = "https://github.com/lp1dev/hack.courses/tree/master/static/directory"

@@ -24,13 +24,13 @@ Some of the classes and course material here is open source, some is close sourc
 
 At the moment, the following free classes are available :
 
-- [Command line 101](command_line_101.md) 🇬🇧
-- [TypeScript](typescript) 🇫🇷
-- [Node.js](nodejs) 🇫🇷
-- [Ionic Development](ionic) 🇫🇷 
-- [EcmaScript 6](es6) 🇫🇷
-- [Test-Driven Development 101](tdd) 🇫🇷
-- [Test-Driven Development with Vue.JS](vue_js_tdd) 🇫🇷
+- [Command line 101](../command_line_101) 🇬🇧
+- [TypeScript](../typescript) 🇫🇷
+- [Node.js](../nodejs) 🇫🇷
+- [Ionic Development](../ionic) 🇫🇷 
+- [EcmaScript 6](../es6) 🇫🇷
+- [Test-Driven Development 101](../tdd) 🇫🇷
+- [Test-Driven Development with Vue.JS](../vue_js_tdd) 🇫🇷
 
 Some more free content is in development at the moment! You can follow [fenrir.pro on LinkedIn](https://www.linkedin.com/company/fenrir-sec) to know whenever the material here is updated.
 
@@ -44,7 +44,7 @@ If you already know your way around a terminal can find the available free chall
 
 If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.
 
-If you're new to this, check out the [command line 101 class](./command_line_101) and learn how to use command line right away!
+If you're new to this, check out the [command line 101 class](../command_line_101) and learn how to use command line right away!
 
 # How to report a security issue?
 
