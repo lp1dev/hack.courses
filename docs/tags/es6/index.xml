@@ -14,15 +14,263 @@
       <pubDate>Mon, 16 Nov 2020 13:47:16 +0100</pubDate>
       
       <guid>/posts/es6/</guid>
-      <description>Slides  https://hack.courses/directory/Programming/JS/es6.pdf https://hack.courses/directory/Programming/JS/es6-partie2.pdf  TDs  https://hack.courses/directory/Programming/JS/TDs/  </description>
-      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+      <description>Partie I - De ES5 à ES6, qu&amp;rsquo;est-ce qui a changé?  Jérémie Amsellem - cours@lp1.eu
+ Sommaire  I - Qu&amp;rsquo;est-ce qu&amp;rsquo;ES6? II - let et const III - Les fonctions flêchée IV - Les templates V - Les Sets VI - Les Maps VII - Les promesses VIII - For&amp;hellip;in et for&amp;hellip;of IX - Méthodes des chaînes de caractères X - Méthodes des tableaux XI - Default XII - Rest et Spread XIII - get et set   I - Premièrement, qu&amp;rsquo;est-ce qu&amp;rsquo;ES6?</description>
+      <content>&lt;h1 id=&#34;partie-i---de-es5-à-es6-quest-ce-qui-a-changé&#34;&gt;Partie I - De ES5 à ES6, qu&amp;rsquo;est-ce qui a changé?&lt;/h1&gt;
+&lt;p&gt; 
+ 
+ 
+ 
+Jérémie Amsellem - &lt;a href=&#34;mailto:cours@lp1.eu&#34;&gt;cours@lp1.eu&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;sommaire&#34;&gt;Sommaire&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/JS/es6.pdf&#34;&gt;https://hack.courses/directory/Programming/JS/es6.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/JS/es6-partie2.pdf&#34;&gt;https://hack.courses/directory/Programming/JS/es6-partie2.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I - Qu&amp;rsquo;est-ce qu&amp;rsquo;ES6?&lt;/li&gt;
+&lt;li&gt;II - let et const&lt;/li&gt;
+&lt;li&gt;III - Les fonctions flêchée&lt;/li&gt;
+&lt;li&gt;IV - Les templates&lt;/li&gt;
+&lt;li&gt;V - Les Sets&lt;/li&gt;
+&lt;li&gt;VI - Les Maps&lt;/li&gt;
+&lt;li&gt;VII - Les promesses&lt;/li&gt;
+&lt;li&gt;VIII - For&amp;hellip;in et for&amp;hellip;of&lt;/li&gt;
+&lt;li&gt;IX - Méthodes des chaînes de caractères&lt;/li&gt;
+&lt;li&gt;X - Méthodes des tableaux&lt;/li&gt;
+&lt;li&gt;XI - Default&lt;/li&gt;
+&lt;li&gt;XII - Rest et Spread&lt;/li&gt;
+&lt;li&gt;XIII - get et set&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;tds&#34;&gt;TDs&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;i---premièrement-quest-ce-ques6&#34;&gt;I - Premièrement, qu&amp;rsquo;est-ce qu&amp;rsquo;ES6?&lt;/h1&gt;
+&lt;p&gt;Pour rappel, ECMAScript est la spécification de langage utilisée (entre autres) par le langage JavaScript.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ES6&lt;/strong&gt;, ou &lt;strong&gt;ECMAScript 6&lt;/strong&gt; (aussi appelé &lt;strong&gt;ECMAScript 2015&lt;/strong&gt;) est la version d&amp;rsquo;ECMAScript actuellement utilisée par les dernières versions de Node.js, Firefox et Google Chrome.&lt;/p&gt;
+&lt;p&gt;Cette nouvelle version apporte beaucoup de nouveautés concernant les paradigmes d&amp;rsquo;ECMAScript empruntés de la POO et de la programmation fonctionnelle, notamment la possibilité de créer des classes en JavaScript !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;ii---les-mots-clés-let-et-const&#34;&gt;II - Les mots clés let et const&lt;/h1&gt;
+&lt;p&gt;ES6 Introduit deux nouveaux mots-clés permettant de définir des variables et des constantes : &lt;strong&gt;let&lt;/strong&gt; et &lt;strong&gt;const&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;let&lt;/strong&gt; vise à remplacer var par une alternative plus &amp;ldquo;sûre&amp;rdquo; pour les développeurs et évitant les débordements involontaires dans des scopes parents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;const&lt;/strong&gt; permet de définir des constantes, ce qui était auparavant impossible dans le langage.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;iii---les-fonctions-flêchées&#34;&gt;III - Les fonctions flêchées&lt;/h1&gt;
+&lt;p&gt;Seconde fonctionnalité primordiale : 
+la possibilité de définir des &amp;ldquo;arrow functions&amp;rdquo; 
+(aussi appelées lambdas dans d&amp;rsquo;autres langages).&lt;/p&gt;
+&lt;p&gt;Cela permet de prototyper des fonctions beaucoup plus courtes qu&amp;rsquo;avec la syntaxe habituelle :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function(params) {
+  /* logique */
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Les syntaxes existantes sont les suivantes :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(params) =&amp;gt; {/* logique */}
+param =&amp;gt; {/* logique */}
+param =&amp;gt; /* logique */
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;iv---les-chaînes-templatées&#34;&gt;IV - Les chaînes &amp;ldquo;templatées&amp;rdquo;&lt;/h1&gt;
+&lt;p&gt;On peut désormais utiliser des templates dans des chaînes de caractères pour interpoler (remplacer dynamiquement) des variables dans du texte.&lt;/p&gt;
+&lt;p&gt;Pour définir une chaîne de caractères contenant des templates, il suffit d&amp;rsquo;utiliser des backquotes au lieux des simples et doubles quotes habituels.&lt;/p&gt;
+&lt;p&gt;On utilisera ensuite la syntaxe ${expression} pour indiquer le contenu à remplacer par une expression JavaScript.&lt;/p&gt;
+&lt;p&gt;Par exemple :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`Today&#39;s the ${new Date().toLocaleString()}`
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;v---les-sets&#34;&gt;V - Les Sets&lt;/h1&gt;
+&lt;p&gt;Des nouvelles structures de données ont également fait leur apparition dans ES6, notamment les très utiles Sets et Maps.&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;Set&lt;/strong&gt; permet de stocker de valeurs &lt;strong&gt;uniques&lt;/strong&gt; de tous les types.&lt;/p&gt;
+&lt;p&gt;Par exemple :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Set&lt;/span&gt;()
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;({})
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* false */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/* 3 */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clear&lt;/span&gt;() &lt;span style=&#34;color:#75715e&#34;&gt;/* Vide le Set */&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;vi---les-maps&#34;&gt;VI - Les Maps&lt;/h1&gt;
+&lt;p&gt;Les &lt;strong&gt;Maps&lt;/strong&gt; permettent de stocker des variables en clé/valeur (comme un objet JavaScript classique en somme).&lt;/p&gt;
+&lt;p&gt;En revanche, celles-ci peuvent utiliser n&amp;rsquo;importe quel type d&amp;rsquo;objet comme clé.&lt;/p&gt;
+&lt;p&gt;Également, il est très simple d&amp;rsquo;obtenir la taille d&amp;rsquo;une Map, en utilisant l&amp;rsquo;attribut Map.size, contrairement aux objets JavaScript.&lt;/p&gt;
+&lt;p&gt;Exemple :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Map&lt;/span&gt;()
+&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/* 1 */&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;vii---les-promesses-ou-promises&#34;&gt;VII - Les promesses (ou promises)&lt;/h1&gt;
+&lt;p&gt;Les promesses sont une manière plus explicite et claire de définir un comportement asynchrone.&lt;/p&gt;
+&lt;p&gt;Une promesse est un objet à usage unique, c&amp;rsquo;est une portion de code qui sera exécutée de manière asynchrone et renverra dans un laps de temps indéterminé des informations à la fin de cette exécution.&lt;/p&gt;
+&lt;p&gt;On définit une promesse en instanciant un nouvel objet Promise et en y ajoutant notre comportement.&lt;/p&gt;
+&lt;p&gt;Une fois notre promesse définie, on peut la déclencher en appelant ses méthodes then et catch.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;viii---forin&#34;&gt;VIII - For&amp;hellip;in&lt;/h1&gt;
+&lt;p&gt;Deux nouveaux mot-clés permettant d&amp;rsquo;itérer plus facilement sur des tableaux et des objets ont également été ajoutés.&lt;/p&gt;
+&lt;p&gt;Ce sont les mots-clés &lt;strong&gt;for &amp;hellip;in&lt;/strong&gt; et &lt;strong&gt;for &amp;hellip;of&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hack.courses/directory/Programming/JS/TDs/&#34;&gt;https://hack.courses/directory/Programming/JS/TDs/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;for &amp;hellip; in permet d&amp;rsquo;itérer sur les clés d&amp;rsquo;un objet JavaScript :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;key1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;}) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// key1, key2
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;for &amp;hellip; of permet d&amp;rsquo;itérer sur les éléments d&amp;rsquo;un tableau :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;For&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;of&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3, 2, 1
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;ix---nouvelles-méthodes-de-la-classe-string&#34;&gt;IX - Nouvelles méthodes de la classe String&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;String.includes&lt;/strong&gt; : Retourne true si la chaîne passée en paramètre de includes est contenue dans la String&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;String.repeat(n)&lt;/strong&gt; : Retourne la chaîne répétée n fois&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;String.startsWith&lt;/strong&gt; : Retourne true si la String commence par la chaîne passée en paramètre&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;String.endsWith&lt;/strong&gt; : Retourne true si la String termine par la chaîne passée en parametre&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;x---nouvelles-méthodes-des-tableaux&#34;&gt;X - Nouvelles méthodes des tableaux&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Array.forEach&lt;/strong&gt; : Permet d&amp;rsquo;itérer sur chacun des éléments d&amp;rsquo;un tableau&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Array.filter&lt;/strong&gt; : Permet de filtrer un tableau JavaScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Array.map&lt;/strong&gt; : Permet de transformer les valeurs d&amp;rsquo;un tableau&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Array.reduce&lt;/strong&gt; : Permet de réduire un tableau à un seul nombre&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Array.find&lt;/strong&gt; : Permet de trouver une valeur dans un tableau (et non son index)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Array.findIndex&lt;/strong&gt; : Permet de trouver l&amp;rsquo;index d&amp;rsquo;un élément dans un tableau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;xi---default&#34;&gt;XI - Default&lt;/h1&gt;
+&lt;p&gt;Comme dans de nombreux autres langages, il est possible de définir des paramètres par défaut dans une fonction dans le cas où ceux-ci ne seraient pas remplis.&lt;/p&gt;
+&lt;h5 id=&#34;par-exemple-&#34;&gt;Par exemple :&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;France&amp;#34;&lt;/span&gt;) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;{&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; / &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Attention, les paramètres par défaut sont toujours les derniers paramètres d&amp;rsquo;une fonction !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;xii---rest-et-spread&#34;&gt;XII - Rest et Spread&lt;/h1&gt;
+&lt;p&gt;Rest permet de stocker des paramètres en nombre indéfini dans un tableau et ce sans utiliser le mot clé arguments de JavaScript.&lt;/p&gt;
+&lt;h5 id=&#34;par-exemple&#34;&gt;Par exemple&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, ...&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;) {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// Affiche tout ce qui est passé en plus de name et age
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Spread, quand à lui permet d&amp;rsquo;utiliser un tableau en tant que paramètres pour une fonction.&lt;/p&gt;
+&lt;h5 id=&#34;par-exemple--1&#34;&gt;Par exemple :&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Paris&amp;#39;&lt;/span&gt;]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;) {
+}
+&lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(...&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// Équivaut à createUser(array[0], array[1], array[2])
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;xiii---get-et-set&#34;&gt;XIII - Get et set&lt;/h1&gt;
+&lt;p&gt;Autre nouvelle possibilité, cette fois-ci concernant les objets JavaScript, on peut désormais définir simplement nos propres setters et getters sur des attributs :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const obj = {
+  get size() {
+    //calcul de la taille de l&#39;objet
+  }
+}
+obj.size // Recalculé dynamiquement et gardé en mémoire
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;partie-ii---es6&#34;&gt;Partie II - ES6++&lt;/h1&gt;
+&lt;p&gt; 
+ 
+ 
+ &lt;/p&gt;
+&lt;p&gt;Jéremie Amsellem &amp;lt;lp1.eu&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;i---la-déstructuration&#34;&gt;I - La déstructuration&lt;/h1&gt;
+&lt;p&gt;Il est possible, d&amp;rsquo;assigner d&amp;rsquo;un seul coup plusieurs variables à partir de valeurs d&amp;rsquo;un tableau ou d&amp;rsquo;un objet.&lt;/p&gt;
+&lt;p&gt;On appelle cette opération de la déstructuration.&lt;/p&gt;
+&lt;p&gt;La syntaxe est la suivante avec un tableau :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; [&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;, , &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Paris, France&amp;#39;&lt;/span&gt; ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et avec un objet :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;} &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;} &lt;span style=&#34;color:#75715e&#34;&gt;// firstName == &amp;#39;Bob&amp;#39; &amp;amp;&amp;amp; lastName == &amp;#39;TestMan&amp;#39;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;ii---les-classes&#34;&gt;II - Les Classes&lt;/h1&gt;
+&lt;p&gt;Une des plus grandes nouveautés d&amp;rsquo;ES6 est la possibilité d&amp;rsquo;instancier des Classes dans le langage.&lt;/p&gt;
+&lt;p&gt;On utilise le mot-clé class pour en créer une nouvelle :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Person {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ainsi que le mot-clé new pour l&amp;rsquo;instancier&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const p = new Person()
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;les-classes-es6---le-constructeur&#34;&gt;Les Classes ES6 - Le constructeur&lt;/h2&gt;
+&lt;p&gt;Pour modifier le constructeur de notre classe pour y ajouter de la logique ou des paramètres on utilise le nom de méthode &lt;strong&gt;constructor&lt;/strong&gt; :&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; 
+Notez que le mot-clé &lt;em&gt;this&lt;/em&gt; s&amp;rsquo;utilise comme dans n&amp;rsquo;importe quel autre langage en ES6.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-classes-es6---les-méthodes-et-variables-de-classe&#34;&gt;Les Classes ES6 - Les méthodes et variables de classe&lt;/h2&gt;
+&lt;p&gt;On ne définit pas de variables de classe dans le corps de notre classe.&lt;/p&gt;
+&lt;p&gt;Elles sont définies dans le constructeur en utilisant la syntaxe :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+  }
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;getBirthYear&lt;/span&gt;() {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;De plus, l&amp;rsquo;ajout de méthodes se fait sans les séparer par une virgule dans une classe JavaScript !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-classes-es6---get-et-set&#34;&gt;Les Classes ES6 - get et set&lt;/h2&gt;
+&lt;p&gt;On peut également définir des get et set dans des classes ES6, par exemple :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+  }
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;birthYear&lt;/span&gt;() {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+  }
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;newName&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newName&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toUpperCase&lt;/span&gt;()
+  }
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;birthYear&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* 1977 */&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* ROBERT */&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;les-classes-es6---lhéritage&#34;&gt;Les Classes ES6 - L&amp;rsquo;héritage&lt;/h2&gt;
+&lt;p&gt;En ES6 il n&amp;rsquo;y a pas d&amp;rsquo;héritage multiple, on hérite d&amp;rsquo;une seule classe parente.&lt;/p&gt;
+&lt;p&gt;La syntaxe pour l&amp;rsquo;héritage est la même que dans beaucoup d&amp;rsquo;autres langages, on utilise le mot clé &amp;lsquo;extends&amp;rsquo; suivi du nom de la classe parente :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+  }
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dev&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;les-classes-es6---super&#34;&gt;Les Classes ES6 - Super&lt;/h2&gt;
+&lt;p&gt;Lorsqu&amp;rsquo;on hérite d&amp;rsquo;une classe il est possible d&amp;rsquo;appeler dans la méthode d&amp;rsquo;une classe fille, 
+la méthode correspondant dans la classe parent.&lt;/p&gt;
+&lt;p&gt;Pour ce faire on utilise le mot-clé &lt;strong&gt;super&lt;/strong&gt; :&lt;/p&gt;
+&lt;h3 id=&#34;par-exemple--2&#34;&gt;Par exemple :&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+  }
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;tds&#34;&gt;TDs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/JS/TDs&#34;&gt;Exercices JavaScript&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </item>

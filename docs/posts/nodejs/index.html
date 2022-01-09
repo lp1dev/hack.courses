@@ -73,7 +73,7 @@
   <header class="header">
   <div class="header__inner">
     <div class="header__logo">
-      <a href="/post/home">
+      <a href="/posts/home">
   <div class="logo">
     hack.courses
   </div>
@@ -94,7 +94,7 @@
         
       
         
-          <li><a href="https://github.com/lp1dev/hack.courses/tree/master/static/directory">Repository</a></li>
+          <li><a href="/posts/classes">Free Courses</a></li>
         
       
       
@@ -110,7 +110,7 @@
       
     
       
-        <li><a href="https://github.com/lp1dev/hack.courses/tree/master/static/directory">Repository</a></li>
+        <li><a href="/posts/classes">Free Courses</a></li>
       
     
     
@@ -156,17 +156,179 @@
   
 
   <div class="post-content"><div>
-        <h1 id="slides">Slides<a href="#slides" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+        <h1 id="cours-nodejs">Cours Node.js<a href="#cours-nodejs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="jour1">Jour1<a href="#jour1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p> 
+ </p>
+<blockquote>
+<p><em>Vous n&rsquo;avez pas les bases (pour le moment)</em></p>
+</blockquote>
+<p> 
+ 
+ 
+ 
+ Jérémie Amsellem &lt;lp1.eu&gt;</p>
+<hr>
+<h1 id="sommaire-du-cours">Sommaire du cours<a href="#sommaire-du-cours" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <ul>
-<li><a href="https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf">https://hack.courses/directory/Programming/Node_Angular/nodejs-1.pdf</a></li>
+<li>Node.js c&rsquo;est quoi ?</li>
+<li>Node.js et JavaScript</li>
+<li>Pourquoi utiliser Node.js plutôt que du PHP/Python/Ruby[&hellip;] ?</li>
+<li>Comment ça marche ?</li>
+<li>Comment on ecrit du Node.js ?</li>
 </ul>
-<h1 id="tds">TDs<a href="#tds" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<h1 id="nodejs-cest-quoi-">Node.js c&rsquo;est quoi ?<a href="#nodejs-cest-quoi-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h3 id="est-ce-un-framework-une-bibliothèque-un-serveur-">Est-ce un framework, une bibliothèque, un serveur ?<a href="#est-ce-un-framework-une-bibliothèque-un-serveur-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Rien de tout ça, Node.js est un environnement d&rsquo;éxecution (runtime) qui permet de lancer du JavaScript sur de nombreux environnements en dehors d&rsquo;un navigateur.</p>
+<p>Il est vastement utilisé pour la communication réseau (notamment pour créer des API HTTP avec Express.js) mais peut servir pour toutes sortes d&rsquo;opérations, même plus bas-niveau.</p>
+<hr>
+<h1 id="nodejs-et-javascript">Node.js et JavaScript<a href="#nodejs-et-javascript" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Node.js est écrit sur une base de <strong>C++</strong>, il utilise le moteur JavaScript <strong>V8</strong> (crée par <strong>Google</strong> originellement pour <strong>Chrome</strong>).</p>
+<p>Il supporte les syntaxes d'<strong>ECMAScript</strong> jusqu&rsquo;à <strong>ES8</strong> !</p>
+<p>Il <strong>incorpore</strong> et est basé sur les paradigmes de programmation évènementielle (<strong>Event Driven Programming</strong>) de JavaScript.</p>
+<hr>
+<h1 id="pourquoi-nodejs-plutôt-quautre-chose-">Pourquoi Node.js plutôt qu&rsquo;autre chose ?<a href="#pourquoi-nodejs-plutôt-quautre-chose-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p> </p>
 <ul>
-<li><a href="https://hack.courses/directory/Programming/Node_Angular/TDs_node/">https://hack.courses/directory/Programming/Node_Angular/TDs_node/</a></li>
+<li>Performances</li>
+<li>Gestion asynchrone des évènements sans multi-threading</li>
+<li>Un seul langage pour un front et un back-end</li>
 </ul>
-<h1 id="projet">Projet<a href="#projet" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<h2 id="les-performances">Les performances<a href="#les-performances" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Node est particulièrement intéressant en terme de performances si on le compare à PHP, Python et Java (entre autres). 
+C&rsquo;est largement dû à la rapidité d&rsquo;execution de V8 !</p>
+<p><strong>Par exemple</strong>, <a href="https://medium.com/@mihaigeorge.c/web-rest-api-benchmark-on-a-real-life-application-ebb743a5d7a3">un benchmark réalisé sur plusieurs architectures</a> pour un simple Hello World (en nombre de requêtes gérées par seconde).</p>
+<hr>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*XGTOfo9taLfePZvL3-FZhg.png" alt="perfs-node"></p>
+<hr>
+<h2 id="gestion-asynchrone-des-évènements-sans-multi-threading">Gestion asynchrone des évènements sans multi-threading<a href="#gestion-asynchrone-des-évènements-sans-multi-threading" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>La gestion d&rsquo;évènements asynchrones est un paradigme inhérent au langage JavaScript. C&rsquo;est ce comportement qui permet à Node.js de gérer <strong>plusieurs requêtes, en même temps</strong> sans avoir à créer des threads enfants en plus du thread principal !</p>
+<p>Sur de nombreuses architectures de <strong>CPU</strong> c&rsquo;est un gain de performance certain.</p>
+<hr>
+<h2 id="un-langage-unifié-pour-le-front-et-le-back-end">Un langage unifié pour le front et le back-end<a href="#un-langage-unifié-pour-le-front-et-le-back-end" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Finalement, le fait d&rsquo;avoir un seul et unique langage nécessaire au développement de votre front-end et de votre back-end est un avantage certain pour le coût de développement et le partage de schémas de donnés dans votre stack technique.</p>
+<p>Par exemple la logique de vérfication des données d&rsquo;un objet JavaScript contenant des informations utilisateur</p>
+<hr>
+<h1 id="comment-ça-marche-">Comment ça marche ?<a href="#comment-ça-marche-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>À la manière d&rsquo;un runtime Python, Ruby, Perl [&hellip;] une fois Node.js installé vous disposez du binaire <strong>node</strong> qui vous permet d&rsquo;éxecuter des fichier <strong>.js</strong> en lançant la commande</p>
+<blockquote>
+<p>$&gt; node monfichier.js</p>
+</blockquote>
+<p>Tous les fichiers <strong>JavaScript</strong> sont supportés, mais il est en revanche possible que certaines fonctionnalités et syntaxes propres à l&rsquo;environnement d&rsquo;un navigateur ne soient pas utilisables.</p>
+<p><em>Par exemple il est impossible d&rsquo;accéder à <strong>window</strong>, car dans le contexte de Node.js il n&rsquo;y a pas de fenêtre de navigateur !</em></p>
+<hr>
+<h1 id="comment-on-ecrit-du-nodejs-">Comment on ecrit du Node.js ?<a href="#comment-on-ecrit-du-nodejs-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Attaquons-nous maintenant aux principales différences entre les syntaxes <strong>Node.js</strong> et le <strong>JavaScript orienté navigateur</strong> :</p>
 <ul>
-<li><a href="https://hack.courses/directory/Programming/Node_Angular/project/">https://hack.courses/directory/Programming/Node_Angular/project/</a></li>
+<li>Les imports</li>
+<li>NPM</li>
+<li>Les API navigateur</li>
+<li>Process</li>
+<li>Quelques modules Node.js
+<ul>
+<li>fs</li>
+<li>express</li>
+<li>Les WebSockets</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> : Ce contenu a été testé en prenant un environnement Node.js 8.11 en référence, il est possible qu&rsquo;il y ait quelques différences avec les dernières versions</p>
+</blockquote>
+<hr>
+<h2 id="les-imports">Les imports<a href="#les-imports" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Vous vous souvenez peut-être du système d&rsquo;imports implémenté en ES6, avec des syntaxes du type :</p>
+<pre><code>export Object
+import Object from './file'
+</code></pre><p>En Node.js, un système d&rsquo;import est présent depuis sa création et implémente sa propre gestion des modules utilisant <strong>module.export</strong> et <strong>require</strong> :</p>
+<p><em>Par exemple :</em></p>
+<h3 id="fichier-hellojs-">Fichier hello.js :<a href="#fichier-hellojs-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<pre><code>module.exports = 'hello'
+</code></pre><h3 id="fichier-mainjs-">Fichier main.js :<a href="#fichier-mainjs-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<pre><code>const hello = require('./hello'); console.log(hello) #prints 'hello'
+</code></pre><hr>
+<h2 id="node-package-manager-npm">Node Package Manager (NPM)<a href="#node-package-manager-npm" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><strong>NPM</strong> est le gestionnaire de modules intégré à Node.js.</p>
+<p>Il en existe d&rsquo;autres (yarn ou bower par exemple), mais <strong>npm</strong> est de loin le plus utilisé actuellement  car il est packagé avec les installeurs Node.js.</p>
+<p>On utilise la syntaxe <code>npm install {nom du module}</code> pour installer un module Node.js.</p>
+<p>La commande <code>npm init</code> dans un dossier permet d&rsquo;initialiser un nouveau projet Node.js. 
+Un fichier <strong>package.json</strong> contenant diverses informations sur le projet (dépendances, dépot, auteur, licence) est alors crée.</p>
+<hr>
+<h2 id="packagejson">package.json<a href="#packagejson" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><strong>npm</strong> se sert du fichier <strong>package.json</strong> pour stocker les informations relatives au projet courant.</p>
+<p>Lorsqu&rsquo;un module npm est ajouté aux dépendances de votre projet (<code>npm install --save {nom du module}</code>)</p>
+<p>il sera ajouté dans le champ &ldquo;dependencies&rdquo; de votre fichier <strong>package.json</strong>. 
+Les fichiers du module seront par défaut installés dans le dossier <em>node_modules</em> du projet.</p>
+<p>Pour installer automatiquement toutes les dépendances d&rsquo;un projet Node.js il suffit d&rsquo;utiliser <code>npm install</code> sans paramètres.</p>
+<p><a href="https://docs.npmjs.com/files/package.json">la documentation NPM</a></p>
+<hr>
+<h2 id="les-api-navigateur">Les API navigateur<a href="#les-api-navigateur" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p> 
+Ça peut être quelque peu déroutant mais en Node.js vous ne pourrez pas accéder à <strong>window, navigator, document</strong>.</p>
+<p>C&rsquo;est en soit logique, ce sont des API présentes et utiles dans le contexte d&rsquo;utilisation d&rsquo;un <strong>navigateur web</strong>.</p>
+<p>Dans le cas de Node.js, le code est exécuté en &ldquo;standalone&rdquo;, il n&rsquo;est <strong>pas lié à un navigateur</strong> mais <strong>directement exécuté sur votre machine</strong>.</p>
+<hr>
+<h2 id="process">Process<a href="#process" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Process est une globale dans le contexte de Node. 
+Elle contient des informations et des méthodes utilitaires concernant le processus courant !</p>
+<p>Vous pouvez l&rsquo;utiliser directement sans import dans votre script Node.js.</p>
+<p><em>Par exemple</em></p>
+<pre><code>const firstArgument = process.argv[1] # affiche le premier argument passé au script
+</code></pre><p>Plus d&rsquo;infos sur <a href="https://nodejs.org/api/process.html#process_process">la documentation Node.js</a></p>
+<hr>
+<h2 id="le-module-fs">Le module fs<a href="#le-module-fs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Le module Node <strong>fs</strong> permet d&rsquo;intéragir avec le système de fichiers de votre machine.</p>
+<p>Il permet (entre autres) de <strong>créer, lire, écrire, supprimer, renommer</strong> des fichiers.</p>
+<p>La majorité de ses méthodes sont utilisables de manière <strong>synchrone et asynchrone</strong>.</p>
+<p><em>Par exemple pour lire le contenu d&rsquo;un fichier de manière asynchrone:</em></p>
+<pre><code>const fs = require('fs')
+fs.readFile('/etc/passwd', (err, data) =&gt; {
+  if (err) throw err;
+  console.log(data);
+});
+</code></pre><p>Plus d&rsquo;informations sur <a href="https://nodejs.org/api/fs.html">la documentation Node.js</a></p>
+<hr>
+<h2 id="expressjs">Express.js<a href="#expressjs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p> 
+Express est un des modules Node.js les plus connus. 
+C&rsquo;est un framework web, souvent utilisé pour créer des back-ends, notamment dans des stacks <strong>MEAN</strong> (<strong>M</strong>ongoDB <strong>E</strong>xpress <strong>A</strong>ngular <strong>N</strong>ode.js).</p>
+<p>Il s&rsquo;inspire du micro-framework web <strong>Sinatra</strong> (Ruby) dans sa simplicité d&rsquo;utilisation.</p>
+<pre><code>const express = require('express');
+const app = express();
+
+const server = app.listen(8000, () =&gt; {
+    const host = server.address().address;
+    const port = server.address().port;
+    console.log(&quot;HTTP Server listening on &quot;, host, port);
+});
+</code></pre><hr>
+<h2 id="les-websockets">Les WebSockets<a href="#les-websockets" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p> 
+Les WebSockets, vous en avez probablement entendu parler, possiblement même utilisées.</p>
+<p>Une WebSocket c&rsquo;est (<em>en gros</em>) un hack de HTTP/2 permettant de créer des objets ayant le même comportement que des sockets UNIX.</p>
+<p>Il existe plusieurs modules Node.js implémentant des WebSockets côté serveur ou client, notamment <strong>ws</strong> et <strong>websocket</strong>.</p>
+<p>Pour plus d&rsquo;informations : <a href="https://developer.mozilla.org/fr/docs/WebSockets">la documentation MDN</a></p>
+<hr>
+<h2 id="axios">Axios<a href="#axios" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><strong>Axios</strong> est un module quelque peu moins populaire que ceux que nous avons cités jusqu&rsquo;ici mais il saura se montrer très utile pour la suite de ce cours (et probablement dans vos autres projets de développement en JavaScript) !</p>
+<p>C&rsquo;est un wrapper autour des <strong>API de communication HTTP</strong> de Node.js et des navigateurs.</p>
+<p>Il permet de grandement simplifier les requêtes HTTP.</p>
+<p><em>Par exemple</em> :</p>
+<pre><code>const axios = require('axios');
+axios.get('https://hack.courses')
+   .then(response =&gt; console.log(response))
+   .catch(error =&gt; console.error(error))
+
+</code></pre><hr>
+<h2 id="tds">TDs<a href="#tds" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><a href="https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/Node_Angular/TDs_node">Exercices Node.js</a></li>
+</ul>
+<h2 id="projet">Projet<a href="#projet" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><a href="https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/Node_Angular/project">Projet Node.js</a></li>
 </ul>
 
       </div></div>

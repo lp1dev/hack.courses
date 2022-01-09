@@ -8,6 +8,15 @@
     <loc>/posts/about/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
+    <loc>/posts/classes/</loc>
+    <lastmod>2022-01-09T19:15:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_101/</loc>
+    <lastmod>2022-01-09T19:15:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/command-line/</loc>
+    <lastmod>2022-01-09T19:15:35+01:00</lastmod>
+  </url><url>
     <loc>/tags/courses/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
@@ -82,9 +91,6 @@
   </url><url>
     <loc>/tags/vue.js/</loc>
     <lastmod>2020-11-16T13:19:38+01:00</lastmod>
-  </url><url>
-    <loc>/posts/hack_courses/</loc>
-    <lastmod>2020-11-16T12:57:35+01:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
   </url>

@@ -12,5 +12,5 @@ showFullContent = false
 
 # Slides
 
-- https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE/edit
-- https://hack.courses/directory/Programming/Ionic/Slides%20Formation%20Ionic.pdf
+- [Slides Formation Ionic 4 Jours (Google Drive)](https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE)
+- [Slides Formation Ionic 4 Jours (PDF)](https://raw.githubusercontent.com/lp1dev/hack.courses/master/static/directory/Programming/Ionic/Slides%20Formation%20Ionic.pdf)
