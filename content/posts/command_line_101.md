@@ -27,7 +27,15 @@ showFullContent = false
     }
 </script>
 
-# What's command-line?
+# Introduction 📖
+
+Welcome to this command-line class!
+
+In this entry level course you will learn how to use a terminal and navigate through a Linux filesystem.
+
+This class is supposed to be followed with [hack.courses](https://hack.courses) open alongside, the challenges are made to be completed in the website's interactive terminal.
+
+# What's command-line 💻?
 
 A **command** is an instruction (or a set of instructions) given to a machine.
 
@@ -67,7 +75,7 @@ Also, commands can be chained and logic can be added, which allows the automatio
 
 ---
 
-# Hands-on!
+# Hands-on 🤜!
 
 Let's start working on your first commands with a small challenge!
 
@@ -112,6 +120,8 @@ In the terminal on hack.courses, filenames are printed in **green**, directories
 
 Typing `$> cd challenges` did make you move to the *challenges* directory for instance.
 
+Typing `$> cd` without parameter will make you go back to your user's personal directory.
+
 > **Note** : **cd** -> **c**hange **d**irectory
 
 # Pwd
@@ -120,14 +130,13 @@ Typing `$> cd challenges` did make you move to the *challenges* directory for in
 
 > **Note** : **pwd** -> **p**rint **w**orking **d**irectory
 
-# Cat
+# Cat 🐱
 
 **cat** displays a file's contents, any kind of file, it's going to print what's inside on your screen.
 
 > **Note** : Do not forget to specify the name of the file you want to open after typing `cat`
 
 ## Challenge 1
-
 
 For this next challenge, you're on your own!
 
@@ -139,7 +148,20 @@ What you need to do here is :
 - Go inside the command_line_101 directory
 - List the contents of this directory
 - Open the file you think might contain the flag for the first challenge
+- Go back to your home directory (Hint : `$> cd`)
 
 <div style="display:flex">
     <input style="width:40rem" type="text" id="chall1" placeholder="flag 1"/><button onclick="verify(1)">Verify</button>
 </div>
+
+---
+
+Congrats on making it through this first command-line class!
+
+You can now move on to 
+
+## [command_line_102](../command_line_102) 
+
+whenever you feel like it.
+
+I hope I'll see you soon 😊!

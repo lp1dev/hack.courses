@@ -28,3 +28,4 @@ Open sources licenses involved with this project :
 - [The wallpaper "silouhette de montagnes"](https://www.pexels.com/fr-fr/photo/silhouette-de-montagnes-1323550/)
 - [The icons used on the website](https://icones8.fr/license)
 - [Foxsay](https://github.com/RaytingSec/foxsay)
+- [glow](https://raw.githubusercontent.com/charmbracelet/glow/master/LICENSE)
