@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vue.js on hack.courses</title>
+    <link>/tags/vue.js/</link>
+    <description>Recent content in vue.js on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 13:19:38 +0100</lastBuildDate><atom:link href="/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formation Vue.JS &#43; TDD</title>
+      <link>/posts/vue_js_tdd/</link>
+      <pubDate>Mon, 16 Nov 2020 13:19:38 +0100</pubDate>
+      
+      <guid>/posts/vue_js_tdd/</guid>
+      <description>Formation Vue.JS 
+Réaliser un projet Vue.JS en TDD  
+Auteur: Jérémie Amsellem // Consultant Sécurité Offensive
+https://hack.courses/Programming/Vue.JS 
+ Le principe de base du TDD Le TDD (Test Driven Development) est une manière de développer des logiciels qui met les tests (notamment unitaires) en priorité par rapport aux premières phases d&amp;rsquo;écriture de code.
+On écrit d&amp;rsquo;abord les tests et ensuite on commençe à coder les fonctionnalités correspondantes.
+Dans une logique métier, en architecturant votre projet vous commençerez par dégager des besoins auquel il doit répondre.</description>
+      <content>&lt;h1 id=&#34;formation-vuejs&#34;&gt;Formation Vue.JS&lt;/h1&gt;
+&lt;!--![Logo Vue.js](https://vuejs.org/images/logo.png) --&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id=&#34;réaliser-un-projet-vuejs-en-tdd&#34;&gt;Réaliser un projet Vue.JS en TDD&lt;/h2&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;Auteur: &lt;strong&gt;Jérémie Amsellem&lt;/strong&gt; // Consultant Sécurité Offensive&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hack.courses/Programming/Vue.JS&#34;&gt;&lt;code&gt;https://hack.courses/Programming/Vue.JS&lt;/code&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;le-principe-de-base-du-tdd&#34;&gt;Le principe de base du TDD&lt;/h1&gt;
+&lt;p&gt;Le &lt;strong&gt;TDD&lt;/strong&gt; (Test Driven Development) est une manière de développer des logiciels qui met &lt;strong&gt;les tests&lt;/strong&gt; (notamment unitaires) &lt;strong&gt;en priorité&lt;/strong&gt; par rapport aux premières phases d&amp;rsquo;écriture de code.&lt;/p&gt;
+&lt;p&gt;On écrit d&amp;rsquo;abord les tests et &lt;strong&gt;ensuite&lt;/strong&gt; on commençe à coder les fonctionnalités correspondantes.&lt;/p&gt;
+&lt;p&gt;Dans une logique métier, en architecturant votre projet vous commençerez par dégager des &lt;strong&gt;besoins&lt;/strong&gt; auquel il doit répondre.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Besoins&lt;/strong&gt; qui deviendront des &lt;strong&gt;spécifications&lt;/strong&gt;, et ces &lt;strong&gt;spécifications&lt;/strong&gt; seront prêtes à être énoncée sous forme de &lt;strong&gt;tests&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;les-étapes-du-tdd&#34;&gt;Les étapes du TDD&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; - Écrire un test&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; - Lancer le test (vérifier qu&amp;rsquo;il échoue)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3&lt;/strong&gt; - Écrire le code nécessaire pour que le test passe&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4&lt;/strong&gt; - Optimiser le code écrit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;les-tests-unitaires&#34;&gt;Les Tests Unitaires&lt;/h1&gt;
+&lt;h2 id=&#34;un-test-unitaire-cest-quoi&#34;&gt;Un test unitaire c&amp;rsquo;est quoi?&lt;/h2&gt;
+&lt;p&gt;Un &lt;strong&gt;test unitaire&lt;/strong&gt; a pour but (comme son nom l&amp;rsquo;indique) de &lt;strong&gt;tester une &amp;ldquo;unité&amp;rdquo; d&amp;rsquo;un programme&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme peut être une &lt;strong&gt;méthode, une fonction, une classe, même quelque lignes seulement&lt;/strong&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Si l&#39;&amp;ldquo;unité&amp;rdquo; qui doit être testée dans un test unitaire n&amp;rsquo;est pas nécessairement définie et que le concept est relatif, le but d&amp;rsquo;un test unitaire est quand à lui assez précis !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;à-quoi-ça-sert-&#34;&gt;À quoi ça sert ?&lt;/h1&gt;
+&lt;p&gt;Le but d&amp;rsquo;un test unitaire est de tester, que pour un paramètre &lt;strong&gt;A&lt;/strong&gt; (le paramètre d&amp;rsquo;une fonction, une variable, un évènement), l&amp;rsquo;unité de code testée ait le comportement &lt;strong&gt;B&lt;/strong&gt; attendu.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;avantage est de pouvoir s&amp;rsquo;assurer à chacune des étapes du développement que les fonctionnalités du projet sont conformes à la manière dont elles ont été architécturées et également de pouvoir éviter et repérer de nombreuses régressions dans le code !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;exemple&#34;&gt;Exemple&lt;/h1&gt;
+&lt;p&gt;Prenons le cas d&amp;rsquo;une fonction &lt;strong&gt;checkPassword&lt;/strong&gt; qui servirait à valider le mot de passe d&amp;rsquo;un utilisateur.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;) {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Elle doit lever une exception dans ces conditions :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le mot de passe fait moins de 8 caractères&lt;/li&gt;
+&lt;li&gt;Le mot de passe est un mot du dictionnaire&lt;/li&gt;
+&lt;li&gt;Le mot de passe ne comporte que des chiffres&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si le mot de passe respecte ces règles, checkPassword devra alors retourner &lt;strong&gt;true&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Nous pourrions écrire les tests de la manière suivante :&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;describe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;checkPassword&amp;#39;&lt;/span&gt;, () =&amp;gt; {
+    &lt;span style=&#34;color:#75715e&#34;&gt;// We start by checking the first rule 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow passwords shorter than 8 chars&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+    });
+    &lt;span style=&#34;color:#75715e&#34;&gt;// Then the second one 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow words from the dictionary&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aerodynamic&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+    });
+    &lt;span style=&#34;color:#75715e&#34;&gt;// And finally the third one
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow only numeric passwords&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;8008135707&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+    });
+    &lt;span style=&#34;color:#75715e&#34;&gt;// A valid password should be accepted
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;should return true when a valid password is given&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g00dP455w0rd!&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;equal&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;);
+    });
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;premier-contact-avec-vuejs&#34;&gt;Premier contact avec Vue.js&lt;/h1&gt;
+&lt;h2 id=&#34;quest-ce-que-vuejs&#34;&gt;Qu&amp;rsquo;est-ce que Vue.js&lt;/h2&gt;
+&lt;p&gt;Vue.JS est un &lt;strong&gt;framework Web&lt;/strong&gt; qui a été crée en 2017 par &lt;strong&gt;Evan You&lt;/strong&gt; (ex Googler).&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est un &lt;strong&gt;logiciel libre&lt;/strong&gt; (license &lt;strong&gt;MIT&lt;/strong&gt;), qui se veut diffèrer des frameworks front-ends &lt;strong&gt;monolithiques&lt;/strong&gt; comme Angular par le fait qu&amp;rsquo;il se limite &lt;strong&gt;exclusivement à la définition et l&amp;rsquo;affichage de composants graphiques&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Il est inspiré du Modèle View View-Model (&lt;strong&gt;MVVM&lt;/strong&gt;).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;prérequis-et-installation&#34;&gt;Prérequis et installation&lt;/h1&gt;
+&lt;p&gt; 
+Il est nécessaire pour utiliser et installer les &lt;strong&gt;outils en ligne de commande de Vue.js&lt;/strong&gt; d&amp;rsquo;avoir &lt;strong&gt;Node.js et npm&lt;/strong&gt; installés.&lt;/p&gt;
+&lt;p&gt;Une fois ceux-ci configurés sur votre machine il faut utiliser la commande&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(sudo) npm install -g @vue/cli&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; 
+Pour installer l&amp;rsquo;interface en ligne de commande de Vue.js.
+Si l&amp;rsquo;installation s&amp;rsquo;est correctement déroulée vous devriez pouvoir utiliser la commande &lt;strong&gt;vue&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;utilisation-de-vue-cli&#34;&gt;Utilisation de vue-cli&lt;/h1&gt;
+&lt;h2 id=&#34;commandes-principales&#34;&gt;Commandes principales&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;create&lt;/strong&gt; [options] app-name - &lt;em&gt;Créer un nouveau projet&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;serve&lt;/strong&gt; [options] (fichier) - &lt;em&gt;Lancer le serveur HTTP d&amp;rsquo;un projet&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;build&lt;/strong&gt; [options] (fichier) - &lt;em&gt;Générer un build de production&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;init&lt;/strong&gt; [options] template app-name - &lt;em&gt;Créer un projet à partir d&amp;rsquo;un des templates de &lt;a href=&#34;https://github.com/vuejs-templates&#34;&gt;https://github.com/vuejs-templates&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; - &lt;em&gt;Démarre l&amp;rsquo;interface utilisateur de gestion des projets Vue.js&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;le-concept-de-composant&#34;&gt;Le concept de &amp;ldquo;composant&amp;rdquo;&lt;/h1&gt;
+&lt;p&gt;Les composants Vue.js s&amp;rsquo;inspirent librement des &lt;a href=&#34;https://www.webcomponents.org/specs&#34;&gt;&lt;strong&gt;spécifications des WebComponents&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pour résumer ce qu&amp;rsquo;est un composant: un composant est un bloc &lt;strong&gt;réutilisable&lt;/strong&gt; et &lt;strong&gt;pouvant lui même contenir d&amp;rsquo;autres composants&lt;/strong&gt; associant :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Du style (CSS)&lt;/li&gt;
+&lt;li&gt;Un template (HTML)&lt;/li&gt;
+&lt;li&gt;De la logique (JavaScript)
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L&#39;&lt;strong&gt;intérêt principal&lt;/strong&gt; de l&amp;rsquo;utilisation de composants est &lt;strong&gt;architectural&lt;/strong&gt;, ils permettent d&#39;&lt;strong&gt;éviter de dupliquer du code&lt;/strong&gt; et d&amp;rsquo;avoir des &lt;strong&gt;templates HTML lisibles&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;mount-et-shallowmount&#34;&gt;Mount et ShallowMount&lt;/h1&gt;
+&lt;p&gt;Le module &lt;em&gt;@vue/test-utils&lt;/em&gt; inclut plusieurs classes et méthodes qui facilitent les tests unitaires des composants.&lt;/p&gt;
+&lt;p&gt;Notamment les fonctions &lt;strong&gt;mount et shallowMount&lt;/strong&gt; qui permettent d&amp;rsquo;instancier un composant à l&amp;rsquo;intérieur d&amp;rsquo;un &lt;strong&gt;wrapper&lt;/strong&gt;, ce qui rend possibles les intéractions avec des composants au sein des tests.
+ &lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wrapper&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mount&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;MyComponent&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;assert&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;wrapper&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;MyComponent&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;La différence entre mount et shallowMount est que shallowMount remplace les méthodes et composants enfants par des &lt;em&gt;stubs&lt;/em&gt; : des éléments vides de remplacement.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;les-principales-méthodes-de-lobjet-wrapper&#34;&gt;Les principales méthodes de l&amp;rsquo;objet Wrapper&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Un wrapper possède plusieurs méthodes nous permettant d&amp;rsquo;intéragir avec un composant monté, voici une liste non exhaustive de celles dont nous nous servirons :&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;vm&lt;/strong&gt; : Contient l&amp;rsquo;instance de l&amp;rsquo;objet Vue crée.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;find(&lt;em&gt;CSSselector&lt;/em&gt;)&lt;/strong&gt;	: Chercher un élément par son sélecteur&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;findAll(&lt;em&gt;CSSselector&lt;/em&gt;)&lt;/strong&gt; : Chercher plusieurs éléments&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;setData(&lt;em&gt;data&lt;/em&gt;)&lt;/strong&gt; : Mettre à jour la &lt;strong&gt;data&lt;/strong&gt; d&amp;rsquo;un composant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;setProps(&lt;em&gt;props&lt;/em&gt;)&lt;/strong&gt; : Mettre à jour les &lt;strong&gt;props&lt;/strong&gt; d&amp;rsquo;un composant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;html()&lt;/strong&gt; : Retourne une chaîne de texte contenant la représentation HTML du composant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;text()&lt;/strong&gt; : Retourne le texte brut compris dans le composant&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on&#34;&gt;Hands-on!&lt;/h1&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Création de notre premier projet Vue.js&lt;/li&gt;
+&lt;li&gt;Présentation du projet Message Board&lt;/li&gt;
+&lt;li&gt;Spécifications et premières modifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;les-principales-options-des-composants&#34;&gt;Les principales options des composants&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;name&lt;/strong&gt; : Le nom du composant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;data&lt;/strong&gt; : Une fonction qui retourne les attributs du composant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;methods&lt;/strong&gt; : Les méthodes explicitées du composant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;components&lt;/strong&gt;: Les dépendances du composant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;props&lt;/strong&gt; : Les attributs passés par le composant parent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;computed&lt;/strong&gt; : Les valeurs à traiter avant leur affichage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;la-liaison-de-données-data-binding&#34;&gt;La liaison de données (data-binding)&lt;/h1&gt;
+&lt;p&gt;Le premier moyen de lier une information entre deux composants est le &lt;strong&gt;data-binding parent vers enfant&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;On envoie une information d&amp;rsquo;un composant &lt;strong&gt;parent&lt;/strong&gt; vers &lt;strong&gt;un autre composant&lt;/strong&gt; qui est utilisé dans son template (son composant &lt;strong&gt;enfant&lt;/strong&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;enfant&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;enfant&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+export default { name: &amp;#34;Parent&amp;#34; }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h1 id=&#34;utilisation-des-props&#34;&gt;Utilisation des props&lt;/h1&gt;
+&lt;p&gt;Pour qu&amp;rsquo;un composant puisse reçevoir des informations de ses parents, il est nécessaire de définir les attributs qui pourront lui être envoyés.&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est le rôle de la méta-donnée &amp;ldquo;props&amp;rdquo;: elle contient des définitions de l&amp;rsquo;ensemble des paramètres qu&amp;rsquo;un composant pourra accepter.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Essayez d&amp;rsquo;être aussi précis que possible dans la définition de vos props&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;props&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    		&lt;span style=&#34;color:#a6e22e&#34;&gt;author&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    			&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String,
+        		&lt;span style=&#34;color:#a6e22e&#34;&gt;required&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+        		&lt;span style=&#34;color:#a6e22e&#34;&gt;validator&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; () =&amp;gt; {}
+        	}, 
+        	&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;la-liaison-de-données-parent-vers-enfant&#34;&gt;La liaison de données parent vers enfant&lt;/h1&gt;
+&lt;p&gt;Plusieurs manières d&amp;rsquo;afficher de la donnée dynamiquement dans le template d&amp;rsquo;un composant
+ &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;moustaches&lt;/strong&gt; :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;{{ data }}&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;v-text&lt;/strong&gt; :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;h1 v-text=&amp;quot;data&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; // n&#39;est pas watchée
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;interpolation d&amp;rsquo;expressions dans des moustaches&lt;/strong&gt; :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;h3&amp;gt;{{ data + new Date() }}&amp;lt;/h3&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;les-slots&#34;&gt;Les slots&lt;/h1&gt;
+&lt;p&gt;Il est également possible de faire passer des informations de template d&amp;rsquo;un composant parent vers un composant enfant en utilisant des slots.&lt;/p&gt;
+&lt;p&gt;Pour ce faire, on utilise une balise &lt;strong&gt;slot&lt;/strong&gt; dans le composant enfant à l&amp;rsquo;endroit où on souhaite afficher le template passé par le parent.&lt;/p&gt;
+&lt;p&gt;Dans le composant parent il suffira de mettre un template HTML entre les balises du composant enfant, comme ceci :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;my-component&amp;gt;
+	&amp;lt;h1&amp;gt;This will replace the slot in MyComponent&amp;lt;/h1&amp;gt;
+&amp;lt;/my-component&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;les-directives&#34;&gt;Les directives&lt;/h1&gt;
+&lt;p&gt;Les directives &lt;strong&gt;sont des composants ne comportant pas  de template&lt;/strong&gt;. 
+ 
+Elles permettent d&amp;rsquo;associer de la logique à un élément de template &lt;strong&gt;déjà existant&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Il est possible de définir nos propres directives, en créant un objet Vue.directive (nous y reviendrons) mais il existe déjà un certain nombre de directives &lt;strong&gt;prédéfinies dans le framework&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;les-directives-vuejs-prédéfinies&#34;&gt;Les directives Vue.js prédéfinies&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;v-text&lt;/strong&gt; : Permet de lier une variable au contenu &amp;lsquo;text&amp;rsquo; de l&amp;rsquo;élément sélectionné&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-bind ( alias ‘:’ )&lt;/strong&gt; : Permet de lier une variable locale à un attribut d&amp;rsquo;un élément de votre template&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-if / v-else-if / v-else&lt;/strong&gt; : Permet d&amp;rsquo;ajouter des conditions à l&amp;rsquo;ajout d&amp;rsquo;un élément dans le DOM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-show&lt;/strong&gt; : Permet d&amp;rsquo;afficher ou non un élément (display en CSS) en fonction d&amp;rsquo;une condition&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-for&lt;/strong&gt; : Permet d&amp;rsquo;itérer sur les éléments d&amp;rsquo;un tableau&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-on&lt;/strong&gt; ( alias ‘@’ ) : Permet de lier un comportement dans notre composant à un évènement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-model&lt;/strong&gt; : Permer de lier la valeur d&amp;rsquo;un input utilisateur (input, checkbox, radio, select…) à une variable de notre composant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;le-v-on-en-détail&#34;&gt;Le v-on en détail&lt;/h1&gt;
+&lt;p&gt;La directive Vue.js v-on (ayant pour alias @) permet d&amp;rsquo;associer un &lt;a href=&#34;https://developer.mozilla.org/fr/docs/Web/Events&#34;&gt;événement JavaScript&lt;/a&gt; avec du comportement défini en JavaScript.&lt;/p&gt;
+&lt;p&gt;Par exemple pour déclencher une fonction au clic sur un bouton on fera comme ceci dans un composant :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v-on:click&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;doSomething()&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+  	&lt;span style=&#34;color:#a6e22e&#34;&gt;doSomething&lt;/span&gt;() {
+  		&lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Button clicked&amp;#39;&lt;/span&gt;);
+  	}
+  };
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-1&#34;&gt;Hands-on!&lt;/h1&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Création de données de Mock&lt;/li&gt;
+&lt;li&gt;Création de notre composant MessagesList&lt;/li&gt;
+&lt;li&gt;Premières intéractions entre composants&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;la-liaison-de-donnée-enfant-vers-parent&#34;&gt;La liaison de donnée enfant vers parent&lt;/h1&gt;
+&lt;p&gt;Nous allons maintenant voir comment faire passer une information du composant enfant vers le composant parent.&lt;/p&gt;
+&lt;p&gt;Le paradigme est ici légèrement différent, on va utiliser le système d&amp;rsquo;évènements pour remonter des informations du composant enfant vers le composant parent.&lt;/p&gt;
+&lt;p&gt;On déclenche notre évènement dans le composant enfant avec la méthode&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$emit&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Il suffira ensuite d&amp;rsquo;écouter cet évènement dans le composant parent avec la directive &lt;strong&gt;v-on&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;parent&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v-on:hello&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;doSomething()&amp;#34;&lt;/span&gt;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;utilisation-avancée-du-wrapper&#34;&gt;Utilisation avancée du wrapper&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Il est maintenant temps de voir d&amp;rsquo;autres méthodes du &lt;strong&gt;wrapper&lt;/strong&gt; qui vont nous servir dans nos prochains tests :&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;contains(&lt;em&gt;selector or component&lt;/em&gt;)&lt;/strong&gt; : Retourne &lt;strong&gt;true&lt;/strong&gt; si un élément est contenu dans le composant. Sinon &lt;strong&gt;false&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;wrapper.emitted()&lt;/strong&gt; : Retourne un objet contenant les évènements émis par le composant.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;wrapper.trigger()&lt;/strong&gt; : Permet de déclencher un évènement dans le &lt;strong&gt;DOM&lt;/strong&gt; de l&amp;rsquo;élément sélectionné.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: wrapper.trigger peut être utilisé à la suite d&amp;rsquo;un find(), par exemple :&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;wrapper.find(&#39;button&#39;).trigger(&#39;click&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;le-cycle-de-vie-des-composants&#34;&gt;Le cycle de vie des composants&lt;/h1&gt;
+&lt;p&gt;L&#39;&lt;strong&gt;affichage&lt;/strong&gt;, la &lt;strong&gt;mise à jour&lt;/strong&gt; et la &lt;strong&gt;destruction&lt;/strong&gt; des composants Vue.js sont des actions gérées par le framework, nous n&amp;rsquo;avons pas à spécifier lorsqu&amp;rsquo;il faut ajouter ou retirer un composant du DOM.&lt;/p&gt;
+&lt;p&gt;En revanche, Vue.js nous permet d&amp;rsquo;effectuer certaines actions à des moments précis du cycle de vie de nos composants à l&amp;rsquo;aide de &lt;strong&gt;crochets (hooks)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour les utiliser, il suffit d&amp;rsquo;implémenter les méthodes éponymes à l&amp;rsquo;intérieur de notre composant.&lt;/p&gt;
+&lt;p&gt;Les hooks qui nous seront les plus utiles sont :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Created, Mounted, Updated et Destroyed.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;schéma-du-cyle-de-vie-dun-composant&#34;&gt;Schéma du cyle de vie d&amp;rsquo;un composant&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdnsite1.assist.ro/sites/default/files/styles/big/public/images/blog/Vue-instance-lifecycle-Page-1.png?itok=OdC8TOWx&#34; alt=&#34;lifecycle schema&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;le-concept-de-store&#34;&gt;Le concept de Store&lt;/h1&gt;
+&lt;h2 id=&#34;state-management-pattern&#34;&gt;(State Management Pattern)&lt;/h2&gt;
+&lt;p&gt;Vue.js utilise &lt;strong&gt;Vuex&lt;/strong&gt; comme système de gestion d&amp;rsquo;état. 
+Vuex est similaire à Redux dans son fonctionnement en de nombreux points :&lt;/p&gt;
+&lt;p&gt;Vuex et Redux permettent de créer des &lt;strong&gt;stores&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;store&lt;/strong&gt; sert à garder un &lt;strong&gt;état (state)&lt;/strong&gt; en mémoire au sein d&amp;rsquo;une WebApplication.&lt;/p&gt;
+&lt;p&gt;Tous nos &lt;strong&gt;composants&lt;/strong&gt; peuvent effectuer des &lt;strong&gt;modifications (mutations)&lt;/strong&gt; sur cet état.&lt;/p&gt;
+&lt;p&gt;Les &lt;strong&gt;composants&lt;/strong&gt; peuvent à tout moment accéder à l&#39;&lt;strong&gt;état&lt;/strong&gt; du store et être &lt;strong&gt;notifiés&lt;/strong&gt; en cas de modifications de celui-ci.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;schéma-store-vuex&#34;&gt;Schéma Store Vuex&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://fr.vuejs.org/images/state.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;utilisation-de-vuex&#34;&gt;Utilisation de Vuex&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://vuex.vuejs.org/&#34;&gt;Vuex&lt;/a&gt; est un module séparé du module core de Vue.js.&lt;/p&gt;
+&lt;p&gt;Il faut l&amp;rsquo;installer (si ce n&amp;rsquo;est pas déjà fait)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm install vuex &amp;ndash;save&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;et ensuite ajouter le module à notre projet Vue en ajoutant dans notre main.js :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vuex&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; 
+Nous allons maintenant pouvoir créer notre premier &lt;strong&gt;store&lt;/strong&gt;!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;le-routage&#34;&gt;Le routage&lt;/h1&gt;
+&lt;p&gt;Le routeur de Vue.js est un module séparé du module &lt;em&gt;core&lt;/em&gt; Vue.js.&lt;/p&gt;
+&lt;p&gt;Une fois qu&amp;rsquo;il est installé il permet d&amp;rsquo;instancier un objet &lt;strong&gt;Router&lt;/strong&gt;, dont le constructeur prend en paramètre une liste des routes de notre application sous forme de tableau.&lt;/p&gt;
+&lt;p&gt;Chaque route doit au minimum décrire un &lt;strong&gt;path&lt;/strong&gt; et y associer un &lt;strong&gt;composant&lt;/strong&gt; ou une &lt;strong&gt;redirection&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Il est d&amp;rsquo;usage d&amp;rsquo;ajouter &lt;strong&gt;un nom&lt;/strong&gt; à chacune des routes crées.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: On peut utiliser des wildcards (*) sur les &lt;strong&gt;path&lt;/strong&gt; des routes. Ce qui permet par exemple de matcher toutes les routes invalides avec &lt;code&gt;{path: &#39;*&#39;}&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-2&#34;&gt;Hands-On!&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Création d&amp;rsquo;un store et de mutations&lt;/li&gt;
+&lt;li&gt;Ajout des parties utilisateur de l&amp;rsquo;application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;le-mapstate&#34;&gt;Le mapState&lt;/h1&gt;
+&lt;p&gt;Maintenant que nous avons un peu plus en main l&amp;rsquo;utilisation de &lt;strong&gt;Vuex&lt;/strong&gt;, nous pouvons aborder les &lt;strong&gt;mapGetters&lt;/strong&gt; et &lt;strong&gt;mapState&lt;/strong&gt; qu&amp;rsquo;il propose.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;mapState&lt;/strong&gt; permet de mapper des propriétés de l&amp;rsquo;état d&amp;rsquo;un store à une propriété &lt;em&gt;computed&lt;/em&gt; d&amp;rsquo;un composant.&lt;/p&gt;
+&lt;p&gt;Il prend en paramètre un tableau :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;computed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mapState&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;avatar&amp;#39;&lt;/span&gt;, ])
+    	&lt;span style=&#34;color:#75715e&#34;&gt;// this.login &amp;amp;&amp;amp; this.avatar
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ou un tableau associatif, permettant de nommer les propriétés &lt;em&gt;computed&lt;/em&gt; :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;computed: mapState({userLogin: &#39;login&#39;, 
+userAvatar: &#39;avatar&#39; })
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;le-mapgetters&#34;&gt;Le mapGetters&lt;/h1&gt;
+&lt;p&gt;Nous utiliserons en priorité le &lt;strong&gt;mapGetters&lt;/strong&gt;, il est conseillé d&amp;rsquo;utiliser des getters plutôt que directement le &lt;strong&gt;state&lt;/strong&gt; d&amp;rsquo;un store !&lt;/p&gt;
+&lt;p&gt;Celui-ci fonctionne comme &lt;strong&gt;mapState&lt;/strong&gt; mais associe un &lt;strong&gt;getter&lt;/strong&gt; à &lt;strong&gt;une propriété computed&lt;/strong&gt;. 
+La syntaxe est aussi quelque peu différente, on utilisera le &lt;em&gt;spread&lt;/em&gt; d&amp;rsquo;ES6 ici car mapGetters retourne un tableau:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;computed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {... &lt;span style=&#34;color:#a6e22e&#34;&gt;mapGetters&lt;/span&gt;(
+    			[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;getLogin&amp;#39;&lt;/span&gt;, 
+                         &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;getAvatar&amp;#39;&lt;/span&gt;]) }
+    	&lt;span style=&#34;color:#75715e&#34;&gt;// this.getLogin &amp;amp;&amp;amp; this.getAvatar
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;liaison-de-classes-et-styles&#34;&gt;Liaison de classes et styles&lt;/h1&gt;
+&lt;p&gt;Nous avons jusqu&amp;rsquo;ici eu une utilisation relativement classique de la directive v-bind.&lt;/p&gt;
+&lt;p&gt;Il est en réalité également possible de s&amp;rsquo;en servir pour associer du style et des classes à des propriétés JavaScript.&lt;/p&gt;
+&lt;p&gt;Vue.js permet de gérer simplement les modifications de style et de classes à l&amp;rsquo;aide d&amp;rsquo;objets, plutôt que de chaînes de caractères.&lt;/p&gt;
+&lt;p&gt;Par exemple, pour changer la classe et la couleur du texte d&amp;rsquo;un élément en fonction d&amp;rsquo;attributs d&amp;rsquo;un composant :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;:style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{color: myCustomColor}&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;:class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{selected: isSpanSelected}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;le-pattern-eventbus&#34;&gt;Le pattern EventBus&lt;/h1&gt;
+&lt;p&gt;Jusqu&amp;rsquo;à présent nous avons émis nos évènements directement depuis nos composants. 
+C&amp;rsquo;est la manière basique d&amp;rsquo;écrire une gestion d&amp;rsquo;évènements en Vue.js, nous allons maintenant aborder le pattern &lt;strong&gt;EventBus&lt;/strong&gt; qui propose de centraliser la gestion des évènements dans un seul composant Vue.js.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;intêret est de faire communiquer facilement des composants sans qu&amp;rsquo;ils aient une relation de parenté.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;import eventBus from &#39;@/eventBus&#39;
+eventBus.$emit(&#39;refresh&#39;) // Pour l&#39;envoi
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;eventBus&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;refresh&amp;#39;&lt;/span&gt;, () =&amp;gt; {...}) &lt;span style=&#34;color:#75715e&#34;&gt;// Pour l&amp;#39;écoute
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;outils-de-débogage&#34;&gt;Outils de Débogage&lt;/h1&gt;
+&lt;p&gt;Il existe une suite d&amp;rsquo;outils &lt;em&gt;officielle&lt;/em&gt; pour Vue.js : les &lt;strong&gt;Vue DevTools&lt;/strong&gt;, disponibles sous forme d&amp;rsquo;extension &lt;strong&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd&#34;&gt;Chrome&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/vue-js-devtools/&#34;&gt;Firefox&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/FoLCsgdXeNyJkiM3uPn6wgbSg_BCfx53XgBHIS5QvhjbRULiFp00eNqkZcUotgasqSm9uh-5LQ=w640-h400-e365&#34; alt=&#34;Vue Devtools&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Une fois l&amp;rsquo;extension installée, un onglet &lt;strong&gt;Vue&lt;/strong&gt; est disponible dans les outils de développement du navigateur.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;axios&#34;&gt;axios&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Axios&lt;/strong&gt; est une bibliothèque JavaScript pouvant être utilisée côté client et serveur (en Node.js) et qui permet de faire des requêtes réseau.
+ 
+&lt;strong&gt;Vue.js&lt;/strong&gt; ne prenant pas en charge la gestion des requêtes &lt;strong&gt;HTTP&lt;/strong&gt;, nous utiliserons &lt;strong&gt;axios&lt;/strong&gt; pour effectuer nos échanges.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;axios&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;axios&amp;#39;&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;axios&lt;/span&gt;
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://hack.courses&amp;#39;&lt;/span&gt;)
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt;))
+.&lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;))
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;les-mixins&#34;&gt;Les mixins&lt;/h1&gt;
+&lt;p&gt;Il n&amp;rsquo;est pas nécessaire de réecrire 100% du code de vos composants si certaines parties sont similaires.&lt;/p&gt;
+&lt;p&gt;Vue.js intègre un système de &lt;strong&gt;mixins&lt;/strong&gt; très simple à prendre en main.&lt;/p&gt;
+&lt;p&gt;Vous pouvez séparer la partie du code que vous souhaitez partager dans une &lt;strong&gt;mixin&lt;/strong&gt; :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;annoyingMixin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;created&lt;/span&gt;() {
+    		&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; created&amp;#39;&lt;/span&gt;);
+    	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Il suffit ensuite de l&amp;rsquo;ajouter à la propriété &lt;strong&gt;mixins&lt;/strong&gt; d&amp;rsquo;un composant :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export default { mixins: [annoyingMixin] }
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;les-modules-vuex&#34;&gt;Les modules Vuex&lt;/h1&gt;
+&lt;p&gt;Jusqu&amp;rsquo;ici nous nous sommes contentés de mettre toutes les informations et mutations de notre &lt;strong&gt;store&lt;/strong&gt; dans un module unique.&lt;/p&gt;
+&lt;p&gt;Notez qu&amp;rsquo;il est également possible de découper un &lt;strong&gt;store Vuex&lt;/strong&gt; en modules, chaque module possédant ses propres &lt;strong&gt;mutations, actions, getters, modules&lt;/strong&gt; et son &lt;strong&gt;état&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;On va définir un module de la sorte :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+	    &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...},
+	    &lt;span style=&#34;color:#a6e22e&#34;&gt;mutations&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...},
+    	    &lt;span style=&#34;color:#a6e22e&#34;&gt;getters&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et l&amp;rsquo;ajouter à notre store :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;store&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Store&lt;/span&gt;({
+	&lt;span style=&#34;color:#a6e22e&#34;&gt;modules&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt; } &lt;span style=&#34;color:#75715e&#34;&gt;//  =&amp;gt; store.state.a
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;écriture-de-directives-personnalisées&#34;&gt;Écriture de directives personnalisées&lt;/h1&gt;
+&lt;p&gt;Nous avons souvent utilisé les directives prédéfinies de Vue.js, il est également possible de créer nos propres directives personnalisées.&lt;/p&gt;
+&lt;p&gt;La syntaxe est légèrement différente à la création d&amp;rsquo;un composant :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;directive&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bold&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#75715e&#34;&gt;/*directive content*/&lt;/span&gt;})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Les directives possèdent également un cycle de vie différent des composants, avec les &lt;strong&gt;hooks&lt;/strong&gt; suivants :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;bind(&lt;em&gt;element, bindings&lt;/em&gt;)&lt;/strong&gt; : Appellé la première fois qu&amp;rsquo;une directive est liée à un élément&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;inserted(&lt;em&gt;element, bindings&lt;/em&gt;)&lt;/strong&gt; : Appellé quand l&amp;rsquo;élément lié a été injecté dans son parent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;update(&lt;em&gt;element, bindings&lt;/em&gt;)&lt;/strong&gt; : Appellé après chaque changement du composant contenant la directive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;element-et-bindings-&#34;&gt;Element et bindings ?!&lt;/h1&gt;
+&lt;p&gt;Ces deux paramètres sont passés aux &lt;strong&gt;hooks&lt;/strong&gt; des directives Vue.js.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Element&lt;/strong&gt; contient une référence à l&amp;rsquo;élément du &lt;strong&gt;DOM&lt;/strong&gt; sur lequel est appliquée la directive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bindings&lt;/strong&gt; est un objet plus vaste : il contient plusieurs informations sur la liaison entre notre directive et l&amp;rsquo;élément auquel elle est rattachée :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;name&lt;/strong&gt; : le nom de la directive&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;value&lt;/strong&gt; : la valeur passée à la directive&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;expression&lt;/strong&gt; : l’expression liée en tant que chaine de caractères&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;arg&lt;/strong&gt; : l’argument passé à la directive&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;modifiers&lt;/strong&gt; : un objet contenant les modificateurs de la directive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;filtres&#34;&gt;Filtres&lt;/h1&gt;
+&lt;p&gt;Vue.js permet de créer des filtres qui pourront être utilisés pour formater des informations avant de les afficher.&lt;/p&gt;
+&lt;p&gt;Les filtres s&amp;rsquo;utilisent comme ceci dans un template :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;{{ &lt;span style=&#34;color:#a6e22e&#34;&gt;unixTimeStamp&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dateFilter&lt;/span&gt; }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;La définition d&amp;rsquo;un filtre utilise &lt;strong&gt;Vue.filter&lt;/strong&gt; et utilise une fonction de transformation à laquelle sera passée la valeur à filtrer.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dateFilter&amp;#39;&lt;/span&gt;, (&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;moment&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;(
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;websockets&#34;&gt;WebSockets&lt;/h1&gt;
+&lt;p&gt;Les &lt;strong&gt;WebSockets&lt;/strong&gt; ont un fonctionnement inspiré des &lt;strong&gt;sockets&lt;/strong&gt; TCP UNIX.&lt;/p&gt;
+&lt;p&gt;Elles sont basées sur le protocole &lt;strong&gt;HTTP&lt;/strong&gt; et permettent d&amp;rsquo;établir une connexion continue entre un client et un serveur.&lt;/p&gt;
+&lt;p&gt;Il existe une &lt;strong&gt;API&lt;/strong&gt; JavaScript permettant de créer simplement une WebSocket et d&amp;rsquo;écouter ses évènements.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const ws = new WebSocket(url);
+ws.onmessage = (message) =&amp;gt; console.log(message);
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;fichier-de-style-global&#34;&gt;Fichier de style global&lt;/h1&gt;
+&lt;p&gt;Dans une logique &amp;ldquo;&lt;strong&gt;D&lt;/strong&gt;on&amp;rsquo;t &lt;strong&gt;R&lt;/strong&gt;epeat &lt;strong&gt;Y&lt;/strong&gt;ourself&amp;rdquo;, il est possible grâce à WebPack de définir un fichier de style global pour notre application.&lt;/p&gt;
+&lt;p&gt;Les modifications de configuration de notre projet Vue.js se feront dans un fichier &lt;strong&gt;vue.config.js&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour ajouter un fichier SCSS global, il faudra y ajouter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;css&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;loaderOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;sass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`@import &amp;#34;@/style/global.scss&amp;#34;;`&lt;/span&gt;
+      }}}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ce qui forcera WebPack à charger le fichier /src/style/global.scss&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Il est évidemment possible de charger plusieurs fichiers de style&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;les-transitions&#34;&gt;Les transitions&lt;/h1&gt;
+&lt;p&gt;Vue.js possède un système de gestion des transitions d&amp;rsquo;entrée et de sortie liées au &lt;strong&gt;v-if et v-show&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;La première étape de leur utilisation est de spécifier qu&amp;rsquo;un élément nécessitera une transition sur son apparition ou sa disparition en utilisant le composant &lt;strong&gt;transition&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;transition name=&amp;quot;fade-in&amp;quot;&amp;gt;
+	&amp;lt;div v-if=&amp;quot;show&amp;quot;&amp;gt;Hello World&amp;lt;/div&amp;gt;
+&amp;lt;/transition&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Il va maintenant falloir définir la transition nommée &amp;ldquo;fade-in&amp;rdquo; que nous allons utilisée.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Nous avons plusieurs classes à disposition, qui seront utilisées pour définir l&amp;rsquo;état d&amp;rsquo;un élément dans sa transition. Ce sont :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;{transition}-enter&lt;/strong&gt; : &lt;em&gt;État de départ, avant que l&amp;rsquo;élément soit inséré.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;{transition}-enter-active : &lt;em&gt;État actif appliqué pendant toute la phase d&amp;rsquo;animation &lt;strong&gt;enter&lt;/strong&gt;.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;{transition}-enter-to&lt;/strong&gt; : &lt;em&gt;État de fin du enter, vient remplacer le {transition}-enter.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;{transition}-leave&lt;/strong&gt; :  &lt;em&gt;État de départ, avant que l&amp;rsquo;élément soit retiré&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;{transition}-leave-active : &lt;em&gt;État actif appliqué pendant toute la phrase d&amp;rsquo;animation &lt;strong&gt;leave&lt;/strong&gt;.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;{transition}-leave-to&lt;/strong&gt; : &lt;em&gt;État de fin du leave, vient remplaçer le {transition}-leave.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;exemple-de-transition-css-utilisant-les-classes-de-transition&#34;&gt;Exemple de transition CSS utilisant les classes de transition&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter-to&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-leave-active&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;transition&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;.5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;s&lt;/span&gt;;
+}
+.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter&lt;/span&gt; {
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;déploiement&#34;&gt;Déploiement&lt;/h1&gt;
+&lt;p&gt; 
+Pour déployer votre projet en production, c&amp;rsquo;est très simple avec Vue.js, il suffit d&amp;rsquo;utiliser le script&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm run build&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; 
+Celui-ci va minifier/compiler l&amp;rsquo;ensemble de vos fichiers pour tout assembler dans un dossier &lt;strong&gt;dist&lt;/strong&gt; contenant votre projet prêt à être déployé en production sur votre serveur web!&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

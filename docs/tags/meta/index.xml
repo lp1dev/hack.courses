@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meta on hack.courses</title>
+    <link>/tags/meta/</link>
+    <description>Recent content in meta on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Tue, 11 Jan 2022 19:00:35 +0100</lastBuildDate><atom:link href="/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command line 102</title>
+      <link>/posts/command_line_102/</link>
+      <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_102/</guid>
+      <description>function verify(id) {const answers = [&#39;flag{442fcf28466515a81d5434931496ffa64611cc8e}&#39;,&#39;flag{4a4c6edef220f300dc6bc58df3d3b2e3c0bc8842}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}input.disabled = true;}Linux filesystem arborescence 🌳 Let me tell you a bit about the way linux filesystems are organized.
+/ is where everything starts, it&amp;rsquo;s the root of your filesystem, a little bit like C: is usually where everything is stored on a Windows machine.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{442fcf28466515a81d5434931496ffa64611cc8e}&#39;,
+            &#39;flag{4a4c6edef220f300dc6bc58df3d3b2e3c0bc8842}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+        input.disabled = true;
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;linux-filesystem-arborescence-&#34;&gt;Linux filesystem arborescence 🌳&lt;/h1&gt;
+&lt;p&gt;Let me tell you a bit about the way linux filesystems are organized.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/&lt;/strong&gt; is where everything starts, it&amp;rsquo;s the &lt;em&gt;root&lt;/em&gt; of your filesystem, a little bit like &lt;em&gt;C:&lt;/em&gt; is usually where everything is stored on a Windows machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/home&lt;/strong&gt; (which is located inside &lt;strong&gt;/&lt;/strong&gt;, that&amp;rsquo;s why it starts with the same character) is where the user&amp;rsquo;s directories are usually stored. It is analogous to the &lt;strong&gt;C:\Users&lt;/strong&gt; directory on Windows.&lt;/p&gt;
+&lt;p&gt;Each user has its own &lt;strong&gt;home&lt;/strong&gt; 🏠 directory, you can see which one is yours using the following command :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo $HOME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In a Linux terminal, the &lt;strong&gt;$&lt;/strong&gt; character designates a variable. The &lt;em&gt;$HOME&lt;/em&gt; variable has been predefined in your terminal by the operating system, such a variable is named an &lt;strong&gt;environment variable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Observe the difference between your terminal&amp;rsquo;s output when you type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo $HOME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo HOME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : $HOME can also be replaced with the ~ character.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;manual-pages-&#34;&gt;Manual pages 📚&lt;/h1&gt;
+&lt;p&gt;Did you know that Linux comes with manuals for almost every command installed?&lt;/p&gt;
+&lt;p&gt;For instance, &lt;code&gt;man ls&lt;/code&gt; will display the manual pages for the command &lt;em&gt;ls&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;You can use your &lt;em&gt;keyboard&amp;rsquo;s arrows&lt;/em&gt; to navigate inside the manpages, the &lt;em&gt;space&lt;/em&gt; key to skip to the next page and &lt;em&gt;q&lt;/em&gt; to quit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : It&amp;rsquo;s also time to let you know that you can access those classes directly in the terminal using the &lt;code&gt;classes&lt;/code&gt; command! Select a class with your keyboard keys and press enter to open a course&amp;rsquo;s contents. You can navigate through the files exactly like you would with a manual page.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;stopping-a-command-&#34;&gt;Stopping a command 🛑&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s say you use the &lt;em&gt;sleep&lt;/em&gt; command and type something like &lt;code&gt;sleep 42&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Your shell is going to wait 42 seconds before allowing you to type new commands, until then, you&amp;rsquo;re stuck!&lt;/p&gt;
+&lt;p&gt;If at some point you get stuck in a command-line which blocks the execution of new commands, you can use the &lt;strong&gt;CTRL + C&lt;/strong&gt; shortcut to force the current program to quit.&lt;/p&gt;
+&lt;p&gt;Exiting a program in such a way is called &lt;em&gt;killing&lt;/em&gt; a program.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;echo-&#34;&gt;Echo 🔉&lt;/h1&gt;
+&lt;p&gt;Echo (which for some uknown reason always reminds me of &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecco_the_Dolphin&#34;&gt;Ecco the Dolphin&lt;/a&gt;) is an incredibly useful Linux command!&lt;/p&gt;
+&lt;p&gt;You can use it to display character strings on your screen.&lt;/p&gt;
+&lt;p&gt;For instance if you want to print &amp;ldquo;Hello, world&amp;rdquo;, you can type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo Hello, world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also use it to display a variable&amp;rsquo;s value, for instance :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo Hello, $USER
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;Why don&amp;rsquo;t we challenge your new command-line knowledge?&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a little treasure hunt.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-2&#34;&gt;Challenge 2&lt;/h2&gt;
+&lt;p&gt;Enter the &lt;em&gt;challenge_3&lt;/em&gt; directory.&lt;/p&gt;
+&lt;p&gt;This directory contains the flag, but where is it?! You&amp;rsquo;ll need to cleverly navigate through multiple directories in order to fetch this challenge&amp;rsquo;s flag.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : You can go through multiple directories at once, instead of writing &lt;code&gt;cd /gu3st&lt;/code&gt; and &lt;code&gt;cd challenges&lt;/code&gt; you can directly type &lt;code&gt;cd /gu3st/challenges&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;flag 2&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;challenge-3&#34;&gt;Challenge 3&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : Don&amp;rsquo;t forget to type &lt;code&gt;cd&lt;/code&gt; when you&amp;rsquo;re done with an exercice to go back to your home directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This fourth (counting the challenge 0) flag is not hidden in a file, it is stored in an environment variable!&lt;/p&gt;
+&lt;p&gt;The name of the variable is FLAG3.&lt;/p&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 3&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;Wow, you&amp;rsquo;re still there?&lt;/p&gt;
+&lt;p&gt;Congrats on making though those first challenges!&lt;/p&gt;
+&lt;p&gt;You can now move on to&lt;/p&gt;
+&lt;h2 id=&#34;command-line-103command_line_103&#34;&gt;&lt;a href=&#34;../command_line_103&#34;&gt;Command line 103&lt;/a&gt;&lt;/h2&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Command line 102</title>
+      <link>/posts/command_line_103/</link>
+      <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_103/</guid>
+      <description>function verify(id) {const answers = [&#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,&#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}input.disabled = true;}Hidden files 🕶️ On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.
+Such files will not be displayed when using a regular ls.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,
+            &#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+        input.disabled = true;
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;hidden-files-&#34;&gt;Hidden files 🕶️&lt;/h1&gt;
+&lt;p&gt;On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.&lt;/p&gt;
+&lt;p&gt;Such files will &lt;em&gt;not&lt;/em&gt; be displayed when using a regular &lt;code&gt;ls&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can actually see hidden files and directories using &lt;code&gt;ls -a&lt;/code&gt; for &amp;ldquo;all&amp;rdquo; though.&lt;/p&gt;
+&lt;p&gt;This command will also display a single dot . which means &amp;ldquo;the current directory&amp;rdquo; in Linux and two dots .. which means &amp;ldquo;the directory above this one in the arborescence&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Observe the difference between :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls .
+$&amp;gt; ls -a .
+$&amp;gt; ls ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;advanced-ls&#34;&gt;Advanced ls&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; can give you even more useful information about files and directories!&lt;/p&gt;
+&lt;p&gt;Using &lt;code&gt;ls -l&lt;/code&gt; on the &lt;em&gt;challenges/command_line_101&lt;/em&gt; directory will print the following list :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls -l challenges/command_line_101/
+total &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+-rwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;span style=&#34;color:#ae81ff&#34;&gt;111&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 12:39 challenge_0.txt
+-rwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1  &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 21:50 challenge_1.txt
+drwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;span style=&#34;color:#ae81ff&#34;&gt;512&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:13 challenge_2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;re going to leave some of the information printed in this list for another class, but you can already recognize the file and directories names!&lt;/p&gt;
+&lt;p&gt;The hours and dates are the last modification date for each item and the number printed on the left of the month (Jan-&amp;gt;January in this example) is the file&amp;rsquo;s size in bytes.&lt;/p&gt;
+&lt;p&gt;Also note, lines starting with &lt;em&gt;d&lt;/em&gt; are directories!&lt;/p&gt;
+&lt;h1 id=&#34;executing-scripts-&#34;&gt;Executing scripts 📜&lt;/h1&gt;
+&lt;h2 id=&#34;about-scripts&#34;&gt;About scripts&lt;/h2&gt;
+&lt;p&gt;What are scripts, you&amp;rsquo;re wondering?&lt;/p&gt;
+&lt;p&gt;Scripts are files containing commands and logic which can be used to automatize mostly any task you do on a computer!&lt;/p&gt;
+&lt;p&gt;Linux and Operating Systems in general are full of scripts, some of them are used to install softwares, update files, make sure programs are not outdated, update the time, move log files, display alerts etc&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;executing-your-first-script&#34;&gt;Executing your first script&lt;/h2&gt;
+&lt;p&gt;In order to run a script, you just need to write its &lt;strong&gt;path&lt;/strong&gt; in your terminal.&lt;/p&gt;
+&lt;p&gt;For instance, a script is located in &lt;em&gt;/usr/bin/foxsay&lt;/em&gt; on &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Type the following command in the terminal to run this script :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/usr/bin/foxsay hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/foxsay.png&#34; alt=&#34;The output should be a fox saying &amp;ldquo;hello&amp;rdquo; in your terminal&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Congrats, you just ran your first script!&lt;/p&gt;
+&lt;p&gt;Now, this is not the &lt;em&gt;only&lt;/em&gt; way to run a script.&lt;/p&gt;
+&lt;p&gt;The path you used here is what is called an &lt;strong&gt;absolute path&lt;/strong&gt;. An absolute path starts from &lt;strong&gt;the root&lt;/strong&gt; of your filesystem (&amp;quot;/&amp;quot;).&lt;/p&gt;
+&lt;p&gt;You can also run a script using its &lt;strong&gt;relative path&lt;/strong&gt;, a relative path is, contrary to an &lt;strong&gt;absolute&lt;/strong&gt; path, a path which does not start with &amp;ldquo;/&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;To run a script within the directory you are currently in, type &amp;ldquo;./&amp;rdquo; followed by the script name.&lt;/p&gt;
+&lt;p&gt;For instance, move inside the &lt;em&gt;/usr/bin&lt;/em&gt; directory using &lt;code&gt;cd /usr/bin&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, use the following syntax to run the same script again :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./foxsay hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : Don&amp;rsquo;t forget to type &lt;code&gt;cd&lt;/code&gt; to go back to your home directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;Ready to take one some harder challenges? Let&amp;rsquo;s go then!&lt;/p&gt;
+&lt;h1 id=&#34;challenge-4&#34;&gt;Challenge 4&lt;/h1&gt;
+&lt;p&gt;The &lt;em&gt;challenges/command_line_101&lt;/em&gt; directory contains a flag for this challenge.&lt;/p&gt;
+&lt;p&gt;But beware, it&amp;rsquo;s &lt;em&gt;hidden&lt;/em&gt;!&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;flag 4&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : Advanced ls&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;h1 id=&#34;challenge-5&#34;&gt;Challenge 5&lt;/h1&gt;
+&lt;p&gt;The flag for this challenge is not hidden, it is in the same directory!&lt;/p&gt;
+&lt;p&gt;But this time, it is not a text file that you can &lt;code&gt;cat&lt;/code&gt;, it is a script!&lt;/p&gt;
+&lt;p&gt;Run the script to get the flag.&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 5&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;Ready to continue? Make sure to take a break, drink some water and move on to&lt;/p&gt;
+&lt;h2 id=&#34;command-line-104command_line_104&#34;&gt;&lt;a href=&#34;../command_line_104&#34;&gt;Command line 104&lt;/a&gt;&lt;/h2&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Command line 102</title>
+      <link>/posts/command_line_104/</link>
+      <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_104/</guid>
+      <description>function verify(id) {const answers = [&#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,&#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}input.disabled = true;}Coming Soon **Note** : Anything written **after** a command is a *parameter*# Wildcards# I/O --</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,
+            &#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+        input.disabled = true;
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;coming-soon&#34;&gt;Coming Soon&lt;/h1&gt;
+&lt;!-- 
+# Hidden files
+
+# Permissions
+
+# Parameters
+
+&gt; **Note** : Anything written **after** a command is a *parameter*
+
+# Wildcards
+
+# I/O --&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>About hack.courses</title>
+      <link>/posts/home/</link>
+      <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
+      
+      <guid>/posts/home/</guid>
+      <description>What is hack.courses? Hack.courses is a toolset comprised of classes and interactive challenges with the aim of teaching command line, programming and hacking in general to anyone from beginners to experienced hackers and IT professionals.
+The content is written by lp1 and is part of the teaching content I develop for my company fenrir.pro.
+Some of the classes and course material here is open source, some is close source and paid as writing classes is (part of) my job.</description>
+      <content>&lt;h1 id=&#34;what-is-hackcourses&#34;&gt;What is hack.courses?&lt;/h1&gt;
+&lt;p&gt;Hack.courses is a toolset comprised of classes and interactive challenges with the aim of teaching command line, programming and hacking in general to anyone from beginners to experienced hackers and IT professionals.&lt;/p&gt;
+&lt;p&gt;The content is written by &lt;a href=&#34;https://lp1.eu&#34;&gt;&lt;strong&gt;lp1&lt;/strong&gt;&lt;/a&gt; and is part of the teaching content I develop for my company &lt;a href=&#34;https://fenrir.pro&#34;&gt;fenrir.pro&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some of the classes and course material here is open source, some is close source and paid as writing classes is (part of) my job.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;what-can-i-learn-here&#34;&gt;What can I learn here?&lt;/h1&gt;
+&lt;p&gt;At the moment, the following free classes are available :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../command_line_101&#34;&gt;Command line 101&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../typescript&#34;&gt;TypeScript&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../nodejs&#34;&gt;Node.js&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some more free content is in development at the moment! You can follow &lt;a href=&#34;https://www.linkedin.com/company/fenrir-sec&#34;&gt;fenrir.pro on LinkedIn&lt;/a&gt; to know whenever the material here is updated.&lt;/p&gt;
+&lt;h1 id=&#34;what-about-the-terminal-and-exercices&#34;&gt;What about the terminal and exercices?&lt;/h1&gt;
+&lt;p&gt;The terminal on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is a full-fledged GNU/Linux terminal.&lt;/p&gt;
+&lt;p&gt;It is based on &lt;a href=&#34;https://xtermjs.org/&#34;&gt;xterm.js&lt;/a&gt; and gives access to a real Linux command line interpreter to anyone for free.&lt;/p&gt;
+&lt;p&gt;If you already know your way around a terminal can find the available free challenges in the &lt;em&gt;challenges&lt;/em&gt; directory in the gu3st user&amp;rsquo;s home.&lt;/p&gt;
+&lt;p&gt;If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to this, check out the &lt;a href=&#34;../command_line_101&#34;&gt;command line 101 class&lt;/a&gt; and learn how to use command line right away!&lt;/p&gt;
+&lt;h1 id=&#34;how-to-report-a-security-issue&#34;&gt;How to report a security issue?&lt;/h1&gt;
+&lt;p&gt;Great question! Kindly email me at jeremie(a)fenrir.pro.&lt;/p&gt;
+&lt;p&gt;We do &lt;strong&gt;not&lt;/strong&gt; propose bounties at the moment, but you might be part of our hall of fame.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>About the hack.courses terminal</title>
+      <link>/posts/about/</link>
+      <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
+      
+      <guid>/posts/about/</guid>
+      <description>What is this terminal? The terminal on hack.courses is a full-fledged GNU/Linux terminal.
+It is based on xterm.js and gives access to a real Linux command line interpreter to anyone for free.
+If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.
+If you&amp;rsquo;re new to this, check out the command line 101 class and learn how to use command line right away!</description>
+      <content>&lt;h1 id=&#34;what-is-this-terminal&#34;&gt;What is this terminal?&lt;/h1&gt;
+&lt;p&gt;The terminal on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is a full-fledged GNU/Linux terminal.&lt;/p&gt;
+&lt;p&gt;It is based on &lt;a href=&#34;https://xtermjs.org/&#34;&gt;xterm.js&lt;/a&gt; and gives access to a real Linux command line interpreter to anyone for free.&lt;/p&gt;
+&lt;p&gt;If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to this, check out the &lt;a href=&#34;./command_line_101&#34;&gt;command line 101 class&lt;/a&gt; and learn how to use command line right away!&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Classes available for free</title>
+      <link>/posts/classes/</link>
+      <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
+      
+      <guid>/posts/classes/</guid>
+      <description>Available classes  Command line 101 🇬🇧 TypeScript 🇫🇷 Node.js 🇫🇷 Ionic Development 🇫🇷 EcmaScript 6 🇫🇷 Test-Driven Development 101 🇫🇷 Vue.js Development w/ TDD 🇫🇷  License All of the class contents on this site use the creative commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+You can send me a message at jeremie(a)fenrir.pro if you need more details.</description>
+      <content>&lt;h1 id=&#34;available-classes&#34;&gt;Available classes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../command_line_101&#34;&gt;Command line 101&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../typescript&#34;&gt;TypeScript&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../nodejs&#34;&gt;Node.js&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;All of the class contents on this site&lt;/strong&gt; use the &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;&lt;strong&gt;creative commons&lt;/strong&gt; &lt;em&gt;Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)&lt;/em&gt;&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;You can send me a message at jeremie(a)fenrir.pro if you need more details.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Command line 101</title>
+      <link>/posts/command_line_101/</link>
+      <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_101/</guid>
+      <description>function verify(id) {const answers = [&#39;flag{29e140ef258fc3ec0e485c0648f048d36ee5e017}&#39;,&#39;flag{1d279c84d51f95a12ea44793212ecc0d5d360d47}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}input.disabled = true;}Introduction 📖 Welcome to this command-line class!
+In this entry level course you will learn how to use a terminal and navigate through a Linux filesystem.
+This class is supposed to be followed with hack.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{29e140ef258fc3ec0e485c0648f048d36ee5e017}&#39;,
+            &#39;flag{1d279c84d51f95a12ea44793212ecc0d5d360d47}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+        input.disabled = true;
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;introduction-&#34;&gt;Introduction 📖&lt;/h1&gt;
+&lt;p&gt;Welcome to this command-line class!&lt;/p&gt;
+&lt;p&gt;In this entry level course you will learn how to use a terminal and navigate through a Linux filesystem.&lt;/p&gt;
+&lt;p&gt;This class is supposed to be followed with &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt; open alongside, the challenges are made to be completed in the website&amp;rsquo;s interactive terminal.&lt;/p&gt;
+&lt;h1 id=&#34;whats-command-line-&#34;&gt;What&amp;rsquo;s command-line 💻?&lt;/h1&gt;
+&lt;p&gt;A &lt;strong&gt;command&lt;/strong&gt; is an instruction (or a set of instructions) given to a machine.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;command-line&lt;/strong&gt; is (by extension) a textual line containing one or multiple commands destined for a computer.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;command-line interface&lt;/strong&gt; (or CLI) is an interface which is made to be interacted with using &lt;strong&gt;commands-lines&lt;/strong&gt;, contrary to a &lt;strong&gt;graphical user interface&lt;/strong&gt; (or GUI).&lt;/p&gt;
+&lt;p&gt;You can type commands in a software called a &lt;strong&gt;command-line interpreter&lt;/strong&gt; (or &lt;em&gt;shell&lt;/em&gt;) for a computer to do specific actions.&lt;/p&gt;
+&lt;p&gt;The terminal window on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is an example of a command interpreter.&lt;/p&gt;
+&lt;p&gt;A command usually looks like this :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; openfile filename.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : The characters &amp;ldquo;$&amp;gt;&amp;rdquo; here are not part of the command, they represent the prompt usually displayed by shells to let the user know they can type a new command.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;what-are-the-existing-commands&#34;&gt;What are the existing commands?&lt;/h1&gt;
+&lt;p&gt;The commands you can possibly type depends on the &lt;strong&gt;command-line interpreter&lt;/strong&gt; you use, and more generally on the &lt;strong&gt;Operating System&lt;/strong&gt; you&amp;rsquo;re working on.&lt;/p&gt;
+&lt;p&gt;Windows machines used to understand commands based on &lt;a href=&#34;https://en.wikipedia.org/wiki/DOS&#34;&gt;DOS&lt;/a&gt;, nowadays they also use &lt;a href=&#34;https://fr.wikipedia.org/wiki/Windows_PowerShell&#34;&gt;PowerShell&lt;/a&gt;&amp;rsquo;s syntaxes, Linux and &amp;ldquo;unix-like&amp;rdquo; machines (Ubuntu, MacOS) use commands similar to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Unix_shell&#34;&gt;Unix Shell&lt;/a&gt;, this is the type of commands we&amp;rsquo;re going to cover during this class.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : If you do not understand precisely what Linux, GNU/Linux and Unix are yet, it&amp;rsquo;s okay, it&amp;rsquo;s not mandatory for this course.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;why-do-we-still-use-command-line&#34;&gt;Why do we (still) use command-line?&lt;/h1&gt;
+&lt;p&gt;Whatever you can do with a graphical user interface, you can do with command-line, also most of the time command-line is much more efficient and lightweight! But don&amp;rsquo;t take what I tell you for granted, you&amp;rsquo;ll soon be able to try it for yourself.&lt;/p&gt;
+&lt;p&gt;Also, commands can be chained and logic can be added, which allows the automation of an almost infinity of tasks!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s start working on your first commands with a small challenge!&lt;/p&gt;
+&lt;p&gt;To finish this first challenge, you will have to find the &lt;em&gt;flag&lt;/em&gt; corresponding to this exercice.&lt;/p&gt;
+&lt;p&gt;A flag is a character string following this format :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flag{f572d396fae9206628714fb2ce00f72e94f2258f}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once you found it you can copy/paste it (by right-clicking and selecting &amp;ldquo;copy&amp;rdquo; in your browser) in the text field below in order to verify that you have successfully completed the challenge.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-0&#34;&gt;Challenge 0&lt;/h2&gt;
+&lt;p&gt;Type the following commands in your shell, one after the other.&lt;/p&gt;
+&lt;p&gt;Press Enter after each command. If you typed them correctly, the flag will be given to you.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ls
+cd challenges
+cd command_line_101
+cat challenge_0.txt
+cd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;flag 0&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;p&gt;Now that you entered your first commands, let&amp;rsquo;s details the things you just did.&lt;/p&gt;
+&lt;h1 id=&#34;ls&#34;&gt;Ls&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;ls&lt;/strong&gt; is the command you will use to list a directory&amp;rsquo;s contents, it displays the files and directories in the location you are at on your computer.&lt;/p&gt;
+&lt;p&gt;In the terminal on hack.courses, filenames are printed in &lt;strong&gt;green&lt;/strong&gt;, directories names in &lt;strong&gt;blue&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;cd&#34;&gt;Cd&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;cd&lt;/strong&gt; is the command you will use to change the directory you are currently in.&lt;/p&gt;
+&lt;p&gt;Typing &lt;code&gt;$&amp;gt; cd challenges&lt;/code&gt; did make you move to the &lt;em&gt;challenges&lt;/em&gt; directory for instance.&lt;/p&gt;
+&lt;p&gt;Typing &lt;code&gt;$&amp;gt; cd&lt;/code&gt; without parameter will make you go back to your user&amp;rsquo;s personal directory.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : &lt;strong&gt;cd&lt;/strong&gt; -&amp;gt; &lt;strong&gt;c&lt;/strong&gt;hange &lt;strong&gt;d&lt;/strong&gt;irectory&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;pwd&#34;&gt;Pwd&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;pwd&lt;/strong&gt; prints the directory you are currently in.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : &lt;strong&gt;pwd&lt;/strong&gt; -&amp;gt; &lt;strong&gt;p&lt;/strong&gt;rint &lt;strong&gt;w&lt;/strong&gt;orking &lt;strong&gt;d&lt;/strong&gt;irectory&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;cat-&#34;&gt;Cat 🐱&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;cat&lt;/strong&gt; displays a file&amp;rsquo;s contents, any kind of file, it&amp;rsquo;s going to print what&amp;rsquo;s inside on your screen.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : Do not forget to specify the name of the file you want to open after typing &lt;code&gt;cat&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;challenge-1&#34;&gt;Challenge 1&lt;/h2&gt;
+&lt;p&gt;For this next challenge, you&amp;rsquo;re on your own!&lt;/p&gt;
+&lt;p&gt;The flag you are looking for is in a file located in the &lt;em&gt;command_line_101&lt;/em&gt; directory within the &lt;em&gt;challenges&lt;/em&gt; directory.&lt;/p&gt;
+&lt;p&gt;What you need to do here is :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go inside the challenges directory&lt;/li&gt;
+&lt;li&gt;Go inside the command_line_101 directory&lt;/li&gt;
+&lt;li&gt;List the contents of this directory&lt;/li&gt;
+&lt;li&gt;Open the file you think might contain the flag for the first challenge&lt;/li&gt;
+&lt;li&gt;Go back to your home directory (Hint : &lt;code&gt;$&amp;gt; cd&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 1&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;Congrats on making it through this first command-line class!&lt;/p&gt;
+&lt;p&gt;You can now move on to&lt;/p&gt;
+&lt;h2 id=&#34;command_line_102command_line_102&#34;&gt;&lt;a href=&#34;../command_line_102&#34;&gt;command_line_102&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;whenever you feel like it.&lt;/p&gt;
+&lt;p&gt;I hope I&amp;rsquo;ll see you soon 😊!&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Licensing</title>
+      <link>/posts/license/</link>
+      <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
+      
+      <guid>/posts/license/</guid>
+      <description>Project&amp;rsquo;s license The project is not open source at the moment, it might evolve, but all of the content is owned by Jeremie Amsellem. You can contact me at jeremie(a)fenrir.pro if you need more information.
+Courses license All of the class contents on this site use the creative commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+You can send me a message at jeremie(a)fenrir.pro if you need more details.
+Open source licenses Open sources licenses involved with this project :</description>
+      <content>&lt;h1 id=&#34;projects-license&#34;&gt;Project&amp;rsquo;s license&lt;/h1&gt;
+&lt;p&gt;The project is not open source at the moment, it might evolve, but all of the content is owned by Jeremie Amsellem. You can contact me at jeremie(a)fenrir.pro if you need more information.&lt;/p&gt;
+&lt;h1 id=&#34;courses-license&#34;&gt;Courses license&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;All of the class contents on this site&lt;/strong&gt; use the &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;&lt;strong&gt;creative commons&lt;/strong&gt; &lt;em&gt;Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)&lt;/em&gt;&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;You can send me a message at jeremie(a)fenrir.pro if you need more details.&lt;/p&gt;
+&lt;h1 id=&#34;open-source-licenses&#34;&gt;Open source licenses&lt;/h1&gt;
+&lt;p&gt;Open sources licenses involved with this project :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xtermjs/xterm.js/blob/master/LICENSE&#34;&gt;xterm.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pexels.com/fr-fr/photo/silhouette-de-montagnes-1323550/&#34;&gt;The wallpaper &amp;ldquo;silouhette de montagnes&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://icones8.fr/license&#34;&gt;The icons used on the website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/RaytingSec/foxsay&#34;&gt;Foxsay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/charmbracelet/glow/master/LICENSE&#34;&gt;glow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

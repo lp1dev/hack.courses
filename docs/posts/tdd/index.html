@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Le Test-Driven Development (TDD) :: hack.courses</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contenu de cours sur le TDD" />
+<meta name="keywords" content="tdd, programmation" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/tdd/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="https://fenrir.pro" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Le Test-Driven Development (TDD)">
+<meta property="og:description" content="Contenu de cours sur le TDD" />
+<meta property="og:url" content="/posts/tdd/" />
+<meta property="og:site_name" content="hack.courses" />
+
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-11-16 13:57:34 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="blue">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/posts/home">
+  <div class="logo">
+    hack.courses
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts/home">About</a></li>
+        
+      
+        
+          <li><a href="/posts/classes">Free Courses</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts/home">About</a></li>
+      
+    
+      
+        <li><a href="/posts/classes">Free Courses</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/tdd/">Le Test-Driven Development (TDD)</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-11-16 
+      </span>
+    
+    
+    <span class="post-author">:: Lp1</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/tdd/">tdd</a>&nbsp;
+    
+    #<a href="/tags/programmation/">programmation</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="le-test-driven-development-et-les-tests-unitaires">Le Test Driven Development et les Tests Unitaires<a href="#le-test-driven-development-et-les-tests-unitaires" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Jéremie A. &lt; lp1.eu &gt;</p>
+<hr>
+<h1 id="le-principe-de-base-du-tdd">Le principe de base du TDD<a href="#le-principe-de-base-du-tdd" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Le <strong>TDD</strong> (Test Driven Development) est une manière de développer des logiciels qui met <strong>les tests</strong> (notamment unitaires) <strong>en priorité</strong> par rapport aux première phases d&rsquo;écriture de code.</p>
+<p>On écrit d&rsquo;abord les tests et <strong>ensuite</strong> on commençe à coder les fonctionnalités correspondantes.</p>
+<hr>
+<h1 id="les-étapes-du-tdd">Les étapes du TDD<a href="#les-étapes-du-tdd" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<ul>
+<li>Écrire un test</li>
+<li>Lancer le test (vérifier qu&rsquo;il échoue)</li>
+<li>Écrire le code nécessaire pour que le test passe</li>
+<li>Optimiser le code écrit</li>
+</ul>
+<hr>
+<h1 id="les-tests-unitaires">Les Tests Unitaires<a href="#les-tests-unitaires" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="un-test-unitaire-cest-quoi">Un test unitaire c&rsquo;est quoi?<a href="#un-test-unitaire-cest-quoi" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Un <strong>test unitaire</strong> a pour but (comme son nom l&rsquo;indique) de <strong>tester une &ldquo;unité&rdquo; d&rsquo;un programme</strong>.
+Ce qu&rsquo;on appelle une &ldquo;unité&rdquo; dans un programme peut être une <strong>méthode, une fonction, une classe, même quelque lignes seulement</strong>&hellip;</p>
+<p>Si l'&ldquo;unité&rdquo; qui doit être testée dans un test unitaire n&rsquo;est pas nécessairement définie et que le concept est relatif, le but d&rsquo;un test unitaire est quand à lui assez précis !</p>
+<hr>
+<h1 id="à-quoi-ça-sert-">À quoi ça sert ?<a href="#à-quoi-ça-sert-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Le but d&rsquo;un test unitaire est de tester, que pour un comportement <strong>A</strong> (une variable, un évènement), l&rsquo;unitée de code testée ait un comportement <strong>B</strong> strictement défini.</p>
+<p>L&rsquo;avantage est de pouvoir s&rsquo;assurer à chacune des étapes du développement que les fonctionnalités du projet sont conformes à la manière dont elles ont été architécturées et également de pouvoir éviter et repérer de nombreuses régressions dans le code !</p>
+<hr>
+<h1 id="exemple">Exemple<a href="#exemple" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Prenons le cas d&rsquo;une fonction <strong>checkPassword</strong> qui servirait à valider le mot de passe d&rsquo;un utilisateur.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkPassword</span>(<span style="color:#a6e22e">password</span>: <span style="color:#66d9ef">string</span>) {
+}
+</code></pre></div><p>Elle doit renvoyer une erreur dans ces conditions :</p>
+<ul>
+<li>Le mot de passe fait moins de 8 caractères</li>
+<li>Le mot de passe est un mot du dictionnaire</li>
+<li>Le mot de passe ne comporte que des chiffres</li>
+</ul>
+<p>Nous pourrions écrire les tests de la manière suivante :</p>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;checkPassword&#39;</span>, () <span style="color:#f92672">=&gt;</span> {
+    <span style="color:#75715e">// We start by checking the first rule 
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow passwords shorter than 8 chars&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;test1&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
+    });
+    <span style="color:#75715e">// Then the second one 
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow words from the dictionary&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;aerodynamic&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
+    });
+    <span style="color:#75715e">// And finally the third one
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow only numeric passwords&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;8008135707&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
+    });
+})
+</code></pre></div>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/posts/typescript/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cours Typescript</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/posts/nodejs/">
+                <span class="button__text">Cours Node.js</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>hosted by fenrir.pro</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

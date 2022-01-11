@@ -1,0 +1,16 @@
+{
+  "name": "codesample",
+  "version": "1.0.0",
+  "description": "node classes codesamples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremie A <lp1.eu>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "express": "^4.16.4",
+    "ws": "^6.1.2"
+  }
+}
