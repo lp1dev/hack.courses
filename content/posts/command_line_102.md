@@ -66,6 +66,8 @@ For instance, `man ls` will display the manual pages for the command *ls*.
 
 You can use your *keyboard's arrows* to navigate inside the manpages, the *space* key to skip to the next page and *q* to quit.
 
+> **Note** : It's also time to let you know that you can access those classes directly in the terminal using the `classes` command! Select a class with your keyboard keys and press enter to open a course's contents. You can navigate through the files exactly like you would with a manual page.
+
 ---
 
 # Stopping a command 🛑
@@ -115,7 +117,7 @@ This directory contains the flag, but where is it?! You'll need to cleverly navi
 > **Hint** : You can go through multiple directories at once, instead of writing `cd /gu3st` and `cd challenges` you can directly type `cd /gu3st/challenges`.
 
 <div style="display:flex">
-    <input style="width:40rem" type="text" id="chall2" placeholder="flag 2"/><button onclick="verify(0)">Verify</button>
+    <input style="width:40rem" type="text" id="chall0" placeholder="flag 2"/><button onclick="verify(0)">Verify</button>
 </div>
 
 ## Challenge 3
@@ -129,13 +131,15 @@ The name of the variable is FLAG3.
 Good luck!
 
 <div style="display:flex">
-    <input style="width:40rem" type="text" id="chall3" placeholder="flag 3"/><button onclick="verify(1)">Verify</button>
+    <input style="width:40rem" type="text" id="chall1" placeholder="flag 3"/><button onclick="verify(1)">Verify</button>
 </div>
 
 ---
 
 Wow, you're still there?
 
-Congrats on making though those first challenges, you can now move on to 
+Congrats on making though those first challenges!
 
-## Command line 103 (Coming Soon)
+You can now move on to 
+
+## [Command line 103](../command_line_103)
