@@ -45,7 +45,7 @@
 <meta property="og:url" content="/posts/command_line_101/104/" />
 <meta property="og:site_name" content="hack.courses" />
 
-  <meta property="og:image" content="/">
+  <meta property="og:image" content="/cli101.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -68,7 +68,7 @@
 <body class="blue">
 
 
-<div class="container full headings--one-size">
+<div class="container center headings--one-size">
 
   <header class="header">
   <div class="header__inner">
@@ -90,11 +90,15 @@
     
       
         
-          <li><a href="/posts/home">About</a></li>
+          <li><a href="/posts">About</a></li>
         
       
         
           <li><a href="/posts/classes">Free Courses</a></li>
+        
+      
+        
+          <li><a href="/cli101/">Linux and Command-Line</a></li>
         
       
       
@@ -106,11 +110,15 @@
   <ul class="menu__inner menu__inner--mobile">
     
       
-        <li><a href="/posts/home">About</a></li>
+        <li><a href="/posts">About</a></li>
       
     
       
         <li><a href="/posts/classes">Free Courses</a></li>
+      
+    
+      
+        <li><a href="/cli101/">Linux and Command-Line</a></li>
       
     
     
@@ -154,6 +162,8 @@
   
 
   
+    <img src="/cli101.png" class="post-cover" alt="Command line 104" />
+  
 
   
 
@@ -166,10 +176,10 @@
         let input = document.querySelector('#chall'+id)
         if (input.value.trim() == answers[id]) {
             alert('Congratulations! You finished the challenge '+id)
+            input.disabled = true;
         } else {
             alert('It seems your answer is invalid. Try again!')
         }
-        input.disabled = true;
     }
 </script>
 <h1 id="parameters-">Parameters ⚙️<a href="#parameters-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>

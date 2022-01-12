@@ -20,14 +20,14 @@
     <loc>/tags/meta/</loc>
     <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
     <loc>/tags/</loc>
     <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/terminal/</loc>
     <lastmod>2022-01-12T09:04:35+01:00</lastmod>
+  </url><url>
+    <loc>/cli101/</loc>
+    <lastmod>2022-01-12T08:01:35+01:00</lastmod>
   </url><url>
     <loc>/posts/command_line_101/</loc>
     <lastmod>2022-01-12T08:01:35+01:00</lastmod>
@@ -41,13 +41,13 @@
     <loc>/posts/command_line_101/103/</loc>
     <lastmod>2022-01-11T19:00:35+01:00</lastmod>
   </url><url>
-    <loc>/posts/home/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
-    <loc>/posts/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
-    <loc>/posts/classes/</loc>
+    <loc>/classes/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
     <loc>/posts/command_line_101/101/</loc>
@@ -56,7 +56,7 @@
     <loc>/tags/license/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
-    <loc>/posts/license/</loc>
+    <loc>/license/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
     <loc>/posts/typescript/</loc>
