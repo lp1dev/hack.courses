@@ -2,34 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/command_line_101/command_line_102/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
-  </url><url>
-    <loc>/posts/command_line_101/command_line_103/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <loc>/posts/command_line_101/cheatsheet/</loc>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/command-line/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/courses/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/hacking/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/meta/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
     <loc>/tags/terminal/</loc>
+    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_101/presentation/</loc>
+    <lastmod>2022-01-12T08:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_101/104/</loc>
+    <lastmod>2022-01-12T07:00:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_101/102/</loc>
+    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_101/103/</loc>
     <lastmod>2022-01-11T19:00:35+01:00</lastmod>
   </url><url>
     <loc>/posts/home/</loc>
@@ -41,7 +50,7 @@
     <loc>/posts/classes/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
-    <loc>/posts/command_line_101/command_line_101/</loc>
+    <loc>/posts/command_line_101/101/</loc>
     <lastmod>2022-01-09T19:15:35+01:00</lastmod>
   </url><url>
     <loc>/tags/license/</loc>

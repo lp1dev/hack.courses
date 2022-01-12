@@ -1,6 +1,6 @@
 +++
 title = "Command line 101 cheatsheet"
-date = "2022-01-12T19:00:35+01:00"
+date = "2022-01-12T09:04:35+01:00"
 author = "Lp1"
 authorTwitter = "lp1dev" #do not include @
 cover = ""

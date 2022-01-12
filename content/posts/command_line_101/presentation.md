@@ -1,6 +1,6 @@
 +++
 title = "Command-line 101 course presentation"
-date = "2022-01-12T20:01:35+01:00"
+date = "2022-01-12T08:01:35+01:00"
 author = "Lp1"
 authorTwitter = "lp1dev" #do not include @
 cover = ""
