@@ -18,4 +18,4 @@ It is based on [xterm.js](https://xtermjs.org/) and gives access to a real Linux
 
 If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.
 
-If you're new to this, check out the [command line 101 class](./command_line_101) and learn how to use command line right away!
+If you're new to this, check out the [command line 101 class](/cli101) and learn how to use command line right away!

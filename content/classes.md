@@ -13,13 +13,13 @@ showFullContent = false
 # Available classes
 
 
-- [Command line 101](../command_line_101) 🇬🇧
-- [TypeScript](../typescript) 🇫🇷
-- [Node.js](../nodejs) 🇫🇷
-- [Ionic Development](../ionic) 🇫🇷 
-- [EcmaScript 6](../es6) 🇫🇷
-- [Test-Driven Development 101](../tdd) 🇫🇷
-- [Vue.js Development w/ TDD](../vue_js_tdd) 🇫🇷
+- [Command line 101](/posts/command_line_101) 🇬🇧
+- [TypeScript](/posts/typescript) 🇫🇷
+- [Node.js](/posts/nodejs) 🇫🇷
+- [Ionic Development](/posts/ionic) 🇫🇷 
+- [EcmaScript 6](/posts/es6) 🇫🇷
+- [Test-Driven Development 101](/posts/tdd) 🇫🇷
+- [Vue.js Development w/ TDD](/posts/vue_js_tdd) 🇫🇷
 
 # License
 
