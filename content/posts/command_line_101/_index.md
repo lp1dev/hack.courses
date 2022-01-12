@@ -21,12 +21,15 @@ You won't need to install *anything* on your computer (for real), absolutely no 
 
 # Contents
 
-- [Command-line 101](../101)
-- [Command-line 102](../102)
-- [Command-line 103](../103)
-- [Command-line 104](../104)
-- [CheatSheet](../cheatsheet)
+- [Command-line 101](./101)
+- [Command-line 102](./102)
+- [Command-line 103](./103)
+- [Command-line 104](./104)
+- [CheatSheet](./cheatsheet)
 
 # Start this course
 
-- [Start the first class](../101)
+- [Start the first class](./101)
+
+---
+
