@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ionic on hack.courses</title>
+    <link>/tags/ionic/</link>
+    <description>Recent content in Ionic on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 13:49:10 +0100</lastBuildDate><atom:link href="/tags/ionic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formation Ionic</title>
+      <link>/posts/ionic/</link>
+      <pubDate>Mon, 16 Nov 2020 13:49:10 +0100</pubDate>
+      
+      <guid>/posts/ionic/</guid>
+      <description>Slides  Slides Formation Ionic 4 Jours (Google Drive) Slides Formation Ionic 4 Jours (PDF)  </description>
+      <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE&#34;&gt;Slides Formation Ionic 4 Jours (Google Drive)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/lp1dev/hack.courses/master/static/directory/Programming/Ionic/Slides%20Formation%20Ionic.pdf&#34;&gt;Slides Formation Ionic 4 Jours (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

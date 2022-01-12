@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>node.js on hack.courses</title>
+    <link>/tags/node.js/</link>
+    <description>Recent content in node.js on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 13:55:32 +0100</lastBuildDate><atom:link href="/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cours Node.js</title>
+      <link>/posts/nodejs/</link>
+      <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
+      
+      <guid>/posts/nodejs/</guid>
+      <description>Cours Node.js Jour1   Vous n&amp;rsquo;avez pas les bases (pour le moment)
+  Jérémie Amsellem &amp;lt;lp1.eu&amp;gt;
+ Sommaire du cours  Node.js c&amp;rsquo;est quoi ? Node.js et JavaScript Pourquoi utiliser Node.js plutôt que du PHP/Python/Ruby[&amp;hellip;] ? Comment ça marche ? Comment on ecrit du Node.js ?   Node.js c&amp;rsquo;est quoi ? Est-ce un framework, une bibliothèque, un serveur ? Rien de tout ça, Node.js est un environnement d&amp;rsquo;éxecution (runtime) qui permet de lancer du JavaScript sur de nombreux environnements en dehors d&amp;rsquo;un navigateur.</description>
+      <content>&lt;h1 id=&#34;cours-nodejs&#34;&gt;Cours Node.js&lt;/h1&gt;
+&lt;h2 id=&#34;jour1&#34;&gt;Jour1&lt;/h2&gt;
+&lt;p&gt; 
+ &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Vous n&amp;rsquo;avez pas les bases (pour le moment)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; 
+ 
+ 
+ 
+ Jérémie Amsellem &amp;lt;lp1.eu&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;sommaire-du-cours&#34;&gt;Sommaire du cours&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Node.js c&amp;rsquo;est quoi ?&lt;/li&gt;
+&lt;li&gt;Node.js et JavaScript&lt;/li&gt;
+&lt;li&gt;Pourquoi utiliser Node.js plutôt que du PHP/Python/Ruby[&amp;hellip;] ?&lt;/li&gt;
+&lt;li&gt;Comment ça marche ?&lt;/li&gt;
+&lt;li&gt;Comment on ecrit du Node.js ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;nodejs-cest-quoi-&#34;&gt;Node.js c&amp;rsquo;est quoi ?&lt;/h1&gt;
+&lt;h3 id=&#34;est-ce-un-framework-une-bibliothèque-un-serveur-&#34;&gt;Est-ce un framework, une bibliothèque, un serveur ?&lt;/h3&gt;
+&lt;p&gt;Rien de tout ça, Node.js est un environnement d&amp;rsquo;éxecution (runtime) qui permet de lancer du JavaScript sur de nombreux environnements en dehors d&amp;rsquo;un navigateur.&lt;/p&gt;
+&lt;p&gt;Il est vastement utilisé pour la communication réseau (notamment pour créer des API HTTP avec Express.js) mais peut servir pour toutes sortes d&amp;rsquo;opérations, même plus bas-niveau.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;nodejs-et-javascript&#34;&gt;Node.js et JavaScript&lt;/h1&gt;
+&lt;p&gt;Node.js est écrit sur une base de &lt;strong&gt;C++&lt;/strong&gt;, il utilise le moteur JavaScript &lt;strong&gt;V8&lt;/strong&gt; (crée par &lt;strong&gt;Google&lt;/strong&gt; originellement pour &lt;strong&gt;Chrome&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Il supporte les syntaxes d&#39;&lt;strong&gt;ECMAScript&lt;/strong&gt; jusqu&amp;rsquo;à &lt;strong&gt;ES8&lt;/strong&gt; !&lt;/p&gt;
+&lt;p&gt;Il &lt;strong&gt;incorpore&lt;/strong&gt; et est basé sur les paradigmes de programmation évènementielle (&lt;strong&gt;Event Driven Programming&lt;/strong&gt;) de JavaScript.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;pourquoi-nodejs-plutôt-quautre-chose-&#34;&gt;Pourquoi Node.js plutôt qu&amp;rsquo;autre chose ?&lt;/h1&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Performances&lt;/li&gt;
+&lt;li&gt;Gestion asynchrone des évènements sans multi-threading&lt;/li&gt;
+&lt;li&gt;Un seul langage pour un front et un back-end&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-performances&#34;&gt;Les performances&lt;/h2&gt;
+&lt;p&gt;Node est particulièrement intéressant en terme de performances si on le compare à PHP, Python et Java (entre autres). 
+C&amp;rsquo;est largement dû à la rapidité d&amp;rsquo;execution de V8 !&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Par exemple&lt;/strong&gt;, &lt;a href=&#34;https://medium.com/@mihaigeorge.c/web-rest-api-benchmark-on-a-real-life-application-ebb743a5d7a3&#34;&gt;un benchmark réalisé sur plusieurs architectures&lt;/a&gt; pour un simple Hello World (en nombre de requêtes gérées par seconde).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*XGTOfo9taLfePZvL3-FZhg.png&#34; alt=&#34;perfs-node&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gestion-asynchrone-des-évènements-sans-multi-threading&#34;&gt;Gestion asynchrone des évènements sans multi-threading&lt;/h2&gt;
+&lt;p&gt;La gestion d&amp;rsquo;évènements asynchrones est un paradigme inhérent au langage JavaScript. C&amp;rsquo;est ce comportement qui permet à Node.js de gérer &lt;strong&gt;plusieurs requêtes, en même temps&lt;/strong&gt; sans avoir à créer des threads enfants en plus du thread principal !&lt;/p&gt;
+&lt;p&gt;Sur de nombreuses architectures de &lt;strong&gt;CPU&lt;/strong&gt; c&amp;rsquo;est un gain de performance certain.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;un-langage-unifié-pour-le-front-et-le-back-end&#34;&gt;Un langage unifié pour le front et le back-end&lt;/h2&gt;
+&lt;p&gt;Finalement, le fait d&amp;rsquo;avoir un seul et unique langage nécessaire au développement de votre front-end et de votre back-end est un avantage certain pour le coût de développement et le partage de schémas de donnés dans votre stack technique.&lt;/p&gt;
+&lt;p&gt;Par exemple la logique de vérfication des données d&amp;rsquo;un objet JavaScript contenant des informations utilisateur&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;comment-ça-marche-&#34;&gt;Comment ça marche ?&lt;/h1&gt;
+&lt;p&gt;À la manière d&amp;rsquo;un runtime Python, Ruby, Perl [&amp;hellip;] une fois Node.js installé vous disposez du binaire &lt;strong&gt;node&lt;/strong&gt; qui vous permet d&amp;rsquo;éxecuter des fichier &lt;strong&gt;.js&lt;/strong&gt; en lançant la commande&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$&amp;gt; node monfichier.js&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tous les fichiers &lt;strong&gt;JavaScript&lt;/strong&gt; sont supportés, mais il est en revanche possible que certaines fonctionnalités et syntaxes propres à l&amp;rsquo;environnement d&amp;rsquo;un navigateur ne soient pas utilisables.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Par exemple il est impossible d&amp;rsquo;accéder à &lt;strong&gt;window&lt;/strong&gt;, car dans le contexte de Node.js il n&amp;rsquo;y a pas de fenêtre de navigateur !&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;comment-on-ecrit-du-nodejs-&#34;&gt;Comment on ecrit du Node.js ?&lt;/h1&gt;
+&lt;p&gt;Attaquons-nous maintenant aux principales différences entre les syntaxes &lt;strong&gt;Node.js&lt;/strong&gt; et le &lt;strong&gt;JavaScript orienté navigateur&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les imports&lt;/li&gt;
+&lt;li&gt;NPM&lt;/li&gt;
+&lt;li&gt;Les API navigateur&lt;/li&gt;
+&lt;li&gt;Process&lt;/li&gt;
+&lt;li&gt;Quelques modules Node.js
+&lt;ul&gt;
+&lt;li&gt;fs&lt;/li&gt;
+&lt;li&gt;express&lt;/li&gt;
+&lt;li&gt;Les WebSockets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : Ce contenu a été testé en prenant un environnement Node.js 8.11 en référence, il est possible qu&amp;rsquo;il y ait quelques différences avec les dernières versions&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-imports&#34;&gt;Les imports&lt;/h2&gt;
+&lt;p&gt;Vous vous souvenez peut-être du système d&amp;rsquo;imports implémenté en ES6, avec des syntaxes du type :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export Object
+import Object from &#39;./file&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;En Node.js, un système d&amp;rsquo;import est présent depuis sa création et implémente sa propre gestion des modules utilisant &lt;strong&gt;module.export&lt;/strong&gt; et &lt;strong&gt;require&lt;/strong&gt; :&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Par exemple :&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;fichier-hellojs-&#34;&gt;Fichier hello.js :&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;module.exports = &#39;hello&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;fichier-mainjs-&#34;&gt;Fichier main.js :&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;const hello = require(&#39;./hello&#39;); console.log(hello) #prints &#39;hello&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;node-package-manager-npm&#34;&gt;Node Package Manager (NPM)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NPM&lt;/strong&gt; est le gestionnaire de modules intégré à Node.js.&lt;/p&gt;
+&lt;p&gt;Il en existe d&amp;rsquo;autres (yarn ou bower par exemple), mais &lt;strong&gt;npm&lt;/strong&gt; est de loin le plus utilisé actuellement  car il est packagé avec les installeurs Node.js.&lt;/p&gt;
+&lt;p&gt;On utilise la syntaxe &lt;code&gt;npm install {nom du module}&lt;/code&gt; pour installer un module Node.js.&lt;/p&gt;
+&lt;p&gt;La commande &lt;code&gt;npm init&lt;/code&gt; dans un dossier permet d&amp;rsquo;initialiser un nouveau projet Node.js. 
+Un fichier &lt;strong&gt;package.json&lt;/strong&gt; contenant diverses informations sur le projet (dépendances, dépot, auteur, licence) est alors crée.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;packagejson&#34;&gt;package.json&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;npm&lt;/strong&gt; se sert du fichier &lt;strong&gt;package.json&lt;/strong&gt; pour stocker les informations relatives au projet courant.&lt;/p&gt;
+&lt;p&gt;Lorsqu&amp;rsquo;un module npm est ajouté aux dépendances de votre projet (&lt;code&gt;npm install --save {nom du module}&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;il sera ajouté dans le champ &amp;ldquo;dependencies&amp;rdquo; de votre fichier &lt;strong&gt;package.json&lt;/strong&gt;. 
+Les fichiers du module seront par défaut installés dans le dossier &lt;em&gt;node_modules&lt;/em&gt; du projet.&lt;/p&gt;
+&lt;p&gt;Pour installer automatiquement toutes les dépendances d&amp;rsquo;un projet Node.js il suffit d&amp;rsquo;utiliser &lt;code&gt;npm install&lt;/code&gt; sans paramètres.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.npmjs.com/files/package.json&#34;&gt;la documentation NPM&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-api-navigateur&#34;&gt;Les API navigateur&lt;/h2&gt;
+&lt;p&gt; 
+Ça peut être quelque peu déroutant mais en Node.js vous ne pourrez pas accéder à &lt;strong&gt;window, navigator, document&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est en soit logique, ce sont des API présentes et utiles dans le contexte d&amp;rsquo;utilisation d&amp;rsquo;un &lt;strong&gt;navigateur web&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Dans le cas de Node.js, le code est exécuté en &amp;ldquo;standalone&amp;rdquo;, il n&amp;rsquo;est &lt;strong&gt;pas lié à un navigateur&lt;/strong&gt; mais &lt;strong&gt;directement exécuté sur votre machine&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;
+&lt;p&gt;Process est une globale dans le contexte de Node. 
+Elle contient des informations et des méthodes utilitaires concernant le processus courant !&lt;/p&gt;
+&lt;p&gt;Vous pouvez l&amp;rsquo;utiliser directement sans import dans votre script Node.js.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Par exemple&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const firstArgument = process.argv[1] # affiche le premier argument passé au script
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Plus d&amp;rsquo;infos sur &lt;a href=&#34;https://nodejs.org/api/process.html#process_process&#34;&gt;la documentation Node.js&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;le-module-fs&#34;&gt;Le module fs&lt;/h2&gt;
+&lt;p&gt;Le module Node &lt;strong&gt;fs&lt;/strong&gt; permet d&amp;rsquo;intéragir avec le système de fichiers de votre machine.&lt;/p&gt;
+&lt;p&gt;Il permet (entre autres) de &lt;strong&gt;créer, lire, écrire, supprimer, renommer&lt;/strong&gt; des fichiers.&lt;/p&gt;
+&lt;p&gt;La majorité de ses méthodes sont utilisables de manière &lt;strong&gt;synchrone et asynchrone&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Par exemple pour lire le contenu d&amp;rsquo;un fichier de manière asynchrone:&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const fs = require(&#39;fs&#39;)
+fs.readFile(&#39;/etc/passwd&#39;, (err, data) =&amp;gt; {
+  if (err) throw err;
+  console.log(data);
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Plus d&amp;rsquo;informations sur &lt;a href=&#34;https://nodejs.org/api/fs.html&#34;&gt;la documentation Node.js&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;expressjs&#34;&gt;Express.js&lt;/h2&gt;
+&lt;p&gt; 
+Express est un des modules Node.js les plus connus. 
+C&amp;rsquo;est un framework web, souvent utilisé pour créer des back-ends, notamment dans des stacks &lt;strong&gt;MEAN&lt;/strong&gt; (&lt;strong&gt;M&lt;/strong&gt;ongoDB &lt;strong&gt;E&lt;/strong&gt;xpress &lt;strong&gt;A&lt;/strong&gt;ngular &lt;strong&gt;N&lt;/strong&gt;ode.js).&lt;/p&gt;
+&lt;p&gt;Il s&amp;rsquo;inspire du micro-framework web &lt;strong&gt;Sinatra&lt;/strong&gt; (Ruby) dans sa simplicité d&amp;rsquo;utilisation.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const express = require(&#39;express&#39;);
+const app = express();
+
+const server = app.listen(8000, () =&amp;gt; {
+    const host = server.address().address;
+    const port = server.address().port;
+    console.log(&amp;quot;HTTP Server listening on &amp;quot;, host, port);
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;les-websockets&#34;&gt;Les WebSockets&lt;/h2&gt;
+&lt;p&gt; 
+Les WebSockets, vous en avez probablement entendu parler, possiblement même utilisées.&lt;/p&gt;
+&lt;p&gt;Une WebSocket c&amp;rsquo;est (&lt;em&gt;en gros&lt;/em&gt;) un hack de HTTP/2 permettant de créer des objets ayant le même comportement que des sockets UNIX.&lt;/p&gt;
+&lt;p&gt;Il existe plusieurs modules Node.js implémentant des WebSockets côté serveur ou client, notamment &lt;strong&gt;ws&lt;/strong&gt; et &lt;strong&gt;websocket&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour plus d&amp;rsquo;informations : &lt;a href=&#34;https://developer.mozilla.org/fr/docs/WebSockets&#34;&gt;la documentation MDN&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;axios&#34;&gt;Axios&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Axios&lt;/strong&gt; est un module quelque peu moins populaire que ceux que nous avons cités jusqu&amp;rsquo;ici mais il saura se montrer très utile pour la suite de ce cours (et probablement dans vos autres projets de développement en JavaScript) !&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est un wrapper autour des &lt;strong&gt;API de communication HTTP&lt;/strong&gt; de Node.js et des navigateurs.&lt;/p&gt;
+&lt;p&gt;Il permet de grandement simplifier les requêtes HTTP.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Par exemple&lt;/em&gt; :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const axios = require(&#39;axios&#39;);
+axios.get(&#39;https://hack.courses&#39;)
+   .then(response =&amp;gt; console.log(response))
+   .catch(error =&amp;gt; console.error(error))
+
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;tds&#34;&gt;TDs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/Node_Angular/TDs_node&#34;&gt;Exercices Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projet&#34;&gt;Projet&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/Node_Angular/project&#34;&gt;Projet Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
