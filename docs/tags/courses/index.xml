@@ -44,7 +44,7 @@
       <description>Command-line 101 This course is a fully interactive and comprehensive class about Linux command-line for beginners.
 Do you want to know how to navigate through a filesystem and run programs on Linux using command-line like a pro (Disclaimer: well, an informed beginner at least)? Hop in and grab your best keyboard 😎!
 You won&amp;rsquo;t need to install anything on your computer (for real), absolutely no prerequisites except from curiosity.
-Contents  Command-line 101 Command-line 102 Command-line 103 Command-line 104 CheatSheet  Start this course  Start the first class  </description>
+Contents  Command-line 101 Command-line 102 Command-line 103 Command-line 104 CheatSheet  Start this course  Start the first class   </description>
       <content>&lt;h1 id=&#34;command-line-101&#34;&gt;Command-line 101&lt;/h1&gt;
 &lt;p&gt;This course is a fully interactive and comprehensive class about Linux command-line for beginners.&lt;/p&gt;
 &lt;p&gt;Do you want to know how to navigate through a filesystem and run programs on Linux using command-line like a pro (Disclaimer: well, an informed beginner at least)? 
@@ -52,16 +52,17 @@ Hop in and grab your best keyboard 😎!&lt;/p&gt;
 &lt;p&gt;You won&amp;rsquo;t need to install &lt;em&gt;anything&lt;/em&gt; on your computer (for real), absolutely no prerequisites except from curiosity.&lt;/p&gt;
 &lt;h1 id=&#34;contents&#34;&gt;Contents&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../101&#34;&gt;Command-line 101&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../102&#34;&gt;Command-line 102&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../103&#34;&gt;Command-line 103&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../104&#34;&gt;Command-line 104&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../cheatsheet&#34;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./101&#34;&gt;Command-line 101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./102&#34;&gt;Command-line 102&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./103&#34;&gt;Command-line 103&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./104&#34;&gt;Command-line 104&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./cheatsheet&#34;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;start-this-course&#34;&gt;Start this course&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../101&#34;&gt;Start the first class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./101&#34;&gt;Start the first class&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 </content>
     </item>
     
