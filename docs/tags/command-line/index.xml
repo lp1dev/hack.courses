@@ -103,7 +103,7 @@ Hop in and grab your best keyboard 😎!&lt;/p&gt;
       <pubDate>Wed, 12 Jan 2022 07:00:35 +0100</pubDate>
       
       <guid>/posts/command_line_101/104/</guid>
-      <description>function verify(id) {const answers = [&#39;-rw-r-----&#39;,]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)input.disabled = true;} else {alert(&#39;It seems your answer is invalid. Try again!&#39;)}}Parameters ⚙️ Parameters are options you can add to your commands in order to change their behaviour.
+      <description>function verify(id) {const answers = [&#39;-rw-r-----&#39;,]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems your answer is invalid. Try again!&#39;)}}Parameters ⚙️ Parameters are options you can add to your commands in order to change their behaviour.
 For instance, when you type ls -a, &amp;ldquo;-a&amp;rdquo; is a parameter that you add to the command ls.</description>
       <content>&lt;script type=&#34;text/javascript&#34;&gt;
     function verify(id) {
@@ -112,7 +112,7 @@ For instance, when you type ls -a, &amp;ldquo;-a&amp;rdquo; is a parameter that 
         ]
         let input = document.querySelector(&#39;#chall&#39;+id)
         if (input.value.trim() == answers[id]) {
-            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+            alert(&#39;Congratulations! You finished this challenge&#39;)
             input.disabled = true;
         } else {
             alert(&#39;It seems your answer is invalid. Try again!&#39;)
@@ -193,6 +193,21 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
 &lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
 &lt;p&gt;If you&amp;rsquo;re new to this, that might be a lot of information to handle, let&amp;rsquo;s take a break with a few exercices.&lt;/p&gt;
 &lt;h2 id=&#34;challenge-6&#34;&gt;Challenge 6&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s do something fun this time, no flag, no answers! There is a pretty neat &lt;strong&gt;executable&lt;/strong&gt; located in ~/examples, its name is &lt;strong&gt;cmatrix&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Find a way to run this executable and then, find a way to exit the Matrix 😎.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint 1&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : You can run an executable exactly like you did with the script previously.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint 2&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : A shortcut starting with CTRL&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;challenge-7&#34;&gt;Challenge 7&lt;/h2&gt;
 &lt;p&gt;For this exercice, let&amp;rsquo;s do something different! This time, you won&amp;rsquo;t have to look for a flag.&lt;/p&gt;
 &lt;p&gt;I will give you specific information describing a file which you will have to translate into a &lt;code&gt;drwxr-xr-x&lt;/code&gt; line just like &lt;code&gt;ls -l&lt;/code&gt; would display.&lt;/p&gt;
 &lt;ul&gt;
@@ -209,6 +224,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
 &lt;h1 id=&#34;you-finished-this-class&#34;&gt;You finished this class!&lt;/h1&gt;
 &lt;p&gt;Congrats on your completion of this first class! I hope you enjoyed it!&lt;/p&gt;
 &lt;p&gt;Was it too fast? Too slow? Too hard? Too easy? I&amp;rsquo;d love to &lt;a href=&#34;https://forms.gle/gzvPTPCDv27uwve88&#34;&gt;read your feedback&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;If you want to support my work, you can &lt;a href=&#34;https://lp1.podia.com/free-command-line-and-linux-beginner-class&#34;&gt;get this class&lt;/a&gt; from podia for &lt;strong&gt;free&lt;/strong&gt;, this will help me centralize the students and you will be able to be notified whenever a new class is available!&lt;/p&gt;
 &lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://devhints.io/bash&#34;&gt;https://devhints.io/bash&lt;/a&gt;&lt;/li&gt;
@@ -239,7 +255,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
       <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
       
       <guid>/posts/command_line_101/102/</guid>
-      <description>function verify(id) {const answers = [&#39;flag{442fcf28466515a81d5434931496ffa64611cc8e}&#39;,&#39;flag{4a4c6edef220f300dc6bc58df3d3b2e3c0bc8842}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Linux filesystem arborescence 🌳 Let me tell you a bit about the way linux filesystems are organized.
+      <description>function verify(id) {const answers = [&#39;flag{442fcf28466515a81d5434931496ffa64611cc8e}&#39;,&#39;flag{4a4c6edef220f300dc6bc58df3d3b2e3c0bc8842}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Linux filesystem arborescence 🌳 Let me tell you a bit about the way linux filesystems are organized.
 / is where everything starts, it&amp;rsquo;s the root of your filesystem, a little bit like C: is usually where everything is stored on a Windows machine.</description>
       <content>&lt;script type=&#34;text/javascript&#34;&gt;
     function verify(id) {
@@ -249,7 +265,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
         ]
         let input = document.querySelector(&#39;#chall&#39;+id)
         if (input.value.trim() == answers[id]) {
-            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+            alert(&#39;Congratulations! You finished this challenge&#39;)
             input.disabled = true;
         } else {
             alert(&#39;It seems this flag is invalid. Try again!&#39;)
@@ -286,7 +302,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
 &lt;p&gt;Exiting a program in such a way is called &lt;em&gt;killing&lt;/em&gt; a program.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;echo-&#34;&gt;Echo 🔉&lt;/h1&gt;
-&lt;p&gt;Echo (which for some uknown reason always reminds me of &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecco_the_Dolphin&#34;&gt;Ecco the Dolphin&lt;/a&gt;) is an incredibly useful Linux command!&lt;/p&gt;
+&lt;p&gt;Echo (which for some unknown reason always reminds me of &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecco_the_Dolphin&#34;&gt;Ecco the Dolphin&lt;/a&gt;) is an incredibly useful Linux command!&lt;/p&gt;
 &lt;p&gt;You can use it to display character strings on your screen.&lt;/p&gt;
 &lt;p&gt;For instance if you want to print &amp;ldquo;Hello, world&amp;rdquo;, you can type :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo Hello, world
@@ -297,7 +313,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
 &lt;p&gt;Why don&amp;rsquo;t we challenge your new command-line knowledge?&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s start with a little treasure hunt.&lt;/p&gt;
 &lt;h2 id=&#34;challenge-2&#34;&gt;Challenge 2&lt;/h2&gt;
-&lt;p&gt;Enter the &lt;em&gt;challenge_3&lt;/em&gt; directory.&lt;/p&gt;
+&lt;p&gt;Enter the &lt;em&gt;challenge_2&lt;/em&gt; directory.&lt;/p&gt;
 &lt;p&gt;This directory contains the flag, but where is it?! You&amp;rsquo;ll need to cleverly navigate through multiple directories in order to fetch this challenge&amp;rsquo;s flag.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : You can go through multiple directories at once, instead of writing &lt;code&gt;cd /gu3st&lt;/code&gt; and &lt;code&gt;cd challenges&lt;/code&gt; you can directly type &lt;code&gt;cd /gu3st/challenges&lt;/code&gt;.&lt;/p&gt;
@@ -332,7 +348,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
       <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
       
       <guid>/posts/command_line_101/103/</guid>
-      <description>function verify(id) {const answers = [&#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,&#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Hidden files 🕶️ On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.
+      <description>function verify(id) {const answers = [&#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,&#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Hidden files 🕶️ On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.
 Such files will not be displayed when using a regular ls.</description>
       <content>&lt;script type=&#34;text/javascript&#34;&gt;
     function verify(id) {
@@ -342,7 +358,7 @@ Such files will not be displayed when using a regular ls.</description>
         ]
         let input = document.querySelector(&#39;#chall&#39;+id)
         if (input.value.trim() == answers[id]) {
-            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+            alert(&#39;Congratulations! You finished this challenge&#39;)
             input.disabled = true;
         } else {
             alert(&#39;It seems this flag is invalid. Try again!&#39;)
@@ -433,7 +449,7 @@ drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     
       <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
       
       <guid>/posts/command_line_101/101/</guid>
-      <description>function verify(id) {const answers = [&#39;flag{29e140ef258fc3ec0e485c0648f048d36ee5e017}&#39;,&#39;flag{1d279c84d51f95a12ea44793212ecc0d5d360d47}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Introduction 📖 Welcome to this command-line class!
+      <description>function verify(id) {const answers = [&#39;flag{29e140ef258fc3ec0e485c0648f048d36ee5e017}&#39;,&#39;flag{1d279c84d51f95a12ea44793212ecc0d5d360d47}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Introduction 📖 Welcome to this command-line class!
 In this entry level course you will learn how to use a terminal and navigate through a Linux filesystem.
 This class is supposed to be followed with hack.</description>
       <content>&lt;script type=&#34;text/javascript&#34;&gt;
@@ -444,7 +460,7 @@ This class is supposed to be followed with hack.</description>
         ]
         let input = document.querySelector(&#39;#chall&#39;+id)
         if (input.value.trim() == answers[id]) {
-            alert(&#39;Congratulations! You finished the challenge &#39;+id)
+            alert(&#39;Congratulations! You finished this challenge&#39;)
             input.disabled = true;
         } else {
             alert(&#39;It seems this flag is invalid. Try again!&#39;)
