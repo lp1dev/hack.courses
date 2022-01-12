@@ -15,16 +15,16 @@ paginate = 5
   themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
 
   # set theme to full screen width
-  fullWidthTheme = true
+  fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
@@ -68,9 +68,14 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "About"
         name = "About"
-        url = "/posts/home"
+        url = "/posts"
 
       [[languages.en.menu.main]]
         identifier = "Classes"
         name = "Free Courses"
         url = "/posts/classes"
+
+      [[languages.en.menu.main]]
+        identifier = "Linux and Command-Line"
+        name = "Linux and Command-Line"
+        url = "/cli101/"
