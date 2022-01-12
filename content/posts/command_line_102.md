@@ -134,6 +134,8 @@ Good luck!
     <input style="width:40rem" type="text" id="chall1" placeholder="flag 3"/><button onclick="verify(1)">Verify</button>
 </div>
 
+> **Hint** : If you need to find a command quickly you can read the [cheatsheet](command_line_101_cheatsheet) associated with this class.
+
 ---
 
 Wow, you're still there?

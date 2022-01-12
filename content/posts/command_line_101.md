@@ -154,6 +154,8 @@ What you need to do here is :
     <input style="width:40rem" type="text" id="chall1" placeholder="flag 1"/><button onclick="verify(1)">Verify</button>
 </div>
 
+> **Hint** : If you need to find a command quickly you can read the [cheatsheet](command_line_101_cheatsheet) associated with this class.
+
 ---
 
 Congrats on making it through this first command-line class!

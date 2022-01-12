@@ -1,5 +1,5 @@
 +++
-title = "Command line 102"
+title = "Command line 103"
 date = "2022-01-11T19:00:35+01:00"
 author = "Lp1"
 authorTwitter = "lp1dev" #do not include @
@@ -44,6 +44,8 @@ $> ls -a .
 $> ls ..
 ```
 
+---
+
 # Advanced ls
 
 `ls` can give you even more useful information about files and directories!
@@ -52,17 +54,27 @@ Using `ls -l` on the *challenges/command_line_101* directory will print the foll
 
 ```bash
 $> ls -l challenges/command_line_101/
-total 0
--rwxrwxrwx 1 lp1 lp1 111 Jan  9 12:39 challenge_0.txt
--rwxrwxrwx 1 lp1 lp1  77 Jan  9 21:50 challenge_1.txt
-drwxrwxrwx 1 lp1 lp1 512 Jan 11 21:13 challenge_2
+total 28
+drwxrwxr-x    3 root     root          4096 Jan 11 21:59 .
+drwxr-xr-x    3 root     root          4096 Jan 11 21:59 ..
+-rw-rw-r--    1 root     root            96 Jan 11 21:59 .challenge_4
+-rw-rw-r--    1 root     root           276 Jan 11 21:59 challenge5.sh
+-rw-rw-r--    1 root     root           111 Jan  9 15:44 challenge_0.txt
+-rw-rw-r--    1 root     root            77 Jan  9 20:57 challenge_1.txt
+drwxrwxr-x    3 root     root          4096 Jan 11 21:58 challenge_2
 ```
 
-We're going to leave some of the information printed in this list for another class, but you can already recognize the file and directories names! 
+We're going to leave some of the information printed in this list for another class, but you should already recognize the file and directories names usually displayed by ls!
+
+The first line "total 28" means that this directory uses a total of 28 filesystem "blocks".
+
+A block is simply a way of counting space on a Linux filesystem, a bit like the more commonly represented Mega octets and Kilo octets. A block is equivalent to 8KB => 8000 bytes.
 
 The hours and dates are the last modification date for each item and the number printed on the left of the month (Jan->January in this example) is the file's size in bytes.
 
 Also note, lines starting with *d* are directories!
+
+---
 
 # Executing scripts 📜
 
@@ -86,7 +98,7 @@ Type the following command in the terminal to run this script :
 /usr/bin/foxsay hello
 ```
 
-![The output should be a fox saying "hello" in your terminal](/foxsay.png)
+![The output should be a fox saying "hello" in your terminal](/foxsay.PNG)
 
 Congrats, you just ran your first script!
 
@@ -112,7 +124,7 @@ Now, use the following syntax to run the same script again :
 
 # Hands-on 🤜!
 
-Ready to take one some harder challenges? Let's go then!
+Ready to take one some harder challenges? Let's go!
 
 # Challenge 4
 

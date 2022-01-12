@@ -1,6 +1,6 @@
 +++
-title = "Command line 102"
-date = "2022-01-11T19:00:35+01:00"
+title = "Command line 104"
+date = "2022-01-12T19:00:35+01:00"
 author = "Lp1"
 authorTwitter = "lp1dev" #do not include @
 cover = ""
@@ -13,30 +13,192 @@ showFullContent = false
 <script type="text/javascript">
     function verify(id) {
         const answers = [
-            'flag{333610b9a7955f54efdddea14634ab93d77a0d64}',
-            'flag{3833de1724aba85be072244d222595c697c29a87}'
+            '-rw-r-----',
         ]
         let input = document.querySelector('#chall'+id)
         if (input.value.trim() == answers[id]) {
             alert('Congratulations! You finished the challenge '+id)
         } else {
-            alert('It seems this flag is invalid. Try again!')
+            alert('It seems your answer is invalid. Try again!')
         }
         input.disabled = true;
     }
 </script>
 
-# Coming Soon
 
-<!-- 
-# Hidden files
+# Parameters ⚙️
+
+Parameters are options you can add to your commands in order to change their behaviour.
+
+For instance, when you type `ls -a`,
+"-a" is a parameter that you add to the command `ls`. 
+
+When you type `cat challenge_0.txt`, "challenge_0.txt" is a parameter that you add to the command `cat`.
+
+You can add an infinite number of parameters depending on the ones your script/program supports.
+
+> **Note** : Anything written **after** a command is a *parameter*. Parameters are separated by a space.
+
+---
+
+# Shortcuts and wildcards 🃏
+
+## History
+
+In a Linux shell, you have multiple syntaxes and keyboard shortcuts to avoid typing long commands and doing the same thing twice.
+
+For instance if you want to run the same command again, **Key Up** will go through your history and display the last command-lines you entered.
+
+> **Note** : The command `history` will also print the whole command-line history for your shell session.
+
+## Autocompletion
+
+**Tab** will **autocomplete** files and directories names, for instance if you type :
+
+```bash
+$> ls chall
+```
+
+In your home directory and then press **Tab**, your terminal will automatically replace "chall" with "challenges".
+
+In case of ambiguity, your shell will not automatically be able to autocomplete your commands, in that case, *nothing will be displayed* when you press **Tab**. 
+
+Pressing **Tab** twice in that situation will print the ambiguous file or directory names.
+
+```bash
+$> ls c # Press Tab twice and observe what is printed
+```
+
+## Wildcards 
+
+A wildcard is a "magic" character that means *everything*.
+
+In a Linux shell, a wildcard is represented by the **\*** character, if you type it in your shell, it will be replaced before executing your command by every (non-hidden) files and directories in the current directory.
+
+You can actually test this behaviour in your terminal using the following commands :
+
+```bash
+$> echo * # Will print every file and directory name
+$> cat * # Will cat every file in the local directory
+```
+
+Wildcards can also be used in conjuction with other characters, at the start or the end of any character string.
+
+```bash
+$> echo chall*
+$> echo *enge
+```
+
+---
 
 # Permissions
 
-# Parameters
+In a Linux filesystem, every file has associated permissions. 
 
-> **Note** : Anything written **after** a command is a *parameter*
+Permissions define which actions users or groups of users can do regarding those files and directories.
 
-# Wildcards
+## Users 
 
-# I/O -->
+If you can enter commands on a computer, you are logged in as a **user**.
+
+The command `whoami` will print your username, this is your identity on the machine.
+
+The `$USER` environment variable also contains your username, you can display its value with `echo $USER`.
+
+Your Linux system does not always uses usernames in order to identify users, each user have a numeric ID called a **UID**. You can also print your UID using `echo $UID`.
+
+## Groups
+
+To make permissions management easier, users are divided in **groups**.
+
+By default on Linux, whenever a user is created, it is part of its own, single-member group whose name is its own. 
+
+On [hack.courses](https://hack.courses), your group should be "nointernet", you can display the groups you are part of using the command `groups`.
+
+## Read, write, execute
+
+Do you remember the `ls -l` listing we reviewed earlier? Let's look at it again.
+
+```bash
+$> ls -l challenges/command_line_101/
+total 28
+drwxrwxr-x    3 root     root          4096 Jan 11 21:59 .
+drwxr-xr-x    3 root     root          4096 Jan 11 21:59 ..
+-rw-rw-r--    1 root     root            96 Jan 11 21:59 .challenge_4
+-rw-rw-r--    1 root     root           276 Jan 11 21:59 challenge5.sh
+-rw-rw-r--    1 root     root           111 Jan  9 15:44 challenge_0.txt
+-rw-rw-r--    1 root     root            77 Jan  9 20:57 challenge_1.txt
+drwxrwxr-x    3 root     root          4096 Jan 11 21:58 challenge_2
+```
+
+It's finally time to explain what all of this means, let's start by investigating in details the first column of this list, the one with characters like `-rw-rw-r--`.
+
+As I told you earlier, the first character can be either *-* (which represents an empty space) or *d* for "directory".
+
+Then, you have three sequences of "rwx", each character of each sequence can also be equal to *-*.
+
+Those sequences describe the permissions associated to the file or directory :
+
+- **r** - is for **read**
+- **w** - is for **write**
+- **x** - is for **execute**
+
+Following this logic, `r--` means "read permissions only", `rw-` means "read/write permissions only, and `rwx` means read+write+execute permissions!
+
+Why three consecutive sequences then? 
+
+The first sequence is for the **user** who owns the file/directory, the second one is for the **group** and the third one is for **everyone else**. 
+
+Finally, the first username in the list (column 3) is the **user** who owns the file and the second one is the **group** the file belongs to!
+
+---
+
+# Hands-on 🤜!
+
+If you're new to this, that might be a lot of information to handle, let's take a break with a few exercices.
+
+## Challenge 6
+
+For this exercice, let's do something different! This time, you won't have to look for a flag. 
+
+I will give you specific information describing a file which you will have to translate into a `drwxr-xr-x` line just like `ls -l` would display.
+
+- We are talking about a file, not a directory
+- The owner of the file can read and write the file
+- The group who owns the file can read it
+- Anyone else can not do *anything* with the file
+
+Enter your answer in the prompt below (web version only) :
+
+<div style="display:flex">
+    <input style="width:40rem" type="text" id="chall0" placeholder="Example : drwxrw-rw-"/><button onclick="verify(0)">Verify</button>
+</div>
+
+---
+
+# You finished this class!
+
+Congrats on your completion of this first class! I hope you enjoyed it!
+
+Was it too fast? Too slow? Too hard? Too easy? I'd love to [read your feedback](https://forms.gle/gzvPTPCDv27uwve88)!
+
+## Additional Resources
+
+- https://devhints.io/bash
+- https://cheatography.com/davechild/cheat-sheets/linux-command-line/
+- https://www.guru99.com/linux-commands-cheat-sheet.html
+
+<!-- # Additional Resources 
+
+
+<!-- 
+
+105
+
+# Chown/Chmod 
+
+# grep
+
+# 
+
+-->
