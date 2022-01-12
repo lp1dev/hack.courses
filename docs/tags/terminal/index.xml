@@ -441,7 +441,7 @@ If you&amp;rsquo;re new to this, check out the command line 101 class and learn 
 &lt;p&gt;The terminal on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is a full-fledged GNU/Linux terminal.&lt;/p&gt;
 &lt;p&gt;It is based on &lt;a href=&#34;https://xtermjs.org/&#34;&gt;xterm.js&lt;/a&gt; and gives access to a real Linux command line interpreter to anyone for free.&lt;/p&gt;
 &lt;p&gt;If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re new to this, check out the &lt;a href=&#34;./command_line_101&#34;&gt;command line 101 class&lt;/a&gt; and learn how to use command line right away!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to this, check out the &lt;a href=&#34;/cli101&#34;&gt;command line 101 class&lt;/a&gt; and learn how to use command line right away!&lt;/p&gt;
 </content>
     </item>
     
@@ -455,13 +455,13 @@ If you&amp;rsquo;re new to this, check out the command line 101 class and learn 
 You can send me a message at jeremie(a)fenrir.pro if you need more details.</description>
       <content>&lt;h1 id=&#34;available-classes&#34;&gt;Available classes&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../command_line_101&#34;&gt;Command line 101&lt;/a&gt; 🇬🇧&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../typescript&#34;&gt;TypeScript&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../nodejs&#34;&gt;Node.js&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101&#34;&gt;Command line 101&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/typescript&#34;&gt;TypeScript&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/nodejs&#34;&gt;Node.js&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;All of the class contents on this site&lt;/strong&gt; use the &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;&lt;strong&gt;creative commons&lt;/strong&gt; &lt;em&gt;Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)&lt;/em&gt;&lt;/a&gt; license.&lt;/p&gt;
