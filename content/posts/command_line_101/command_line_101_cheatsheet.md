@@ -6,7 +6,7 @@ authorTwitter = "lp1dev" #do not include @
 cover = ""
 tags = ["meta", "hacking", "courses","terminal","command-line"]
 keywords = ["hack", "courses","command-line","cheatsheet"]
-description = "Command line for beginners"
+description = "Command line cheatsheet"
 showFullContent = false
 +++
 
