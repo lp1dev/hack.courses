@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>Command line 102 :: hack.courses</title>
+    <title>Command line 103 :: hack.courses</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Command line 102">
+<meta property="og:title" content="Command line 103">
 <meta property="og:description" content="Command line for beginners" />
 <meta property="og:url" content="/posts/command_line_103/" />
 <meta property="og:site_name" content="hack.courses" />
@@ -125,7 +125,7 @@
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/posts/command_line_103/">Command line 102</a></h1>
+    <a href="/posts/command_line_103/">Command line 103</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -182,17 +182,25 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls .
 $&gt; ls -a .
 $&gt; ls ..
-</code></pre></div><h1 id="advanced-ls">Advanced ls<a href="#advanced-ls" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+</code></pre></div><hr>
+<h1 id="advanced-ls">Advanced ls<a href="#advanced-ls" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p><code>ls</code> can give you even more useful information about files and directories!</p>
 <p>Using <code>ls -l</code> on the <em>challenges/command_line_101</em> directory will print the following list :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls -l challenges/command_line_101/
-total <span style="color:#ae81ff">0</span>
--rwxrwxrwx <span style="color:#ae81ff">1</span> lp1 lp1 <span style="color:#ae81ff">111</span> Jan  <span style="color:#ae81ff">9</span> 12:39 challenge_0.txt
--rwxrwxrwx <span style="color:#ae81ff">1</span> lp1 lp1  <span style="color:#ae81ff">77</span> Jan  <span style="color:#ae81ff">9</span> 21:50 challenge_1.txt
-drwxrwxrwx <span style="color:#ae81ff">1</span> lp1 lp1 <span style="color:#ae81ff">512</span> Jan <span style="color:#ae81ff">11</span> 21:13 challenge_2
-</code></pre></div><p>We&rsquo;re going to leave some of the information printed in this list for another class, but you can already recognize the file and directories names!</p>
+total <span style="color:#ae81ff">28</span>
+drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 .
+drwxr-xr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 ..
+-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">96</span> Jan <span style="color:#ae81ff">11</span> 21:59 .challenge_4
+-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">276</span> Jan <span style="color:#ae81ff">11</span> 21:59 challenge5.sh
+-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">111</span> Jan  <span style="color:#ae81ff">9</span> 15:44 challenge_0.txt
+-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">77</span> Jan  <span style="color:#ae81ff">9</span> 20:57 challenge_1.txt
+drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:58 challenge_2
+</code></pre></div><p>We&rsquo;re going to leave some of the information printed in this list for another class, but you should already recognize the file and directories names usually displayed by ls!</p>
+<p>The first line &ldquo;total 28&rdquo; means that this directory uses a total of 28 filesystem &ldquo;blocks&rdquo;.</p>
+<p>A block is simply a way of counting space on a Linux filesystem, a bit like the more commonly represented Mega octets and Kilo octets. A block is equivalent to 8KB =&gt; 8000 bytes.</p>
 <p>The hours and dates are the last modification date for each item and the number printed on the left of the month (Jan-&gt;January in this example) is the file&rsquo;s size in bytes.</p>
 <p>Also note, lines starting with <em>d</em> are directories!</p>
+<hr>
 <h1 id="executing-scripts-">Executing scripts 📜<a href="#executing-scripts-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <h2 id="about-scripts">About scripts<a href="#about-scripts" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>What are scripts, you&rsquo;re wondering?</p>
@@ -203,7 +211,7 @@ drwxrwxrwx <span style="color:#ae81ff">1</span> lp1 lp1 <span style="color:#ae81
 <p>For instance, a script is located in <em>/usr/bin/foxsay</em> on <a href="https://hack.courses">hack.courses</a>.</p>
 <p>Type the following command in the terminal to run this script :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/bin/foxsay hello
-</code></pre></div><p><img src="/foxsay.png" alt="The output should be a fox saying &ldquo;hello&rdquo; in your terminal"></p>
+</code></pre></div><p><img src="/foxsay.PNG" alt="The output should be a fox saying &ldquo;hello&rdquo; in your terminal"></p>
 <p>Congrats, you just ran your first script!</p>
 <p>Now, this is not the <em>only</em> way to run a script.</p>
 <p>The path you used here is what is called an <strong>absolute path</strong>. An absolute path starts from <strong>the root</strong> of your filesystem (&quot;/&quot;).</p>
@@ -217,7 +225,7 @@ drwxrwxrwx <span style="color:#ae81ff">1</span> lp1 lp1 <span style="color:#ae81
 </blockquote>
 <hr>
 <h1 id="hands-on-">Hands-on 🤜!<a href="#hands-on-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>Ready to take one some harder challenges? Let&rsquo;s go then!</p>
+<p>Ready to take one some harder challenges? Let&rsquo;s go!</p>
 <h1 id="challenge-4">Challenge 4<a href="#challenge-4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p>The <em>challenges/command_line_101</em> directory contains a flag for this challenge.</p>
 <p>But beware, it&rsquo;s <em>hidden</em>!</p>
@@ -261,8 +269,8 @@ drwxrwxrwx <span style="color:#ae81ff">1</span> lp1 lp1 <span style="color:#ae81
         
         
         <span class="button next">
-            <a href="/posts/command_line_104/">
-                <span class="button__text">Command line 102</span>
+            <a href="/posts/home/">
+                <span class="button__text">About hack.courses</span>
                 <span class="button__icon">→</span>
             </a>
         </span>

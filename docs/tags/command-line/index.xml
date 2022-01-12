@@ -90,6 +90,9 @@
 &lt;div style=&#34;display:flex&#34;&gt;
     &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 3&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
 &lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : If you need to find a command quickly you can read the &lt;a href=&#34;command_line_101_cheatsheet&#34;&gt;cheatsheet&lt;/a&gt; associated with this class.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Wow, you&amp;rsquo;re still there?&lt;/p&gt;
 &lt;p&gt;Congrats on making though those first challenges!&lt;/p&gt;
@@ -99,7 +102,7 @@
     </item>
     
     <item>
-      <title>Command line 102</title>
+      <title>Command line 103</title>
       <link>/posts/command_line_103/</link>
       <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
       
@@ -130,17 +133,25 @@ Such files will not be displayed when using a regular ls.</description>
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls .
 $&amp;gt; ls -a .
 $&amp;gt; ls ..
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;advanced-ls&#34;&gt;Advanced ls&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;advanced-ls&#34;&gt;Advanced ls&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;ls&lt;/code&gt; can give you even more useful information about files and directories!&lt;/p&gt;
 &lt;p&gt;Using &lt;code&gt;ls -l&lt;/code&gt; on the &lt;em&gt;challenges/command_line_101&lt;/em&gt; directory will print the following list :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls -l challenges/command_line_101/
-total &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
--rwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;span style=&#34;color:#ae81ff&#34;&gt;111&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 12:39 challenge_0.txt
--rwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1  &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 21:50 challenge_1.txt
-drwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;span style=&#34;color:#ae81ff&#34;&gt;512&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:13 challenge_2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;re going to leave some of the information printed in this list for another class, but you can already recognize the file and directories names!&lt;/p&gt;
+total &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;
+drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 .
+drwxr-xr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 ..
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root            &lt;span style=&#34;color:#ae81ff&#34;&gt;96&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 .challenge_4
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root           &lt;span style=&#34;color:#ae81ff&#34;&gt;276&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 challenge5.sh
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root           &lt;span style=&#34;color:#ae81ff&#34;&gt;111&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 15:44 challenge_0.txt
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root            &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 20:57 challenge_1.txt
+drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:58 challenge_2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;re going to leave some of the information printed in this list for another class, but you should already recognize the file and directories names usually displayed by ls!&lt;/p&gt;
+&lt;p&gt;The first line &amp;ldquo;total 28&amp;rdquo; means that this directory uses a total of 28 filesystem &amp;ldquo;blocks&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;A block is simply a way of counting space on a Linux filesystem, a bit like the more commonly represented Mega octets and Kilo octets. A block is equivalent to 8KB =&amp;gt; 8000 bytes.&lt;/p&gt;
 &lt;p&gt;The hours and dates are the last modification date for each item and the number printed on the left of the month (Jan-&amp;gt;January in this example) is the file&amp;rsquo;s size in bytes.&lt;/p&gt;
 &lt;p&gt;Also note, lines starting with &lt;em&gt;d&lt;/em&gt; are directories!&lt;/p&gt;
+&lt;hr&gt;
 &lt;h1 id=&#34;executing-scripts-&#34;&gt;Executing scripts 📜&lt;/h1&gt;
 &lt;h2 id=&#34;about-scripts&#34;&gt;About scripts&lt;/h2&gt;
 &lt;p&gt;What are scripts, you&amp;rsquo;re wondering?&lt;/p&gt;
@@ -151,7 +162,7 @@ drwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;
 &lt;p&gt;For instance, a script is located in &lt;em&gt;/usr/bin/foxsay&lt;/em&gt; on &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Type the following command in the terminal to run this script :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/usr/bin/foxsay hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/foxsay.png&#34; alt=&#34;The output should be a fox saying &amp;ldquo;hello&amp;rdquo; in your terminal&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/foxsay.PNG&#34; alt=&#34;The output should be a fox saying &amp;ldquo;hello&amp;rdquo; in your terminal&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Congrats, you just ran your first script!&lt;/p&gt;
 &lt;p&gt;Now, this is not the &lt;em&gt;only&lt;/em&gt; way to run a script.&lt;/p&gt;
 &lt;p&gt;The path you used here is what is called an &lt;strong&gt;absolute path&lt;/strong&gt;. An absolute path starts from &lt;strong&gt;the root&lt;/strong&gt; of your filesystem (&amp;quot;/&amp;quot;).&lt;/p&gt;
@@ -165,7 +176,7 @@ drwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
-&lt;p&gt;Ready to take one some harder challenges? Let&amp;rsquo;s go then!&lt;/p&gt;
+&lt;p&gt;Ready to take one some harder challenges? Let&amp;rsquo;s go!&lt;/p&gt;
 &lt;h1 id=&#34;challenge-4&#34;&gt;Challenge 4&lt;/h1&gt;
 &lt;p&gt;The &lt;em&gt;challenges/command_line_101&lt;/em&gt; directory contains a flag for this challenge.&lt;/p&gt;
 &lt;p&gt;But beware, it&amp;rsquo;s &lt;em&gt;hidden&lt;/em&gt;!&lt;/p&gt;
@@ -188,44 +199,6 @@ drwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; lp1 lp1 &lt;
 &lt;hr&gt;
 &lt;p&gt;Ready to continue? Make sure to take a break, drink some water and move on to&lt;/p&gt;
 &lt;h2 id=&#34;command-line-104command_line_104&#34;&gt;&lt;a href=&#34;../command_line_104&#34;&gt;Command line 104&lt;/a&gt;&lt;/h2&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Command line 102</title>
-      <link>/posts/command_line_104/</link>
-      <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
-      
-      <guid>/posts/command_line_104/</guid>
-      <description>function verify(id) {const answers = [&#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,&#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished the challenge &#39;+id)} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}input.disabled = true;}Coming Soon **Note** : Anything written **after** a command is a *parameter*# Wildcards# I/O --</description>
-      <content>&lt;script type=&#34;text/javascript&#34;&gt;
-    function verify(id) {
-        const answers = [
-            &#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,
-            &#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;
-        ]
-        let input = document.querySelector(&#39;#chall&#39;+id)
-        if (input.value.trim() == answers[id]) {
-            alert(&#39;Congratulations! You finished the challenge &#39;+id)
-        } else {
-            alert(&#39;It seems this flag is invalid. Try again!&#39;)
-        }
-        input.disabled = true;
-    }
-&lt;/script&gt;
-&lt;h1 id=&#34;coming-soon&#34;&gt;Coming Soon&lt;/h1&gt;
-&lt;!-- 
-# Hidden files
-
-# Permissions
-
-# Parameters
-
-&gt; **Note** : Anything written **after** a command is a *parameter*
-
-# Wildcards
-
-# I/O --&gt;
 </content>
     </item>
     
@@ -332,6 +305,9 @@ cd
 &lt;div style=&#34;display:flex&#34;&gt;
     &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 1&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
 &lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : If you need to find a command quickly you can read the &lt;a href=&#34;command_line_101_cheatsheet&#34;&gt;cheatsheet&lt;/a&gt; associated with this class.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Congrats on making it through this first command-line class!&lt;/p&gt;
 &lt;p&gt;You can now move on to&lt;/p&gt;
