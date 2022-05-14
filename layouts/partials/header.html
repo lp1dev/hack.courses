@@ -1,0 +1,21 @@
+<script type="text/javascript">
+(function() {
+    if (String(window.location).startsWith('http://') && !String(window.location).includes('http://localhost')) {
+        window.location = String(window.location).replace('http://', 'https://')
+    }
+})();
+</script>
+
+<header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      {{ partial "logo.html" . }}
+    </div>
+    {{ if len $.Site.Menus }}
+      <div class="menu-trigger">menu</div>
+    {{ end }}
+  </div>
+  {{ if len $.Site.Menus }}
+    {{ partial "menu.html" . }}
+  {{ end }}
+</header>

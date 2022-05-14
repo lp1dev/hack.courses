@@ -1,12 +1,12 @@
 +++
-title = "Command-line 102 course presentation"
-date = "2022-01-18T09:01:35+01:00"
+title = "Command-line 201 course presentation"
+date = "2022-05-11T09:01:35+01:00"
 author = "Lp1"
 authorTwitter = "lp1dev" #do not include @
 cover = "/cli102.png"
 tags = ["meta", "hacking", "courses","terminal","command-line"]
 keywords = ["hack", "courses","command-line","cheatsheet"]
-description = "Command line for beginners 201"
+description = "Command line for advanced beginners 201"
 showFullContent = false
 +++
 
@@ -47,7 +47,7 @@ You won't need to install *anything* on your computer (for real).
 
 # Start this course
 
-- [Start the first class](./101)
+- [Start the first class](./201)
 
 ---
 
