@@ -24,10 +24,11 @@ You won't need to install *anything* on your computer (for real).
 
 ## Syllabus
 
-- **201** - Input/Output and redirections
-- **202** - File interaction (head, tail, wc, grep)
-- **203** - Advanced files interaction (cat++, file, cut, rev [...])
-- **204** - Scripts execution 
+- **201** - Inputs/Outputs
+- **202** - Redirections
+- **203** - File interaction (head, tail, wc, grep)
+- **204** - Advanced files interaction (cat++, file, cut, rev [...])
+- **205** - Scripts execution 
 
 **Requirements** : 
 
