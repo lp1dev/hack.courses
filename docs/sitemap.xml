@@ -2,31 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/</loc>
+    <lastmod>2022-05-27T16:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/meta/</loc>
+    <lastmod>2022-05-27T16:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/user_account/</loc>
+    <lastmod>2022-05-27T16:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-05-27T16:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/terminal/</loc>
+    <lastmod>2022-05-27T16:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_201/203/</loc>
+    <lastmod>2022-05-24T17:10:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/command-line/</loc>
+    <lastmod>2022-05-24T17:10:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/courses/</loc>
+    <lastmod>2022-05-24T17:10:35+01:00</lastmod>
+  </url><url>
+    <loc>/tags/hacking/</loc>
+    <lastmod>2022-05-24T17:10:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_201/201/</loc>
+    <lastmod>2022-05-14T14:30:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_201/</loc>
+    <lastmod>2022-05-11T09:01:35+01:00</lastmod>
+  </url><url>
     <loc>/posts/command_line_101/cheatsheet/</loc>
     <lastmod>2022-01-12T09:04:35+01:00</lastmod>
   </url><url>
-    <loc>/tags/command-line/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
-    <loc>/tags/courses/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
-    <loc>/tags/hacking/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
-    <loc>/tags/meta/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
-    <loc>/tags/terminal/</loc>
-    <lastmod>2022-01-12T09:04:35+01:00</lastmod>
-  </url><url>
     <loc>/cli101/</loc>
+    <lastmod>2022-01-12T08:01:35+01:00</lastmod>
+  </url><url>
+    <loc>/cli201/</loc>
     <lastmod>2022-01-12T08:01:35+01:00</lastmod>
   </url><url>
     <loc>/posts/command_line_101/</loc>
@@ -39,6 +54,9 @@
     <lastmod>2022-01-11T19:00:35+01:00</lastmod>
   </url><url>
     <loc>/posts/command_line_101/103/</loc>
+    <lastmod>2022-01-11T19:00:35+01:00</lastmod>
+  </url><url>
+    <loc>/posts/command_line_201/202/</loc>
     <lastmod>2022-01-11T19:00:35+01:00</lastmod>
   </url><url>
     <loc>/posts/</loc>

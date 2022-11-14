@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command-line 201 course presentation on hack.courses</title>
+    <link>/posts/command_line_201/</link>
+    <description>Recent content in Command-line 201 course presentation on hack.courses</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>hosted by fenrir.pro</copyright>
+    <lastBuildDate>Wed, 11 May 2022 09:01:35 +0100</lastBuildDate><atom:link href="/posts/command_line_201/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command line 203</title>
+      <link>/posts/command_line_201/203/</link>
+      <pubDate>Tue, 24 May 2022 17:10:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_201/203/</guid>
+      <description>Data and file manipulation (head, tail, wc, grep, find) Oh, there you are! I was waiting for you to come back from 202!
+Now that you&amp;rsquo;re here we&amp;rsquo;re going to talk about new Linux commands you might not know about yet, these commands allow the modification of files and data streams.
+ Note : We are not going to discuss file creation or deletion in this class for technical reasons regarding the terminal on hack.</description>
+    </item>
+    
+    <item>
+      <title>Command line 201</title>
+      <link>/posts/command_line_201/201/</link>
+      <pubDate>Sat, 14 May 2022 14:30:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_201/201/</guid>
+      <description>function checkAnswers() { let responses = [ &#34;Question 1 [STATUS] : The answer was /dev/stdin since we need to read user input here.&#34;, &#34;Question 2 [STATUS] : The answer was /dev/stderr, this is the special file reserved for error messages.&#34;, &#34;Question 3 [STATUS] : The answer was /dev/stdout, this is the file that should be used to display information for the users in a terminal.&#34;, ] let questions = document.querySelectorAll(&#39;fieldset&#39;) let answers = [&#39;#res0&#39;,&#39;#res07&#39;,&#39;#res11&#39;] let valid = [false, false, false] let i = 0 for (let question of questions) { let answer = question.</description>
+    </item>
+    
+    <item>
+      <title>Command line 202</title>
+      <link>/posts/command_line_201/202/</link>
+      <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
+      
+      <guid>/posts/command_line_201/202/</guid>
+      <description>function verify(id) { const answers = [ &#39;flag{b0138935d232349fcea0aede02ab9cdd96938e55}&#39;, ] let input = document.querySelector(&#39;#chall&#39;+id) if (input.value.trim() == answers[id]) { alert(&#39;Congratulations! You finished this challenge&#39;) input.disabled = true; } else { alert(&#39;It seems your answer is invalid. Try again!&#39;) } }  Pipes You might have heard about or have seen pipes using the | character, they are very frequently used in Linux command-line and can become an essential tool once you master them.</description>
+    </item>
+    
+  </channel>
+</rss>
