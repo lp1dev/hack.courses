@@ -41,8 +41,9 @@ You won't need to install *anything* on your computer (for real).
 
 - [Command-line 201](./201)
 - [Command-line 202](./202)
-- [Command-line 203](./203)
-- [Command-line 204](./204)
+- Command-line 203 (Coming Soon)
+<!-- - [Command-line 203](./203) -->
+<!-- - [Command-line 204](./204) -->
 
 - [CheatSheet](./cheatsheet)
 

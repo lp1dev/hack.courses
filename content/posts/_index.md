@@ -25,6 +25,7 @@ Some of the classes and course material here is open source, some is close sourc
 At the moment, the following free classes are available :
 
 - [Command line 101](../command_line_101) 🇬🇧
+- [Command line 201](../command_line_201) 🇬🇧
 - [TypeScript](../typescript) 🇫🇷
 - [Node.js](../nodejs) 🇫🇷
 - [Ionic Development](../ionic) 🇫🇷 
