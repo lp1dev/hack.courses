@@ -17,6 +17,37 @@
       <description>Data and file manipulation (head, tail, wc, grep, find) Oh, there you are! I was waiting for you to come back from 202!
 Now that you&amp;rsquo;re here we&amp;rsquo;re going to talk about new Linux commands you might not know about yet, these commands allow the modification of files and data streams.
  Note : We are not going to discuss file creation or deletion in this class for technical reasons regarding the terminal on hack.</description>
+      <content>&lt;h1 id=&#34;data-and-file-manipulation-head-tail-wc-grep-find&#34;&gt;Data and file manipulation (head, tail, wc, grep, find)&lt;/h1&gt;
+&lt;p&gt;Oh, there you are! I was waiting for you to come back from &lt;a href=&#34;./202&#34;&gt;202&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Now that you&amp;rsquo;re here we&amp;rsquo;re going to talk about new Linux &lt;strong&gt;commands&lt;/strong&gt; you might not know about yet, these commands allow the modification of files and data streams.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : We are not going to discuss file creation or deletion in this class for technical reasons regarding the terminal on hack.courses, but it might be part of another future class ;).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;head&#34;&gt;head&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with the command &lt;code&gt;head&lt;/code&gt;, it seems appropriate to start with this specific one since it displays the start of a given file or data stream.
+By default, head will &lt;strong&gt;only display the 10 first lines&lt;/strong&gt; of the contents passed to it as parameters.&lt;/p&gt;
+&lt;p&gt;You can try it using the following command :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; head /etc/passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;root:x:0:0:root:/root:/usr/bin/shell.sh
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/mail:/sbin/nologin
+news:x:9:13:news:/usr/lib/news:/sbin/nologin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, only the 10 first lines of the &lt;code&gt;/etc/passwd&lt;/code&gt; are displayed, you can also specify the number of lines you want to print using the &lt;code&gt;-n&lt;/code&gt; parameter, for instance if you only want the first two lines of the same file :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; head -n &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; /etc/passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tail&#34;&gt;tail&lt;/h2&gt;
+&lt;h2 id=&#34;wc&#34;&gt;wc&lt;/h2&gt;
+&lt;h2 id=&#34;grep&#34;&gt;grep&lt;/h2&gt;
+&lt;h2 id=&#34;find&#34;&gt;find&lt;/h2&gt;
+&lt;p&gt;Wow, you&amp;rsquo;re there early aren&amp;rsquo;t you?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m still working on this part, it will be available soon, come back later!&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -26,6 +57,168 @@ Now that you&amp;rsquo;re here we&amp;rsquo;re going to talk about new Linux com
       
       <guid>/posts/command_line_201/201/</guid>
       <description>function checkAnswers() { let responses = [ &#34;Question 1 [STATUS] : The answer was /dev/stdin since we need to read user input here.&#34;, &#34;Question 2 [STATUS] : The answer was /dev/stderr, this is the special file reserved for error messages.&#34;, &#34;Question 3 [STATUS] : The answer was /dev/stdout, this is the file that should be used to display information for the users in a terminal.&#34;, ] let questions = document.querySelectorAll(&#39;fieldset&#39;) let answers = [&#39;#res0&#39;,&#39;#res07&#39;,&#39;#res11&#39;] let valid = [false, false, false] let i = 0 for (let question of questions) { let answer = question.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+function checkAnswers() {
+    let responses = [
+          &#34;Question 1 [STATUS] : The answer was /dev/stdin since we need to read user input here.&#34;,
+          &#34;Question 2 [STATUS] : The answer was /dev/stderr, this is the special file reserved for error messages.&#34;,
+          &#34;Question 3 [STATUS] : The answer was /dev/stdout, this is the file that should be used to display information for the users in a terminal.&#34;,
+    ]
+    let questions = document.querySelectorAll(&#39;fieldset&#39;)
+    let answers = [&#39;#res0&#39;,&#39;#res07&#39;,&#39;#res11&#39;]
+    let valid = [false, false, false]
+
+    let i = 0
+    for (let question of questions) {
+          let answer = question.querySelector(answers[i])
+          valid[i] = answer.checked
+          alert(responses[i].replace(&#39;STATUS&#39;, (answer.checked ? &#39;True&#39; : &#39;False&#39;)))
+          i += 1
+    }
+    console.log(valid)
+}
+&lt;/script&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Welcome to this second command-line class!&lt;/p&gt;
+&lt;p&gt;If you didn&amp;rsquo;t follow Command-line 101 and need to grasp the basics of command-line and Linux click &lt;a href=&#34;../command_line_101&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this class, we&amp;rsquo;ll go further down the rabbit hole and learn how to use more advanced command and chain multiple commands together.&lt;/p&gt;
+&lt;p&gt;This class is supposed to be followed with &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt; open alongside, the challenges are made to be completed in the website&amp;rsquo;s interactive terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/screenshot.png&#34; alt=&#34;Hack.courses terminal&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;inputoutputs&#34;&gt;Input/Outputs&lt;/h1&gt;
+&lt;h2 id=&#34;linux-filesystem&#34;&gt;Linux filesystem&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start this course by talking about the way inputs and outputs are handled on Linux systems!&lt;/p&gt;
+&lt;p&gt;Inputs and outputs are quintessentials for operating systems and such important features are usually handled by the &lt;em&gt;most important&lt;/em&gt; and basic part of it : the &lt;strong&gt;kernel&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; : A &lt;strong&gt;kernel&lt;/strong&gt; is basically what you have left when you remove every executable, service and configuration file on your system, it&amp;rsquo;s the part that handles your filesystems, users, groups, permissions and essential hardware.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Each kernel follows its own paradigms, regarding Linux, there is a famous saying in IT and Computer Science :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;In Linux, everything is a file&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Which might sound odd as a concept.&lt;/p&gt;
+&lt;p&gt;It actually just means that the way the Linux kernel handles most things is by creating or allowing you to create entries for them in the filesystem.&lt;/p&gt;
+&lt;p&gt;For instance, if you plug in a new webcam into your GNU/Linux machine, a new file will be created in the &lt;em&gt;/dev/&lt;/em&gt; directory for it.&lt;/p&gt;
+&lt;p&gt;Those files are named &lt;strong&gt;special files&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to access a process&amp;rsquo;s environment variables, you can read the contents of the &lt;em&gt;/proc/self/environ&lt;/em&gt; file.&lt;/p&gt;
+&lt;h2 id=&#34;standard-inputs-and-output&#34;&gt;Standard inputs and output&lt;/h2&gt;
+&lt;p&gt;We will now describe some of the more oftenly used special files, those are the ones your shell uses in order to read user inputs and display processes outputs.&lt;/p&gt;
+&lt;h3 id=&#34;devstdin&#34;&gt;/dev/stdin&lt;/h3&gt;
+&lt;p&gt;Also known as the &lt;strong&gt;standard input&lt;/strong&gt; (stdin), &lt;em&gt;/dev/stdin&lt;/em&gt; is the special file programs such as &lt;strong&gt;shells&lt;/strong&gt; use in order to handle your keyboard input.&lt;/p&gt;
+&lt;!-- todo link to definition &#34;shell&#34; --&gt;
+&lt;p&gt;Whenever you type something in a terminal emulator, it will be written to &lt;em&gt;/dev/stdin&lt;/em&gt;, then read by whatever program is waiting for user input.&lt;/p&gt;
+&lt;h3 id=&#34;devstdout&#34;&gt;/dev/stdout&lt;/h3&gt;
+&lt;p&gt;Also known as the &lt;strong&gt;standard output&lt;/strong&gt; (stdout), &lt;em&gt;/dev/stdout&lt;/em&gt; is the special file programs use in order to display text output for the user.&lt;/p&gt;
+&lt;p&gt;When a process needs to display content inside your terminal window, it will write it inside this file which is coutinuously read by terminal emulators.&lt;/p&gt;
+&lt;h3 id=&#34;devstderr&#34;&gt;/dev/stderr&lt;/h3&gt;
+&lt;p&gt;Also known as the &lt;strong&gt;error output&lt;/strong&gt; (stderr), &lt;em&gt;/dev/stderr&lt;/em&gt; is the special file programs use in order to display error output for the user.&lt;/p&gt;
+&lt;p&gt;It works the same way the &lt;em&gt;standard output&lt;/em&gt; does, but having two different data streams makes the distinction between errors and &amp;ldquo;normal&amp;rdquo; messages from a program easier.&lt;/p&gt;
+&lt;h3 id=&#34;devnull&#34;&gt;/dev/null&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;/dev/null&lt;/em&gt; is often called &amp;ldquo;the null device&amp;rdquo; or the black hole. Everything sent/written to this special file will not be stored and disappear.&lt;/p&gt;
+&lt;p&gt;It comes in handy if you want to disregard a program&amp;rsquo;s error or standard output for instance.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/io.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;devrandom-and-devurandom&#34;&gt;/dev/random and /dev/urandom&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;/dev/random&lt;/em&gt; and &lt;em&gt;/dev/urandom&lt;/em&gt; are random data generators.&lt;/p&gt;
+&lt;p&gt;Whenever they are read, random data is generated. The slight difference between those two special files is that if &lt;em&gt;/dev/random&lt;/em&gt; will wait for enough entropy to be generated by a system before sending data. In a nutshell :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;/dev/random&lt;/em&gt; might block the execution of a program if doesn&amp;rsquo;t have enough entropy available&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;/dev/urandom&lt;/em&gt; will not stop generating data in any case, but will produce data that might be less random&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;/dev/urandom&lt;/em&gt; is suitable for most usages though, even cryptographic ones&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : You can have a look at the data generated by &lt;em&gt;/dev/random&lt;/em&gt; and &lt;em&gt;/dev/urandom&lt;/em&gt; using &lt;code&gt;cat /dev/urandom&lt;/code&gt; for instance.
+It might randomly write character sequences which break your terminal, it&amp;rsquo;s okay though, you can just reload the page or press CTRL+C multiple times to stop &lt;code&gt;cat&lt;/code&gt;, then type &lt;code&gt;reset&lt;/code&gt; to reset your terminal.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quizz-1&#34;&gt;Quizz 1&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s have a small quizz this time before we &lt;em&gt;actually&lt;/em&gt; start tinkering, shall we?&lt;/p&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Question 1&lt;/legend&gt;
+&lt;p&gt;I am writing a program that requires the user to write their name in the terminal, which special file will I use?&lt;/p&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res0&#34; name=&#34;res&#34; value=&#34;0&#34;
+             checked&gt;
+      &lt;label for=&#34;0&#34;&gt;/dev/stdin&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res01&#34; name=&#34;res&#34; value=&#34;1&#34;&gt;
+      &lt;label for=&#34;1&#34;&gt;/dev/stdout&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res02&#34; name=&#34;res&#34; value=&#34;2&#34;&gt;
+      &lt;label for=&#34;2&#34;&gt;/dev/stderr&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res03&#34; name=&#34;res&#34; value=&#34;3&#34;&gt;
+      &lt;label for=&#34;3&#34;&gt;/dev/null&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res04&#34; name=&#34;res&#34; value=&#34;3&#34;&gt;
+      &lt;label for=&#34;3&#34;&gt;/dev/urandom&lt;/label&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Question 2&lt;/legend&gt;
+&lt;p&gt;If my program encouters an error and I want to report it to its user, which special file will I use?&lt;/p&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res05&#34; name=&#34;res2&#34; value=&#34;0&#34;
+             checked&gt;
+      &lt;label for=&#34;0&#34;&gt;/dev/stdin&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res06&#34; name=&#34;res2&#34; value=&#34;1&#34;&gt;
+      &lt;label for=&#34;1&#34;&gt;/dev/stdout&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res07&#34; name=&#34;res2&#34; value=&#34;2&#34;&gt;
+      &lt;label for=&#34;2&#34;&gt;/dev/stderr&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res08&#34; name=&#34;res2&#34; value=&#34;3&#34;&gt;
+      &lt;label for=&#34;3&#34;&gt;/dev/null&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res09&#34; name=&#34;res2&#34; value=&#34;3&#34;&gt;
+      &lt;label for=&#34;3&#34;&gt;/dev/urandom&lt;/label&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Question 3&lt;/legend&gt;
+&lt;p&gt;This one is a little bit more tricky : In the same program, I have generated a private key using random data and need to display it in the user&amp;rsquo;s terminal for them to copy/paste.&lt;/p&gt;
+&lt;p&gt;Which special file will I write to in the end?&lt;/p&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res10&#34; name=&#34;res3&#34; value=&#34;0&#34;
+             checked&gt;
+      &lt;label for=&#34;0&#34;&gt;/dev/stdin&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res11&#34; name=&#34;res3&#34; value=&#34;1&#34;&gt;
+      &lt;label for=&#34;1&#34;&gt;/dev/stdout&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res12&#34; name=&#34;res3&#34; value=&#34;2&#34;&gt;
+      &lt;label for=&#34;2&#34;&gt;/dev/stderr&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res13&#34; name=&#34;res3&#34; value=&#34;3&#34;&gt;
+      &lt;label for=&#34;3&#34;&gt;/dev/null&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+      &lt;input type=&#34;radio&#34; id=&#34;res14&#34; name=&#34;res3&#34; value=&#34;3&#34;&gt;
+      &lt;label for=&#34;3&#34;&gt;/dev/urandom&lt;/label&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;button onclick=&#34;checkAnswers()&#34;&gt;Check my answers&lt;/button&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;Make sure you correcly understood everything in there, those are important concepts for the rest of this course which will make the content of the other classes easier to grasp.&lt;/p&gt;
+&lt;p&gt;Whenever you&amp;rsquo;re ready, move on to :&lt;/p&gt;
+&lt;h2 id=&#34;command-line-202202&#34;&gt;&lt;a href=&#34;../202&#34;&gt;Command-line 202&lt;/a&gt;&lt;/h2&gt;
+</content>
     </item>
     
     <item>
@@ -40,6 +233,42 @@ This course will teach you everything you need to do basic system administration
 You won&amp;rsquo;t need to install anything on your computer (for real).
 Difficulty : ⭐⭐✰✰✰ (Advanced Beginner)
 Syllabus  201 - Inputs/Outputs 202 - Redirections 203 - File interaction (head, tail, wc, grep) 204 - Advanced files interaction (cat++, file, cut, rev [&amp;hellip;]) 205 - Scripts execution  Requirements :</description>
+      <content>&lt;h1 id=&#34;command-line-201&#34;&gt;Command-line 201&lt;/h1&gt;
+&lt;p&gt;You know how to navigate on a Linux filesystem using command-line and want to know how to use pipes, redirections and more advanced commands?&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ve come to the right place!&lt;/p&gt;
+&lt;p&gt;This course will teach you everything you need to do basic system administration and management on your Linux machines 🖥️.&lt;/p&gt;
+&lt;p&gt;You won&amp;rsquo;t need to install &lt;em&gt;anything&lt;/em&gt; on your computer (for real).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty&lt;/strong&gt; : ⭐⭐✰✰✰ (Advanced Beginner)&lt;/p&gt;
+&lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;201&lt;/strong&gt; - Inputs/Outputs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;202&lt;/strong&gt; - Redirections&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;203&lt;/strong&gt; - File interaction (head, tail, wc, grep)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;204&lt;/strong&gt; - Advanced files interaction (cat++, file, cut, rev [&amp;hellip;])&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;205&lt;/strong&gt; - Scripts execution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Knowledge of the &lt;a href=&#34;/posts/command_line_101/cheatsheet&#34;&gt;commands from command-line 101&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;contents&#34;&gt;Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./201&#34;&gt;Command-line 201&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./202&#34;&gt;Command-line 202&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Command-line 203 (Coming Soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- - [Command-line 203](./203) --&gt;
+&lt;!-- - [Command-line 204](./204) --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./cheatsheet&#34;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;start-this-course&#34;&gt;Start this course&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./201&#34;&gt;Start the first class&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
     </item>
     
     <item>
@@ -49,6 +278,24 @@ Syllabus  201 - Inputs/Outputs 202 - Redirections 203 - File interaction (head, 
       
       <guid>/posts/command_line_101/cheatsheet/</guid>
       <description>Command-line CheatSheet  ls -&amp;gt; Print a directory&amp;rsquo;s contents  -l -&amp;gt; Print the contents as a list -a -&amp;gt; Display every file and directory   cat -&amp;gt; Print a file&amp;rsquo;s contents cd -&amp;gt; Move to a different directory pwd -&amp;gt; Prints the directory you&amp;rsquo;re currently in echo -&amp;gt; Print character strings and variables whoami -&amp;gt; Print your username echo $USER Print your username groups -&amp;gt; Print the groups you are part of echo $UID -&amp;gt; Print your user&amp;rsquo;s unique numeric ID  </description>
+      <content>&lt;h1 id=&#34;command-line-cheatsheet&#34;&gt;Command-line CheatSheet&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ls&lt;/strong&gt; -&amp;gt; Print a directory&amp;rsquo;s contents
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;-l&lt;/strong&gt; -&amp;gt; Print the contents as a list&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-a&lt;/strong&gt; -&amp;gt; Display every file and directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cat&lt;/strong&gt; -&amp;gt; Print a file&amp;rsquo;s contents&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cd&lt;/strong&gt; -&amp;gt; Move to a different directory&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pwd&lt;/strong&gt; -&amp;gt; Prints the directory you&amp;rsquo;re currently in&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;echo&lt;/strong&gt; -&amp;gt; Print character strings and variables&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;whoami&lt;/strong&gt; -&amp;gt; Print your username&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;echo $USER&lt;/strong&gt; Print your username&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;groups&lt;/strong&gt; -&amp;gt; Print the groups you are part of&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;echo $UID&lt;/strong&gt; -&amp;gt; Print your user&amp;rsquo;s unique numeric ID&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
@@ -61,6 +308,25 @@ Syllabus  201 - Inputs/Outputs 202 - Redirections 203 - File interaction (head, 
 Do you want to know how to navigate through a filesystem and run programs on Linux using command-line like a pro (Disclaimer: well, an informed beginner at least)? Hop in and grab your best keyboard 😎!
 You won&amp;rsquo;t need to install anything on your computer (for real), absolutely no prerequisites except from curiosity.
 Contents  Command-line 101 Command-line 102 Command-line 103 Command-line 104 CheatSheet  Start this course  Start the first class   </description>
+      <content>&lt;h1 id=&#34;command-line-101&#34;&gt;Command-line 101&lt;/h1&gt;
+&lt;p&gt;This course is a fully interactive and comprehensive class about Linux command-line for beginners.&lt;/p&gt;
+&lt;p&gt;Do you want to know how to navigate through a filesystem and run programs on Linux using command-line like a pro (Disclaimer: well, an informed beginner at least)? 
+Hop in and grab your best keyboard 😎!&lt;/p&gt;
+&lt;p&gt;You won&amp;rsquo;t need to install &lt;em&gt;anything&lt;/em&gt; on your computer (for real), absolutely no prerequisites except from curiosity.&lt;/p&gt;
+&lt;h1 id=&#34;contents&#34;&gt;Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101/101&#34;&gt;Command-line 101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101/102&#34;&gt;Command-line 102&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101/103&#34;&gt;Command-line 103&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101/104&#34;&gt;Command-line 104&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101/cheatsheet&#34;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;start-this-course&#34;&gt;Start this course&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101/101&#34;&gt;Start the first class&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
     </item>
     
     <item>
@@ -73,6 +339,43 @@ Contents  Command-line 101 Command-line 102 Command-line 103 Command-line 104 Ch
 You know how to navigate on a Linux filesystem using command-line and want to know how to use pipes, redirections and more advanced commands?
 You&amp;rsquo;ve come to the right place!
 This course will teach you everything you need to do basic system administration and management on your Linux machines 🖥️.</description>
+      <content>&lt;h1 id=&#34;command-line-101&#34;&gt;Command-line 101&lt;/h1&gt;
+&lt;p&gt;This course is a fully interactive and comprehensive class about Linux command-line for beginners who have finished command-line 101!&lt;/p&gt;
+&lt;p&gt;You know how to navigate on a Linux filesystem using command-line and want to know how to use pipes, redirections and more advanced commands?&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ve come to the right place!&lt;/p&gt;
+&lt;p&gt;This course will teach you everything you need to do basic system administration and management on your Linux machines 🖥️.&lt;/p&gt;
+&lt;p&gt;You won&amp;rsquo;t need to install &lt;em&gt;anything&lt;/em&gt; on your computer (for real).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty&lt;/strong&gt; : ⭐⭐✰✰✰ (Advanced Beginner)&lt;/p&gt;
+&lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;201&lt;/strong&gt; - Inputs/Outputs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;202&lt;/strong&gt; - Redirections&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;203&lt;/strong&gt; - File interaction (head, tail, wc, grep)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;204&lt;/strong&gt; - Advanced files interaction (cat++, file, cut, rev [&amp;hellip;])&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;205&lt;/strong&gt; - Scripts execution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Knowledge of the &lt;a href=&#34;/posts/command_line_101/cheatsheet&#34;&gt;commands from command-line 101&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;contents&#34;&gt;Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_201/201&#34;&gt;Command-line 201&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_201/202&#34;&gt;Command-line 202&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Command-line 203 (Coming Soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- - [Command-line 203](./203) --&gt;
+&lt;!-- - [Command-line 204](./204) --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./cheatsheet&#34;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;start-this-course&#34;&gt;Start this course&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./201&#34;&gt;Start the first class&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
     </item>
     
     <item>
@@ -85,6 +388,38 @@ This course will teach you everything you need to do basic system administration
 This course is a fully interactive and comprehensive class about Linux command-line for beginners.
 Do you want to know how to navigate through a filesystem and run programs on Linux using command-line like a pro (Disclaimer: well, an informed beginner at least)? Hop in and grab your best keyboard 😎!
 You won&amp;rsquo;t need to install anything on your computer (for real), absolutely no prerequisites except from curiosity.</description>
+      <content>&lt;h1 id=&#34;command-line-101&#34;&gt;Command-line 101&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty&lt;/strong&gt; : ⭐✰✰✰✰ (Beginner)&lt;/p&gt;
+&lt;p&gt;This course is a fully interactive and comprehensive class about Linux command-line for beginners.&lt;/p&gt;
+&lt;p&gt;Do you want to know how to navigate through a filesystem and run programs on Linux using command-line like a pro (Disclaimer: well, an informed beginner at least)? 
+Hop in and grab your best keyboard 😎!&lt;/p&gt;
+&lt;p&gt;You won&amp;rsquo;t need to install &lt;em&gt;anything&lt;/em&gt; on your computer (for real), absolutely no prerequisites except from curiosity.&lt;/p&gt;
+&lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;101&lt;/strong&gt; - The basics of command-line&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;102&lt;/strong&gt; - Filesystem and more&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;103&lt;/strong&gt; - Hidden and executable files&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;104&lt;/strong&gt; - Parameters and permissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Absolutely &lt;strong&gt;none&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./101&#34;&gt;Command-line 101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./102&#34;&gt;Command-line 102&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./103&#34;&gt;Command-line 103&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./104&#34;&gt;Command-line 104&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./cheatsheet&#34;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;start-this-course&#34;&gt;Start this course&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./101&#34;&gt;Start the first class&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
     </item>
     
     <item>
@@ -95,6 +430,148 @@ You won&amp;rsquo;t need to install anything on your computer (for real), absolu
       <guid>/posts/command_line_101/104/</guid>
       <description>function verify(id) {const answers = [&#39;-rw-r-----&#39;,]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems your answer is invalid. Try again!&#39;)}}Parameters ⚙️ Parameters are options you can add to your commands in order to change their behaviour.
 For instance, when you type ls -a, &amp;ldquo;-a&amp;rdquo; is a parameter that you add to the command ls.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;-rw-r-----&#39;,
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished this challenge&#39;)
+            input.disabled = true;
+        } else {
+            alert(&#39;It seems your answer is invalid. Try again!&#39;)
+        }
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;parameters-&#34;&gt;Parameters ⚙️&lt;/h1&gt;
+&lt;p&gt;Parameters are options you can add to your commands in order to change their behaviour.&lt;/p&gt;
+&lt;p&gt;For instance, when you type &lt;code&gt;ls -a&lt;/code&gt;,
+&amp;ldquo;-a&amp;rdquo; is a parameter that you add to the command &lt;code&gt;ls&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When you type &lt;code&gt;cat challenge_0.txt&lt;/code&gt;, &amp;ldquo;challenge_0.txt&amp;rdquo; is a parameter that you add to the command &lt;code&gt;cat&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can add an infinite number of parameters depending on the ones your script/program supports.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : Anything written &lt;strong&gt;after&lt;/strong&gt; a command is a &lt;em&gt;parameter&lt;/em&gt;. Parameters are separated by a space.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;shortcuts-and-wildcards-&#34;&gt;Shortcuts and wildcards 🃏&lt;/h1&gt;
+&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;
+&lt;p&gt;In a Linux shell, you have multiple syntaxes and keyboard shortcuts to avoid typing long commands and doing the same thing twice.&lt;/p&gt;
+&lt;p&gt;For instance if you want to run the same command again, &lt;strong&gt;Key Up&lt;/strong&gt; will go through your history and display the last command-lines you entered.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : The command &lt;code&gt;history&lt;/code&gt; will also print the whole command-line history for your shell session.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;autocompletion&#34;&gt;Autocompletion&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Tab&lt;/strong&gt; will &lt;strong&gt;autocomplete&lt;/strong&gt; files and directories names, for instance if you type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls chall
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In your home directory and then press &lt;strong&gt;Tab&lt;/strong&gt;, your terminal will automatically replace &amp;ldquo;chall&amp;rdquo; with &amp;ldquo;challenges&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In case of ambiguity, your shell will not automatically be able to autocomplete your commands, in that case, &lt;em&gt;nothing will be displayed&lt;/em&gt; when you press &lt;strong&gt;Tab&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pressing &lt;strong&gt;Tab&lt;/strong&gt; twice in that situation will print the ambiguous file or directory names.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls c &lt;span style=&#34;color:#75715e&#34;&gt;# Press Tab twice and observe what is printed&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;wildcards&#34;&gt;Wildcards&lt;/h2&gt;
+&lt;p&gt;A wildcard is a &amp;ldquo;magic&amp;rdquo; character that means &lt;em&gt;everything&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In a Linux shell, a wildcard is represented by the &lt;strong&gt;*&lt;/strong&gt; character, if you type it in your shell, it will be replaced before executing your command by every (non-hidden) files and directories in the current directory.&lt;/p&gt;
+&lt;p&gt;You can actually test this behaviour in your terminal using the following commands :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo * &lt;span style=&#34;color:#75715e&#34;&gt;# Will print every file and directory name&lt;/span&gt;
+$&amp;gt; cat * &lt;span style=&#34;color:#75715e&#34;&gt;# Will cat every file in the local directory&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wildcards can also be used in conjuction with other characters, at the start or the end of any character string.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo chall*
+$&amp;gt; echo *enge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;permissions&#34;&gt;Permissions&lt;/h1&gt;
+&lt;p&gt;In a Linux filesystem, every file has associated permissions.&lt;/p&gt;
+&lt;p&gt;Permissions define which actions users or groups of users can do regarding those files and directories.&lt;/p&gt;
+&lt;h2 id=&#34;users&#34;&gt;Users&lt;/h2&gt;
+&lt;p&gt;If you can enter commands on a computer, you are logged in as a &lt;strong&gt;user&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The command &lt;code&gt;whoami&lt;/code&gt; will print your username, this is your identity on the machine.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;$USER&lt;/code&gt; environment variable also contains your username, you can display its value with &lt;code&gt;echo $USER&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Your Linux system does not always uses usernames in order to identify users, each user have a numeric ID called a &lt;strong&gt;UID&lt;/strong&gt;. You can also print your UID using &lt;code&gt;echo $UID&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;groups&#34;&gt;Groups&lt;/h2&gt;
+&lt;p&gt;To make permissions management easier, users are divided in &lt;strong&gt;groups&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;By default on Linux, whenever a user is created, it is part of its own, single-member group whose name is its own.&lt;/p&gt;
+&lt;p&gt;On &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt;, your group should be &amp;ldquo;nointernet&amp;rdquo;, you can display the groups you are part of using the command &lt;code&gt;groups&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;read-write-execute&#34;&gt;Read, write, execute&lt;/h2&gt;
+&lt;p&gt;Do you remember the &lt;code&gt;ls -l&lt;/code&gt; listing we reviewed earlier? Let&amp;rsquo;s look at it again.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls -l challenges/command_line_101/
+total &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;
+drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 .
+drwxr-xr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 ..
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root            &lt;span style=&#34;color:#ae81ff&#34;&gt;96&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 .challenge_4
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root           &lt;span style=&#34;color:#ae81ff&#34;&gt;276&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 challenge5.sh
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root           &lt;span style=&#34;color:#ae81ff&#34;&gt;111&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 15:44 challenge_0.txt
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root            &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 20:57 challenge_1.txt
+drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:58 challenge_2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s finally time to explain what all of this means, let&amp;rsquo;s start by investigating in details the first column of this list, the one with characters like &lt;code&gt;-rw-rw-r--&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;As I told you earlier, the first character can be either &lt;em&gt;-&lt;/em&gt; (which represents an empty space) or &lt;em&gt;d&lt;/em&gt; for &amp;ldquo;directory&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Then, you have three sequences of &amp;ldquo;rwx&amp;rdquo;, each character of each sequence can also be equal to &lt;em&gt;-&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Those sequences describe the permissions associated to the file or directory :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; - is for &lt;strong&gt;read&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; - is for &lt;strong&gt;write&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x&lt;/strong&gt; - is for &lt;strong&gt;execute&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Following this logic, &lt;code&gt;r--&lt;/code&gt; means &amp;ldquo;read permissions only&amp;rdquo;, &lt;code&gt;rw-&lt;/code&gt; means &amp;ldquo;read/write permissions only, and &lt;code&gt;rwx&lt;/code&gt; means read+write+execute permissions!&lt;/p&gt;
+&lt;p&gt;Why three consecutive sequences then?&lt;/p&gt;
+&lt;p&gt;The first sequence is for the &lt;strong&gt;user&lt;/strong&gt; who owns the file/directory, the second one is for the &lt;strong&gt;group&lt;/strong&gt; and the third one is for &lt;strong&gt;everyone else&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, the first username in the list (column 3) is the &lt;strong&gt;user&lt;/strong&gt; who owns the file and the second one is the &lt;strong&gt;group&lt;/strong&gt; the file belongs to!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;If you&amp;rsquo;re new to this, that might be a lot of information to handle, let&amp;rsquo;s take a break with a few exercices.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-6&#34;&gt;Challenge 6&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s do something fun this time, no flag, no answers! There is a pretty neat &lt;strong&gt;executable&lt;/strong&gt; located in ~/examples, its name is &lt;strong&gt;cmatrix&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Find a way to run this executable and then, find a way to exit the Matrix 😎.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint 1&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : You can run an executable exactly like you did with the script previously.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint 2&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : A shortcut starting with CTRL&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;challenge-7&#34;&gt;Challenge 7&lt;/h2&gt;
+&lt;p&gt;For this exercice, let&amp;rsquo;s do something different! This time, you won&amp;rsquo;t have to look for a flag.&lt;/p&gt;
+&lt;p&gt;I will give you specific information describing a file which you will have to translate into a &lt;code&gt;drwxr-xr-x&lt;/code&gt; line just like &lt;code&gt;ls -l&lt;/code&gt; would display.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We are talking about a file, not a directory&lt;/li&gt;
+&lt;li&gt;The owner of the file can read and write the file&lt;/li&gt;
+&lt;li&gt;The group who owns the file can read it&lt;/li&gt;
+&lt;li&gt;Anyone else can not do &lt;em&gt;anything&lt;/em&gt; with the file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enter your answer in the prompt below (web version only) :&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;Example : drwxrw-rw-&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;you-finished-this-class&#34;&gt;You finished this class!&lt;/h1&gt;
+&lt;p&gt;Congrats on your completion of this first class! I hope you enjoyed it!&lt;/p&gt;
+&lt;p&gt;Was it too fast? Too slow? Too hard? Too easy? I&amp;rsquo;d love to &lt;a href=&#34;https://forms.gle/gzvPTPCDv27uwve88&#34;&gt;read your feedback&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;If you want to support my work, you can &lt;a href=&#34;https://lp1.podia.com/free-command-line-and-linux-beginner-class&#34;&gt;get this class&lt;/a&gt; from podia for &lt;strong&gt;free&lt;/strong&gt;, this will help me centralize the students and you will be able to be notified whenever a new class is available!&lt;/p&gt;
+&lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://devhints.io/bash&#34;&gt;https://devhints.io/bash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cheatography.com/davechild/cheat-sheets/linux-command-line/&#34;&gt;https://cheatography.com/davechild/cheat-sheets/linux-command-line/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.guru99.com/linux-commands-cheat-sheet.html&#34;&gt;https://www.guru99.com/linux-commands-cheat-sheet.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- # Additional Resources 
+
+
+&lt;!-- 
+
+105
+
+# Chown/Chmod 
+
+# grep
+
+# 
+
+--&gt;&lt;blockquote&gt;
+&lt;/blockquote&gt;
+</content>
     </item>
     
     <item>
@@ -105,6 +582,89 @@ For instance, when you type ls -a, &amp;ldquo;-a&amp;rdquo; is a parameter that 
       <guid>/posts/command_line_101/102/</guid>
       <description>function verify(id) {const answers = [&#39;flag{442fcf28466515a81d5434931496ffa64611cc8e}&#39;,&#39;flag{4a4c6edef220f300dc6bc58df3d3b2e3c0bc8842}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Linux filesystem arborescence 🌳 Let me tell you a bit about the way linux filesystems are organized.
 / is where everything starts, it&amp;rsquo;s the root of your filesystem, a little bit like C: is usually where everything is stored on a Windows machine.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{442fcf28466515a81d5434931496ffa64611cc8e}&#39;,
+            &#39;flag{4a4c6edef220f300dc6bc58df3d3b2e3c0bc8842}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished this challenge&#39;)
+            input.disabled = true;
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;linux-filesystem-arborescence-&#34;&gt;Linux filesystem arborescence 🌳&lt;/h1&gt;
+&lt;p&gt;Let me tell you a bit about the way linux filesystems are organized.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/&lt;/strong&gt; is where everything starts, it&amp;rsquo;s the &lt;em&gt;root&lt;/em&gt; of your filesystem, a little bit like &lt;em&gt;C:&lt;/em&gt; is usually where everything is stored on a Windows machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/home&lt;/strong&gt; (which is located inside &lt;strong&gt;/&lt;/strong&gt;, that&amp;rsquo;s why it starts with the same character) is where the user&amp;rsquo;s directories are usually stored. It is analogous to the &lt;strong&gt;C:\Users&lt;/strong&gt; directory on Windows.&lt;/p&gt;
+&lt;p&gt;Each user has its own &lt;strong&gt;home&lt;/strong&gt; 🏠 directory, you can see which one is yours using the following command :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo $HOME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In a Linux terminal, the &lt;strong&gt;$&lt;/strong&gt; character designates a variable. The &lt;em&gt;$HOME&lt;/em&gt; variable has been predefined in your terminal by the operating system, such a variable is named an &lt;strong&gt;environment variable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Observe the difference between your terminal&amp;rsquo;s output when you type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo $HOME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo HOME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : $HOME can also be replaced with the ~ character.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;manual-pages-&#34;&gt;Manual pages 📚&lt;/h1&gt;
+&lt;p&gt;Did you know that Linux comes with manuals for almost every command installed?&lt;/p&gt;
+&lt;p&gt;For instance, &lt;code&gt;man ls&lt;/code&gt; will display the manual pages for the command &lt;em&gt;ls&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;You can use your &lt;em&gt;keyboard&amp;rsquo;s arrows&lt;/em&gt; to navigate inside the manpages, the &lt;em&gt;space&lt;/em&gt; key to skip to the next page and &lt;em&gt;q&lt;/em&gt; to quit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : It&amp;rsquo;s also time to let you know that you can access those classes directly in the terminal using the &lt;code&gt;classes&lt;/code&gt; command! Select a class with your keyboard keys and press enter to open a course&amp;rsquo;s contents. You can navigate through the files exactly like you would with a manual page.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;stopping-a-command-&#34;&gt;Stopping a command 🛑&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s say you use the &lt;em&gt;sleep&lt;/em&gt; command and type something like &lt;code&gt;sleep 42&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Your shell is going to wait 42 seconds before allowing you to type new commands, until then, you&amp;rsquo;re stuck!&lt;/p&gt;
+&lt;p&gt;If at some point you get stuck in a command-line which blocks the execution of new commands, you can use the &lt;strong&gt;CTRL + C&lt;/strong&gt; shortcut to force the current program to quit.&lt;/p&gt;
+&lt;p&gt;Exiting a program in such a way is called &lt;em&gt;killing&lt;/em&gt; a program.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;echo-&#34;&gt;Echo 🔉&lt;/h1&gt;
+&lt;p&gt;Echo (which for some unknown reason always reminds me of &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecco_the_Dolphin&#34;&gt;Ecco the Dolphin&lt;/a&gt;) is an incredibly useful Linux command!&lt;/p&gt;
+&lt;p&gt;You can use it to display character strings on your screen.&lt;/p&gt;
+&lt;p&gt;For instance if you want to print &amp;ldquo;Hello, world&amp;rdquo;, you can type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo Hello, world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also use it to display a variable&amp;rsquo;s value, for instance :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; echo Hello, $USER
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;Why don&amp;rsquo;t we challenge your new command-line knowledge?&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a little treasure hunt.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-2&#34;&gt;Challenge 2&lt;/h2&gt;
+&lt;p&gt;Enter the &lt;em&gt;challenge_2&lt;/em&gt; directory.&lt;/p&gt;
+&lt;p&gt;This directory contains the flag, but where is it?! You&amp;rsquo;ll need to cleverly navigate through multiple directories in order to fetch this challenge&amp;rsquo;s flag.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : You can go through multiple directories at once, instead of writing &lt;code&gt;cd /gu3st&lt;/code&gt; and &lt;code&gt;cd challenges&lt;/code&gt; you can directly type &lt;code&gt;cd /gu3st/challenges&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;flag 2&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;challenge-3&#34;&gt;Challenge 3&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : Don&amp;rsquo;t forget to type &lt;code&gt;cd&lt;/code&gt; when you&amp;rsquo;re done with an exercice to go back to your home directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This fourth (counting the challenge 0) flag is not hidden in a file, it is stored in an environment variable!&lt;/p&gt;
+&lt;p&gt;The name of the variable is FLAG3.&lt;/p&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 3&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : If you need to find a command quickly you can read the &lt;a href=&#34;../cheatsheet&#34;&gt;cheatsheet&lt;/a&gt; associated with this class.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Wow, you&amp;rsquo;re still there?&lt;/p&gt;
+&lt;p&gt;Congrats on making though those first challenges!&lt;/p&gt;
+&lt;p&gt;You can now move on to&lt;/p&gt;
+&lt;h2 id=&#34;command-line-103103&#34;&gt;&lt;a href=&#34;../103&#34;&gt;Command line 103&lt;/a&gt;&lt;/h2&gt;
+</content>
     </item>
     
     <item>
@@ -115,6 +675,97 @@ For instance, when you type ls -a, &amp;ldquo;-a&amp;rdquo; is a parameter that 
       <guid>/posts/command_line_101/103/</guid>
       <description>function verify(id) {const answers = [&#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,&#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Hidden files 🕶️ On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.
 Such files will not be displayed when using a regular ls.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{333610b9a7955f54efdddea14634ab93d77a0d64}&#39;,
+            &#39;flag{3833de1724aba85be072244d222595c697c29a87}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished this challenge&#39;)
+            input.disabled = true;
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;hidden-files-&#34;&gt;Hidden files 🕶️&lt;/h1&gt;
+&lt;p&gt;On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.&lt;/p&gt;
+&lt;p&gt;Such files will &lt;em&gt;not&lt;/em&gt; be displayed when using a regular &lt;code&gt;ls&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can actually see hidden files and directories using &lt;code&gt;ls -a&lt;/code&gt; for &amp;ldquo;all&amp;rdquo; though.&lt;/p&gt;
+&lt;p&gt;This command will also display a single dot . which means &amp;ldquo;the current directory&amp;rdquo; in Linux and two dots .. which means &amp;ldquo;the directory above this one in the arborescence&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Observe the difference between :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls .
+$&amp;gt; ls -a .
+$&amp;gt; ls ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;advanced-ls&#34;&gt;Advanced ls&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; can give you even more useful information about files and directories!&lt;/p&gt;
+&lt;p&gt;Using &lt;code&gt;ls -l&lt;/code&gt; on the &lt;em&gt;challenges/command_line_101&lt;/em&gt; directory will print the following list :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; ls -l challenges/command_line_101/
+total &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;
+drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 .
+drwxr-xr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 ..
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root            &lt;span style=&#34;color:#ae81ff&#34;&gt;96&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 .challenge_4
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root           &lt;span style=&#34;color:#ae81ff&#34;&gt;276&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:59 challenge5.sh
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root           &lt;span style=&#34;color:#ae81ff&#34;&gt;111&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 15:44 challenge_0.txt
+-rw-rw-r--    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root     root            &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt; Jan  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; 20:57 challenge_1.txt
+drwxrwxr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root     root          &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Jan &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 21:58 challenge_2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;re going to leave some of the information printed in this list for another class, but you should already recognize the file and directories names usually displayed by ls!&lt;/p&gt;
+&lt;p&gt;The first line &amp;ldquo;total 28&amp;rdquo; means that this directory uses a total of 28 filesystem &amp;ldquo;blocks&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;A block is simply a way of counting space on a Linux filesystem, a bit like the more commonly represented Mega octets and Kilo octets. A block is equivalent to 8KB =&amp;gt; 8000 bytes.&lt;/p&gt;
+&lt;p&gt;The hours and dates are the last modification date for each item and the number printed on the left of the month (Jan-&amp;gt;January in this example) is the file&amp;rsquo;s size in bytes.&lt;/p&gt;
+&lt;p&gt;Also note, lines starting with &lt;em&gt;d&lt;/em&gt; are directories!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;executing-scripts-&#34;&gt;Executing scripts 📜&lt;/h1&gt;
+&lt;h2 id=&#34;about-scripts&#34;&gt;About scripts&lt;/h2&gt;
+&lt;p&gt;What are scripts, you&amp;rsquo;re wondering?&lt;/p&gt;
+&lt;p&gt;Scripts are files containing commands and logic which can be used to automatize mostly any task you do on a computer!&lt;/p&gt;
+&lt;p&gt;Linux and Operating Systems in general are full of scripts, some of them are used to install softwares, update files, make sure programs are not outdated, update the time, move log files, display alerts etc&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;executing-your-first-script&#34;&gt;Executing your first script&lt;/h2&gt;
+&lt;p&gt;In order to run a script, you just need to write its &lt;strong&gt;path&lt;/strong&gt; in your terminal.&lt;/p&gt;
+&lt;p&gt;For instance, a script is located in &lt;em&gt;/usr/bin/foxsay&lt;/em&gt; on &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Type the following command in the terminal to run this script :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/usr/bin/foxsay hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/foxsay.PNG&#34; alt=&#34;The output should be a fox saying &amp;ldquo;hello&amp;rdquo; in your terminal&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Congrats, you just ran your first script!&lt;/p&gt;
+&lt;p&gt;Now, this is not the &lt;em&gt;only&lt;/em&gt; way to run a script.&lt;/p&gt;
+&lt;p&gt;The path you used here is what is called an &lt;strong&gt;absolute path&lt;/strong&gt;. An absolute path starts from &lt;strong&gt;the root&lt;/strong&gt; of your filesystem (&amp;quot;/&amp;quot;).&lt;/p&gt;
+&lt;p&gt;You can also run a script using its &lt;strong&gt;relative path&lt;/strong&gt;, a relative path is, contrary to an &lt;strong&gt;absolute&lt;/strong&gt; path, a path which does not start with &amp;ldquo;/&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;To run a script within the directory you are currently in, type &amp;ldquo;./&amp;rdquo; followed by the script name.&lt;/p&gt;
+&lt;p&gt;For instance, move inside the &lt;em&gt;/usr/bin&lt;/em&gt; directory using &lt;code&gt;cd /usr/bin&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, use the following syntax to run the same script again :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./foxsay hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : Don&amp;rsquo;t forget to type &lt;code&gt;cd&lt;/code&gt; to go back to your home directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;Ready to take one some harder challenges? Let&amp;rsquo;s go!&lt;/p&gt;
+&lt;h1 id=&#34;challenge-4&#34;&gt;Challenge 4&lt;/h1&gt;
+&lt;p&gt;The &lt;em&gt;challenges/command_line_101&lt;/em&gt; directory contains a flag for this challenge.&lt;/p&gt;
+&lt;p&gt;But beware, it&amp;rsquo;s &lt;em&gt;hidden&lt;/em&gt;!&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;flag 4&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : Advanced ls&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;h1 id=&#34;challenge-5&#34;&gt;Challenge 5&lt;/h1&gt;
+&lt;p&gt;The flag for this challenge is not hidden, it is in the same directory!&lt;/p&gt;
+&lt;p&gt;But this time, it is not a text file that you can &lt;code&gt;cat&lt;/code&gt;, it is a script!&lt;/p&gt;
+&lt;p&gt;Run the script to get the flag.&lt;/p&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 5&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;Ready to continue? Make sure to take a break, drink some water and move on to&lt;/p&gt;
+&lt;h2 id=&#34;command-line-104104&#34;&gt;&lt;a href=&#34;../104&#34;&gt;Command line 104&lt;/a&gt;&lt;/h2&gt;
+</content>
     </item>
     
     <item>
@@ -124,6 +775,94 @@ Such files will not be displayed when using a regular ls.</description>
       
       <guid>/posts/command_line_201/202/</guid>
       <description>function verify(id) { const answers = [ &#39;flag{b0138935d232349fcea0aede02ab9cdd96938e55}&#39;, ] let input = document.querySelector(&#39;#chall&#39;+id) if (input.value.trim() == answers[id]) { alert(&#39;Congratulations! You finished this challenge&#39;) input.disabled = true; } else { alert(&#39;It seems your answer is invalid. Try again!&#39;) } }  Pipes You might have heard about or have seen pipes using the | character, they are very frequently used in Linux command-line and can become an essential tool once you master them.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{b0138935d232349fcea0aede02ab9cdd96938e55}&#39;,
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished this challenge&#39;)
+            input.disabled = true;
+        } else {
+            alert(&#39;It seems your answer is invalid. Try again!&#39;)
+        }
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;pipes&#34;&gt;Pipes&lt;/h1&gt;
+&lt;p&gt;You might have heard about or have seen &lt;strong&gt;pipes&lt;/strong&gt; using the &lt;code&gt;|&lt;/code&gt; character, they are very frequently used in Linux command-line and can become an essential tool once you master them.&lt;/p&gt;
+&lt;p&gt;If you have a look at the manual pages related to pipes using &lt;code&gt;man pipe&lt;/code&gt;, the definition of a pipe starts with the following sentence :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pipe() creates a pipe, a unidirectional data channel that can be used
+       for interprocess communication.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can infer from it that a pipe :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is a data channel&lt;/li&gt;
+&lt;li&gt;Can be used to communicate data from a process to another&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To give you a definition that better fits the concepts we have discussed in the previous class : a &lt;strong&gt;pipe&lt;/strong&gt; is &lt;strong&gt;a character&lt;/strong&gt; whose usage redirects the &lt;strong&gt;standard output&lt;/strong&gt; of a first command part to the &lt;strong&gt;standard input&lt;/strong&gt; of a second one.&lt;/p&gt;
+&lt;p&gt;For instance, if you wanted to redirect the &lt;strong&gt;standard output&lt;/strong&gt; of &lt;code&gt;whoami&lt;/code&gt; to &lt;code&gt;rev&lt;/code&gt;, you would type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; whoami | rev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;New command&lt;/strong&gt; : &lt;code&gt;rev&lt;/code&gt; is like cat, except it reads the data in a reversed way. Try it with &lt;code&gt;rev /etc/passwd&lt;/code&gt; or any other file available on hack.courses.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pipes can be chained without limitations, for instance the following command line is valid :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; cat /etc/passwd | grep gu3st | rev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : The characters &amp;ldquo;$&amp;gt;&amp;rdquo; here are not part of the command, they represent the prompt usually displayed by shells to let the user know they can type a new command.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And will &lt;code&gt;cat /etc/passwd&lt;/code&gt;, then send all of the file content written to &lt;em&gt;/dev/stdout&lt;/em&gt; to &lt;code&gt;grep&lt;/code&gt; which fill filter only the lines containing &lt;code&gt;gu3st&lt;/code&gt; and then &lt;code&gt;reverse&lt;/code&gt; the output with &lt;code&gt;rev&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;redirections&#34;&gt;Redirections&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s tackle another important concept in Linux shells : &lt;strong&gt;redirections&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;They are represented by the characters &lt;code&gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;&lt;/code&gt; for the &lt;em&gt;right&lt;/em&gt; and &lt;em&gt;left&lt;/em&gt; redirection or &lt;em&gt;output&lt;/em&gt; and &lt;em&gt;input&lt;/em&gt; redirection.&lt;/p&gt;
+&lt;h2 id=&#34;right-redirection-output-redirection&#34;&gt;Right redirection (output redirection)&lt;/h2&gt;
+&lt;p&gt;What is meant by &lt;em&gt;right redirection&lt;/em&gt; or &lt;em&gt;output redirection&lt;/em&gt; is a redirection of a process &lt;strong&gt;standard output&lt;/strong&gt; to a file (which can be a special file or a regular file).&lt;/p&gt;
+&lt;p&gt;For instance on a Linux system you could write random data to an actual file named &lt;code&gt;random_data&lt;/code&gt; using &lt;em&gt;/dev/urandom&lt;/em&gt; with the following command :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat /dev/urandom &amp;gt; random_data&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : You do not have the permissions to create new files on hack.courses, this command will not work unless you have your own &lt;em&gt;user account&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You could also use right redirections to hide a command&amp;rsquo;s standard output, like :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ls / &amp;gt; /dev/null&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Which would redirect all of the content written by &lt;code&gt;ls /&lt;/code&gt; on the &lt;strong&gt;standard output&lt;/strong&gt; to &lt;code&gt;/dev/null&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hands-on&lt;/strong&gt; : A good example of this is the &lt;code&gt;ping&lt;/code&gt; utility, try with &lt;code&gt;ping 127.0.0.1 &amp;gt; /dev/null&lt;/code&gt;. Do you understand which part of the original ping command is written on the standard output? Which one is written on the error output?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- //TODO rename the section to somehting else than hands-on and replace ping with something that works on hack.courses --&gt;
+&lt;h2 id=&#34;left-redirection-input-redirection&#34;&gt;Left redirection (input redirection)&lt;/h2&gt;
+&lt;p&gt;Input redirection, using the &lt;code&gt;&amp;lt;&lt;/code&gt; operator redirects a file&amp;rsquo;s contents to a command&amp;rsquo;s &lt;strong&gt;standard input&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can replace user input, entered using a keyboard with the contents of a &lt;em&gt;special&lt;/em&gt; or &lt;em&gt;regular&lt;/em&gt; file.&lt;/p&gt;
+&lt;p&gt;As an example, if we were to sort the contents of a given &lt;em&gt;customers.txt&lt;/em&gt; we could use a left redirection like :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sort &amp;lt; customers.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;em&gt;customers.txt&lt;/em&gt; will be read by the command interpreter, which will then write all of its contents as &lt;code&gt;sort&lt;/code&gt;&amp;rsquo;s &lt;strong&gt;standard input&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : There also is another output redirection you might encounter, using &lt;em&gt;two angular brackets&lt;/em&gt; &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;. This one will &lt;strong&gt;add additional data&lt;/strong&gt; after the end of a file instead of totally &lt;strong&gt;replacing its contents&lt;/strong&gt; like &lt;code&gt;&amp;gt;&lt;/code&gt; does.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-On 🤜!&lt;/h1&gt;
+&lt;p&gt;You probably miss actually messing around with a terminal by yourself after all of this! Let&amp;rsquo;s get our hands dirty and search for more &lt;em&gt;flags&lt;/em&gt; by finishing &lt;em&gt;challenges&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If you need a reminder about the &lt;em&gt;flags&lt;/em&gt; system, have a look at &lt;a href=&#34;http://doc.hack.courses/posts/command_line_101/101/#hands-on-&#34;&gt;this section of CLI 101&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-0&#34;&gt;Challenge 0&lt;/h2&gt;
+&lt;p&gt;This first challenge&amp;rsquo;s flag will be given to you by a &lt;em&gt;script&lt;/em&gt;, you &lt;a href=&#34;../command_line_101/103.md&#34;&gt;remember how to run a shell script&lt;/a&gt;, right?&lt;/p&gt;
+&lt;p&gt;Once you run this shell script, it gives you the flag&amp;hellip;
+But wait, there&amp;rsquo;s something wrong with it isn&amp;rsquo;t it?&lt;/p&gt;
+&lt;p&gt;It seems the flag you&amp;rsquo;re given has been &lt;em&gt;reversed&lt;/em&gt;. Maybe you can do something about it using your new command-line skills?&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Hint 1&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : This exercice can be done (not exclusively) using &lt;code&gt;rev&lt;/code&gt; and a pipe.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;Example : flag{abcdefgh0123456789}&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- flag{b0138935d232349fcea0aede02ab9cdd96938e55} --&gt;
+&lt;!-- ## Challenge 1 --&gt;
+&lt;hr&gt;
+&lt;p&gt;Whenever you&amp;rsquo;re ready, move on to :&lt;/p&gt;
+&lt;h2 id=&#34;command-line-203-coming-soon&#34;&gt;Command-line 203 (Coming Soon)&lt;/h2&gt;
+&lt;!-- ## [Command-line 202](../202) --&gt;
+</content>
     </item>
     
     <item>
@@ -135,6 +874,34 @@ Such files will not be displayed when using a regular ls.</description>
       <description>What is hack.courses? Hack.courses is a toolset comprised of classes and interactive challenges with the aim of teaching command line, programming and hacking in general to anyone from beginners to experienced hackers and IT professionals.
 The content is written by lp1 and is part of the teaching content I develop for my company fenrir.pro.
 Some of the classes and course material here is open source, some is close source and paid as writing classes is (part of) my job.</description>
+      <content>&lt;h1 id=&#34;what-is-hackcourses&#34;&gt;What is hack.courses?&lt;/h1&gt;
+&lt;p&gt;Hack.courses is a toolset comprised of classes and interactive challenges with the aim of teaching command line, programming and hacking in general to anyone from beginners to experienced hackers and IT professionals.&lt;/p&gt;
+&lt;p&gt;The content is written by &lt;a href=&#34;https://lp1.eu&#34;&gt;&lt;strong&gt;lp1&lt;/strong&gt;&lt;/a&gt; and is part of the teaching content I develop for my company &lt;a href=&#34;https://fenrir.pro&#34;&gt;fenrir.pro&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some of the classes and course material here is open source, some is close source and paid as writing classes is (part of) my job.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;what-can-i-learn-here&#34;&gt;What can I learn here?&lt;/h1&gt;
+&lt;p&gt;At the moment, the following free classes are available :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../command_line_101&#34;&gt;Command line 101&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../command_line_201&#34;&gt;Command line 201&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../typescript&#34;&gt;TypeScript&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../nodejs&#34;&gt;Node.js&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some more free content is in development at the moment! You can follow &lt;a href=&#34;https://www.linkedin.com/company/fenrir-sec&#34;&gt;fenrir.pro on LinkedIn&lt;/a&gt; to know whenever the material here is updated.&lt;/p&gt;
+&lt;h1 id=&#34;what-about-the-terminal-and-exercices&#34;&gt;What about the terminal and exercices?&lt;/h1&gt;
+&lt;p&gt;The terminal on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is a full-fledged GNU/Linux terminal.&lt;/p&gt;
+&lt;p&gt;It is based on &lt;a href=&#34;https://xtermjs.org/&#34;&gt;xterm.js&lt;/a&gt; and gives access to a real Linux command line interpreter to anyone for free.&lt;/p&gt;
+&lt;p&gt;If you already know your way around a terminal can find the available free challenges in the &lt;em&gt;challenges&lt;/em&gt; directory in the gu3st user&amp;rsquo;s home.&lt;/p&gt;
+&lt;p&gt;If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to this, check out the &lt;a href=&#34;../command_line_101&#34;&gt;command line 101 class&lt;/a&gt; and learn how to use command line right away!&lt;/p&gt;
+&lt;h1 id=&#34;how-to-report-a-security-issue&#34;&gt;How to report a security issue?&lt;/h1&gt;
+&lt;p&gt;Great question! Kindly email me at jeremie(a)fenrir.pro.&lt;/p&gt;
+&lt;p&gt;We do &lt;strong&gt;not&lt;/strong&gt; propose bounties at the moment, but you might be part of our hall of fame.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -147,6 +914,12 @@ Some of the classes and course material here is open source, some is close sourc
 It is based on xterm.js and gives access to a real Linux command line interpreter to anyone for free.
 If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.
 If you&amp;rsquo;re new to this, check out the command line 101 class and learn how to use command line right away!</description>
+      <content>&lt;h1 id=&#34;what-is-this-terminal&#34;&gt;What is this terminal?&lt;/h1&gt;
+&lt;p&gt;The terminal on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is a full-fledged GNU/Linux terminal.&lt;/p&gt;
+&lt;p&gt;It is based on &lt;a href=&#34;https://xtermjs.org/&#34;&gt;xterm.js&lt;/a&gt; and gives access to a real Linux command line interpreter to anyone for free.&lt;/p&gt;
+&lt;p&gt;If you want to start learning the command line, linux, scripting or programming it is a great way to experiment and learn in real-life conditions without having to install anything on your computer.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re new to this, check out the &lt;a href=&#34;/cli101&#34;&gt;command line 101 class&lt;/a&gt; and learn how to use command line right away!&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -157,6 +930,21 @@ If you&amp;rsquo;re new to this, check out the command line 101 class and learn 
       <guid>/classes/</guid>
       <description>Available classes  Command line 101 🇬🇧 Command line 201 🇬🇧 TypeScript 🇫🇷 Node.js 🇫🇷 Ionic Development 🇫🇷 EcmaScript 6 🇫🇷 Test-Driven Development 101 🇫🇷 Vue.js Development w/ TDD 🇫🇷  License All of the class contents on this site use the creative commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
 You can send me a message at jeremie(a)fenrir.pro if you need more details.</description>
+      <content>&lt;h1 id=&#34;available-classes&#34;&gt;Available classes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_101&#34;&gt;Command line 101&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/command_line_201&#34;&gt;Command line 201&lt;/a&gt; 🇬🇧&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/typescript&#34;&gt;TypeScript&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/nodejs&#34;&gt;Node.js&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/ionic&#34;&gt;Ionic Development&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/es6&#34;&gt;EcmaScript 6&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/tdd&#34;&gt;Test-Driven Development 101&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/vue_js_tdd&#34;&gt;Vue.js Development w/ TDD&lt;/a&gt; 🇫🇷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;All of the class contents on this site&lt;/strong&gt; use the &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;&lt;strong&gt;creative commons&lt;/strong&gt; &lt;em&gt;Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)&lt;/em&gt;&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;You can send me a message at jeremie(a)fenrir.pro if you need more details.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -168,6 +956,111 @@ You can send me a message at jeremie(a)fenrir.pro if you need more details.</des
       <description>function verify(id) {const answers = [&#39;flag{29e140ef258fc3ec0e485c0648f048d36ee5e017}&#39;,&#39;flag{1d279c84d51f95a12ea44793212ecc0d5d360d47}&#39;]let input = document.querySelector(&#39;#chall&#39;+id)if (input.value.trim() == answers[id]) {alert(&#39;Congratulations! You finished this challenge&#39;)input.disabled = true;} else {alert(&#39;It seems this flag is invalid. Try again!&#39;)}}Introduction 📖 Welcome to this command-line class!
 In this entry level course you will learn how to use a terminal and navigate through a Linux filesystem.
 This class is supposed to be followed with hack.</description>
+      <content>&lt;script type=&#34;text/javascript&#34;&gt;
+    function verify(id) {
+        const answers = [
+            &#39;flag{29e140ef258fc3ec0e485c0648f048d36ee5e017}&#39;,
+            &#39;flag{1d279c84d51f95a12ea44793212ecc0d5d360d47}&#39;
+        ]
+        let input = document.querySelector(&#39;#chall&#39;+id)
+        if (input.value.trim() == answers[id]) {
+            alert(&#39;Congratulations! You finished this challenge&#39;)
+            input.disabled = true;
+        } else {
+            alert(&#39;It seems this flag is invalid. Try again!&#39;)
+        }
+    }
+&lt;/script&gt;
+&lt;h1 id=&#34;introduction-&#34;&gt;Introduction 📖&lt;/h1&gt;
+&lt;p&gt;Welcome to this command-line class!&lt;/p&gt;
+&lt;p&gt;In this entry level course you will learn how to use a terminal and navigate through a Linux filesystem.&lt;/p&gt;
+&lt;p&gt;This class is supposed to be followed with &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt; open alongside, the challenges are made to be completed in the website&amp;rsquo;s interactive terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/screenshot.png&#34; alt=&#34;Hack.courses terminal&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;whats-command-line-&#34;&gt;What&amp;rsquo;s command-line 💻?&lt;/h1&gt;
+&lt;p&gt;A &lt;strong&gt;command&lt;/strong&gt; is an instruction (or a set of instructions) given to a machine.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;command-line&lt;/strong&gt; is (by extension) a textual line containing one or multiple commands destined for a computer.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;command-line interface&lt;/strong&gt; (or CLI) is an interface which is made to be interacted with using &lt;strong&gt;commands-lines&lt;/strong&gt;, contrary to a &lt;strong&gt;graphical user interface&lt;/strong&gt; (or GUI).&lt;/p&gt;
+&lt;p&gt;You can type commands in a software called a &lt;strong&gt;command-line interpreter&lt;/strong&gt; (or &lt;em&gt;shell&lt;/em&gt;) for a computer to do specific actions.&lt;/p&gt;
+&lt;p&gt;The terminal window on &lt;a href=&#34;hack.courses&#34;&gt;hack.courses&lt;/a&gt; is an example of a command interpreter.&lt;/p&gt;
+&lt;p&gt;A command usually looks like this :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; openfile filename.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : The characters &amp;ldquo;$&amp;gt;&amp;rdquo; here are not part of the command, they represent the prompt usually displayed by shells to let the user know they can type a new command.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;what-are-the-existing-commands&#34;&gt;What are the existing commands?&lt;/h1&gt;
+&lt;p&gt;The commands you can possibly type depends on the &lt;strong&gt;command-line interpreter&lt;/strong&gt; you use, and more generally on the &lt;strong&gt;Operating System&lt;/strong&gt; you&amp;rsquo;re working on.&lt;/p&gt;
+&lt;p&gt;Windows machines used to understand commands based on &lt;a href=&#34;https://en.wikipedia.org/wiki/DOS&#34;&gt;DOS&lt;/a&gt;, nowadays they also use &lt;a href=&#34;https://fr.wikipedia.org/wiki/Windows_PowerShell&#34;&gt;PowerShell&lt;/a&gt;&amp;rsquo;s syntaxes, Linux and &amp;ldquo;unix-like&amp;rdquo; machines (Ubuntu, MacOS) use commands similar to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Unix_shell&#34;&gt;Unix Shell&lt;/a&gt;, this is the type of commands we&amp;rsquo;re going to cover during this class.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : If you do not understand precisely what Linux, GNU/Linux and Unix are yet, it&amp;rsquo;s okay, it&amp;rsquo;s not mandatory for this course.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;why-do-we-still-use-command-line&#34;&gt;Why do we (still) use command-line?&lt;/h1&gt;
+&lt;p&gt;Whatever you can do with a graphical user interface, you can do with command-line, also most of the time command-line is much more efficient and lightweight! But don&amp;rsquo;t take what I tell you for granted, you&amp;rsquo;ll soon be able to try it for yourself.&lt;/p&gt;
+&lt;p&gt;Also, commands can be chained and logic can be added, which allows the automation of an almost infinity of tasks!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-on 🤜!&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s start working on your first commands with a small challenge!&lt;/p&gt;
+&lt;p&gt;To finish this first challenge, you will have to find the &lt;em&gt;flag&lt;/em&gt; corresponding to this exercice.&lt;/p&gt;
+&lt;p&gt;A flag is a character string following this format :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flag{f572d396fae9206628714fb2ce00f72e94f2258f}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once you found it you can copy/paste it (by right-clicking and selecting &amp;ldquo;copy&amp;rdquo; in your browser) in the text field below in order to verify that you have successfully completed the challenge.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-0&#34;&gt;Challenge 0&lt;/h2&gt;
+&lt;p&gt;Type the following commands in your shell, one after the other.&lt;/p&gt;
+&lt;p&gt;Press Enter after each command. If you typed them correctly, the flag will be given to you.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ls
+cd challenges
+cd command_line_101
+cat challenge_0.txt
+cd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;flag 0&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;p&gt;Now that you entered your first commands, let&amp;rsquo;s details the things you just did.&lt;/p&gt;
+&lt;h1 id=&#34;ls&#34;&gt;Ls&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;ls&lt;/strong&gt; is the command you will use to list a directory&amp;rsquo;s contents, it displays the files and directories in the location you are at on your computer.&lt;/p&gt;
+&lt;p&gt;In the terminal on hack.courses, filenames are printed in &lt;strong&gt;green&lt;/strong&gt;, directories names in &lt;strong&gt;blue&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;cd&#34;&gt;Cd&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;cd&lt;/strong&gt; is the command you will use to change the directory you are currently in.&lt;/p&gt;
+&lt;p&gt;Typing &lt;code&gt;$&amp;gt; cd challenges&lt;/code&gt; did make you move to the &lt;em&gt;challenges&lt;/em&gt; directory for instance.&lt;/p&gt;
+&lt;p&gt;Typing &lt;code&gt;$&amp;gt; cd&lt;/code&gt; without parameter will make you go back to your user&amp;rsquo;s personal directory.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : &lt;strong&gt;cd&lt;/strong&gt; -&amp;gt; &lt;strong&gt;c&lt;/strong&gt;hange &lt;strong&gt;d&lt;/strong&gt;irectory&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;pwd&#34;&gt;Pwd&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;pwd&lt;/strong&gt; prints the directory you are currently in.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : &lt;strong&gt;pwd&lt;/strong&gt; -&amp;gt; &lt;strong&gt;p&lt;/strong&gt;rint &lt;strong&gt;w&lt;/strong&gt;orking &lt;strong&gt;d&lt;/strong&gt;irectory&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;cat-&#34;&gt;Cat 🐱&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;cat&lt;/strong&gt; displays a file&amp;rsquo;s contents, any kind of file, it&amp;rsquo;s going to print what&amp;rsquo;s inside on your screen.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : Do not forget to specify the name of the file you want to open after typing &lt;code&gt;cat&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;challenge-1&#34;&gt;Challenge 1&lt;/h2&gt;
+&lt;p&gt;For this next challenge, you&amp;rsquo;re on your own!&lt;/p&gt;
+&lt;p&gt;The flag you are looking for is in a file located in the &lt;em&gt;command_line_101&lt;/em&gt; directory within the &lt;em&gt;challenges&lt;/em&gt; directory.&lt;/p&gt;
+&lt;p&gt;What you need to do here is :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go inside the challenges directory&lt;/li&gt;
+&lt;li&gt;Go inside the command_line_101 directory&lt;/li&gt;
+&lt;li&gt;List the contents of this directory&lt;/li&gt;
+&lt;li&gt;Open the file you think might contain the flag for the first challenge&lt;/li&gt;
+&lt;li&gt;Go back to your home directory (Hint : &lt;code&gt;$&amp;gt; cd&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;display:flex&#34;&gt;
+    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall1&#34; placeholder=&#34;flag 1&#34;/&gt;&lt;button onclick=&#34;verify(1)&#34;&gt;Verify&lt;/button&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : If you need to find a command quickly you can read the &lt;a href=&#34;../cheatsheet&#34;&gt;cheatsheet&lt;/a&gt; associated with this class.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Congrats on making it through this first command-line class!&lt;/p&gt;
+&lt;p&gt;You can now move on to&lt;/p&gt;
+&lt;h2 id=&#34;command_line_102102&#34;&gt;&lt;a href=&#34;../102&#34;&gt;command_line_102&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;whenever you feel like it.&lt;/p&gt;
+&lt;p&gt;I hope I&amp;rsquo;ll see you soon 😊!&lt;/p&gt;
+</content>
     </item>
     
   </channel>
