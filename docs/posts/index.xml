@@ -5,7 +5,7 @@
     <link>/posts/</link>
     <description>Recent content in About hack.courses on hack.courses</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>hosted by fenrir.pro</copyright>
     <lastBuildDate>Sun, 09 Jan 2022 19:15:35 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,9 +14,9 @@
       <pubDate>Mon, 16 Nov 2020 13:58:54 +0100</pubDate>
       
       <guid>/posts/typescript/</guid>
-      <description>TypeScript  Jeremie Amsellem &amp;lt; classes@lp1.eu &amp;gt;
- Sommaire  Qu’est-ce que TypeScript ? Les spécifités de TypeScript  Les annotations de type Les types primitifs Les tableaux Les interfaces Les classes Les modificateurs d’accès Les generics Les Enum     Qu&amp;rsquo;est-ce que TypeScript ? TypeScript est un langage Libre (sous licence GNU/GPL) sorti en 2012
- Développé par Microsoft Orienté Objet Transcompilé (ou &amp;ldquo;transpilé&amp;rdquo;) en JavaScript avec l&amp;rsquo;aide de babel Accompagné d’un IDE : Visual Studio Code Utilisé par le framework Angular depuis Angular 2   Les annotations de type TypeScript est un langage plus fortement typé que JavaScript.</description>
+      <description>TypeScript Jeremie Amsellem &amp;lt; classes@lp1.eu &amp;gt;
+Sommaire Qu’est-ce que TypeScript ? Les spécifités de TypeScript Les annotations de type Les types primitifs Les tableaux Les interfaces Les classes Les modificateurs d’accès Les generics Les Enum Qu&amp;rsquo;est-ce que TypeScript ? TypeScript est un langage Libre (sous licence GNU/GPL) sorti en 2012
+Développé par Microsoft Orienté Objet Transcompilé (ou &amp;ldquo;transpilé&amp;rdquo;) en JavaScript avec l&amp;rsquo;aide de babel Accompagné d’un IDE : Visual Studio Code Utilisé par le framework Angular depuis Angular 2 Les annotations de type TypeScript est un langage plus fortement typé que JavaScript.</description>
       <content>&lt;h1 id=&#34;typescript&#34;&gt;TypeScript&lt;/h1&gt;
 &lt;p&gt; 
  
@@ -53,15 +53,15 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;les-annotations-de-type&#34;&gt;Les annotations de type&lt;/h1&gt;
-&lt;p&gt;TypeScript est un langage plus fortement typé que JavaScript. 
+&lt;p&gt;TypeScript est un langage plus fortement typé que JavaScript.
 Il est possible de spécifier pour nos paramètres de fonctions, valeurs de retour et variables des types, par exemple :
  &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;myVar&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;;
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;square&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;param&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt; {
-	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;param&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;param&lt;/span&gt;; 
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;myVar&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;square&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;param&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;param&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;param&lt;/span&gt;; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-types-primitifs&#34;&gt;Les types primitifs&lt;/h1&gt;
 &lt;p&gt;TypeScript comprend 5 types primitifs :&lt;/p&gt;
 &lt;ul&gt;
@@ -72,46 +72,46 @@ Il est possible de spécifier pour nos paramètres de fonctions, valeurs de reto
 &lt;li&gt;null&lt;/li&gt;
 &lt;li&gt;undefined&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;num&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;boolean&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;num&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;boolean&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-tableaux&#34;&gt;Les tableaux&lt;/h1&gt;
 &lt;p&gt;Ils sont similaires aux tableaux en JavaScript, à la différence qu’ils peuvent être également sujets aux annotations de type&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;[];
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Array&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;number&lt;/span&gt;&amp;gt;;
-
-&lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]; &lt;span style=&#34;color:#75715e&#34;&gt;//OK
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]; &lt;span style=&#34;color:#75715e&#34;&gt;//KO
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;[];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Array&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;number&lt;/span&gt;&amp;gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]; &lt;span style=&#34;color:#75715e&#34;&gt;//OK
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;numberArray&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]; &lt;span style=&#34;color:#75715e&#34;&gt;//KO
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-interfaces&#34;&gt;Les interfaces&lt;/h1&gt;
 &lt;p&gt;Les interfaces permettent de définir la structure d&amp;rsquo;un objet, cette structure est plus ou moins stricte et doit être respectée par tous les tiers l&amp;rsquo;implémentant.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;children?&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Object&lt;/span&gt;[];
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Person&lt;/span&gt;;
-
-&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;John&amp;#39;&lt;/span&gt;,
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;25&amp;#39;&lt;/span&gt;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;children?&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Object&lt;/span&gt;[];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Person&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;John&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;25&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-classes&#34;&gt;Les classes&lt;/h1&gt;
 &lt;p&gt;Les classes de TypeScript sont globalement similaires à celles d&amp;rsquo;ES6. En revanche TypeScript permet de définir des propriétés en dehors du constructeur d&amp;rsquo;une classe :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Point&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
-        
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;) {
-        	&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;;
-            	&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;;
-        }
-    
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Point&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        	&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            	&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-modificateurs-daccès&#34;&gt;Les modificateurs d&amp;rsquo;accès&lt;/h1&gt;
 &lt;p&gt;TypeScript permet également d&amp;rsquo;ajouter des modificateurs d&amp;rsquo;accès sur les propriétés de nos classes :&lt;/p&gt;
 &lt;ul&gt;
@@ -119,34 +119,34 @@ Il est possible de spécifier pour nos paramètres de fonctions, valeurs de reto
 &lt;li&gt;private&lt;/li&gt;
 &lt;li&gt;protected&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nickname&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nickname&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-generics&#34;&gt;Les generics&lt;/h1&gt;
 &lt;p&gt;Tout comme certains autres langages haut-niveau il est possible de définir des generics relatifs aux types de données utilisées dans une fonction :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt;&amp;gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;T&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;T&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt; {
-	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; parseInt(&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; parseInt(&lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;);
-}
-
-&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;string&lt;/span&gt;&amp;gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3;
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;number&lt;/span&gt;&amp;gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt;&amp;gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;T&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;T&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;number&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; parseInt(&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; parseInt(&lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;string&lt;/span&gt;&amp;gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;number&lt;/span&gt;&amp;gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-enum&#34;&gt;Les Enum&lt;/h1&gt;
 &lt;p&gt;Autre nouveauté appréciable en comparaison avec JavaScript, nous pouvons ici définir des enum :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fd&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;STDIN&lt;/span&gt;,
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;STDOUT&lt;/span&gt;,
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;STDERR&lt;/span&gt;
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;returnCodes&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;ERROR&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;OK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fd&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;STDIN&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;STDOUT&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;STDERR&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;returnCodes&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;ERROR&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;OK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;tds&#34;&gt;TDs&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/TypeScript/TDs&#34;&gt;Exercices TypeScript&lt;/a&gt;&lt;/li&gt;
@@ -161,9 +161,9 @@ Il est possible de spécifier pour nos paramètres de fonctions, valeurs de reto
       
       <guid>/posts/tdd/</guid>
       <description>Le Test Driven Development et les Tests Unitaires Jéremie A. &amp;lt; lp1.eu &amp;gt;
- Le principe de base du TDD Le TDD (Test Driven Development) est une manière de développer des logiciels qui met les tests (notamment unitaires) en priorité par rapport aux première phases d&amp;rsquo;écriture de code.
+Le principe de base du TDD Le TDD (Test Driven Development) est une manière de développer des logiciels qui met les tests (notamment unitaires) en priorité par rapport aux première phases d&amp;rsquo;écriture de code.
 On écrit d&amp;rsquo;abord les tests et ensuite on commençe à coder les fonctionnalités correspondantes.
- Les étapes du TDD  Écrire un test Lancer le test (vérifier qu&amp;rsquo;il échoue) Écrire le code nécessaire pour que le test passe Optimiser le code écrit   Les Tests Unitaires Un test unitaire c&amp;rsquo;est quoi?</description>
+Les étapes du TDD Écrire un test Lancer le test (vérifier qu&amp;rsquo;il échoue) Écrire le code nécessaire pour que le test passe Optimiser le code écrit Les Tests Unitaires Un test unitaire c&amp;rsquo;est quoi?</description>
       <content>&lt;h1 id=&#34;le-test-driven-development-et-les-tests-unitaires&#34;&gt;Le Test Driven Development et les Tests Unitaires&lt;/h1&gt;
 &lt;p&gt;Jéremie A. &amp;lt; lp1.eu &amp;gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -183,7 +183,7 @@ On écrit d&amp;rsquo;abord les tests et ensuite on commençe à coder les fonct
 &lt;h2 id=&#34;un-test-unitaire-cest-quoi&#34;&gt;Un test unitaire c&amp;rsquo;est quoi?&lt;/h2&gt;
 &lt;p&gt;Un &lt;strong&gt;test unitaire&lt;/strong&gt; a pour but (comme son nom l&amp;rsquo;indique) de &lt;strong&gt;tester une &amp;ldquo;unité&amp;rdquo; d&amp;rsquo;un programme&lt;/strong&gt;.
 Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme peut être une &lt;strong&gt;méthode, une fonction, une classe, même quelque lignes seulement&lt;/strong&gt;&amp;hellip;&lt;/p&gt;
-&lt;p&gt;Si l&#39;&amp;ldquo;unité&amp;rdquo; qui doit être testée dans un test unitaire n&amp;rsquo;est pas nécessairement définie et que le concept est relatif, le but d&amp;rsquo;un test unitaire est quand à lui assez précis !&lt;/p&gt;
+&lt;p&gt;Si l&amp;rsquo;&amp;ldquo;unité&amp;rdquo; qui doit être testée dans un test unitaire n&amp;rsquo;est pas nécessairement définie et que le concept est relatif, le but d&amp;rsquo;un test unitaire est quand à lui assez précis !&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;à-quoi-ça-sert-&#34;&gt;À quoi ça sert ?&lt;/h1&gt;
 &lt;p&gt;Le but d&amp;rsquo;un test unitaire est de tester, que pour un comportement &lt;strong&gt;A&lt;/strong&gt; (une variable, un évènement), l&amp;rsquo;unitée de code testée ait un comportement &lt;strong&gt;B&lt;/strong&gt; strictement défini.&lt;/p&gt;
@@ -191,9 +191,9 @@ Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme pe
 &lt;hr&gt;
 &lt;h1 id=&#34;exemple&#34;&gt;Exemple&lt;/h1&gt;
 &lt;p&gt;Prenons le cas d&amp;rsquo;une fonction &lt;strong&gt;checkPassword&lt;/strong&gt; qui servirait à valider le mot de passe d&amp;rsquo;un utilisateur.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;) {
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Elle doit renvoyer une erreur dans ces conditions :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Elle doit renvoyer une erreur dans ces conditions :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Le mot de passe fait moins de 8 caractères&lt;/li&gt;
 &lt;li&gt;Le mot de passe est un mot du dictionnaire&lt;/li&gt;
@@ -201,20 +201,21 @@ Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme pe
 &lt;/ul&gt;
 &lt;p&gt;Nous pourrions écrire les tests de la manière suivante :&lt;/p&gt;
 &lt;hr&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;describe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;checkPassword&amp;#39;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
-    &lt;span style=&#34;color:#75715e&#34;&gt;// We start by checking the first rule 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow passwords shorter than 8 chars&amp;#34;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
-    });
-    &lt;span style=&#34;color:#75715e&#34;&gt;// Then the second one 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow words from the dictionary&amp;#34;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aerodynamic&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
-    });
-    &lt;span style=&#34;color:#75715e&#34;&gt;// And finally the third one
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow only numeric passwords&amp;#34;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;8008135707&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
-    });
-})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;describe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;checkPassword&amp;#39;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// We start by checking the first rule 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow passwords shorter than 8 chars&amp;#34;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Then the second one 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow words from the dictionary&amp;#34;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aerodynamic&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// And finally the third one
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow only numeric passwords&amp;#34;&lt;/span&gt;, () &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;8008135707&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
     <item>
@@ -223,9 +224,9 @@ Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme pe
       <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
       
       <guid>/posts/nodejs/</guid>
-      <description>Cours Node.js Jour1   Vous n&amp;rsquo;avez pas les bases (pour le moment)
-  Jérémie Amsellem &amp;lt;lp1.eu&amp;gt;
- Sommaire du cours  Node.js c&amp;rsquo;est quoi ? Node.js et JavaScript Pourquoi utiliser Node.js plutôt que du PHP/Python/Ruby[&amp;hellip;] ? Comment ça marche ? Comment on ecrit du Node.js ?   Node.js c&amp;rsquo;est quoi ? Est-ce un framework, une bibliothèque, un serveur ? Rien de tout ça, Node.js est un environnement d&amp;rsquo;éxecution (runtime) qui permet de lancer du JavaScript sur de nombreux environnements en dehors d&amp;rsquo;un navigateur.</description>
+      <description>Cours Node.js Jour1 Vous n&amp;rsquo;avez pas les bases (pour le moment)
+Jérémie Amsellem &amp;lt;lp1.eu&amp;gt;
+Sommaire du cours Node.js c&amp;rsquo;est quoi ? Node.js et JavaScript Pourquoi utiliser Node.js plutôt que du PHP/Python/Ruby[&amp;hellip;] ? Comment ça marche ? Comment on ecrit du Node.js ? Node.js c&amp;rsquo;est quoi ? Est-ce un framework, une bibliothèque, un serveur ? Rien de tout ça, Node.js est un environnement d&amp;rsquo;éxecution (runtime) qui permet de lancer du JavaScript sur de nombreux environnements en dehors d&amp;rsquo;un navigateur.</description>
       <content>&lt;h1 id=&#34;cours-nodejs&#34;&gt;Cours Node.js&lt;/h1&gt;
 &lt;h2 id=&#34;jour1&#34;&gt;Jour1&lt;/h2&gt;
 &lt;p&gt; 
@@ -255,7 +256,7 @@ Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme pe
 &lt;hr&gt;
 &lt;h1 id=&#34;nodejs-et-javascript&#34;&gt;Node.js et JavaScript&lt;/h1&gt;
 &lt;p&gt;Node.js est écrit sur une base de &lt;strong&gt;C++&lt;/strong&gt;, il utilise le moteur JavaScript &lt;strong&gt;V8&lt;/strong&gt; (crée par &lt;strong&gt;Google&lt;/strong&gt; originellement pour &lt;strong&gt;Chrome&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Il supporte les syntaxes d&#39;&lt;strong&gt;ECMAScript&lt;/strong&gt; jusqu&amp;rsquo;à &lt;strong&gt;ES8&lt;/strong&gt; !&lt;/p&gt;
+&lt;p&gt;Il supporte les syntaxes d&amp;rsquo;&lt;strong&gt;ECMAScript&lt;/strong&gt; jusqu&amp;rsquo;à &lt;strong&gt;ES8&lt;/strong&gt; !&lt;/p&gt;
 &lt;p&gt;Il &lt;strong&gt;incorpore&lt;/strong&gt; et est basé sur les paradigmes de programmation évènementielle (&lt;strong&gt;Event Driven Programming&lt;/strong&gt;) de JavaScript.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;pourquoi-nodejs-plutôt-quautre-chose-&#34;&gt;Pourquoi Node.js plutôt qu&amp;rsquo;autre chose ?&lt;/h1&gt;
@@ -267,11 +268,11 @@ Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme pe
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;les-performances&#34;&gt;Les performances&lt;/h2&gt;
-&lt;p&gt;Node est particulièrement intéressant en terme de performances si on le compare à PHP, Python et Java (entre autres). 
+&lt;p&gt;Node est particulièrement intéressant en terme de performances si on le compare à PHP, Python et Java (entre autres).
 C&amp;rsquo;est largement dû à la rapidité d&amp;rsquo;execution de V8 !&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Par exemple&lt;/strong&gt;, &lt;a href=&#34;https://medium.com/@mihaigeorge.c/web-rest-api-benchmark-on-a-real-life-application-ebb743a5d7a3&#34;&gt;un benchmark réalisé sur plusieurs architectures&lt;/a&gt; pour un simple Hello World (en nombre de requêtes gérées par seconde).&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*XGTOfo9taLfePZvL3-FZhg.png&#34; alt=&#34;perfs-node&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;perfs-node&#34; src=&#34;https://cdn-images-1.medium.com/max/800/1*XGTOfo9taLfePZvL3-FZhg.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;gestion-asynchrone-des-évènements-sans-multi-threading&#34;&gt;Gestion asynchrone des évènements sans multi-threading&lt;/h2&gt;
 &lt;p&gt;La gestion d&amp;rsquo;évènements asynchrones est un paradigme inhérent au langage JavaScript. C&amp;rsquo;est ce comportement qui permet à Node.js de gérer &lt;strong&gt;plusieurs requêtes, en même temps&lt;/strong&gt; sans avoir à créer des threads enfants en plus du thread principal !&lt;/p&gt;
@@ -311,25 +312,25 @@ C&amp;rsquo;est largement dû à la rapidité d&amp;rsquo;execution de V8 !&lt;/
 &lt;h2 id=&#34;les-imports&#34;&gt;Les imports&lt;/h2&gt;
 &lt;p&gt;Vous vous souvenez peut-être du système d&amp;rsquo;imports implémenté en ES6, avec des syntaxes du type :&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export Object
-import Object from &#39;./file&#39;
+import Object from &amp;#39;./file&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;En Node.js, un système d&amp;rsquo;import est présent depuis sa création et implémente sa propre gestion des modules utilisant &lt;strong&gt;module.export&lt;/strong&gt; et &lt;strong&gt;require&lt;/strong&gt; :&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Par exemple :&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;fichier-hellojs-&#34;&gt;Fichier hello.js :&lt;/h3&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;module.exports = &#39;hello&#39;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;module.exports = &amp;#39;hello&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;fichier-mainjs-&#34;&gt;Fichier main.js :&lt;/h3&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const hello = require(&#39;./hello&#39;); console.log(hello) #prints &#39;hello&#39;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const hello = require(&amp;#39;./hello&amp;#39;); console.log(hello) #prints &amp;#39;hello&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;node-package-manager-npm&#34;&gt;Node Package Manager (NPM)&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;NPM&lt;/strong&gt; est le gestionnaire de modules intégré à Node.js.&lt;/p&gt;
 &lt;p&gt;Il en existe d&amp;rsquo;autres (yarn ou bower par exemple), mais &lt;strong&gt;npm&lt;/strong&gt; est de loin le plus utilisé actuellement  car il est packagé avec les installeurs Node.js.&lt;/p&gt;
 &lt;p&gt;On utilise la syntaxe &lt;code&gt;npm install {nom du module}&lt;/code&gt; pour installer un module Node.js.&lt;/p&gt;
-&lt;p&gt;La commande &lt;code&gt;npm init&lt;/code&gt; dans un dossier permet d&amp;rsquo;initialiser un nouveau projet Node.js. 
+&lt;p&gt;La commande &lt;code&gt;npm init&lt;/code&gt; dans un dossier permet d&amp;rsquo;initialiser un nouveau projet Node.js.
 Un fichier &lt;strong&gt;package.json&lt;/strong&gt; contenant diverses informations sur le projet (dépendances, dépot, auteur, licence) est alors crée.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;packagejson&#34;&gt;package.json&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;npm&lt;/strong&gt; se sert du fichier &lt;strong&gt;package.json&lt;/strong&gt; pour stocker les informations relatives au projet courant.&lt;/p&gt;
 &lt;p&gt;Lorsqu&amp;rsquo;un module npm est ajouté aux dépendances de votre projet (&lt;code&gt;npm install --save {nom du module}&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;il sera ajouté dans le champ &amp;ldquo;dependencies&amp;rdquo; de votre fichier &lt;strong&gt;package.json&lt;/strong&gt;. 
+&lt;p&gt;il sera ajouté dans le champ &amp;ldquo;dependencies&amp;rdquo; de votre fichier &lt;strong&gt;package.json&lt;/strong&gt;.
 Les fichiers du module seront par défaut installés dans le dossier &lt;em&gt;node_modules&lt;/em&gt; du projet.&lt;/p&gt;
 &lt;p&gt;Pour installer automatiquement toutes les dépendances d&amp;rsquo;un projet Node.js il suffit d&amp;rsquo;utiliser &lt;code&gt;npm install&lt;/code&gt; sans paramètres.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://docs.npmjs.com/files/package.json&#34;&gt;la documentation NPM&lt;/a&gt;&lt;/p&gt;
@@ -341,7 +342,7 @@ Les fichiers du module seront par défaut installés dans le dossier &lt;em&gt;n
 &lt;p&gt;Dans le cas de Node.js, le code est exécuté en &amp;ldquo;standalone&amp;rdquo;, il n&amp;rsquo;est &lt;strong&gt;pas lié à un navigateur&lt;/strong&gt; mais &lt;strong&gt;directement exécuté sur votre machine&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;
-&lt;p&gt;Process est une globale dans le contexte de Node. 
+&lt;p&gt;Process est une globale dans le contexte de Node.
 Elle contient des informations et des méthodes utilitaires concernant le processus courant !&lt;/p&gt;
 &lt;p&gt;Vous pouvez l&amp;rsquo;utiliser directement sans import dans votre script Node.js.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Par exemple&lt;/em&gt;&lt;/p&gt;
@@ -353,8 +354,8 @@ Elle contient des informations et des méthodes utilitaires concernant le proces
 &lt;p&gt;Il permet (entre autres) de &lt;strong&gt;créer, lire, écrire, supprimer, renommer&lt;/strong&gt; des fichiers.&lt;/p&gt;
 &lt;p&gt;La majorité de ses méthodes sont utilisables de manière &lt;strong&gt;synchrone et asynchrone&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Par exemple pour lire le contenu d&amp;rsquo;un fichier de manière asynchrone:&lt;/em&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const fs = require(&#39;fs&#39;)
-fs.readFile(&#39;/etc/passwd&#39;, (err, data) =&amp;gt; {
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const fs = require(&amp;#39;fs&amp;#39;)
+fs.readFile(&amp;#39;/etc/passwd&amp;#39;, (err, data) =&amp;gt; {
   if (err) throw err;
   console.log(data);
 });
@@ -362,16 +363,16 @@ fs.readFile(&#39;/etc/passwd&#39;, (err, data) =&amp;gt; {
 &lt;hr&gt;
 &lt;h2 id=&#34;expressjs&#34;&gt;Express.js&lt;/h2&gt;
 &lt;p&gt; 
-Express est un des modules Node.js les plus connus. 
+Express est un des modules Node.js les plus connus.
 C&amp;rsquo;est un framework web, souvent utilisé pour créer des back-ends, notamment dans des stacks &lt;strong&gt;MEAN&lt;/strong&gt; (&lt;strong&gt;M&lt;/strong&gt;ongoDB &lt;strong&gt;E&lt;/strong&gt;xpress &lt;strong&gt;A&lt;/strong&gt;ngular &lt;strong&gt;N&lt;/strong&gt;ode.js).&lt;/p&gt;
 &lt;p&gt;Il s&amp;rsquo;inspire du micro-framework web &lt;strong&gt;Sinatra&lt;/strong&gt; (Ruby) dans sa simplicité d&amp;rsquo;utilisation.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const express = require(&#39;express&#39;);
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const express = require(&amp;#39;express&amp;#39;);
 const app = express();
 
 const server = app.listen(8000, () =&amp;gt; {
     const host = server.address().address;
     const port = server.address().port;
-    console.log(&amp;quot;HTTP Server listening on &amp;quot;, host, port);
+    console.log(&amp;#34;HTTP Server listening on &amp;#34;, host, port);
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;les-websockets&#34;&gt;Les WebSockets&lt;/h2&gt;
@@ -386,11 +387,10 @@ Les WebSockets, vous en avez probablement entendu parler, possiblement même uti
 &lt;p&gt;C&amp;rsquo;est un wrapper autour des &lt;strong&gt;API de communication HTTP&lt;/strong&gt; de Node.js et des navigateurs.&lt;/p&gt;
 &lt;p&gt;Il permet de grandement simplifier les requêtes HTTP.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Par exemple&lt;/em&gt; :&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const axios = require(&#39;axios&#39;);
-axios.get(&#39;https://hack.courses&#39;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const axios = require(&amp;#39;axios&amp;#39;);
+axios.get(&amp;#39;https://hack.courses&amp;#39;)
 	.then(response =&amp;gt; console.log(response))
 	.catch(error =&amp;gt; console.error(error))
-
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;tds&#34;&gt;TDs&lt;/h2&gt;
 &lt;ul&gt;
@@ -409,7 +409,7 @@ axios.get(&#39;https://hack.courses&#39;)
       <pubDate>Mon, 16 Nov 2020 13:49:10 +0100</pubDate>
       
       <guid>/posts/ionic/</guid>
-      <description>Slides  Slides Formation Ionic 4 Jours (Google Drive) Slides Formation Ionic 4 Jours (PDF)  </description>
+      <description>Slides Slides Formation Ionic 4 Jours (Google Drive) Slides Formation Ionic 4 Jours (PDF) </description>
       <content>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1n_Oz5TEEG3RvSU5gHnfN47qtq0zUr9YzlVXupWiRpRE&#34;&gt;Slides Formation Ionic 4 Jours (Google Drive)&lt;/a&gt;&lt;/li&gt;
@@ -424,8 +424,8 @@ axios.get(&#39;https://hack.courses&#39;)
       <pubDate>Mon, 16 Nov 2020 13:47:16 +0100</pubDate>
       
       <guid>/posts/es6/</guid>
-      <description>Partie I - De ES5 à ES6, qu&amp;rsquo;est-ce qui a changé?  Jérémie Amsellem - cours@lp1.eu
- Sommaire  I - Qu&amp;rsquo;est-ce qu&amp;rsquo;ES6? II - let et const III - Les fonctions flêchée IV - Les templates V - Les Sets VI - Les Maps VII - Les promesses VIII - For&amp;hellip;in et for&amp;hellip;of IX - Méthodes des chaînes de caractères X - Méthodes des tableaux XI - Default XII - Rest et Spread XIII - get et set   I - Premièrement, qu&amp;rsquo;est-ce qu&amp;rsquo;ES6?</description>
+      <description>Partie I - De ES5 à ES6, qu&amp;rsquo;est-ce qui a changé? Jérémie Amsellem - cours@lp1.eu
+Sommaire I - Qu&amp;rsquo;est-ce qu&amp;rsquo;ES6? II - let et const III - Les fonctions flêchée IV - Les templates V - Les Sets VI - Les Maps VII - Les promesses VIII - For&amp;hellip;in et for&amp;hellip;of IX - Méthodes des chaînes de caractères X - Méthodes des tableaux XI - Default XII - Rest et Spread XIII - get et set I - Premièrement, qu&amp;rsquo;est-ce qu&amp;rsquo;ES6?</description>
       <content>&lt;h1 id=&#34;partie-i---de-es5-à-es6-quest-ce-qui-a-changé&#34;&gt;Partie I - De ES5 à ES6, qu&amp;rsquo;est-ce qui a changé?&lt;/h1&gt;
 &lt;p&gt; 
  
@@ -461,8 +461,8 @@ Jérémie Amsellem - &lt;a href=&#34;mailto:cours@lp1.eu&#34;&gt;cours@lp1.eu&lt
 &lt;p&gt;&lt;strong&gt;const&lt;/strong&gt; permet de définir des constantes, ce qui était auparavant impossible dans le langage.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;iii---les-fonctions-flêchées&#34;&gt;III - Les fonctions flêchées&lt;/h1&gt;
-&lt;p&gt;Seconde fonctionnalité primordiale : 
-la possibilité de définir des &amp;ldquo;arrow functions&amp;rdquo; 
+&lt;p&gt;Seconde fonctionnalité primordiale :
+la possibilité de définir des &amp;ldquo;arrow functions&amp;rdquo;
 (aussi appelées lambdas dans d&amp;rsquo;autres langages).&lt;/p&gt;
 &lt;p&gt;Cela permet de prototyper des fonctions beaucoup plus courtes qu&amp;rsquo;avec la syntaxe habituelle :&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(params) {
@@ -478,34 +478,34 @@ param =&amp;gt; /* logique */
 &lt;p&gt;Pour définir une chaîne de caractères contenant des templates, il suffit d&amp;rsquo;utiliser des backquotes au lieux des simples et doubles quotes habituels.&lt;/p&gt;
 &lt;p&gt;On utilisera ensuite la syntaxe ${expression} pour indiquer le contenu à remplacer par une expression JavaScript.&lt;/p&gt;
 &lt;p&gt;Par exemple :&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;`Today&#39;s the ${new Date().toLocaleString()}`
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;`Today&amp;#39;s the ${new Date().toLocaleString()}`
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;v---les-sets&#34;&gt;V - Les Sets&lt;/h1&gt;
 &lt;p&gt;Des nouvelles structures de données ont également fait leur apparition dans ES6, notamment les très utiles Sets et Maps.&lt;/p&gt;
 &lt;p&gt;Un &lt;strong&gt;Set&lt;/strong&gt; permet de stocker de valeurs &lt;strong&gt;uniques&lt;/strong&gt; de tous les types.&lt;/p&gt;
 &lt;p&gt;Par exemple :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Set&lt;/span&gt;()
-&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;({})
-&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* false */&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/* 3 */&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clear&lt;/span&gt;() &lt;span style=&#34;color:#75715e&#34;&gt;/* Vide le Set */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Set&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;({})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* false */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/* 3 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clear&lt;/span&gt;() &lt;span style=&#34;color:#75715e&#34;&gt;/* Vide le Set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;vi---les-maps&#34;&gt;VI - Les Maps&lt;/h1&gt;
 &lt;p&gt;Les &lt;strong&gt;Maps&lt;/strong&gt; permettent de stocker des variables en clé/valeur (comme un objet JavaScript classique en somme).&lt;/p&gt;
 &lt;p&gt;En revanche, celles-ci peuvent utiliser n&amp;rsquo;importe quel type d&amp;rsquo;objet comme clé.&lt;/p&gt;
 &lt;p&gt;Également, il est très simple d&amp;rsquo;obtenir la taille d&amp;rsquo;une Map, en utilisant l&amp;rsquo;attribut Map.size, contrairement aux objets JavaScript.&lt;/p&gt;
 &lt;p&gt;Exemple :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}
-&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Map&lt;/span&gt;()
-&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/* 1 */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Map&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;has&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* true */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/* 1 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;vii---les-promesses-ou-promises&#34;&gt;VII - Les promesses (ou promises)&lt;/h1&gt;
 &lt;p&gt;Les promesses sont une manière plus explicite et claire de définir un comportement asynchrone.&lt;/p&gt;
 &lt;p&gt;Une promesse est un objet à usage unique, c&amp;rsquo;est une portion de code qui sera exécutée de manière asynchrone et renverra dans un laps de temps indéterminé des informations à la fin de cette exécution.&lt;/p&gt;
@@ -518,16 +518,16 @@ param =&amp;gt; /* logique */
 &lt;ul&gt;
 &lt;li&gt;for &amp;hellip; in permet d&amp;rsquo;itérer sur les clés d&amp;rsquo;un objet JavaScript :&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;key1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;}) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// key1, key2
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;key1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;}) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// key1, key2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;for &amp;hellip; of permet d&amp;rsquo;itérer sur les éléments d&amp;rsquo;un tableau :&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;For&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;of&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3, 2, 1
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;For&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;of&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 3, 2, 1
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;ix---nouvelles-méthodes-de-la-classe-string&#34;&gt;IX - Nouvelles méthodes de la classe String&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;String.includes&lt;/strong&gt; : Retourne true si la chaîne passée en paramètre de includes est contenue dans la String&lt;/li&gt;
@@ -549,29 +549,29 @@ param =&amp;gt; /* logique */
 &lt;h1 id=&#34;xi---default&#34;&gt;XI - Default&lt;/h1&gt;
 &lt;p&gt;Comme dans de nombreux autres langages, il est possible de définir des paramètres par défaut dans une fonction dans le cas où ceux-ci ne seraient pas remplis.&lt;/p&gt;
 &lt;h5 id=&#34;par-exemple-&#34;&gt;Par exemple :&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;France&amp;#34;&lt;/span&gt;) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;{&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; / &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;)
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Attention, les paramètres par défaut sont toujours les derniers paramètres d&amp;rsquo;une fonction !&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;France&amp;#34;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;{&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; / &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Attention, les paramètres par défaut sont toujours les derniers paramètres d&amp;rsquo;une fonction !&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;xii---rest-et-spread&#34;&gt;XII - Rest et Spread&lt;/h1&gt;
 &lt;p&gt;Rest permet de stocker des paramètres en nombre indéfini dans un tableau et ce sans utiliser le mot clé arguments de JavaScript.&lt;/p&gt;
 &lt;h5 id=&#34;par-exemple&#34;&gt;Par exemple&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, ...&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;) {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// Affiche tout ce qui est passé en plus de name et age
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Spread, quand à lui permet d&amp;rsquo;utiliser un tableau en tant que paramètres pour une fonction.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, ...&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;extra&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// Affiche tout ce qui est passé en plus de name et age
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Spread, quand à lui permet d&amp;rsquo;utiliser un tableau en tant que paramètres pour une fonction.&lt;/p&gt;
 &lt;h5 id=&#34;par-exemple--1&#34;&gt;Par exemple :&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Paris&amp;#39;&lt;/span&gt;]
-&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;) {
-}
-&lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(...&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// Équivaut à createUser(array[0], array[1], array[2])
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Paris&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;createUser&lt;/span&gt;(...&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// Équivaut à createUser(array[0], array[1], array[2])
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;xiii---get-et-set&#34;&gt;XIII - Get et set&lt;/h1&gt;
 &lt;p&gt;Autre nouvelle possibilité, cette fois-ci concernant les objets JavaScript, on peut désormais définir simplement nos propres setters et getters sur des attributs :&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const obj = {
   get size() {
-    //calcul de la taille de l&#39;objet
+    //calcul de la taille de l&amp;#39;objet
   }
 }
 obj.size // Recalculé dynamiquement et gardé en mémoire
@@ -587,10 +587,10 @@ obj.size // Recalculé dynamiquement et gardé en mémoire
 &lt;p&gt;Il est possible, d&amp;rsquo;assigner d&amp;rsquo;un seul coup plusieurs variables à partir de valeurs d&amp;rsquo;un tableau ou d&amp;rsquo;un objet.&lt;/p&gt;
 &lt;p&gt;On appelle cette opération de la déstructuration.&lt;/p&gt;
 &lt;p&gt;La syntaxe est la suivante avec un tableau :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; [&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;, , &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Paris, France&amp;#39;&lt;/span&gt; ]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et avec un objet :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;} &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;} &lt;span style=&#34;color:#75715e&#34;&gt;// firstName == &amp;#39;Bob&amp;#39; &amp;amp;&amp;amp; lastName == &amp;#39;TestMan&amp;#39;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; [&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;, , &lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Paris, France&amp;#39;&lt;/span&gt; ]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et avec un objet :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;} &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#a6e22e&#34;&gt;firstName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;lastName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TestMan&amp;#39;&lt;/span&gt;} &lt;span style=&#34;color:#75715e&#34;&gt;// firstName == &amp;#39;Bob&amp;#39; &amp;amp;&amp;amp; lastName == &amp;#39;TestMan&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;ii---les-classes&#34;&gt;II - Les Classes&lt;/h1&gt;
 &lt;p&gt;Une des plus grandes nouveautés d&amp;rsquo;ES6 est la possibilité d&amp;rsquo;instancier des Classes dans le langage.&lt;/p&gt;
 &lt;p&gt;On utilise le mot-clé class pour en créer une nouvelle :&lt;/p&gt;
@@ -602,82 +602,82 @@ obj.size // Recalculé dynamiquement et gardé en mémoire
 &lt;h2 id=&#34;les-classes-es6---le-constructeur&#34;&gt;Les Classes ES6 - Le constructeur&lt;/h2&gt;
 &lt;p&gt;Pour modifier le constructeur de notre classe pour y ajouter de la logique ou des paramètres on utilise le nom de méthode &lt;strong&gt;constructor&lt;/strong&gt; :&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; 
 Notez que le mot-clé &lt;em&gt;this&lt;/em&gt; s&amp;rsquo;utilise comme dans n&amp;rsquo;importe quel autre langage en ES6.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;les-classes-es6---les-méthodes-et-variables-de-classe&#34;&gt;Les Classes ES6 - Les méthodes et variables de classe&lt;/h2&gt;
 &lt;p&gt;On ne définit pas de variables de classe dans le corps de notre classe.&lt;/p&gt;
 &lt;p&gt;Elles sont définies dans le constructeur en utilisant la syntaxe :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
-  }
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;getBirthYear&lt;/span&gt;() {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;De plus, l&amp;rsquo;ajout de méthodes se fait sans les séparer par une virgule dans une classe JavaScript !&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;getBirthYear&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;De plus, l&amp;rsquo;ajout de méthodes se fait sans les séparer par une virgule dans une classe JavaScript !&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;les-classes-es6---get-et-set&#34;&gt;Les Classes ES6 - get et set&lt;/h2&gt;
 &lt;p&gt;On peut également définir des get et set dans des classes ES6, par exemple :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
-  }
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;birthYear&lt;/span&gt;() {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
-  }
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;newName&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newName&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toUpperCase&lt;/span&gt;()
-  }
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;birthYear&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* 1977 */&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* ROBERT */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;birthYear&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;newName&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newName&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toUpperCase&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;person&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;birthYear&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* 1977 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;/* ROBERT */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;les-classes-es6---lhéritage&#34;&gt;Les Classes ES6 - L&amp;rsquo;héritage&lt;/h2&gt;
 &lt;p&gt;En ES6 il n&amp;rsquo;y a pas d&amp;rsquo;héritage multiple, on hérite d&amp;rsquo;une seule classe parente.&lt;/p&gt;
-&lt;p&gt;La syntaxe pour l&amp;rsquo;héritage est la même que dans beaucoup d&amp;rsquo;autres langages, on utilise le mot clé &amp;lsquo;extends&amp;rsquo; suivi du nom de la classe parente :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
-  }
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dev&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;La syntaxe pour l&amp;rsquo;héritage est la même que dans beaucoup d&amp;rsquo;autres langages, on utilise le mot clé &amp;rsquo;extends&amp;rsquo; suivi du nom de la classe parente :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dev&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;les-classes-es6---super&#34;&gt;Les Classes ES6 - Super&lt;/h2&gt;
-&lt;p&gt;Lorsqu&amp;rsquo;on hérite d&amp;rsquo;une classe il est possible d&amp;rsquo;appeler dans la méthode d&amp;rsquo;une classe fille, 
+&lt;p&gt;Lorsqu&amp;rsquo;on hérite d&amp;rsquo;une classe il est possible d&amp;rsquo;appeler dans la méthode d&amp;rsquo;une classe fille,
 la méthode correspondant dans la classe parent.&lt;/p&gt;
 &lt;p&gt;Pour ce faire on utilise le mot-clé &lt;strong&gt;super&lt;/strong&gt; :&lt;/p&gt;
 &lt;h3 id=&#34;par-exemple--2&#34;&gt;Par exemple :&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
-  }
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt;) {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;)
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dev&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Person&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;constructor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;language&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;tds&#34;&gt;TDs&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/JS/TDs&#34;&gt;Exercices JavaScript&lt;/a&gt;&lt;/li&gt;
@@ -691,11 +691,8 @@ la méthode correspondant dans la classe parent.&lt;/p&gt;
       <pubDate>Mon, 16 Nov 2020 13:19:38 +0100</pubDate>
       
       <guid>/posts/vue_js_tdd/</guid>
-      <description>Formation Vue.JS 
-Réaliser un projet Vue.JS en TDD  
-Auteur: Jérémie Amsellem // Consultant Sécurité Offensive
-https://hack.courses/Programming/Vue.JS 
- Le principe de base du TDD Le TDD (Test Driven Development) est une manière de développer des logiciels qui met les tests (notamment unitaires) en priorité par rapport aux premières phases d&amp;rsquo;écriture de code.
+      <description>Formation Vue.JS Réaliser un projet Vue.JS en TDD Auteur: Jérémie Amsellem // Consultant Sécurité Offensive
+https://hack.courses/Programming/Vue.JS Le principe de base du TDD Le TDD (Test Driven Development) est une manière de développer des logiciels qui met les tests (notamment unitaires) en priorité par rapport aux premières phases d&amp;rsquo;écriture de code.
 On écrit d&amp;rsquo;abord les tests et ensuite on commençe à coder les fonctionnalités correspondantes.
 Dans une logique métier, en architecturant votre projet vous commençerez par dégager des besoins auquel il doit répondre.</description>
       <content>&lt;h1 id=&#34;formation-vuejs&#34;&gt;Formation Vue.JS&lt;/h1&gt;
@@ -725,7 +722,7 @@ Dans une logique métier, en architecturant votre projet vous commençerez par d
 &lt;h2 id=&#34;un-test-unitaire-cest-quoi&#34;&gt;Un test unitaire c&amp;rsquo;est quoi?&lt;/h2&gt;
 &lt;p&gt;Un &lt;strong&gt;test unitaire&lt;/strong&gt; a pour but (comme son nom l&amp;rsquo;indique) de &lt;strong&gt;tester une &amp;ldquo;unité&amp;rdquo; d&amp;rsquo;un programme&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Ce qu&amp;rsquo;on appelle une &amp;ldquo;unité&amp;rdquo; dans un programme peut être une &lt;strong&gt;méthode, une fonction, une classe, même quelque lignes seulement&lt;/strong&gt;&amp;hellip;&lt;/p&gt;
-&lt;p&gt;Si l&#39;&amp;ldquo;unité&amp;rdquo; qui doit être testée dans un test unitaire n&amp;rsquo;est pas nécessairement définie et que le concept est relatif, le but d&amp;rsquo;un test unitaire est quand à lui assez précis !&lt;/p&gt;
+&lt;p&gt;Si l&amp;rsquo;&amp;ldquo;unité&amp;rdquo; qui doit être testée dans un test unitaire n&amp;rsquo;est pas nécessairement définie et que le concept est relatif, le but d&amp;rsquo;un test unitaire est quand à lui assez précis !&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;à-quoi-ça-sert-&#34;&gt;À quoi ça sert ?&lt;/h1&gt;
 &lt;p&gt;Le but d&amp;rsquo;un test unitaire est de tester, que pour un paramètre &lt;strong&gt;A&lt;/strong&gt; (le paramètre d&amp;rsquo;une fonction, une variable, un évènement), l&amp;rsquo;unité de code testée ait le comportement &lt;strong&gt;B&lt;/strong&gt; attendu.&lt;/p&gt;
@@ -733,9 +730,9 @@ Dans une logique métier, en architecturant votre projet vous commençerez par d
 &lt;hr&gt;
 &lt;h1 id=&#34;exemple&#34;&gt;Exemple&lt;/h1&gt;
 &lt;p&gt;Prenons le cas d&amp;rsquo;une fonction &lt;strong&gt;checkPassword&lt;/strong&gt; qui servirait à valider le mot de passe d&amp;rsquo;un utilisateur.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;) {
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Elle doit lever une exception dans ces conditions :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Elle doit lever une exception dans ces conditions :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Le mot de passe fait moins de 8 caractères&lt;/li&gt;
 &lt;li&gt;Le mot de passe est un mot du dictionnaire&lt;/li&gt;
@@ -744,25 +741,25 @@ Dans une logique métier, en architecturant votre projet vous commençerez par d
 &lt;p&gt;Si le mot de passe respecte ces règles, checkPassword devra alors retourner &lt;strong&gt;true&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Nous pourrions écrire les tests de la manière suivante :&lt;/p&gt;
 &lt;hr&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;describe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;checkPassword&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-    &lt;span style=&#34;color:#75715e&#34;&gt;// We start by checking the first rule 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow passwords shorter than 8 chars&amp;#34;&lt;/span&gt;, () =&amp;gt; {
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
-    });
-    &lt;span style=&#34;color:#75715e&#34;&gt;// Then the second one 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow words from the dictionary&amp;#34;&lt;/span&gt;, () =&amp;gt; {
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aerodynamic&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
-    });
-    &lt;span style=&#34;color:#75715e&#34;&gt;// And finally the third one
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow only numeric passwords&amp;#34;&lt;/span&gt;, () =&amp;gt; {
-    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;8008135707&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
-    });
-    &lt;span style=&#34;color:#75715e&#34;&gt;// A valid password should be accepted
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;should return true when a valid password is given&amp;#34;&lt;/span&gt;, () =&amp;gt; {
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g00dP455w0rd!&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;equal&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;);
-    });
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;describe&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;checkPassword&amp;#39;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// We start by checking the first rule 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow passwords shorter than 8 chars&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Then the second one 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow words from the dictionary&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aerodynamic&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// And finally the third one
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shouldn&amp;#39;t allow only numeric passwords&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;8008135707&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;toThrow&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// A valid password should be accepted
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;it&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;should return true when a valid password is given&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;expect&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;checkPassword&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;g00dP455w0rd!&amp;#34;&lt;/span&gt;)).&lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;equal&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;premier-contact-avec-vuejs&#34;&gt;Premier contact avec Vue.js&lt;/h1&gt;
 &lt;h2 id=&#34;quest-ce-que-vuejs&#34;&gt;Qu&amp;rsquo;est-ce que Vue.js&lt;/h2&gt;
 &lt;p&gt;Vue.JS est un &lt;strong&gt;framework Web&lt;/strong&gt; qui a été crée en 2017 par &lt;strong&gt;Evan You&lt;/strong&gt; (ex Googler).&lt;/p&gt;
@@ -799,15 +796,15 @@ Si l&amp;rsquo;installation s&amp;rsquo;est correctement déroulée vous devriez
 &lt;li&gt;De la logique (JavaScript)
  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;L&#39;&lt;strong&gt;intérêt principal&lt;/strong&gt; de l&amp;rsquo;utilisation de composants est &lt;strong&gt;architectural&lt;/strong&gt;, ils permettent d&#39;&lt;strong&gt;éviter de dupliquer du code&lt;/strong&gt; et d&amp;rsquo;avoir des &lt;strong&gt;templates HTML lisibles&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;&lt;strong&gt;intérêt principal&lt;/strong&gt; de l&amp;rsquo;utilisation de composants est &lt;strong&gt;architectural&lt;/strong&gt;, ils permettent d&amp;rsquo;&lt;strong&gt;éviter de dupliquer du code&lt;/strong&gt; et d&amp;rsquo;avoir des &lt;strong&gt;templates HTML lisibles&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;mount-et-shallowmount&#34;&gt;Mount et ShallowMount&lt;/h1&gt;
 &lt;p&gt;Le module &lt;em&gt;@vue/test-utils&lt;/em&gt; inclut plusieurs classes et méthodes qui facilitent les tests unitaires des composants.&lt;/p&gt;
 &lt;p&gt;Notamment les fonctions &lt;strong&gt;mount et shallowMount&lt;/strong&gt; qui permettent d&amp;rsquo;instancier un composant à l&amp;rsquo;intérieur d&amp;rsquo;un &lt;strong&gt;wrapper&lt;/strong&gt;, ce qui rend possibles les intéractions avec des composants au sein des tests.
  &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wrapper&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mount&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;MyComponent&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;assert&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;wrapper&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;MyComponent&amp;#39;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wrapper&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mount&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;MyComponent&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;assert&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;wrapper&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;MyComponent&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
 &lt;p&gt;La différence entre mount et shallowMount est que shallowMount remplace les méthodes et composants enfants par des &lt;em&gt;stubs&lt;/em&gt; : des éléments vides de remplacement.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;les-principales-méthodes-de-lobjet-wrapper&#34;&gt;Les principales méthodes de l&amp;rsquo;objet Wrapper&lt;/h1&gt;
@@ -857,12 +854,12 @@ Si l&amp;rsquo;installation s&amp;rsquo;est correctement déroulée vous devriez
 &lt;h1 id=&#34;la-liaison-de-données-data-binding&#34;&gt;La liaison de données (data-binding)&lt;/h1&gt;
 &lt;p&gt;Le premier moyen de lier une information entre deux composants est le &lt;strong&gt;data-binding parent vers enfant&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;On envoie une information d&amp;rsquo;un composant &lt;strong&gt;parent&lt;/strong&gt; vers &lt;strong&gt;un autre composant&lt;/strong&gt; qui est utilisé dans son template (son composant &lt;strong&gt;enfant&lt;/strong&gt;).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
-	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;enfant&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;enfant&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
-export default { name: &amp;#34;Parent&amp;#34; }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;enfant&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;enfant&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export default { name: &amp;#34;Parent&amp;#34; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h1 id=&#34;utilisation-des-props&#34;&gt;Utilisation des props&lt;/h1&gt;
 &lt;p&gt;Pour qu&amp;rsquo;un composant puisse reçevoir des informations de ses parents, il est nécessaire de définir les attributs qui pourront lui être envoyés.&lt;/p&gt;
@@ -870,15 +867,15 @@ export default { name: &amp;#34;Parent&amp;#34; }
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Essayez d&amp;rsquo;être aussi précis que possible dans la définition de vos props&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;props&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-    		&lt;span style=&#34;color:#a6e22e&#34;&gt;author&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-    			&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String,
-        		&lt;span style=&#34;color:#a6e22e&#34;&gt;required&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
-        		&lt;span style=&#34;color:#a6e22e&#34;&gt;validator&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; () =&amp;gt; {}
-        	}, 
-        	&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String }}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;props&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    		&lt;span style=&#34;color:#a6e22e&#34;&gt;author&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    			&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        		&lt;span style=&#34;color:#a6e22e&#34;&gt;required&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        		&lt;span style=&#34;color:#a6e22e&#34;&gt;validator&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; () =&amp;gt; {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        	}, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        	&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;la-liaison-de-données-parent-vers-enfant&#34;&gt;La liaison de données parent vers enfant&lt;/h1&gt;
 &lt;p&gt;Plusieurs manières d&amp;rsquo;afficher de la donnée dynamiquement dans le template d&amp;rsquo;un composant
  &lt;/p&gt;
@@ -889,7 +886,7 @@ export default { name: &amp;#34;Parent&amp;#34; }
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;v-text&lt;/strong&gt; :&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;lt;h1 v-text=&amp;quot;data&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; // n&#39;est pas watchée
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;lt;h1 v-text=&amp;#34;data&amp;#34;&amp;gt;&amp;lt;/h1&amp;gt; // n&amp;#39;est pas watchée
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;interpolation d&amp;rsquo;expressions dans des moustaches&lt;/strong&gt; :&lt;/li&gt;
 &lt;/ul&gt;
@@ -904,14 +901,14 @@ export default { name: &amp;#34;Parent&amp;#34; }
 &amp;lt;/my-component&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-directives&#34;&gt;Les directives&lt;/h1&gt;
-&lt;p&gt;Les directives &lt;strong&gt;sont des composants ne comportant pas  de template&lt;/strong&gt;. 
+&lt;p&gt;Les directives &lt;strong&gt;sont des composants ne comportant pas  de template&lt;/strong&gt;.
  
 Elles permettent d&amp;rsquo;associer de la logique à un élément de template &lt;strong&gt;déjà existant&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Il est possible de définir nos propres directives, en créant un objet Vue.directive (nous y reviendrons) mais il existe déjà un certain nombre de directives &lt;strong&gt;prédéfinies dans le framework&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;les-directives-vuejs-prédéfinies&#34;&gt;Les directives Vue.js prédéfinies&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;v-text&lt;/strong&gt; : Permet de lier une variable au contenu &amp;lsquo;text&amp;rsquo; de l&amp;rsquo;élément sélectionné&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-text&lt;/strong&gt; : Permet de lier une variable au contenu &amp;rsquo;text&amp;rsquo; de l&amp;rsquo;élément sélectionné&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;v-bind ( alias ‘:’ )&lt;/strong&gt; : Permet de lier une variable locale à un attribut d&amp;rsquo;un élément de votre template&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;v-if / v-else-if / v-else&lt;/strong&gt; : Permet d&amp;rsquo;ajouter des conditions à l&amp;rsquo;ajout d&amp;rsquo;un élément dans le DOM&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;v-show&lt;/strong&gt; : Permet d&amp;rsquo;afficher ou non un élément (display en CSS) en fonction d&amp;rsquo;une condition&lt;/li&gt;
@@ -923,17 +920,17 @@ Elles permettent d&amp;rsquo;associer de la logique à un élément de template 
 &lt;h1 id=&#34;le-v-on-en-détail&#34;&gt;Le v-on en détail&lt;/h1&gt;
 &lt;p&gt;La directive Vue.js v-on (ayant pour alias @) permet d&amp;rsquo;associer un &lt;a href=&#34;https://developer.mozilla.org/fr/docs/Web/Events&#34;&gt;événement JavaScript&lt;/a&gt; avec du comportement défini en JavaScript.&lt;/p&gt;
 &lt;p&gt;Par exemple pour déclencher une fonction au clic sur un bouton on fera comme ceci dans un composant :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
-  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v-on:click&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;doSomething()&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
-  	&lt;span style=&#34;color:#a6e22e&#34;&gt;doSomething&lt;/span&gt;() {
-  		&lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Button clicked&amp;#39;&lt;/span&gt;);
-  	}
-  };
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v-on:click&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;doSomething()&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  	&lt;span style=&#34;color:#a6e22e&#34;&gt;doSomething&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  		&lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Button clicked&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;hands-on-1&#34;&gt;Hands-on!&lt;/h1&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;ul&gt;
@@ -946,10 +943,10 @@ Elles permettent d&amp;rsquo;associer de la logique à un élément de template 
 &lt;p&gt;Nous allons maintenant voir comment faire passer une information du composant enfant vers le composant parent.&lt;/p&gt;
 &lt;p&gt;Le paradigme est ici légèrement différent, on va utiliser le système d&amp;rsquo;évènements pour remonter des informations du composant enfant vers le composant parent.&lt;/p&gt;
 &lt;p&gt;On déclenche notre évènement dans le composant enfant avec la méthode&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$emit&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Il suffira ensuite d&amp;rsquo;écouter cet évènement dans le composant parent avec la directive &lt;strong&gt;v-on&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;parent&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v-on:hello&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;doSomething()&amp;#34;&lt;/span&gt;/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$emit&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Il suffira ensuite d&amp;rsquo;écouter cet évènement dans le composant parent avec la directive &lt;strong&gt;v-on&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;parent&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v-on:hello&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;doSomething()&amp;#34;&lt;/span&gt;/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;utilisation-avancée-du-wrapper&#34;&gt;Utilisation avancée du wrapper&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;Il est maintenant temps de voir d&amp;rsquo;autres méthodes du &lt;strong&gt;wrapper&lt;/strong&gt; qui vont nous servir dans nos prochains tests :&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -960,29 +957,29 @@ Elles permettent d&amp;rsquo;associer de la logique à un élément de template 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: wrapper.trigger peut être utilisé à la suite d&amp;rsquo;un find(), par exemple :&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wrapper.find(&#39;button&#39;).trigger(&#39;click&#39;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wrapper.find(&amp;#39;button&amp;#39;).trigger(&amp;#39;click&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;le-cycle-de-vie-des-composants&#34;&gt;Le cycle de vie des composants&lt;/h1&gt;
-&lt;p&gt;L&#39;&lt;strong&gt;affichage&lt;/strong&gt;, la &lt;strong&gt;mise à jour&lt;/strong&gt; et la &lt;strong&gt;destruction&lt;/strong&gt; des composants Vue.js sont des actions gérées par le framework, nous n&amp;rsquo;avons pas à spécifier lorsqu&amp;rsquo;il faut ajouter ou retirer un composant du DOM.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;&lt;strong&gt;affichage&lt;/strong&gt;, la &lt;strong&gt;mise à jour&lt;/strong&gt; et la &lt;strong&gt;destruction&lt;/strong&gt; des composants Vue.js sont des actions gérées par le framework, nous n&amp;rsquo;avons pas à spécifier lorsqu&amp;rsquo;il faut ajouter ou retirer un composant du DOM.&lt;/p&gt;
 &lt;p&gt;En revanche, Vue.js nous permet d&amp;rsquo;effectuer certaines actions à des moments précis du cycle de vie de nos composants à l&amp;rsquo;aide de &lt;strong&gt;crochets (hooks)&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Pour les utiliser, il suffit d&amp;rsquo;implémenter les méthodes éponymes à l&amp;rsquo;intérieur de notre composant.&lt;/p&gt;
 &lt;p&gt;Les hooks qui nous seront les plus utiles sont :&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Created, Mounted, Updated et Destroyed.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;schéma-du-cyle-de-vie-dun-composant&#34;&gt;Schéma du cyle de vie d&amp;rsquo;un composant&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://cdnsite1.assist.ro/sites/default/files/styles/big/public/images/blog/Vue-instance-lifecycle-Page-1.png?itok=OdC8TOWx&#34; alt=&#34;lifecycle schema&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;lifecycle schema&#34; src=&#34;https://cdnsite1.assist.ro/sites/default/files/styles/big/public/images/blog/Vue-instance-lifecycle-Page-1.png?itok=OdC8TOWx&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;le-concept-de-store&#34;&gt;Le concept de Store&lt;/h1&gt;
 &lt;h2 id=&#34;state-management-pattern&#34;&gt;(State Management Pattern)&lt;/h2&gt;
-&lt;p&gt;Vue.js utilise &lt;strong&gt;Vuex&lt;/strong&gt; comme système de gestion d&amp;rsquo;état. 
+&lt;p&gt;Vue.js utilise &lt;strong&gt;Vuex&lt;/strong&gt; comme système de gestion d&amp;rsquo;état.
 Vuex est similaire à Redux dans son fonctionnement en de nombreux points :&lt;/p&gt;
 &lt;p&gt;Vuex et Redux permettent de créer des &lt;strong&gt;stores&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Un &lt;strong&gt;store&lt;/strong&gt; sert à garder un &lt;strong&gt;état (state)&lt;/strong&gt; en mémoire au sein d&amp;rsquo;une WebApplication.&lt;/p&gt;
 &lt;p&gt;Tous nos &lt;strong&gt;composants&lt;/strong&gt; peuvent effectuer des &lt;strong&gt;modifications (mutations)&lt;/strong&gt; sur cet état.&lt;/p&gt;
-&lt;p&gt;Les &lt;strong&gt;composants&lt;/strong&gt; peuvent à tout moment accéder à l&#39;&lt;strong&gt;état&lt;/strong&gt; du store et être &lt;strong&gt;notifiés&lt;/strong&gt; en cas de modifications de celui-ci.&lt;/p&gt;
+&lt;p&gt;Les &lt;strong&gt;composants&lt;/strong&gt; peuvent à tout moment accéder à l&amp;rsquo;&lt;strong&gt;état&lt;/strong&gt; du store et être &lt;strong&gt;notifiés&lt;/strong&gt; en cas de modifications de celui-ci.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;schéma-store-vuex&#34;&gt;Schéma Store Vuex&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://fr.vuejs.org/images/state.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fr.vuejs.org/images/state.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;utilisation-de-vuex&#34;&gt;Utilisation de Vuex&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://vuex.vuejs.org/&#34;&gt;Vuex&lt;/a&gt; est un module séparé du module core de Vue.js.&lt;/p&gt;
@@ -991,9 +988,9 @@ Vuex est similaire à Redux dans son fonctionnement en de nombreux points :&lt;/
 &lt;p&gt;npm install vuex &amp;ndash;save&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;et ensuite ajouter le module à notre projet Vue en ajoutant dans notre main.js :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vuex&amp;#39;&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vuex&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; 
 Nous allons maintenant pouvoir créer notre premier &lt;strong&gt;store&lt;/strong&gt;!&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;le-routage&#34;&gt;Le routage&lt;/h1&gt;
@@ -1015,91 +1012,89 @@ Nous allons maintenant pouvoir créer notre premier &lt;strong&gt;store&lt;/stro
 &lt;p&gt;Maintenant que nous avons un peu plus en main l&amp;rsquo;utilisation de &lt;strong&gt;Vuex&lt;/strong&gt;, nous pouvons aborder les &lt;strong&gt;mapGetters&lt;/strong&gt; et &lt;strong&gt;mapState&lt;/strong&gt; qu&amp;rsquo;il propose.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;mapState&lt;/strong&gt; permet de mapper des propriétés de l&amp;rsquo;état d&amp;rsquo;un store à une propriété &lt;em&gt;computed&lt;/em&gt; d&amp;rsquo;un composant.&lt;/p&gt;
 &lt;p&gt;Il prend en paramètre un tableau :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;computed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mapState&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;avatar&amp;#39;&lt;/span&gt;, ])
-    	&lt;span style=&#34;color:#75715e&#34;&gt;// this.login &amp;amp;&amp;amp; this.avatar
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ou un tableau associatif, permettant de nommer les propriétés &lt;em&gt;computed&lt;/em&gt; :&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;computed: mapState({userLogin: &#39;login&#39;, 
-userAvatar: &#39;avatar&#39; })
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;computed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mapState&lt;/span&gt;([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;avatar&amp;#39;&lt;/span&gt;, ])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#75715e&#34;&gt;// this.login &amp;amp;&amp;amp; this.avatar
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ou un tableau associatif, permettant de nommer les propriétés &lt;em&gt;computed&lt;/em&gt; :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;computed: mapState({userLogin: &amp;#39;login&amp;#39;, 
+userAvatar: &amp;#39;avatar&amp;#39; })
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;le-mapgetters&#34;&gt;Le mapGetters&lt;/h1&gt;
 &lt;p&gt;Nous utiliserons en priorité le &lt;strong&gt;mapGetters&lt;/strong&gt;, il est conseillé d&amp;rsquo;utiliser des getters plutôt que directement le &lt;strong&gt;state&lt;/strong&gt; d&amp;rsquo;un store !&lt;/p&gt;
-&lt;p&gt;Celui-ci fonctionne comme &lt;strong&gt;mapState&lt;/strong&gt; mais associe un &lt;strong&gt;getter&lt;/strong&gt; à &lt;strong&gt;une propriété computed&lt;/strong&gt;. 
+&lt;p&gt;Celui-ci fonctionne comme &lt;strong&gt;mapState&lt;/strong&gt; mais associe un &lt;strong&gt;getter&lt;/strong&gt; à &lt;strong&gt;une propriété computed&lt;/strong&gt;.
 La syntaxe est aussi quelque peu différente, on utilisera le &lt;em&gt;spread&lt;/em&gt; d&amp;rsquo;ES6 ici car mapGetters retourne un tableau:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;computed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {... &lt;span style=&#34;color:#a6e22e&#34;&gt;mapGetters&lt;/span&gt;(
-    			[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;getLogin&amp;#39;&lt;/span&gt;, 
-                         &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;getAvatar&amp;#39;&lt;/span&gt;]) }
-    	&lt;span style=&#34;color:#75715e&#34;&gt;// this.getLogin &amp;amp;&amp;amp; this.getAvatar
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;computed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {... &lt;span style=&#34;color:#a6e22e&#34;&gt;mapGetters&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    			[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;getLogin&amp;#39;&lt;/span&gt;, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                         &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;getAvatar&amp;#39;&lt;/span&gt;]) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	&lt;span style=&#34;color:#75715e&#34;&gt;// this.getLogin &amp;amp;&amp;amp; this.getAvatar
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;liaison-de-classes-et-styles&#34;&gt;Liaison de classes et styles&lt;/h1&gt;
 &lt;p&gt;Nous avons jusqu&amp;rsquo;ici eu une utilisation relativement classique de la directive v-bind.&lt;/p&gt;
 &lt;p&gt;Il est en réalité également possible de s&amp;rsquo;en servir pour associer du style et des classes à des propriétés JavaScript.&lt;/p&gt;
 &lt;p&gt;Vue.js permet de gérer simplement les modifications de style et de classes à l&amp;rsquo;aide d&amp;rsquo;objets, plutôt que de chaînes de caractères.&lt;/p&gt;
 &lt;p&gt;Par exemple, pour changer la classe et la couleur du texte d&amp;rsquo;un élément en fonction d&amp;rsquo;attributs d&amp;rsquo;un composant :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;:style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{color: myCustomColor}&amp;#34;&lt;/span&gt;&amp;gt;
-  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;:class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{selected: isSpanSelected}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;:style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{color: myCustomColor}&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;:class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{selected: isSpanSelected}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;le-pattern-eventbus&#34;&gt;Le pattern EventBus&lt;/h1&gt;
-&lt;p&gt;Jusqu&amp;rsquo;à présent nous avons émis nos évènements directement depuis nos composants. 
+&lt;p&gt;Jusqu&amp;rsquo;à présent nous avons émis nos évènements directement depuis nos composants.
 C&amp;rsquo;est la manière basique d&amp;rsquo;écrire une gestion d&amp;rsquo;évènements en Vue.js, nous allons maintenant aborder le pattern &lt;strong&gt;EventBus&lt;/strong&gt; qui propose de centraliser la gestion des évènements dans un seul composant Vue.js.&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;intêret est de faire communiquer facilement des composants sans qu&amp;rsquo;ils aient une relation de parenté.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import eventBus from &#39;@/eventBus&#39;
-eventBus.$emit(&#39;refresh&#39;) // Pour l&#39;envoi
-&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;eventBus&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;refresh&amp;#39;&lt;/span&gt;, () =&amp;gt; {...}) &lt;span style=&#34;color:#75715e&#34;&gt;// Pour l&amp;#39;écoute
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import eventBus from &amp;#39;@/eventBus&amp;#39;
+eventBus.$emit(&amp;#39;refresh&amp;#39;) // Pour l&amp;#39;envoi
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;eventBus&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;$on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;refresh&amp;#39;&lt;/span&gt;, () =&amp;gt; {...}) &lt;span style=&#34;color:#75715e&#34;&gt;// Pour l&amp;#39;écoute
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;outils-de-débogage&#34;&gt;Outils de Débogage&lt;/h1&gt;
 &lt;p&gt;Il existe une suite d&amp;rsquo;outils &lt;em&gt;officielle&lt;/em&gt; pour Vue.js : les &lt;strong&gt;Vue DevTools&lt;/strong&gt;, disponibles sous forme d&amp;rsquo;extension &lt;strong&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd&#34;&gt;Chrome&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/vue-js-devtools/&#34;&gt;Firefox&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/FoLCsgdXeNyJkiM3uPn6wgbSg_BCfx53XgBHIS5QvhjbRULiFp00eNqkZcUotgasqSm9uh-5LQ=w640-h400-e365&#34; alt=&#34;Vue Devtools&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Vue Devtools&#34; src=&#34;https://lh3.googleusercontent.com/FoLCsgdXeNyJkiM3uPn6wgbSg_BCfx53XgBHIS5QvhjbRULiFp00eNqkZcUotgasqSm9uh-5LQ=w640-h400-e365&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une fois l&amp;rsquo;extension installée, un onglet &lt;strong&gt;Vue&lt;/strong&gt; est disponible dans les outils de développement du navigateur.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;axios&#34;&gt;axios&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Axios&lt;/strong&gt; est une bibliothèque JavaScript pouvant être utilisée côté client et serveur (en Node.js) et qui permet de faire des requêtes réseau.
  
 &lt;strong&gt;Vue.js&lt;/strong&gt; ne prenant pas en charge la gestion des requêtes &lt;strong&gt;HTTP&lt;/strong&gt;, nous utiliserons &lt;strong&gt;axios&lt;/strong&gt; pour effectuer nos échanges.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;axios&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;axios&amp;#39;&lt;/span&gt;
-
-&lt;span style=&#34;color:#a6e22e&#34;&gt;axios&lt;/span&gt;
-.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://hack.courses&amp;#39;&lt;/span&gt;)
-.&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt;))
-.&lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;))
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;axios&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;axios&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;axios&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://hack.courses&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-mixins&#34;&gt;Les mixins&lt;/h1&gt;
 &lt;p&gt;Il n&amp;rsquo;est pas nécessaire de réecrire 100% du code de vos composants si certaines parties sont similaires.&lt;/p&gt;
 &lt;p&gt;Vue.js intègre un système de &lt;strong&gt;mixins&lt;/strong&gt; très simple à prendre en main.&lt;/p&gt;
 &lt;p&gt;Vous pouvez séparer la partie du code que vous souhaitez partager dans une &lt;strong&gt;mixin&lt;/strong&gt; :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;annoyingMixin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;created&lt;/span&gt;() {
-    		&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; created&amp;#39;&lt;/span&gt;);
-    	}
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Il suffit ensuite de l&amp;rsquo;ajouter à la propriété &lt;strong&gt;mixins&lt;/strong&gt; d&amp;rsquo;un composant :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;annoyingMixin&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;created&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    		&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; created&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Il suffit ensuite de l&amp;rsquo;ajouter à la propriété &lt;strong&gt;mixins&lt;/strong&gt; d&amp;rsquo;un composant :&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export default { mixins: [annoyingMixin] }
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;les-modules-vuex&#34;&gt;Les modules Vuex&lt;/h1&gt;
 &lt;p&gt;Jusqu&amp;rsquo;ici nous nous sommes contentés de mettre toutes les informations et mutations de notre &lt;strong&gt;store&lt;/strong&gt; dans un module unique.&lt;/p&gt;
 &lt;p&gt;Notez qu&amp;rsquo;il est également possible de découper un &lt;strong&gt;store Vuex&lt;/strong&gt; en modules, chaque module possédant ses propres &lt;strong&gt;mutations, actions, getters, modules&lt;/strong&gt; et son &lt;strong&gt;état&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;On va définir un module de la sorte :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
-	    &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...},
-	    &lt;span style=&#34;color:#a6e22e&#34;&gt;mutations&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...},
-    	    &lt;span style=&#34;color:#a6e22e&#34;&gt;getters&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...}
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et l&amp;rsquo;ajouter à notre store :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;store&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Store&lt;/span&gt;({
-	&lt;span style=&#34;color:#a6e22e&#34;&gt;modules&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt; } &lt;span style=&#34;color:#75715e&#34;&gt;//  =&amp;gt; store.state.a
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	    &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	    &lt;span style=&#34;color:#a6e22e&#34;&gt;mutations&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    	    &lt;span style=&#34;color:#a6e22e&#34;&gt;getters&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {...}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et l&amp;rsquo;ajouter à notre store :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;store&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Vuex&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Store&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;modules&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt; } &lt;span style=&#34;color:#75715e&#34;&gt;//  =&amp;gt; store.state.a
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;écriture-de-directives-personnalisées&#34;&gt;Écriture de directives personnalisées&lt;/h1&gt;
 &lt;p&gt;Nous avons souvent utilisé les directives prédéfinies de Vue.js, il est également possible de créer nos propres directives personnalisées.&lt;/p&gt;
 &lt;p&gt;La syntaxe est légèrement différente à la création d&amp;rsquo;un composant :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;directive&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bold&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#75715e&#34;&gt;/*directive content*/&lt;/span&gt;})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Les directives possèdent également un cycle de vie différent des composants, avec les &lt;strong&gt;hooks&lt;/strong&gt; suivants :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;directive&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bold&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#75715e&#34;&gt;/*directive content*/&lt;/span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Les directives possèdent également un cycle de vie différent des composants, avec les &lt;strong&gt;hooks&lt;/strong&gt; suivants :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;bind(&lt;em&gt;element, bindings&lt;/em&gt;)&lt;/strong&gt; : Appellé la première fois qu&amp;rsquo;une directive est liée à un élément&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;inserted(&lt;em&gt;element, bindings&lt;/em&gt;)&lt;/strong&gt; : Appellé quand l&amp;rsquo;élément lié a été injecté dans son parent.&lt;/li&gt;
@@ -1121,10 +1116,10 @@ eventBus.$emit(&#39;refresh&#39;) // Pour l&#39;envoi
 &lt;h1 id=&#34;filtres&#34;&gt;Filtres&lt;/h1&gt;
 &lt;p&gt;Vue.js permet de créer des filtres qui pourront être utilisés pour formater des informations avant de les afficher.&lt;/p&gt;
 &lt;p&gt;Les filtres s&amp;rsquo;utilisent comme ceci dans un template :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;{{ &lt;span style=&#34;color:#a6e22e&#34;&gt;unixTimeStamp&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dateFilter&lt;/span&gt; }}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;La définition d&amp;rsquo;un filtre utilise &lt;strong&gt;Vue.filter&lt;/strong&gt; et utilise une fonction de transformation à laquelle sera passée la valeur à filtrer.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dateFilter&amp;#39;&lt;/span&gt;, (&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;moment&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;(
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ &lt;span style=&#34;color:#a6e22e&#34;&gt;unixTimeStamp&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dateFilter&lt;/span&gt; }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;La définition d&amp;rsquo;un filtre utilise &lt;strong&gt;Vue.filter&lt;/strong&gt; et utilise une fonction de transformation à laquelle sera passée la valeur à filtrer.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Vue&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dateFilter&amp;#39;&lt;/span&gt;, (&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;moment&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;websockets&#34;&gt;WebSockets&lt;/h1&gt;
 &lt;p&gt;Les &lt;strong&gt;WebSockets&lt;/strong&gt; ont un fonctionnement inspiré des &lt;strong&gt;sockets&lt;/strong&gt; TCP UNIX.&lt;/p&gt;
 &lt;p&gt;Elles sont basées sur le protocole &lt;strong&gt;HTTP&lt;/strong&gt; et permettent d&amp;rsquo;établir une connexion continue entre un client et un serveur.&lt;/p&gt;
@@ -1136,14 +1131,13 @@ ws.onmessage = (message) =&amp;gt; console.log(message);
 &lt;p&gt;Dans une logique &amp;ldquo;&lt;strong&gt;D&lt;/strong&gt;on&amp;rsquo;t &lt;strong&gt;R&lt;/strong&gt;epeat &lt;strong&gt;Y&lt;/strong&gt;ourself&amp;rdquo;, il est possible grâce à WebPack de définir un fichier de style global pour notre application.&lt;/p&gt;
 &lt;p&gt;Les modifications de configuration de notre projet Vue.js se feront dans un fichier &lt;strong&gt;vue.config.js&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Pour ajouter un fichier SCSS global, il faudra y ajouter :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;css&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;loaderOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-      &lt;span style=&#34;color:#a6e22e&#34;&gt;sass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`@import &amp;#34;@/style/global.scss&amp;#34;;`&lt;/span&gt;
-      }}}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ce qui forcera WebPack à charger le fichier /src/style/global.scss&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;css&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;loaderOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;sass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`@import &amp;#34;@/style/global.scss&amp;#34;;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ce qui forcera WebPack à charger le fichier /src/style/global.scss&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Il est évidemment possible de charger plusieurs fichiers de style&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1151,8 +1145,8 @@ ws.onmessage = (message) =&amp;gt; console.log(message);
 &lt;h1 id=&#34;les-transitions&#34;&gt;Les transitions&lt;/h1&gt;
 &lt;p&gt;Vue.js possède un système de gestion des transitions d&amp;rsquo;entrée et de sortie liées au &lt;strong&gt;v-if et v-show&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;La première étape de leur utilisation est de spécifier qu&amp;rsquo;un élément nécessitera une transition sur son apparition ou sa disparition en utilisant le composant &lt;strong&gt;transition&lt;/strong&gt; :&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;transition name=&amp;quot;fade-in&amp;quot;&amp;gt;
-	&amp;lt;div v-if=&amp;quot;show&amp;quot;&amp;gt;Hello World&amp;lt;/div&amp;gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;transition name=&amp;#34;fade-in&amp;#34;&amp;gt;
+	&amp;lt;div v-if=&amp;#34;show&amp;#34;&amp;gt;Hello World&amp;lt;/div&amp;gt;
 &amp;lt;/transition&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Il va maintenant falloir définir la transition nommée &amp;ldquo;fade-in&amp;rdquo; que nous allons utilisée.&lt;/p&gt;
 &lt;hr&gt;
@@ -1167,17 +1161,16 @@ ws.onmessage = (message) =&amp;gt; console.log(message);
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;exemple-de-transition-css-utilisant-les-classes-de-transition&#34;&gt;Exemple de transition CSS utilisant les classes de transition&lt;/h1&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter-to&lt;/span&gt; {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
-}
-.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-leave-active&lt;/span&gt; {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;transition&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;.5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;s&lt;/span&gt;;
-}
-.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter&lt;/span&gt; {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter-to&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-leave-active&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;transition&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;.5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;s&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fade-in-enter&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;opacity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;déploiement&#34;&gt;Déploiement&lt;/h1&gt;
 &lt;p&gt; 
 Pour déployer votre projet en production, c&amp;rsquo;est très simple avec Vue.js, il suffit d&amp;rsquo;utiliser le script&lt;/p&gt;

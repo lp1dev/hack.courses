@@ -17,13 +17,47 @@
 
 
 
+  
+  <link rel="stylesheet" href="/css/buttons.min.3be0bba9fe18b5b77c8fe97175a5ff803eb3b8d6b94a4c43e6c842bc229040f1.css">
 
   
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
   
+  <link rel="stylesheet" href="/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
   
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
   
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
   
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ae96bd858b485e91dd4d30f50f4298bdc371cb1a2a55dcfa043d76a6c95b59b0.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.fa7e148bd9d175a5fda1e62ea44a0e535f3bb05f7634ec615154cccbe71b3a9a.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
 
 
 
@@ -31,9 +65,8 @@
 
 
 
-  <link rel="shortcut icon" href="/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="/img/theme-colors/blue.png">
-
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -74,10 +107,10 @@
 
 
 </head>
-<body class="blue">
+<body>
 
 
-<div class="container center headings--one-size">
+<div class="container center">
 
   <script type="text/javascript">
 (function() {
@@ -133,18 +166,7 @@
   <h1 class="post-title">
     <a href="/posts/command_line_101/104/">Command line 104</a>
   </h1>
-  <div class="post-meta">
-    
-      <time class="post-date">
-        2022-01-12 ::
-        
-      </time>
-    
-    
-      <span class="post-author">Lp1</span>
-    
-    
-  </div>
+  <div class="post-meta"><time class="post-date">2022-01-12</time><span class="post-author">Lp1</span></div>
 
   
     <span class="post-tags">
@@ -185,7 +207,7 @@
         }
     }
 </script>
-<h1 id="parameters-">Parameters ⚙️<a href="#parameters-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="parameters-">Parameters ⚙️<a href="#parameters-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Parameters are options you can add to your commands in order to change their behaviour.</p>
 <p>For instance, when you type <code>ls -a</code>,
 &ldquo;-a&rdquo; is a parameter that you add to the command <code>ls</code>.</p>
@@ -195,54 +217,54 @@
 <p><strong>Note</strong> : Anything written <strong>after</strong> a command is a <em>parameter</em>. Parameters are separated by a space.</p>
 </blockquote>
 <hr>
-<h1 id="shortcuts-and-wildcards-">Shortcuts and wildcards 🃏<a href="#shortcuts-and-wildcards-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<h2 id="history">History<a href="#history" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h1 id="shortcuts-and-wildcards-">Shortcuts and wildcards 🃏<a href="#shortcuts-and-wildcards-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="history">History<a href="#history" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>In a Linux shell, you have multiple syntaxes and keyboard shortcuts to avoid typing long commands and doing the same thing twice.</p>
 <p>For instance if you want to run the same command again, <strong>Key Up</strong> will go through your history and display the last command-lines you entered.</p>
 <blockquote>
 <p><strong>Note</strong> : The command <code>history</code> will also print the whole command-line history for your shell session.</p>
 </blockquote>
-<h2 id="autocompletion">Autocompletion<a href="#autocompletion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="autocompletion">Autocompletion<a href="#autocompletion" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p><strong>Tab</strong> will <strong>autocomplete</strong> files and directories names, for instance if you type :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls chall
-</code></pre></div><p>In your home directory and then press <strong>Tab</strong>, your terminal will automatically replace &ldquo;chall&rdquo; with &ldquo;challenges&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; ls chall
+</span></span></code></pre></div><p>In your home directory and then press <strong>Tab</strong>, your terminal will automatically replace &ldquo;chall&rdquo; with &ldquo;challenges&rdquo;.</p>
 <p>In case of ambiguity, your shell will not automatically be able to autocomplete your commands, in that case, <em>nothing will be displayed</em> when you press <strong>Tab</strong>.</p>
 <p>Pressing <strong>Tab</strong> twice in that situation will print the ambiguous file or directory names.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls c <span style="color:#75715e"># Press Tab twice and observe what is printed</span>
-</code></pre></div><h2 id="wildcards">Wildcards<a href="#wildcards" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; ls c <span style="color:#75715e"># Press Tab twice and observe what is printed</span>
+</span></span></code></pre></div><h2 id="wildcards">Wildcards<a href="#wildcards" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>A wildcard is a &ldquo;magic&rdquo; character that means <em>everything</em>.</p>
 <p>In a Linux shell, a wildcard is represented by the <strong>*</strong> character, if you type it in your shell, it will be replaced before executing your command by every (non-hidden) files and directories in the current directory.</p>
 <p>You can actually test this behaviour in your terminal using the following commands :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; echo * <span style="color:#75715e"># Will print every file and directory name</span>
-$&gt; cat * <span style="color:#75715e"># Will cat every file in the local directory</span>
-</code></pre></div><p>Wildcards can also be used in conjuction with other characters, at the start or the end of any character string.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; echo chall*
-$&gt; echo *enge
-</code></pre></div><hr>
-<h1 id="permissions">Permissions<a href="#permissions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; echo * <span style="color:#75715e"># Will print every file and directory name</span>
+</span></span><span style="display:flex;"><span>$&gt; cat * <span style="color:#75715e"># Will cat every file in the local directory</span>
+</span></span></code></pre></div><p>Wildcards can also be used in conjuction with other characters, at the start or the end of any character string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; echo chall*
+</span></span><span style="display:flex;"><span>$&gt; echo *enge
+</span></span></code></pre></div><hr>
+<h1 id="permissions">Permissions<a href="#permissions" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>In a Linux filesystem, every file has associated permissions.</p>
 <p>Permissions define which actions users or groups of users can do regarding those files and directories.</p>
-<h2 id="users">Users<a href="#users" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="users">Users<a href="#users" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>If you can enter commands on a computer, you are logged in as a <strong>user</strong>.</p>
 <p>The command <code>whoami</code> will print your username, this is your identity on the machine.</p>
 <p>The <code>$USER</code> environment variable also contains your username, you can display its value with <code>echo $USER</code>.</p>
 <p>Your Linux system does not always uses usernames in order to identify users, each user have a numeric ID called a <strong>UID</strong>. You can also print your UID using <code>echo $UID</code>.</p>
-<h2 id="groups">Groups<a href="#groups" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="groups">Groups<a href="#groups" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>To make permissions management easier, users are divided in <strong>groups</strong>.</p>
 <p>By default on Linux, whenever a user is created, it is part of its own, single-member group whose name is its own.</p>
 <p>On <a href="https://hack.courses">hack.courses</a>, your group should be &ldquo;nointernet&rdquo;, you can display the groups you are part of using the command <code>groups</code>.</p>
-<h2 id="read-write-execute">Read, write, execute<a href="#read-write-execute" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="read-write-execute">Read, write, execute<a href="#read-write-execute" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Do you remember the <code>ls -l</code> listing we reviewed earlier? Let&rsquo;s look at it again.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls -l challenges/command_line_101/
-total <span style="color:#ae81ff">28</span>
-drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 .
-drwxr-xr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 ..
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">96</span> Jan <span style="color:#ae81ff">11</span> 21:59 .challenge_4
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">276</span> Jan <span style="color:#ae81ff">11</span> 21:59 challenge5.sh
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">111</span> Jan  <span style="color:#ae81ff">9</span> 15:44 challenge_0.txt
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">77</span> Jan  <span style="color:#ae81ff">9</span> 20:57 challenge_1.txt
-drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:58 challenge_2
-</code></pre></div><p>It&rsquo;s finally time to explain what all of this means, let&rsquo;s start by investigating in details the first column of this list, the one with characters like <code>-rw-rw-r--</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; ls -l challenges/command_line_101/
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">28</span>
+</span></span><span style="display:flex;"><span>drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 .
+</span></span><span style="display:flex;"><span>drwxr-xr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 ..
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">96</span> Jan <span style="color:#ae81ff">11</span> 21:59 .challenge_4
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">276</span> Jan <span style="color:#ae81ff">11</span> 21:59 challenge5.sh
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">111</span> Jan  <span style="color:#ae81ff">9</span> 15:44 challenge_0.txt
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">77</span> Jan  <span style="color:#ae81ff">9</span> 20:57 challenge_1.txt
+</span></span><span style="display:flex;"><span>drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:58 challenge_2
+</span></span></code></pre></div><p>It&rsquo;s finally time to explain what all of this means, let&rsquo;s start by investigating in details the first column of this list, the one with characters like <code>-rw-rw-r--</code>.</p>
 <p>As I told you earlier, the first character can be either <em>-</em> (which represents an empty space) or <em>d</em> for &ldquo;directory&rdquo;.</p>
 <p>Then, you have three sequences of &ldquo;rwx&rdquo;, each character of each sequence can also be equal to <em>-</em>.</p>
 <p>Those sequences describe the permissions associated to the file or directory :</p>
@@ -256,9 +278,9 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
 <p>The first sequence is for the <strong>user</strong> who owns the file/directory, the second one is for the <strong>group</strong> and the third one is for <strong>everyone else</strong>.</p>
 <p>Finally, the first username in the list (column 3) is the <strong>user</strong> who owns the file and the second one is the <strong>group</strong> the file belongs to!</p>
 <hr>
-<h1 id="hands-on-">Hands-on 🤜!<a href="#hands-on-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="hands-on-">Hands-on 🤜!<a href="#hands-on-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>If you&rsquo;re new to this, that might be a lot of information to handle, let&rsquo;s take a break with a few exercices.</p>
-<h2 id="challenge-6">Challenge 6<a href="#challenge-6" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="challenge-6">Challenge 6<a href="#challenge-6" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Let&rsquo;s do something fun this time, no flag, no answers! There is a pretty neat <strong>executable</strong> located in ~/examples, its name is <strong>cmatrix</strong>.</p>
 <p>Find a way to run this executable and then, find a way to exit the Matrix 😎.</p>
 <details>
@@ -273,7 +295,7 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
 <p><strong>Hint</strong> : A shortcut starting with CTRL&hellip;</p>
 </blockquote>
 </details>
-<h2 id="challenge-7">Challenge 7<a href="#challenge-7" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="challenge-7">Challenge 7<a href="#challenge-7" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>For this exercice, let&rsquo;s do something different! This time, you won&rsquo;t have to look for a flag.</p>
 <p>I will give you specific information describing a file which you will have to translate into a <code>drwxr-xr-x</code> line just like <code>ls -l</code> would display.</p>
 <ul>
@@ -287,11 +309,11 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
     <input style="width:40rem" type="text" id="chall0" placeholder="Example : drwxrw-rw-"/><button onclick="verify(0)">Verify</button>
 </div>
 <hr>
-<h1 id="you-finished-this-class">You finished this class!<a href="#you-finished-this-class" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="you-finished-this-class">You finished this class!<a href="#you-finished-this-class" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Congrats on your completion of this first class! I hope you enjoyed it!</p>
 <p>Was it too fast? Too slow? Too hard? Too easy? I&rsquo;d love to <a href="https://forms.gle/gzvPTPCDv27uwve88">read your feedback</a>!</p>
 <p>If you want to support my work, you can <a href="https://lp1.podia.com/free-command-line-and-linux-beginner-class">get this class</a> from podia for <strong>free</strong>, this will help me centralize the students and you will be able to be notified whenever a new class is available!</p>
-<h2 id="additional-resources">Additional Resources<a href="#additional-resources" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="additional-resources">Additional Resources<a href="#additional-resources" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <ul>
 <li><a href="https://devhints.io/bash">https://devhints.io/bash</a></li>
 <li><a href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/">https://cheatography.com/davechild/cheat-sheets/linux-command-line/</a></li>
@@ -310,37 +332,33 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
 
 # 
 
---><blockquote>
-</blockquote>
-
+-->
       </div></div>
 
   
     
 <div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other posts</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="/posts/command_line_101/cheatsheet/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Command line 101 cheatsheet</span>
-            </a>
-        </span>
-        
-        
-        <span class="button next">
-            <a href="/posts/command_line_101/102/">
-                <span class="button__text">Command line 102</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
-        
-    </div>
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/command_line_101/cheatsheet/" class="button inline prev">
+        Command line 101 cheatsheet
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/command_line_101/102/" class="button inline next">
+        Command line 102
+      </a>
+    
+  </div>
 </div>
+
 
   
 

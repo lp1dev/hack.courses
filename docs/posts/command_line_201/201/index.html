@@ -17,13 +17,47 @@
 
 
 
+  
+  <link rel="stylesheet" href="/css/buttons.min.3be0bba9fe18b5b77c8fe97175a5ff803eb3b8d6b94a4c43e6c842bc229040f1.css">
 
   
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
   
+  <link rel="stylesheet" href="/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
   
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
   
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
   
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ae96bd858b485e91dd4d30f50f4298bdc371cb1a2a55dcfa043d76a6c95b59b0.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.fa7e148bd9d175a5fda1e62ea44a0e535f3bb05f7634ec615154cccbe71b3a9a.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
 
 
 
@@ -31,9 +65,8 @@
 
 
 
-  <link rel="shortcut icon" href="/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="/img/theme-colors/blue.png">
-
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -74,10 +107,10 @@
 
 
 </head>
-<body class="blue">
+<body>
 
 
-<div class="container center headings--one-size">
+<div class="container center">
 
   <script type="text/javascript">
 (function() {
@@ -133,18 +166,7 @@
   <h1 class="post-title">
     <a href="/posts/command_line_201/201/">Command line 201</a>
   </h1>
-  <div class="post-meta">
-    
-      <time class="post-date">
-        2022-05-14 ::
-        
-      </time>
-    
-    
-      <span class="post-author">Lp1</span>
-    
-    
-  </div>
+  <div class="post-meta"><time class="post-date">2022-05-14</time><span class="post-author">Lp1</span></div>
 
   
     <span class="post-tags">
@@ -193,15 +215,15 @@ function checkAnswers() {
 }
 </script>
 <hr>
-<h1 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Welcome to this second command-line class!</p>
-<p>If you didn&rsquo;t follow Command-line 101 and need to grasp the basics of command-line and Linux click <a href="../command_line_101">here</a>.</p>
+<p>If you didn&rsquo;t follow Command-line 101 and need to grasp the basics of command-line and Linux click <a href="/posts/command_line_101/">here</a>.</p>
 <p>In this class, we&rsquo;ll go further down the rabbit hole and learn how to use more advanced command and chain multiple commands together.</p>
 <p>This class is supposed to be followed with <a href="https://hack.courses">hack.courses</a> open alongside, the challenges are made to be completed in the website&rsquo;s interactive terminal.</p>
-<p><img src="/screenshot.png" alt="Hack.courses terminal"></p>
+<p><img alt="Hack.courses terminal" src="/screenshot.png"></p>
 <hr>
-<h1 id="inputoutputs">Input/Outputs<a href="#inputoutputs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<h2 id="linux-filesystem">Linux filesystem<a href="#linux-filesystem" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h1 id="inputoutputs">Input/Outputs<a href="#inputoutputs" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="linux-filesystem">Linux filesystem<a href="#linux-filesystem" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Let&rsquo;s start this course by talking about the way inputs and outputs are handled on Linux systems!</p>
 <p>Inputs and outputs are quintessentials for operating systems and such important features are usually handled by the <em>most important</em> and basic part of it : the <strong>kernel</strong>.</p>
 <blockquote>
@@ -216,24 +238,24 @@ function checkAnswers() {
 <p>For instance, if you plug in a new webcam into your GNU/Linux machine, a new file will be created in the <em>/dev/</em> directory for it.</p>
 <p>Those files are named <strong>special files</strong>.</p>
 <p>If you want to access a process&rsquo;s environment variables, you can read the contents of the <em>/proc/self/environ</em> file.</p>
-<h2 id="standard-inputs-and-output">Standard inputs and output<a href="#standard-inputs-and-output" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="standard-inputs-and-output">Standard inputs and output<a href="#standard-inputs-and-output" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>We will now describe some of the more oftenly used special files, those are the ones your shell uses in order to read user inputs and display processes outputs.</p>
-<h3 id="devstdin">/dev/stdin<a href="#devstdin" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<h3 id="devstdin">/dev/stdin<a href="#devstdin" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Also known as the <strong>standard input</strong> (stdin), <em>/dev/stdin</em> is the special file programs such as <strong>shells</strong> use in order to handle your keyboard input.</p>
 <!-- todo link to definition "shell" -->
 <p>Whenever you type something in a terminal emulator, it will be written to <em>/dev/stdin</em>, then read by whatever program is waiting for user input.</p>
-<h3 id="devstdout">/dev/stdout<a href="#devstdout" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<h3 id="devstdout">/dev/stdout<a href="#devstdout" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Also known as the <strong>standard output</strong> (stdout), <em>/dev/stdout</em> is the special file programs use in order to display text output for the user.</p>
 <p>When a process needs to display content inside your terminal window, it will write it inside this file which is coutinuously read by terminal emulators.</p>
-<h3 id="devstderr">/dev/stderr<a href="#devstderr" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<h3 id="devstderr">/dev/stderr<a href="#devstderr" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Also known as the <strong>error output</strong> (stderr), <em>/dev/stderr</em> is the special file programs use in order to display error output for the user.</p>
 <p>It works the same way the <em>standard output</em> does, but having two different data streams makes the distinction between errors and &ldquo;normal&rdquo; messages from a program easier.</p>
-<h3 id="devnull">/dev/null<a href="#devnull" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<h3 id="devnull">/dev/null<a href="#devnull" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p><em>/dev/null</em> is often called &ldquo;the null device&rdquo; or the black hole. Everything sent/written to this special file will not be stored and disappear.</p>
 <p>It comes in handy if you want to disregard a program&rsquo;s error or standard output for instance.</p>
-<h3 id="summary">Summary<a href="#summary" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p><img src="/io.svg" alt=""></p>
-<h3 id="devrandom-and-devurandom">/dev/random and /dev/urandom<a href="#devrandom-and-devurandom" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<h3 id="summary">Summary<a href="#summary" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p><img src="/io.svg"></p>
+<h3 id="devrandom-and-devurandom">/dev/random and /dev/urandom<a href="#devrandom-and-devurandom" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p><em>/dev/random</em> and <em>/dev/urandom</em> are random data generators.</p>
 <p>Whenever they are read, random data is generated. The slight difference between those two special files is that if <em>/dev/random</em> will wait for enough entropy to be generated by a system before sending data. In a nutshell :</p>
 <ul>
@@ -246,7 +268,7 @@ function checkAnswers() {
 It might randomly write character sequences which break your terminal, it&rsquo;s okay though, you can just reload the page or press CTRL+C multiple times to stop <code>cat</code>, then type <code>reset</code> to reset your terminal.</p>
 </blockquote>
 <hr>
-<h2 id="quizz-1">Quizz 1<a href="#quizz-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="quizz-1">Quizz 1<a href="#quizz-1" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Let&rsquo;s have a small quizz this time before we <em>actually</em> start tinkering, shall we?</p>
 <fieldset>
     <legend>Question 1</legend>
@@ -331,36 +353,12 @@ It might randomly write character sequences which break your terminal, it&rsquo;
 <hr>
 <p>Make sure you correcly understood everything in there, those are important concepts for the rest of this course which will make the content of the other classes easier to grasp.</p>
 <p>Whenever you&rsquo;re ready, move on to :</p>
-<h2 id="command-line-202202"><a href="../202">Command-line 202</a><a href="#command-line-202202" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="command-line-202202"><a href="../202">Command-line 202</a><a href="#command-line-202202" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 
       </div></div>
 
   
     
-<div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other posts</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="/posts/command_line_201/203/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Command line 203</span>
-            </a>
-        </span>
-        
-        
-        <span class="button next">
-            <a href="/posts/command_line_201/202/">
-                <span class="button__text">Command line 202</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
-        
-    </div>
-</div>
 
   
 

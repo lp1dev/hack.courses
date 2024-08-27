@@ -5,11 +5,11 @@
     <link>/tags/</link>
     <description>Recent content in Tags on hack.courses</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>hosted by fenrir.pro</copyright>
     <lastBuildDate>Fri, 27 May 2022 16:01:35 +0100</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>meta</title>
+      <title>Meta</title>
       <link>/tags/meta/</link>
       <pubDate>Fri, 27 May 2022 16:01:35 +0100</pubDate>
       
@@ -19,7 +19,7 @@
     </item>
     
     <item>
-      <title>terminal</title>
+      <title>Terminal</title>
       <link>/tags/terminal/</link>
       <pubDate>Fri, 27 May 2022 16:01:35 +0100</pubDate>
       
@@ -29,9 +29,9 @@
     </item>
     
     <item>
-      <title>command-line</title>
+      <title>Command-Line</title>
       <link>/tags/command-line/</link>
-      <pubDate>Tue, 24 May 2022 17:10:35 +0100</pubDate>
+      <pubDate>Sat, 14 May 2022 14:30:35 +0100</pubDate>
       
       <guid>/tags/command-line/</guid>
       <description></description>
@@ -39,9 +39,9 @@
     </item>
     
     <item>
-      <title>courses</title>
+      <title>Courses</title>
       <link>/tags/courses/</link>
-      <pubDate>Tue, 24 May 2022 17:10:35 +0100</pubDate>
+      <pubDate>Sat, 14 May 2022 14:30:35 +0100</pubDate>
       
       <guid>/tags/courses/</guid>
       <description></description>
@@ -49,9 +49,9 @@
     </item>
     
     <item>
-      <title>hacking</title>
+      <title>Hacking</title>
       <link>/tags/hacking/</link>
-      <pubDate>Tue, 24 May 2022 17:10:35 +0100</pubDate>
+      <pubDate>Sat, 14 May 2022 14:30:35 +0100</pubDate>
       
       <guid>/tags/hacking/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     </item>
     
     <item>
-      <title>license</title>
+      <title>License</title>
       <link>/tags/license/</link>
       <pubDate>Sun, 09 Jan 2022 19:15:35 +0100</pubDate>
       
@@ -69,7 +69,7 @@
     </item>
     
     <item>
-      <title>programmation</title>
+      <title>Programmation</title>
       <link>/tags/programmation/</link>
       <pubDate>Mon, 16 Nov 2020 13:58:54 +0100</pubDate>
       
@@ -79,7 +79,7 @@
     </item>
     
     <item>
-      <title>typescript</title>
+      <title>Typescript</title>
       <link>/tags/typescript/</link>
       <pubDate>Mon, 16 Nov 2020 13:58:54 +0100</pubDate>
       
@@ -89,7 +89,7 @@
     </item>
     
     <item>
-      <title>tdd</title>
+      <title>Tdd</title>
       <link>/tags/tdd/</link>
       <pubDate>Mon, 16 Nov 2020 13:57:34 +0100</pubDate>
       
@@ -99,7 +99,7 @@
     </item>
     
     <item>
-      <title>javascript</title>
+      <title>Javascript</title>
       <link>/tags/javascript/</link>
       <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
       
@@ -109,7 +109,7 @@
     </item>
     
     <item>
-      <title>js</title>
+      <title>Js</title>
       <link>/tags/js/</link>
       <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
       
@@ -119,7 +119,7 @@
     </item>
     
     <item>
-      <title>node.js</title>
+      <title>Node.js</title>
       <link>/tags/node.js/</link>
       <pubDate>Mon, 16 Nov 2020 13:55:32 +0100</pubDate>
       
@@ -149,7 +149,7 @@
     </item>
     
     <item>
-      <title>es6</title>
+      <title>Es6</title>
       <link>/tags/es6/</link>
       <pubDate>Mon, 16 Nov 2020 13:47:16 +0100</pubDate>
       
@@ -159,7 +159,7 @@
     </item>
     
     <item>
-      <title>vue.js</title>
+      <title>Vue.js</title>
       <link>/tags/vue.js/</link>
       <pubDate>Mon, 16 Nov 2020 13:19:38 +0100</pubDate>
       

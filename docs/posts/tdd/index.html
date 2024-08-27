@@ -17,13 +17,47 @@
 
 
 
+  
+  <link rel="stylesheet" href="/css/buttons.min.3be0bba9fe18b5b77c8fe97175a5ff803eb3b8d6b94a4c43e6c842bc229040f1.css">
 
   
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
   
+  <link rel="stylesheet" href="/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
   
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
   
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
   
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ae96bd858b485e91dd4d30f50f4298bdc371cb1a2a55dcfa043d76a6c95b59b0.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.fa7e148bd9d175a5fda1e62ea44a0e535f3bb05f7634ec615154cccbe71b3a9a.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
 
 
 
@@ -31,9 +65,8 @@
 
 
 
-  <link rel="shortcut icon" href="/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="/img/theme-colors/blue.png">
-
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -74,10 +107,10 @@
 
 
 </head>
-<body class="blue">
+<body>
 
 
-<div class="container center headings--one-size">
+<div class="container center">
 
   <script type="text/javascript">
 (function() {
@@ -133,18 +166,7 @@
   <h1 class="post-title">
     <a href="/posts/tdd/">Le Test-Driven Development (TDD)</a>
   </h1>
-  <div class="post-meta">
-    
-      <time class="post-date">
-        2020-11-16 ::
-        
-      </time>
-    
-    
-      <span class="post-author">Lp1</span>
-    
-    
-  </div>
+  <div class="post-meta"><time class="post-date">2020-11-16</time><span class="post-author">Lp1</span></div>
 
   
     <span class="post-tags">
@@ -161,14 +183,14 @@
   
 
   <div class="post-content"><div>
-        <h1 id="le-test-driven-development-et-les-tests-unitaires">Le Test Driven Development et les Tests Unitaires<a href="#le-test-driven-development-et-les-tests-unitaires" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+        <h1 id="le-test-driven-development-et-les-tests-unitaires">Le Test Driven Development et les Tests Unitaires<a href="#le-test-driven-development-et-les-tests-unitaires" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Jéremie A. &lt; lp1.eu &gt;</p>
 <hr>
-<h1 id="le-principe-de-base-du-tdd">Le principe de base du TDD<a href="#le-principe-de-base-du-tdd" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="le-principe-de-base-du-tdd">Le principe de base du TDD<a href="#le-principe-de-base-du-tdd" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Le <strong>TDD</strong> (Test Driven Development) est une manière de développer des logiciels qui met <strong>les tests</strong> (notamment unitaires) <strong>en priorité</strong> par rapport aux première phases d&rsquo;écriture de code.</p>
 <p>On écrit d&rsquo;abord les tests et <strong>ensuite</strong> on commençe à coder les fonctionnalités correspondantes.</p>
 <hr>
-<h1 id="les-étapes-du-tdd">Les étapes du TDD<a href="#les-étapes-du-tdd" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="les-étapes-du-tdd">Les étapes du TDD<a href="#les-étapes-du-tdd" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
 <li>Écrire un test</li>
 <li>Lancer le test (vérifier qu&rsquo;il échoue)</li>
@@ -176,21 +198,21 @@
 <li>Optimiser le code écrit</li>
 </ul>
 <hr>
-<h1 id="les-tests-unitaires">Les Tests Unitaires<a href="#les-tests-unitaires" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<h2 id="un-test-unitaire-cest-quoi">Un test unitaire c&rsquo;est quoi?<a href="#un-test-unitaire-cest-quoi" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h1 id="les-tests-unitaires">Les Tests Unitaires<a href="#les-tests-unitaires" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="un-test-unitaire-cest-quoi">Un test unitaire c&rsquo;est quoi?<a href="#un-test-unitaire-cest-quoi" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Un <strong>test unitaire</strong> a pour but (comme son nom l&rsquo;indique) de <strong>tester une &ldquo;unité&rdquo; d&rsquo;un programme</strong>.
 Ce qu&rsquo;on appelle une &ldquo;unité&rdquo; dans un programme peut être une <strong>méthode, une fonction, une classe, même quelque lignes seulement</strong>&hellip;</p>
-<p>Si l'&ldquo;unité&rdquo; qui doit être testée dans un test unitaire n&rsquo;est pas nécessairement définie et que le concept est relatif, le but d&rsquo;un test unitaire est quand à lui assez précis !</p>
+<p>Si l&rsquo;&ldquo;unité&rdquo; qui doit être testée dans un test unitaire n&rsquo;est pas nécessairement définie et que le concept est relatif, le but d&rsquo;un test unitaire est quand à lui assez précis !</p>
 <hr>
-<h1 id="à-quoi-ça-sert-">À quoi ça sert ?<a href="#à-quoi-ça-sert-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="à-quoi-ça-sert-">À quoi ça sert ?<a href="#à-quoi-ça-sert-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Le but d&rsquo;un test unitaire est de tester, que pour un comportement <strong>A</strong> (une variable, un évènement), l&rsquo;unitée de code testée ait un comportement <strong>B</strong> strictement défini.</p>
 <p>L&rsquo;avantage est de pouvoir s&rsquo;assurer à chacune des étapes du développement que les fonctionnalités du projet sont conformes à la manière dont elles ont été architécturées et également de pouvoir éviter et repérer de nombreuses régressions dans le code !</p>
 <hr>
-<h1 id="exemple">Exemple<a href="#exemple" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="exemple">Exemple<a href="#exemple" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Prenons le cas d&rsquo;une fonction <strong>checkPassword</strong> qui servirait à valider le mot de passe d&rsquo;un utilisateur.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkPassword</span>(<span style="color:#a6e22e">password</span>: <span style="color:#66d9ef">string</span>) {
-}
-</code></pre></div><p>Elle doit renvoyer une erreur dans ces conditions :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkPassword</span>(<span style="color:#a6e22e">password</span>: <span style="color:#66d9ef">string</span>) {
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Elle doit renvoyer une erreur dans ces conditions :</p>
 <ul>
 <li>Le mot de passe fait moins de 8 caractères</li>
 <li>Le mot de passe est un mot du dictionnaire</li>
@@ -198,48 +220,47 @@ Ce qu&rsquo;on appelle une &ldquo;unité&rdquo; dans un programme peut être une
 </ul>
 <p>Nous pourrions écrire les tests de la manière suivante :</p>
 <hr>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;checkPassword&#39;</span>, () <span style="color:#f92672">=&gt;</span> {
-    <span style="color:#75715e">// We start by checking the first rule 
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow passwords shorter than 8 chars&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
-    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;test1&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
-    });
-    <span style="color:#75715e">// Then the second one 
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow words from the dictionary&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
-    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;aerodynamic&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
-    });
-    <span style="color:#75715e">// And finally the third one
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow only numeric passwords&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
-    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;8008135707&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
-    });
-})</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;checkPassword&#39;</span>, () <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// We start by checking the first rule 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow passwords shorter than 8 chars&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;test1&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Then the second one 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow words from the dictionary&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;aerodynamic&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// And finally the third one
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;shouldn&#39;t allow only numeric passwords&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">checkPassword</span>(<span style="color:#e6db74">&#34;8008135707&#34;</span>)).<span style="color:#a6e22e">toThrow</span>();
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div>
       </div></div>
 
   
     
 <div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other posts</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="/posts/typescript/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Cours Typescript</span>
-            </a>
-        </span>
-        
-        
-        <span class="button next">
-            <a href="/posts/nodejs/">
-                <span class="button__text">Cours Node.js</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
-        
-    </div>
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/typescript/" class="button inline prev">
+        Cours Typescript
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/nodejs/" class="button inline next">
+        Cours Node.js
+      </a>
+    
+  </div>
 </div>
+
 
   
 

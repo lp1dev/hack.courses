@@ -17,13 +17,47 @@
 
 
 
+  
+  <link rel="stylesheet" href="/css/buttons.min.3be0bba9fe18b5b77c8fe97175a5ff803eb3b8d6b94a4c43e6c842bc229040f1.css">
 
   
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
   
+  <link rel="stylesheet" href="/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
   
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
   
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
   
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ae96bd858b485e91dd4d30f50f4298bdc371cb1a2a55dcfa043d76a6c95b59b0.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.fa7e148bd9d175a5fda1e62ea44a0e535f3bb05f7634ec615154cccbe71b3a9a.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
 
 
 
@@ -31,9 +65,8 @@
 
 
 
-  <link rel="shortcut icon" href="/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="/img/theme-colors/blue.png">
-
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -74,10 +107,10 @@
 
 
 </head>
-<body class="blue">
+<body>
 
 
-<div class="container center headings--one-size">
+<div class="container center">
 
   <script type="text/javascript">
 (function() {
@@ -133,18 +166,7 @@
   <h1 class="post-title">
     <a href="/posts/command_line_101/103/">Command line 103</a>
   </h1>
-  <div class="post-meta">
-    
-      <time class="post-date">
-        2022-01-11 ::
-        
-      </time>
-    
-    
-      <span class="post-author">Lp1</span>
-    
-    
-  </div>
+  <div class="post-meta"><time class="post-date">2022-01-11</time><span class="post-author">Lp1</span></div>
 
   
     <span class="post-tags">
@@ -186,45 +208,45 @@
         }
     }
 </script>
-<h1 id="hidden-files-">Hidden files 🕶️<a href="#hidden-files-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="hidden-files-">Hidden files 🕶️<a href="#hidden-files-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>On a linux filesystem, every file and directory whose name starts with a dot . will be hidden.</p>
 <p>Such files will <em>not</em> be displayed when using a regular <code>ls</code>.</p>
 <p>You can actually see hidden files and directories using <code>ls -a</code> for &ldquo;all&rdquo; though.</p>
 <p>This command will also display a single dot . which means &ldquo;the current directory&rdquo; in Linux and two dots .. which means &ldquo;the directory above this one in the arborescence&rdquo;.</p>
 <p>Observe the difference between :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls .
-$&gt; ls -a .
-$&gt; ls ..
-</code></pre></div><hr>
-<h1 id="advanced-ls">Advanced ls<a href="#advanced-ls" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; ls .
+</span></span><span style="display:flex;"><span>$&gt; ls -a .
+</span></span><span style="display:flex;"><span>$&gt; ls ..
+</span></span></code></pre></div><hr>
+<h1 id="advanced-ls">Advanced ls<a href="#advanced-ls" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p><code>ls</code> can give you even more useful information about files and directories!</p>
 <p>Using <code>ls -l</code> on the <em>challenges/command_line_101</em> directory will print the following list :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; ls -l challenges/command_line_101/
-total <span style="color:#ae81ff">28</span>
-drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 .
-drwxr-xr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 ..
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">96</span> Jan <span style="color:#ae81ff">11</span> 21:59 .challenge_4
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">276</span> Jan <span style="color:#ae81ff">11</span> 21:59 challenge5.sh
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">111</span> Jan  <span style="color:#ae81ff">9</span> 15:44 challenge_0.txt
--rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">77</span> Jan  <span style="color:#ae81ff">9</span> 20:57 challenge_1.txt
-drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:58 challenge_2
-</code></pre></div><p>We&rsquo;re going to leave some of the information printed in this list for another class, but you should already recognize the file and directories names usually displayed by ls!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$&gt; ls -l challenges/command_line_101/
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">28</span>
+</span></span><span style="display:flex;"><span>drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 .
+</span></span><span style="display:flex;"><span>drwxr-xr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:59 ..
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">96</span> Jan <span style="color:#ae81ff">11</span> 21:59 .challenge_4
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">276</span> Jan <span style="color:#ae81ff">11</span> 21:59 challenge5.sh
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root           <span style="color:#ae81ff">111</span> Jan  <span style="color:#ae81ff">9</span> 15:44 challenge_0.txt
+</span></span><span style="display:flex;"><span>-rw-rw-r--    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">77</span> Jan  <span style="color:#ae81ff">9</span> 20:57 challenge_1.txt
+</span></span><span style="display:flex;"><span>drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span style="color:#ae81ff">4096</span> Jan <span style="color:#ae81ff">11</span> 21:58 challenge_2
+</span></span></code></pre></div><p>We&rsquo;re going to leave some of the information printed in this list for another class, but you should already recognize the file and directories names usually displayed by ls!</p>
 <p>The first line &ldquo;total 28&rdquo; means that this directory uses a total of 28 filesystem &ldquo;blocks&rdquo;.</p>
 <p>A block is simply a way of counting space on a Linux filesystem, a bit like the more commonly represented Mega octets and Kilo octets. A block is equivalent to 8KB =&gt; 8000 bytes.</p>
 <p>The hours and dates are the last modification date for each item and the number printed on the left of the month (Jan-&gt;January in this example) is the file&rsquo;s size in bytes.</p>
 <p>Also note, lines starting with <em>d</em> are directories!</p>
 <hr>
-<h1 id="executing-scripts-">Executing scripts 📜<a href="#executing-scripts-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<h2 id="about-scripts">About scripts<a href="#about-scripts" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h1 id="executing-scripts-">Executing scripts 📜<a href="#executing-scripts-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="about-scripts">About scripts<a href="#about-scripts" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>What are scripts, you&rsquo;re wondering?</p>
 <p>Scripts are files containing commands and logic which can be used to automatize mostly any task you do on a computer!</p>
 <p>Linux and Operating Systems in general are full of scripts, some of them are used to install softwares, update files, make sure programs are not outdated, update the time, move log files, display alerts etc&hellip;</p>
-<h2 id="executing-your-first-script">Executing your first script<a href="#executing-your-first-script" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="executing-your-first-script">Executing your first script<a href="#executing-your-first-script" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>In order to run a script, you just need to write its <strong>path</strong> in your terminal.</p>
 <p>For instance, a script is located in <em>/usr/bin/foxsay</em> on <a href="https://hack.courses">hack.courses</a>.</p>
 <p>Type the following command in the terminal to run this script :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/bin/foxsay hello
-</code></pre></div><p><img src="/foxsay.PNG" alt="The output should be a fox saying &ldquo;hello&rdquo; in your terminal"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/usr/bin/foxsay hello
+</span></span></code></pre></div><p><img alt="The output should be a fox saying &ldquo;hello&rdquo; in your terminal" src="/foxsay.PNG"></p>
 <p>Congrats, you just ran your first script!</p>
 <p>Now, this is not the <em>only</em> way to run a script.</p>
 <p>The path you used here is what is called an <strong>absolute path</strong>. An absolute path starts from <strong>the root</strong> of your filesystem (&quot;/&quot;).</p>
@@ -232,14 +254,14 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
 <p>To run a script within the directory you are currently in, type &ldquo;./&rdquo; followed by the script name.</p>
 <p>For instance, move inside the <em>/usr/bin</em> directory using <code>cd /usr/bin</code>.</p>
 <p>Now, use the following syntax to run the same script again :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./foxsay hello
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./foxsay hello
+</span></span></code></pre></div><blockquote>
 <p><strong>Hint</strong> : Don&rsquo;t forget to type <code>cd</code> to go back to your home directory.</p>
 </blockquote>
 <hr>
-<h1 id="hands-on-">Hands-on 🤜!<a href="#hands-on-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="hands-on-">Hands-on 🤜!<a href="#hands-on-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Ready to take one some harder challenges? Let&rsquo;s go!</p>
-<h1 id="challenge-4">Challenge 4<a href="#challenge-4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="challenge-4">Challenge 4<a href="#challenge-4" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>The <em>challenges/command_line_101</em> directory contains a flag for this challenge.</p>
 <p>But beware, it&rsquo;s <em>hidden</em>!</p>
 <div style="display:flex">
@@ -251,7 +273,7 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
 <p><strong>Hint</strong> : Advanced ls</p>
 </blockquote>
 </details>
-<h1 id="challenge-5">Challenge 5<a href="#challenge-5" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="challenge-5">Challenge 5<a href="#challenge-5" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>The flag for this challenge is not hidden, it is in the same directory!</p>
 <p>But this time, it is not a text file that you can <code>cat</code>, it is a script!</p>
 <p>Run the script to get the flag.</p>
@@ -260,36 +282,34 @@ drwxrwxr-x    <span style="color:#ae81ff">3</span> root     root          <span 
 </div>
 <hr>
 <p>Ready to continue? Make sure to take a break, drink some water and move on to</p>
-<h2 id="command-line-104104"><a href="../104">Command line 104</a><a href="#command-line-104104" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="command-line-104104"><a href="../104">Command line 104</a><a href="#command-line-104104" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 
       </div></div>
 
   
     
 <div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other posts</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="/posts/command_line_101/102/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Command line 102</span>
-            </a>
-        </span>
-        
-        
-        <span class="button next">
-            <a href="/posts/command_line_101/101/">
-                <span class="button__text">Command line 101</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
-        
-    </div>
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/command_line_101/102/" class="button inline prev">
+        Command line 102
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/command_line_101/101/" class="button inline next">
+        Command line 101
+      </a>
+    
+  </div>
 </div>
+
 
   
 

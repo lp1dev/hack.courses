@@ -17,13 +17,47 @@
 
 
 
+  
+  <link rel="stylesheet" href="/css/buttons.min.3be0bba9fe18b5b77c8fe97175a5ff803eb3b8d6b94a4c43e6c842bc229040f1.css">
 
   
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
   
+  <link rel="stylesheet" href="/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
   
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
   
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
   
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ae96bd858b485e91dd4d30f50f4298bdc371cb1a2a55dcfa043d76a6c95b59b0.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.fa7e148bd9d175a5fda1e62ea44a0e535f3bb05f7634ec615154cccbe71b3a9a.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
 
 
 
@@ -31,9 +65,8 @@
 
 
 
-  <link rel="shortcut icon" href="/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="/img/theme-colors/blue.png">
-
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -74,10 +107,10 @@
 
 
 </head>
-<body class="blue">
+<body>
 
 
-<div class="container center headings--one-size">
+<div class="container center">
 
   <script type="text/javascript">
 (function() {
@@ -133,18 +166,7 @@
   <h1 class="post-title">
     <a href="/posts/es6/">Programmation : EcmaScript6</a>
   </h1>
-  <div class="post-meta">
-    
-      <time class="post-date">
-        2020-11-16 ::
-        
-      </time>
-    
-    
-      <span class="post-author">Lp1</span>
-    
-    
-  </div>
+  <div class="post-meta"><time class="post-date">2020-11-16</time><span class="post-author">Lp1</span></div>
 
   
     <span class="post-tags">
@@ -163,14 +185,14 @@
   
 
   <div class="post-content"><div>
-        <h1 id="partie-i---de-es5-à-es6-quest-ce-qui-a-changé">Partie I - De ES5 à ES6, qu&rsquo;est-ce qui a changé?<a href="#partie-i---de-es5-à-es6-quest-ce-qui-a-changé" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+        <h1 id="partie-i---de-es5-à-es6-quest-ce-qui-a-changé">Partie I - De ES5 à ES6, qu&rsquo;est-ce qui a changé?<a href="#partie-i---de-es5-à-es6-quest-ce-qui-a-changé" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p> 
  
  
  
 Jérémie Amsellem - <a href="mailto:cours@lp1.eu">cours@lp1.eu</a></p>
 <hr>
-<h1 id="sommaire">Sommaire<a href="#sommaire" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="sommaire">Sommaire<a href="#sommaire" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
 <li>I - Qu&rsquo;est-ce qu&rsquo;ES6?</li>
 <li>II - let et const</li>
@@ -187,19 +209,19 @@ Jérémie Amsellem - <a href="mailto:cours@lp1.eu">cours@lp1.eu</a></p>
 <li>XIII - get et set</li>
 </ul>
 <hr>
-<h1 id="i---premièrement-quest-ce-ques6">I - Premièrement, qu&rsquo;est-ce qu&rsquo;ES6?<a href="#i---premièrement-quest-ce-ques6" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="i---premièrement-quest-ce-ques6">I - Premièrement, qu&rsquo;est-ce qu&rsquo;ES6?<a href="#i---premièrement-quest-ce-ques6" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Pour rappel, ECMAScript est la spécification de langage utilisée (entre autres) par le langage JavaScript.</p>
 <p><strong>ES6</strong>, ou <strong>ECMAScript 6</strong> (aussi appelé <strong>ECMAScript 2015</strong>) est la version d&rsquo;ECMAScript actuellement utilisée par les dernières versions de Node.js, Firefox et Google Chrome.</p>
 <p>Cette nouvelle version apporte beaucoup de nouveautés concernant les paradigmes d&rsquo;ECMAScript empruntés de la POO et de la programmation fonctionnelle, notamment la possibilité de créer des classes en JavaScript !</p>
 <hr>
-<h1 id="ii---les-mots-clés-let-et-const">II - Les mots clés let et const<a href="#ii---les-mots-clés-let-et-const" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="ii---les-mots-clés-let-et-const">II - Les mots clés let et const<a href="#ii---les-mots-clés-let-et-const" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>ES6 Introduit deux nouveaux mots-clés permettant de définir des variables et des constantes : <strong>let</strong> et <strong>const</strong>.</p>
 <p><strong>let</strong> vise à remplacer var par une alternative plus &ldquo;sûre&rdquo; pour les développeurs et évitant les débordements involontaires dans des scopes parents.</p>
 <p><strong>const</strong> permet de définir des constantes, ce qui était auparavant impossible dans le langage.</p>
 <hr>
-<h1 id="iii---les-fonctions-flêchées">III - Les fonctions flêchées<a href="#iii---les-fonctions-flêchées" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>Seconde fonctionnalité primordiale : 
-la possibilité de définir des &ldquo;arrow functions&rdquo; 
+<h1 id="iii---les-fonctions-flêchées">III - Les fonctions flêchées<a href="#iii---les-fonctions-flêchées" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Seconde fonctionnalité primordiale :
+la possibilité de définir des &ldquo;arrow functions&rdquo;
 (aussi appelées lambdas dans d&rsquo;autres langages).</p>
 <p>Cela permet de prototyper des fonctions beaucoup plus courtes qu&rsquo;avec la syntaxe habituelle :</p>
 <pre tabindex="0"><code>function(params) {
@@ -210,62 +232,62 @@ la possibilité de définir des &ldquo;arrow functions&rdquo;
 param =&gt; {/* logique */}
 param =&gt; /* logique */
 </code></pre><hr>
-<h1 id="iv---les-chaînes-templatées">IV - Les chaînes &ldquo;templatées&rdquo;<a href="#iv---les-chaînes-templatées" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="iv---les-chaînes-templatées">IV - Les chaînes &ldquo;templatées&rdquo;<a href="#iv---les-chaînes-templatées" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>On peut désormais utiliser des templates dans des chaînes de caractères pour interpoler (remplacer dynamiquement) des variables dans du texte.</p>
 <p>Pour définir une chaîne de caractères contenant des templates, il suffit d&rsquo;utiliser des backquotes au lieux des simples et doubles quotes habituels.</p>
 <p>On utilisera ensuite la syntaxe ${expression} pour indiquer le contenu à remplacer par une expression JavaScript.</p>
 <p>Par exemple :</p>
-<pre tabindex="0"><code>`Today's the ${new Date().toLocaleString()}`
+<pre tabindex="0"><code>`Today&#39;s the ${new Date().toLocaleString()}`
 </code></pre><hr>
-<h1 id="v---les-sets">V - Les Sets<a href="#v---les-sets" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="v---les-sets">V - Les Sets<a href="#v---les-sets" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Des nouvelles structures de données ont également fait leur apparition dans ES6, notamment les très utiles Sets et Maps.</p>
 <p>Un <strong>Set</strong> permet de stocker de valeurs <strong>uniques</strong> de tous les types.</p>
 <p>Par exemple :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">set</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>()
-<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;test&#39;</span>).<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">42</span>).<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;hello&#39;</span>).<span style="color:#a6e22e">add</span>({})
-<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">has</span>(<span style="color:#ae81ff">42</span>) <span style="color:#75715e">/* true */</span>
-<span style="color:#a6e22e">set</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#ae81ff">42</span>)
-<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">has</span>(<span style="color:#ae81ff">42</span>) <span style="color:#75715e">/* false */</span>
-<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">size</span> <span style="color:#75715e">/* 3 */</span>
-<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">clear</span>() <span style="color:#75715e">/* Vide le Set */</span>
-</code></pre></div><hr>
-<h1 id="vi---les-maps">VI - Les Maps<a href="#vi---les-maps" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">set</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;test&#39;</span>).<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">42</span>).<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;hello&#39;</span>).<span style="color:#a6e22e">add</span>({})
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">has</span>(<span style="color:#ae81ff">42</span>) <span style="color:#75715e">/* true */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">has</span>(<span style="color:#ae81ff">42</span>) <span style="color:#75715e">/* false */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">size</span> <span style="color:#75715e">/* 3 */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">clear</span>() <span style="color:#75715e">/* Vide le Set */</span>
+</span></span></code></pre></div><hr>
+<h1 id="vi---les-maps">VI - Les Maps<a href="#vi---les-maps" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Les <strong>Maps</strong> permettent de stocker des variables en clé/valeur (comme un objet JavaScript classique en somme).</p>
 <p>En revanche, celles-ci peuvent utiliser n&rsquo;importe quel type d&rsquo;objet comme clé.</p>
 <p>Également, il est très simple d&rsquo;obtenir la taille d&rsquo;une Map, en utilisant l&rsquo;attribut Map.size, contrairement aux objets JavaScript.</p>
 <p>Exemple :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> {}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">map</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Map</span>()
-<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;hello&#39;</span>, <span style="color:#ae81ff">42</span>)
-<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">set</span>(<span style="color:#a6e22e">obj</span>, <span style="color:#66d9ef">true</span>)
-<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">obj</span>) <span style="color:#75715e">/* true */</span>
-<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;hello&#39;</span>) <span style="color:#75715e">/* true */</span>
-<span style="color:#a6e22e">map</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#e6db74">&#39;hello&#39;</span>)
-<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">size</span> <span style="color:#75715e">/* 1 */</span>
-</code></pre></div><hr>
-<h1 id="vii---les-promesses-ou-promises">VII - Les promesses (ou promises)<a href="#vii---les-promesses-ou-promises" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">map</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Map</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;hello&#39;</span>, <span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">set</span>(<span style="color:#a6e22e">obj</span>, <span style="color:#66d9ef">true</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">obj</span>) <span style="color:#75715e">/* true */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;hello&#39;</span>) <span style="color:#75715e">/* true */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#e6db74">&#39;hello&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">size</span> <span style="color:#75715e">/* 1 */</span>
+</span></span></code></pre></div><hr>
+<h1 id="vii---les-promesses-ou-promises">VII - Les promesses (ou promises)<a href="#vii---les-promesses-ou-promises" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Les promesses sont une manière plus explicite et claire de définir un comportement asynchrone.</p>
 <p>Une promesse est un objet à usage unique, c&rsquo;est une portion de code qui sera exécutée de manière asynchrone et renverra dans un laps de temps indéterminé des informations à la fin de cette exécution.</p>
 <p>On définit une promesse en instanciant un nouvel objet Promise et en y ajoutant notre comportement.</p>
 <p>Une fois notre promesse définie, on peut la déclencher en appelant ses méthodes then et catch.</p>
 <hr>
-<h1 id="viii---forin">VIII - For&hellip;in<a href="#viii---forin" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="viii---forin">VIII - For&hellip;in<a href="#viii---forin" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Deux nouveaux mot-clés permettant d&rsquo;itérer plus facilement sur des tableaux et des objets ont également été ajoutés.</p>
 <p>Ce sont les mots-clés <strong>for &hellip;in</strong> et <strong>for &hellip;of</strong>.</p>
 <ul>
 <li>for &hellip; in permet d&rsquo;itérer sur les clés d&rsquo;un objet JavaScript :</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">key</span> <span style="color:#66d9ef">in</span> {<span style="color:#a6e22e">key1</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">key2</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>}) {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">key</span>) <span style="color:#75715e">// key1, key2
-</span><span style="color:#75715e"></span>}
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">key</span> <span style="color:#66d9ef">in</span> {<span style="color:#a6e22e">key1</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">key2</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>}) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">key</span>) <span style="color:#75715e">// key1, key2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><ul>
 <li>for &hellip; of permet d&rsquo;itérer sur les éléments d&rsquo;un tableau :</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">For</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item</span> <span style="color:#66d9ef">of</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]) {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">item</span>) <span style="color:#75715e">// 3, 2, 1
-</span><span style="color:#75715e"></span>}
-</code></pre></div><hr>
-<h1 id="ix---nouvelles-méthodes-de-la-classe-string">IX - Nouvelles méthodes de la classe String<a href="#ix---nouvelles-méthodes-de-la-classe-string" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">For</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item</span> <span style="color:#66d9ef">of</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">item</span>) <span style="color:#75715e">// 3, 2, 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><hr>
+<h1 id="ix---nouvelles-méthodes-de-la-classe-string">IX - Nouvelles méthodes de la classe String<a href="#ix---nouvelles-méthodes-de-la-classe-string" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
 <li><strong>String.includes</strong> : Retourne true si la chaîne passée en paramètre de includes est contenue dans la String</li>
 <li><strong>String.repeat(n)</strong> : Retourne la chaîne répétée n fois</li>
@@ -273,7 +295,7 @@ param =&gt; /* logique */
 <li><strong>String.endsWith</strong> : Retourne true si la String termine par la chaîne passée en parametre</li>
 </ul>
 <hr>
-<h1 id="x---nouvelles-méthodes-des-tableaux">X - Nouvelles méthodes des tableaux<a href="#x---nouvelles-méthodes-des-tableaux" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="x---nouvelles-méthodes-des-tableaux">X - Nouvelles méthodes des tableaux<a href="#x---nouvelles-méthodes-des-tableaux" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
 <li><strong>Array.forEach</strong> : Permet d&rsquo;itérer sur chacun des éléments d&rsquo;un tableau</li>
 <li><strong>Array.filter</strong> : Permet de filtrer un tableau JavaScript</li>
@@ -283,52 +305,52 @@ param =&gt; /* logique */
 <li><strong>Array.findIndex</strong> : Permet de trouver l&rsquo;index d&rsquo;un élément dans un tableau</li>
 </ul>
 <hr>
-<h1 id="xi---default">XI - Default<a href="#xi---default" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="xi---default">XI - Default<a href="#xi---default" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Comme dans de nombreux autres langages, il est possible de définir des paramètres par défaut dans une fonction dans le cas où ceux-ci ne seraient pas remplis.</p>
-<h5 id="par-exemple-">Par exemple :<a href="#par-exemple-" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createUser</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, <span style="color:#a6e22e">location</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;France&#34;</span>) {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">age</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> / </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">location</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
-}
-</code></pre></div><p>Attention, les paramètres par défaut sont toujours les derniers paramètres d&rsquo;une fonction !</p>
+<h5 id="par-exemple-">Par exemple :<a href="#par-exemple-" class="hanchor" ariaLabel="Anchor">#</a> </h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createUser</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, <span style="color:#a6e22e">location</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;France&#34;</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">age</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> / </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">location</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Attention, les paramètres par défaut sont toujours les derniers paramètres d&rsquo;une fonction !</p>
 <hr>
-<h1 id="xii---rest-et-spread">XII - Rest et Spread<a href="#xii---rest-et-spread" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="xii---rest-et-spread">XII - Rest et Spread<a href="#xii---rest-et-spread" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Rest permet de stocker des paramètres en nombre indéfini dans un tableau et ce sans utiliser le mot clé arguments de JavaScript.</p>
-<h5 id="par-exemple">Par exemple<a href="#par-exemple" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, ...<span style="color:#a6e22e">extra</span>) {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">extra</span>) <span style="color:#75715e">// Affiche tout ce qui est passé en plus de name et age
-</span><span style="color:#75715e"></span>}
-</code></pre></div><p>Spread, quand à lui permet d&rsquo;utiliser un tableau en tant que paramètres pour une fonction.</p>
-<h5 id="par-exemple--1">Par exemple :<a href="#par-exemple--1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;TestMan&#39;</span>, <span style="color:#e6db74">&#39;Paris&#39;</span>]
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createUser</span>(<span style="color:#a6e22e">firstName</span>, <span style="color:#a6e22e">lastName</span>, <span style="color:#a6e22e">location</span>) {
-}
-<span style="color:#a6e22e">createUser</span>(...<span style="color:#a6e22e">array</span>) <span style="color:#75715e">// Équivaut à createUser(array[0], array[1], array[2])
-</span></code></pre></div><hr>
-<h1 id="xiii---get-et-set">XIII - Get et set<a href="#xiii---get-et-set" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h5 id="par-exemple">Par exemple<a href="#par-exemple" class="hanchor" ariaLabel="Anchor">#</a> </h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, ...<span style="color:#a6e22e">extra</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">extra</span>) <span style="color:#75715e">// Affiche tout ce qui est passé en plus de name et age
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Spread, quand à lui permet d&rsquo;utiliser un tableau en tant que paramètres pour une fonction.</p>
+<h5 id="par-exemple--1">Par exemple :<a href="#par-exemple--1" class="hanchor" ariaLabel="Anchor">#</a> </h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;TestMan&#39;</span>, <span style="color:#e6db74">&#39;Paris&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createUser</span>(<span style="color:#a6e22e">firstName</span>, <span style="color:#a6e22e">lastName</span>, <span style="color:#a6e22e">location</span>) {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">createUser</span>(...<span style="color:#a6e22e">array</span>) <span style="color:#75715e">// Équivaut à createUser(array[0], array[1], array[2])
+</span></span></span></code></pre></div><hr>
+<h1 id="xiii---get-et-set">XIII - Get et set<a href="#xiii---get-et-set" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Autre nouvelle possibilité, cette fois-ci concernant les objets JavaScript, on peut désormais définir simplement nos propres setters et getters sur des attributs :</p>
 <pre tabindex="0"><code>const obj = {
   get size() {
-    //calcul de la taille de l'objet
+    //calcul de la taille de l&#39;objet
   }
 }
 obj.size // Recalculé dynamiquement et gardé en mémoire
 </code></pre><hr>
-<h1 id="partie-ii---es6">Partie II - ES6++<a href="#partie-ii---es6" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="partie-ii---es6">Partie II - ES6++<a href="#partie-ii---es6" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p> 
  
  
  </p>
 <p>Jéremie Amsellem &lt;lp1.eu&gt;</p>
 <hr>
-<h1 id="i---la-déstructuration">I - La déstructuration<a href="#i---la-déstructuration" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h1 id="i---la-déstructuration">I - La déstructuration<a href="#i---la-déstructuration" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Il est possible, d&rsquo;assigner d&rsquo;un seul coup plusieurs variables à partir de valeurs d&rsquo;un tableau ou d&rsquo;un objet.</p>
 <p>On appelle cette opération de la déstructuration.</p>
 <p>La syntaxe est la suivante avec un tableau :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">firstName</span>, <span style="color:#a6e22e">lastName</span>, , <span style="color:#a6e22e">location</span>] <span style="color:#f92672">=</span> [ <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;TestMan&#39;</span>, <span style="color:#ae81ff">25</span>, <span style="color:#e6db74">&#39;Paris, France&#39;</span> ]
-</code></pre></div><p>Et avec un objet :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> {<span style="color:#a6e22e">firstName</span>, <span style="color:#a6e22e">lastName</span>} <span style="color:#f92672">=</span> {<span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;TestMan&#39;</span>} <span style="color:#75715e">// firstName == &#39;Bob&#39; &amp;&amp; lastName == &#39;TestMan&#39;
-</span></code></pre></div><hr>
-<h1 id="ii---les-classes">II - Les Classes<a href="#ii---les-classes" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">firstName</span>, <span style="color:#a6e22e">lastName</span>, , <span style="color:#a6e22e">location</span>] <span style="color:#f92672">=</span> [ <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;TestMan&#39;</span>, <span style="color:#ae81ff">25</span>, <span style="color:#e6db74">&#39;Paris, France&#39;</span> ]
+</span></span></code></pre></div><p>Et avec un objet :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> {<span style="color:#a6e22e">firstName</span>, <span style="color:#a6e22e">lastName</span>} <span style="color:#f92672">=</span> {<span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;TestMan&#39;</span>} <span style="color:#75715e">// firstName == &#39;Bob&#39; &amp;&amp; lastName == &#39;TestMan&#39;
+</span></span></span></code></pre></div><hr>
+<h1 id="ii---les-classes">II - Les Classes<a href="#ii---les-classes" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Une des plus grandes nouveautés d&rsquo;ES6 est la possibilité d&rsquo;instancier des Classes dans le langage.</p>
 <p>On utilise le mot-clé class pour en créer une nouvelle :</p>
 <pre tabindex="0"><code>class Person {
@@ -336,86 +358,86 @@ obj.size // Recalculé dynamiquement et gardé en mémoire
 </code></pre><p>Ainsi que le mot-clé new pour l&rsquo;instancier</p>
 <pre tabindex="0"><code>const p = new Person()
 </code></pre><hr>
-<h2 id="les-classes-es6---le-constructeur">Les Classes ES6 - Le constructeur<a href="#les-classes-es6---le-constructeur" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="les-classes-es6---le-constructeur">Les Classes ES6 - Le constructeur<a href="#les-classes-es6---le-constructeur" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Pour modifier le constructeur de notre classe pour y ajouter de la logique ou des paramètres on utilise le nom de méthode <strong>constructor</strong> :</p>
 <p> </p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
-  }
-}
-</code></pre></div><p> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p> 
 Notez que le mot-clé <em>this</em> s&rsquo;utilise comme dans n&rsquo;importe quel autre langage en ES6.</p>
 <hr>
-<h2 id="les-classes-es6---les-méthodes-et-variables-de-classe">Les Classes ES6 - Les méthodes et variables de classe<a href="#les-classes-es6---les-méthodes-et-variables-de-classe" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="les-classes-es6---les-méthodes-et-variables-de-classe">Les Classes ES6 - Les méthodes et variables de classe<a href="#les-classes-es6---les-méthodes-et-variables-de-classe" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>On ne définit pas de variables de classe dans le corps de notre classe.</p>
 <p>Elles sont définies dans le constructeur en utilisant la syntaxe :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
-  }
-  <span style="color:#a6e22e">getBirthYear</span>() {
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2019</span> <span style="color:#f92672">-</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span>
-  }
-}
-</code></pre></div><p>De plus, l&rsquo;ajout de méthodes se fait sans les séparer par une virgule dans une classe JavaScript !</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">getBirthYear</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2019</span> <span style="color:#f92672">-</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>De plus, l&rsquo;ajout de méthodes se fait sans les séparer par une virgule dans une classe JavaScript !</p>
 <hr>
-<h2 id="les-classes-es6---get-et-set">Les Classes ES6 - get et set<a href="#les-classes-es6---get-et-set" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="les-classes-es6---get-et-set">Les Classes ES6 - get et set<a href="#les-classes-es6---get-et-set" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>On peut également définir des get et set dans des classes ES6, par exemple :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
-  }
-  <span style="color:#a6e22e">get</span> <span style="color:#a6e22e">birthYear</span>() {
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2019</span> <span style="color:#f92672">-</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span>
-  }
-  <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">name</span>(<span style="color:#a6e22e">newName</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newName</span>.<span style="color:#a6e22e">toUpperCase</span>()
-  }
-}
-
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>(<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#ae81ff">42</span>)
-<span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Robert&#39;</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">birthYear</span>) <span style="color:#75715e">/* 1977 */</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">name</span>) <span style="color:#75715e">/* ROBERT */</span>
-</code></pre></div><hr>
-<h2 id="les-classes-es6---lhéritage">Les Classes ES6 - L&rsquo;héritage<a href="#les-classes-es6---lhéritage" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">get</span> <span style="color:#a6e22e">birthYear</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2019</span> <span style="color:#f92672">-</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">name</span>(<span style="color:#a6e22e">newName</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newName</span>.<span style="color:#a6e22e">toUpperCase</span>()
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>(<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Robert&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">birthYear</span>) <span style="color:#75715e">/* 1977 */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">name</span>) <span style="color:#75715e">/* ROBERT */</span>
+</span></span></code></pre></div><hr>
+<h2 id="les-classes-es6---lhéritage">Les Classes ES6 - L&rsquo;héritage<a href="#les-classes-es6---lhéritage" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>En ES6 il n&rsquo;y a pas d&rsquo;héritage multiple, on hérite d&rsquo;une seule classe parente.</p>
-<p>La syntaxe pour l&rsquo;héritage est la même que dans beaucoup d&rsquo;autres langages, on utilise le mot clé &lsquo;extends&rsquo; suivi du nom de la classe parente :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
-  }
-}
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dev</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Person</span> {
-}
-
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dev</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dev</span>(<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#ae81ff">42</span>)
-</code></pre></div><hr>
-<h2 id="les-classes-es6---super">Les Classes ES6 - Super<a href="#les-classes-es6---super" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Lorsqu&rsquo;on hérite d&rsquo;une classe il est possible d&rsquo;appeler dans la méthode d&rsquo;une classe fille, 
+<p>La syntaxe pour l&rsquo;héritage est la même que dans beaucoup d&rsquo;autres langages, on utilise le mot clé &rsquo;extends&rsquo; suivi du nom de la classe parente :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dev</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dev</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dev</span>(<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#ae81ff">42</span>)
+</span></span></code></pre></div><hr>
+<h2 id="les-classes-es6---super">Les Classes ES6 - Super<a href="#les-classes-es6---super" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Lorsqu&rsquo;on hérite d&rsquo;une classe il est possible d&rsquo;appeler dans la méthode d&rsquo;une classe fille,
 la méthode correspondant dans la classe parent.</p>
 <p>Pour ce faire on utilise le mot-clé <strong>super</strong> :</p>
-<h3 id="par-exemple--2">Par exemple :<a href="#par-exemple--2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
-  }
-}
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dev</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Person</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, <span style="color:#a6e22e">language</span>) {
-    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>)
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">language</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">language</span>
-  }
-}
-</code></pre></div><hr>
-<h2 id="tds">TDs<a href="#tds" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="par-exemple--2">Par exemple :<a href="#par-exemple--2" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dev</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, <span style="color:#a6e22e">language</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">language</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">language</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="tds">TDs<a href="#tds" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <ul>
 <li><a href="https://github.com/lp1dev/hack.courses/tree/master/static/directory/Programming/JS/TDs">Exercices JavaScript</a></li>
 </ul>
@@ -425,29 +447,27 @@ la méthode correspondant dans la classe parent.</p>
   
     
 <div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other posts</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="/posts/ionic/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Formation Ionic</span>
-            </a>
-        </span>
-        
-        
-        <span class="button next">
-            <a href="/posts/vue_js_tdd/">
-                <span class="button__text">Formation Vue.JS &#43; TDD</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
-        
-    </div>
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/ionic/" class="button inline prev">
+        Formation Ionic
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/vue_js_tdd/" class="button inline next">
+        Formation Vue.JS &#43; TDD
+      </a>
+    
+  </div>
 </div>
+
 
   
 

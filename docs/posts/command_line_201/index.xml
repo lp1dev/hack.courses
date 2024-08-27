@@ -5,58 +5,19 @@
     <link>/posts/command_line_201/</link>
     <description>Recent content in Command-line 201 course presentation on hack.courses</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>hosted by fenrir.pro</copyright>
     <lastBuildDate>Wed, 11 May 2022 09:01:35 +0100</lastBuildDate><atom:link href="/posts/command_line_201/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Command line 203</title>
-      <link>/posts/command_line_201/203/</link>
-      <pubDate>Tue, 24 May 2022 17:10:35 +0100</pubDate>
-      
-      <guid>/posts/command_line_201/203/</guid>
-      <description>Data and file manipulation (head, tail, wc, grep, find) Oh, there you are! I was waiting for you to come back from 202!
-Now that you&amp;rsquo;re here we&amp;rsquo;re going to talk about new Linux commands you might not know about yet, these commands allow the modification of files and data streams.
- Note : We are not going to discuss file creation or deletion in this class for technical reasons regarding the terminal on hack.</description>
-      <content>&lt;h1 id=&#34;data-and-file-manipulation-head-tail-wc-grep-find&#34;&gt;Data and file manipulation (head, tail, wc, grep, find)&lt;/h1&gt;
-&lt;p&gt;Oh, there you are! I was waiting for you to come back from &lt;a href=&#34;./202&#34;&gt;202&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;Now that you&amp;rsquo;re here we&amp;rsquo;re going to talk about new Linux &lt;strong&gt;commands&lt;/strong&gt; you might not know about yet, these commands allow the modification of files and data streams.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : We are not going to discuss file creation or deletion in this class for technical reasons regarding the terminal on hack.courses, but it might be part of another future class ;).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;head&#34;&gt;head&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s start with the command &lt;code&gt;head&lt;/code&gt;, it seems appropriate to start with this specific one since it displays the start of a given file or data stream.
-By default, head will &lt;strong&gt;only display the 10 first lines&lt;/strong&gt; of the contents passed to it as parameters.&lt;/p&gt;
-&lt;p&gt;You can try it using the following command :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; head /etc/passwd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;root:x:0:0:root:/root:/usr/bin/shell.sh
-bin:x:1:1:bin:/bin:/sbin/nologin
-daemon:x:2:2:daemon:/sbin:/sbin/nologin
-adm:x:3:4:adm:/var/adm:/sbin/nologin
-lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
-sync:x:5:0:sync:/sbin:/bin/sync
-shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
-halt:x:7:0:halt:/sbin:/sbin/halt
-mail:x:8:12:mail:/var/mail:/sbin/nologin
-news:x:9:13:news:/usr/lib/news:/sbin/nologin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, only the 10 first lines of the &lt;code&gt;/etc/passwd&lt;/code&gt; are displayed, you can also specify the number of lines you want to print using the &lt;code&gt;-n&lt;/code&gt; parameter, for instance if you only want the first two lines of the same file :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; head -n &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; /etc/passwd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tail&#34;&gt;tail&lt;/h2&gt;
-&lt;h2 id=&#34;wc&#34;&gt;wc&lt;/h2&gt;
-&lt;h2 id=&#34;grep&#34;&gt;grep&lt;/h2&gt;
-&lt;h2 id=&#34;find&#34;&gt;find&lt;/h2&gt;
-&lt;p&gt;Wow, you&amp;rsquo;re there early aren&amp;rsquo;t you?&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m still working on this part, it will be available soon, come back later!&lt;/p&gt;
-</content>
-    </item>
-    
     <item>
       <title>Command line 201</title>
       <link>/posts/command_line_201/201/</link>
       <pubDate>Sat, 14 May 2022 14:30:35 +0100</pubDate>
       
       <guid>/posts/command_line_201/201/</guid>
-      <description>function checkAnswers() { let responses = [ &#34;Question 1 [STATUS] : The answer was /dev/stdin since we need to read user input here.&#34;, &#34;Question 2 [STATUS] : The answer was /dev/stderr, this is the special file reserved for error messages.&#34;, &#34;Question 3 [STATUS] : The answer was /dev/stdout, this is the file that should be used to display information for the users in a terminal.&#34;, ] let questions = document.querySelectorAll(&#39;fieldset&#39;) let answers = [&#39;#res0&#39;,&#39;#res07&#39;,&#39;#res11&#39;] let valid = [false, false, false] let i = 0 for (let question of questions) { let answer = question.</description>
+      <description>Introduction Welcome to this second command-line class!
+If you didn&amp;rsquo;t follow Command-line 101 and need to grasp the basics of command-line and Linux click here.
+In this class, we&amp;rsquo;ll go further down the rabbit hole and learn how to use more advanced command and chain multiple commands together.
+This class is supposed to be followed with hack.courses open alongside, the challenges are made to be completed in the website&amp;rsquo;s interactive terminal.</description>
       <content>&lt;script type=&#34;text/javascript&#34;&gt;
 function checkAnswers() {
     let responses = [
@@ -81,10 +42,10 @@ function checkAnswers() {
 &lt;hr&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Welcome to this second command-line class!&lt;/p&gt;
-&lt;p&gt;If you didn&amp;rsquo;t follow Command-line 101 and need to grasp the basics of command-line and Linux click &lt;a href=&#34;../command_line_101&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you didn&amp;rsquo;t follow Command-line 101 and need to grasp the basics of command-line and Linux click &lt;a href=&#34;/posts/command_line_101/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In this class, we&amp;rsquo;ll go further down the rabbit hole and learn how to use more advanced command and chain multiple commands together.&lt;/p&gt;
 &lt;p&gt;This class is supposed to be followed with &lt;a href=&#34;https://hack.courses&#34;&gt;hack.courses&lt;/a&gt; open alongside, the challenges are made to be completed in the website&amp;rsquo;s interactive terminal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/screenshot.png&#34; alt=&#34;Hack.courses terminal&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Hack.courses terminal&#34; src=&#34;/screenshot.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;inputoutputs&#34;&gt;Input/Outputs&lt;/h1&gt;
 &lt;h2 id=&#34;linux-filesystem&#34;&gt;Linux filesystem&lt;/h2&gt;
@@ -118,7 +79,7 @@ function checkAnswers() {
 &lt;p&gt;&lt;em&gt;/dev/null&lt;/em&gt; is often called &amp;ldquo;the null device&amp;rdquo; or the black hole. Everything sent/written to this special file will not be stored and disappear.&lt;/p&gt;
 &lt;p&gt;It comes in handy if you want to disregard a program&amp;rsquo;s error or standard output for instance.&lt;/p&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;/io.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/io.svg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;devrandom-and-devurandom&#34;&gt;/dev/random and /dev/urandom&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;/dev/random&lt;/em&gt; and &lt;em&gt;/dev/urandom&lt;/em&gt; are random data generators.&lt;/p&gt;
 &lt;p&gt;Whenever they are read, random data is generated. The slight difference between those two special files is that if &lt;em&gt;/dev/random&lt;/em&gt; will wait for enough entropy to be generated by a system before sending data. In a nutshell :&lt;/p&gt;
@@ -218,103 +179,6 @@ It might randomly write character sequences which break your terminal, it&amp;rs
 &lt;p&gt;Make sure you correcly understood everything in there, those are important concepts for the rest of this course which will make the content of the other classes easier to grasp.&lt;/p&gt;
 &lt;p&gt;Whenever you&amp;rsquo;re ready, move on to :&lt;/p&gt;
 &lt;h2 id=&#34;command-line-202202&#34;&gt;&lt;a href=&#34;../202&#34;&gt;Command-line 202&lt;/a&gt;&lt;/h2&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Command line 202</title>
-      <link>/posts/command_line_201/202/</link>
-      <pubDate>Tue, 11 Jan 2022 19:00:35 +0100</pubDate>
-      
-      <guid>/posts/command_line_201/202/</guid>
-      <description>function verify(id) { const answers = [ &#39;flag{b0138935d232349fcea0aede02ab9cdd96938e55}&#39;, ] let input = document.querySelector(&#39;#chall&#39;+id) if (input.value.trim() == answers[id]) { alert(&#39;Congratulations! You finished this challenge&#39;) input.disabled = true; } else { alert(&#39;It seems your answer is invalid. Try again!&#39;) } }  Pipes You might have heard about or have seen pipes using the | character, they are very frequently used in Linux command-line and can become an essential tool once you master them.</description>
-      <content>&lt;script type=&#34;text/javascript&#34;&gt;
-    function verify(id) {
-        const answers = [
-            &#39;flag{b0138935d232349fcea0aede02ab9cdd96938e55}&#39;,
-        ]
-        let input = document.querySelector(&#39;#chall&#39;+id)
-        if (input.value.trim() == answers[id]) {
-            alert(&#39;Congratulations! You finished this challenge&#39;)
-            input.disabled = true;
-        } else {
-            alert(&#39;It seems your answer is invalid. Try again!&#39;)
-        }
-    }
-&lt;/script&gt;
-&lt;h1 id=&#34;pipes&#34;&gt;Pipes&lt;/h1&gt;
-&lt;p&gt;You might have heard about or have seen &lt;strong&gt;pipes&lt;/strong&gt; using the &lt;code&gt;|&lt;/code&gt; character, they are very frequently used in Linux command-line and can become an essential tool once you master them.&lt;/p&gt;
-&lt;p&gt;If you have a look at the manual pages related to pipes using &lt;code&gt;man pipe&lt;/code&gt;, the definition of a pipe starts with the following sentence :&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pipe() creates a pipe, a unidirectional data channel that can be used
-       for interprocess communication.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can infer from it that a pipe :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Is a data channel&lt;/li&gt;
-&lt;li&gt;Can be used to communicate data from a process to another&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To give you a definition that better fits the concepts we have discussed in the previous class : a &lt;strong&gt;pipe&lt;/strong&gt; is &lt;strong&gt;a character&lt;/strong&gt; whose usage redirects the &lt;strong&gt;standard output&lt;/strong&gt; of a first command part to the &lt;strong&gt;standard input&lt;/strong&gt; of a second one.&lt;/p&gt;
-&lt;p&gt;For instance, if you wanted to redirect the &lt;strong&gt;standard output&lt;/strong&gt; of &lt;code&gt;whoami&lt;/code&gt; to &lt;code&gt;rev&lt;/code&gt;, you would type :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; whoami | rev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;New command&lt;/strong&gt; : &lt;code&gt;rev&lt;/code&gt; is like cat, except it reads the data in a reversed way. Try it with &lt;code&gt;rev /etc/passwd&lt;/code&gt; or any other file available on hack.courses.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Pipes can be chained without limitations, for instance the following command line is valid :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$&amp;gt; cat /etc/passwd | grep gu3st | rev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : The characters &amp;ldquo;$&amp;gt;&amp;rdquo; here are not part of the command, they represent the prompt usually displayed by shells to let the user know they can type a new command.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;And will &lt;code&gt;cat /etc/passwd&lt;/code&gt;, then send all of the file content written to &lt;em&gt;/dev/stdout&lt;/em&gt; to &lt;code&gt;grep&lt;/code&gt; which fill filter only the lines containing &lt;code&gt;gu3st&lt;/code&gt; and then &lt;code&gt;reverse&lt;/code&gt; the output with &lt;code&gt;rev&lt;/code&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;redirections&#34;&gt;Redirections&lt;/h1&gt;
-&lt;p&gt;Let&amp;rsquo;s tackle another important concept in Linux shells : &lt;strong&gt;redirections&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;They are represented by the characters &lt;code&gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;&lt;/code&gt; for the &lt;em&gt;right&lt;/em&gt; and &lt;em&gt;left&lt;/em&gt; redirection or &lt;em&gt;output&lt;/em&gt; and &lt;em&gt;input&lt;/em&gt; redirection.&lt;/p&gt;
-&lt;h2 id=&#34;right-redirection-output-redirection&#34;&gt;Right redirection (output redirection)&lt;/h2&gt;
-&lt;p&gt;What is meant by &lt;em&gt;right redirection&lt;/em&gt; or &lt;em&gt;output redirection&lt;/em&gt; is a redirection of a process &lt;strong&gt;standard output&lt;/strong&gt; to a file (which can be a special file or a regular file).&lt;/p&gt;
-&lt;p&gt;For instance on a Linux system you could write random data to an actual file named &lt;code&gt;random_data&lt;/code&gt; using &lt;em&gt;/dev/urandom&lt;/em&gt; with the following command :&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;cat /dev/urandom &amp;gt; random_data&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : You do not have the permissions to create new files on hack.courses, this command will not work unless you have your own &lt;em&gt;user account&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You could also use right redirections to hide a command&amp;rsquo;s standard output, like :&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ls / &amp;gt; /dev/null&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Which would redirect all of the content written by &lt;code&gt;ls /&lt;/code&gt; on the &lt;strong&gt;standard output&lt;/strong&gt; to &lt;code&gt;/dev/null&lt;/code&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Hands-on&lt;/strong&gt; : A good example of this is the &lt;code&gt;ping&lt;/code&gt; utility, try with &lt;code&gt;ping 127.0.0.1 &amp;gt; /dev/null&lt;/code&gt;. Do you understand which part of the original ping command is written on the standard output? Which one is written on the error output?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- //TODO rename the section to somehting else than hands-on and replace ping with something that works on hack.courses --&gt;
-&lt;h2 id=&#34;left-redirection-input-redirection&#34;&gt;Left redirection (input redirection)&lt;/h2&gt;
-&lt;p&gt;Input redirection, using the &lt;code&gt;&amp;lt;&lt;/code&gt; operator redirects a file&amp;rsquo;s contents to a command&amp;rsquo;s &lt;strong&gt;standard input&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;You can replace user input, entered using a keyboard with the contents of a &lt;em&gt;special&lt;/em&gt; or &lt;em&gt;regular&lt;/em&gt; file.&lt;/p&gt;
-&lt;p&gt;As an example, if we were to sort the contents of a given &lt;em&gt;customers.txt&lt;/em&gt; we could use a left redirection like :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sort &amp;lt; customers.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;em&gt;customers.txt&lt;/em&gt; will be read by the command interpreter, which will then write all of its contents as &lt;code&gt;sort&lt;/code&gt;&amp;rsquo;s &lt;strong&gt;standard input&lt;/strong&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : There also is another output redirection you might encounter, using &lt;em&gt;two angular brackets&lt;/em&gt; &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;. This one will &lt;strong&gt;add additional data&lt;/strong&gt; after the end of a file instead of totally &lt;strong&gt;replacing its contents&lt;/strong&gt; like &lt;code&gt;&amp;gt;&lt;/code&gt; does.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;hands-on-&#34;&gt;Hands-On 🤜!&lt;/h1&gt;
-&lt;p&gt;You probably miss actually messing around with a terminal by yourself after all of this! Let&amp;rsquo;s get our hands dirty and search for more &lt;em&gt;flags&lt;/em&gt; by finishing &lt;em&gt;challenges&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;If you need a reminder about the &lt;em&gt;flags&lt;/em&gt; system, have a look at &lt;a href=&#34;http://doc.hack.courses/posts/command_line_101/101/#hands-on-&#34;&gt;this section of CLI 101&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;challenge-0&#34;&gt;Challenge 0&lt;/h2&gt;
-&lt;p&gt;This first challenge&amp;rsquo;s flag will be given to you by a &lt;em&gt;script&lt;/em&gt;, you &lt;a href=&#34;../command_line_101/103.md&#34;&gt;remember how to run a shell script&lt;/a&gt;, right?&lt;/p&gt;
-&lt;p&gt;Once you run this shell script, it gives you the flag&amp;hellip;
-But wait, there&amp;rsquo;s something wrong with it isn&amp;rsquo;t it?&lt;/p&gt;
-&lt;p&gt;It seems the flag you&amp;rsquo;re given has been &lt;em&gt;reversed&lt;/em&gt;. Maybe you can do something about it using your new command-line skills?&lt;/p&gt;
-&lt;details&gt;
-  &lt;summary&gt;Hint 1&lt;/summary&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt; : This exercice can be done (not exclusively) using &lt;code&gt;rev&lt;/code&gt; and a pipe.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/details&gt;
-&lt;div style=&#34;display:flex&#34;&gt;
-    &lt;input style=&#34;width:40rem&#34; type=&#34;text&#34; id=&#34;chall0&#34; placeholder=&#34;Example : flag{abcdefgh0123456789}&#34;/&gt;&lt;button onclick=&#34;verify(0)&#34;&gt;Verify&lt;/button&gt;
-&lt;/div&gt;
-&lt;!-- flag{b0138935d232349fcea0aede02ab9cdd96938e55} --&gt;
-&lt;!-- ## Challenge 1 --&gt;
-&lt;hr&gt;
-&lt;p&gt;Whenever you&amp;rsquo;re ready, move on to :&lt;/p&gt;
-&lt;h2 id=&#34;command-line-203-coming-soon&#34;&gt;Command-line 203 (Coming Soon)&lt;/h2&gt;
-&lt;!-- ## [Command-line 202](../202) --&gt;
 </content>
     </item>
     
